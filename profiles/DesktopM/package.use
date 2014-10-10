@@ -1,0 +1,35 @@
+sys-fs/udev gudev
+x11-libs/libfm udisks
+
+# net-fs/samba [client]
+net-fs/cifs-utils -acl
+
+# Removed unnecessary dependence
+net-fs/samba -winbind
+
+# Add file systems and raid support.
+sys-block/gparted btrfs dmraid fat jfs mdadm ntfs reiserfs xfs
+
+x11-misc/light-locker upower
+
+x11-misc/lightdm -introspection
+
+sys-fs/udisks cryptsetup
+sys-fs/cryptsetup kernel -gcrypt -nettle -openssl udev static-libs
+
+sys-kernel/calculate-sources -minimal
+sys-fs/ntfs3g ntfsprogs ntfsdecrypt -external-fuse
+
+dev-libs/elfutils static-libs
+dev-libs/libgcrypt static-libs
+dev-libs/libgpg-error static-libs
+dev-libs/popt static-libs
+sys-apps/util-linux static-libs
+sys-fs/lvm2 lvm2create_initrd static-libs -thin
+sys-fs/udev static-libs
+sys-libs/e2fsprogs-libs static-libs
+virtual/libgudev static-libs
+virtual/libudev static-libs
+virtual/udev static-libs
+media-sound/deadbeef -ffmpeg ape converter dts hotkeys infobar mms notify mono2stereo psf shn supereq -gtk2 gtk3 -lastfm wma pltbrowser
+net-irc/kvirc -audiofile -oss -theora -dcc_voice -phonon doc

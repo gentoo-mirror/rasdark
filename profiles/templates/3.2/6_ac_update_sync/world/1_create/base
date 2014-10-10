@@ -1,0 +1,16 @@
+# Calculate name=world format=world
+
+#?in(os_linux_pkglist, COBRA)!=#
+app-editors/nano
+media-fonts/terminus-font
+sys-apps/ifplugd
+sys-apps/less
+sys-fs/btrfs-progs
+sys-fs/nilfs-utils
+sys-fs/ntfs3g
+sys-fs/reiserfsprogs
+sys-kernel/dracut
+sys-process/lsof
+virtual/linux-sources
+#in#
+

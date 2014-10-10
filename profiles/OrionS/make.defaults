@@ -1,0 +1,5 @@
+USE=""
+KERNELNAME="security"
+LINGUAS="en ru es es_ES"
+EMERGE_DEFAULT_OPTS="${EMERGE_DEFAULT_OPTS} --ask --verbose --keep-going"
+

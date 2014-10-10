@@ -1,0 +1,20 @@
+USE=""
+
+# Audio
+USE="${USE} cdda -gstreamer pulseaudio"
+
+# Network protocols
+USE="${USE} rdesktop"
+
+# System
+USE="${USE} -dconf networkmanager udisks"
+
+# Window manager and specialities
+USE="${USE} -eds -gnome -kde"
+
+CL="builder client desktop console consolegui"
+THEMES="CLDX"
+LIGHTDM_SESSION=openbox-session
+KERNELNAME="darkus"
+EMERGE_DEFAULT_OPTS="${EMERGE_DEFAULT_OPTS} --ask --verbose --keep-going"
+
