@@ -3,10 +3,20 @@
 app-text/wgetpaste
 net-analyzer/mtr
 net-analyzer/netcat6
+net-analyzer/nmap
+net-ftp/ftp
+net-misc/whois
 #in#
 
 #?in(os_linux_pkglist, COBRA)!=#
+net-analyzer/wireshark
 net-irc/kvirc
+net-misc/remmina
+net-p2p/deluge
+net-wireless/aircrack-ng
+net-wireless/reaver
 www-client/firefox-bin
 www-plugins/adobe-flash
+x11-plugins/pidgin-hotkeys
+x11-themes/pidgin-penguins-smileys
 #in#

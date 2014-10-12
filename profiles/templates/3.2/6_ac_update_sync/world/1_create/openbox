@@ -1,6 +1,7 @@
 # Calculate name=world format=world in(os_linux_pkglist,COBRA)!=
 
 app-arch/xarchiver
+app-editors/gvim
 app-office/libreoffice
 app-text/evince
 dev-util/gsimplecal

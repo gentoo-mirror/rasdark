@@ -13,6 +13,8 @@ media-gfx/grub-splashes-calculate
 media-gfx/plymouth-themes-calculate
 net-analyzer/mtr
 net-analyzer/netcat6
+net-ftp/ftp
+net-misc/whois
 sys-apps/ifplugd
 sys-fs/btrfs-progs
 sys-fs/cryptsetup
@@ -27,6 +29,7 @@ virtual/linux-sources
 #?in(os_linux_pkglist, COBRA)!=#
 app-admin/keepassx
 app-arch/xarchiver
+app-editors/gvim
 app-office/libreoffice
 app-text/evince
 dev-util/gsimplecal
@@ -39,7 +42,6 @@ media-gfx/dm-themes-calculate
 media-gfx/gimp
 media-gfx/lightdm-themes-calculate
 media-gfx/plymouth-themes-calculate
-x11-misc/screengrab
 media-gfx/syslinux-themes-calculate
 media-sound/alsa-utils
 media-sound/deadbeef
@@ -49,6 +51,10 @@ media-sound/volumeicon
 media-video/vlc
 net-im/pidgin
 net-irc/kvirc
+net-p2p/deluge
+net-wireless/aircrack-ng
+net-wireless/kismet
+net-wireless/reaver
 sys-apps/less
 sys-block/gparted
 sys-fs/nilfs-utils
@@ -64,8 +70,10 @@ x11-misc/obmenugen-bin
 x11-misc/obshutdown
 x11-misc/parcellite
 x11-misc/pcmanfm
+x11-misc/screengrab
 x11-misc/tint2
 x11-misc/xxkb
+x11-plugins/pidgin-hotkeys
 x11-themes/calculate-xcursors
 x11-themes/elementary-icon-theme
 x11-themes/gnome-icon-theme
@@ -73,5 +81,6 @@ x11-themes/gnome-icon-theme-extras
 x11-themes/haematite-xcursors
 x11-themes/oxygen-gtk:2
 x11-themes/oxygen-gtk:3
+x11-themes/pidgin-penguins-smileys
 #in#
 

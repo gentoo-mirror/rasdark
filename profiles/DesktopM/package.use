@@ -1,46 +1,43 @@
-sys-fs/udev gudev
-x11-libs/libfm udisks
-
-# net-fs/samba [client]
-net-fs/cifs-utils -acl
-
-# Removed unnecessary dependence
-net-fs/samba -winbind
-
-# Add file systems and raid support.
-sys-block/gparted btrfs dmraid fat jfs mdadm ntfs reiserfs xfs
-
-x11-misc/light-locker upower
-
-x11-misc/lightdm -introspection
-
-sys-fs/udisks cryptsetup
-sys-fs/cryptsetup kernel -gcrypt -nettle -openssl udev static-libs
-
-sys-kernel/calculate-sources -minimal firmware
-sys-fs/ntfs3g ntfsprogs ntfsdecrypt -external-fuse
-
+app-admin/testdisk ntfs reiserfs
+app-arch/p7zip rar
+app-editors/gvim neXt perl python
+app-misc/mc gpm
+app-office/libreoffice gtk -bluetooth opengl vlc 
+dev-libs/boost python
 dev-libs/elfutils static-libs
 dev-libs/libgcrypt static-libs
 dev-libs/libgpg-error static-libs
 dev-libs/popt static-libs
+media-libs/harfbuzz icu
+media-libs/sdl-mixer mikmod mod
+media-sound/deadbeef -ffmpeg ape converter dts hotkeys infobar mms notify mono2stereo psf shn supereq -gtk2 gtk3 -lastfm wma pltbrowser
+media-sound/lame mp3rtp sndfile
+media-video/ffmpeg threads
+media-video/vlc  opus libsamplerate optimisememory cdda
+net-analyzer/nmap -lua gtk ncat ndiff nmap-update nping
+net-analyzer/wireshark -adns geoip -gtk3 smi
+net-fs/cifs-utils -acl
+net-fs/samba -winbind
+net-irc/kvirc -audiofile -oss -theora -dcc_voice -phonon doc
+net-libs/libpcap netlink
+net-libs/rb_libtorrent python
+net-misc/remmina -avahi freerdp gnome-keyring ssh vte
+net-p2p/deluge geoip setproctitle webinterface sound
+net-wireless/lorcon python
 sys-apps/util-linux static-libs
+sys-block/gparted btrfs dmraid fat jfs mdadm ntfs reiserfs xfs
+sys-fs/cryptsetup kernel -gcrypt -nettle -openssl udev static-libs
 sys-fs/lvm2 lvm2create_initrd static-libs -thin
+sys-fs/ntfs3g ntfsprogs ntfsdecrypt -external-fuse
+sys-fs/udev gudev
 sys-fs/udev static-libs
+sys-fs/udisks cryptsetup
+sys-kernel/calculate-sources -minimal firmware
 sys-libs/e2fsprogs-libs static-libs
 virtual/libgudev static-libs
 virtual/libudev static-libs
 virtual/udev static-libs
-media-sound/deadbeef -ffmpeg ape converter dts hotkeys infobar mms notify mono2stereo psf shn supereq -gtk2 gtk3 -lastfm wma pltbrowser
-net-irc/kvirc -audiofile -oss -theora -dcc_voice -phonon doc
-app-admin/testdisk ntfs reiserfs
-app-arch/p7zip rar
-
-media-libs/harfbuzz icu
-
-media-sound/lame mp3rtp sndfile
-media-video/ffmpeg threads
-media-video/vlc  opus libsamplerate optimisememory cdda
-app-office/libreoffice -gtk  -bluetooth opengl vlc 
-app-misc/mc gpm
+x11-libs/libfm udisks
+x11-misc/light-locker upower
+x11-misc/lightdm -introspection
 x11-wm/openbox imlib
