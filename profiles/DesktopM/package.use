@@ -35,3 +35,6 @@ media-sound/deadbeef -ffmpeg ape converter dts hotkeys infobar mms notify mono2s
 net-irc/kvirc -audiofile -oss -theora -dcc_voice -phonon doc
 app-admin/testdisk ntfs reiserfs
 app-arch/p7zip rar
+
+media-libs/harfbuzz icu
+
