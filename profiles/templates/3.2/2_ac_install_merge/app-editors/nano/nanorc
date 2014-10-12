@@ -1,4 +1,4 @@
-# Calculate append=after comment=# path=/etc
+# Calculate append=join format=squid comment=# path=/etc
 
 set const
 set fill -8
