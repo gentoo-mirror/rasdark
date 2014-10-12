@@ -1,3 +1,4 @@
+# Calculate comment=#
 #
 # Openbox shutdown dialog
 # This is example obshutdown rc file
@@ -42,7 +43,7 @@ lock =           Bloquear
 switch =         Cambiar de usuario
 suspend =        Suspensión
 hibernate =      Hibernación
-#os_local_lang#
+#os_locale_lang#
 #?os_locale_lang==en_EN#
 cancel =         Cancel
 logout =         Logout
@@ -52,7 +53,7 @@ lock =           Lock
 switch =         Switch user
 suspend =        Suspend
 hibernate =      Hibernate
-#os_local_lang#
+#os_locale_lang#
 #?os_locale_lang==ru_RU#
 cancel =         Отмена
 logout =         Выход
@@ -62,4 +63,4 @@ lock =           Блокировка
 switch =         Сменить пользователя
 suspend =        Ждущий режим
 hibernate =      Спящий режим
-#os_local_lang#
+#os_locale_lang#
