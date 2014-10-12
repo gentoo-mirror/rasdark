@@ -8,6 +8,7 @@ app-misc/mc
 app-misc/tmux-mem-cpu-load
 app-text/wgetpaste
 media-fonts/terminus-font
+media-gfx/fbgrab
 media-gfx/grub-splashes-calculate
 media-gfx/plymouth-themes-calculate
 net-analyzer/mtr
@@ -38,7 +39,7 @@ media-gfx/dm-themes-calculate
 media-gfx/gimp
 media-gfx/lightdm-themes-calculate
 media-gfx/plymouth-themes-calculate
-media-gfx/scrot
+x11-misc/screengrab
 media-gfx/syslinux-themes-calculate
 media-sound/alsa-utils
 media-sound/deadbeef

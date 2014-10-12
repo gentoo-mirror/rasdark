@@ -43,3 +43,4 @@ media-video/ffmpeg threads
 media-video/vlc  opus libsamplerate optimisememory cdda
 app-office/libreoffice -gtk  -bluetooth opengl vlc 
 app-misc/mc gpm
+x11-wm/openbox imlib

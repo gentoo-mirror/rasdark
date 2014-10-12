@@ -1,11 +1,12 @@
 # Calculate name=world format=world
 
 #?in(os_linux_pkglist, COBRA)!=#
-media-gfx/scrot
+media-gfx/fbgrab
 media-sound/alsa-utils
 media-sound/deadbeef
 media-sound/pavucontrol
 media-sound/sox
 media-video/vlc
+x11-misc/screengrab
 #in#
 
