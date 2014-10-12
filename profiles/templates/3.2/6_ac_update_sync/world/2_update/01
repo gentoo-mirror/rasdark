@@ -16,8 +16,10 @@ net-analyzer/netcat6
 net-ftp/ftp
 net-misc/whois
 sys-apps/ifplugd
+sys-apps/inxi
 sys-fs/btrfs-progs
 sys-fs/cryptsetup
+sys-fs/extundelete
 sys-kernel/dracut
 sys-process/atop
 sys-process/htop
@@ -51,6 +53,8 @@ media-sound/volumeicon
 media-video/vlc
 net-im/pidgin
 net-irc/kvirc
+net-misc/dropbox
+net-misc/yandex-disk
 net-p2p/deluge
 net-wireless/aircrack-ng
 net-wireless/kismet

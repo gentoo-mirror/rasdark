@@ -6,7 +6,6 @@ app-office/libreoffice
 app-text/evince
 dev-util/gsimplecal
 gnome-extra/gcalctool
-gnome-extra/nm-applet
 mail-client/thunderbird-bin
 media-gfx/gimp
 media-sound/volumeicon

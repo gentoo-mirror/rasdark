@@ -3,7 +3,10 @@
 ~app-editors/gvim-7.4.430 x86 amd64
 ~app-editors/vim-core-7.4.430 x86 amd64
 ~dev-util/gsimplecal-1.6 x86 amd64
+~net-misc/dropbox-2.10.2-r1 x86 amd64
 ~net-misc/remmina-1.0.0_p20130723 x86 amd64
+~net-analyzer/nmap-6.47 amd64 x86
+~net-analyzer/tcpdump-4.6.2 amd64 x86
 ~net-wireless/aircrack-ng-1.2_beta3-r3 x86 amd64
 ~net-wireless/lorcon-0.0_p20130212-r1 x86 amd64
 ~net-wireless/reaver-1.4-r3 x86 amd64

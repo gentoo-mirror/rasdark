@@ -4,14 +4,18 @@ app-text/wgetpaste
 net-analyzer/mtr
 net-analyzer/netcat6
 net-analyzer/nmap
+net-analyzer/tcpdump
 net-ftp/ftp
 net-misc/whois
 #in#
 
 #?in(os_linux_pkglist, COBRA)!=#
+gnome-extra/nm-applet
 net-analyzer/wireshark
 net-irc/kvirc
 net-misc/remmina
+net-misc/dropbox
+net-misc/yandex-disk
 net-p2p/deluge
 net-wireless/aircrack-ng
 net-wireless/reaver
