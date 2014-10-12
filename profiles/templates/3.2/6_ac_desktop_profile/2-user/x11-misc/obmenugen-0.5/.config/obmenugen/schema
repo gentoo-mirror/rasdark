@@ -18,6 +18,7 @@
 #     Example: file:extras.xml
 #
 # Comments are lines begining with a # character, to the end of the line.
+file:folders.xml
 item:terminal
 item:filemanager
 #raw:<item label="root Midnight Commanger"><action name="Execute"><execute>urxvt -e sudo mc</execute></action></item>
