@@ -10,27 +10,28 @@ inherit distutils-r1 eutils
 SRC_URI="ftp://ftp.calculate.ru/pub/calculate/calculate2/${PN}/${P}.tar.bz2
 	http://mirror.yandex.ru/calculate/calculate2/${PN}/${P}.tar.bz2"
 
-DESCRIPTION="The utilities for assembling tasks of Calculate Linux"
+DESCRIPTION="The library for Calculate 2"
 HOMEPAGE="http://www.calculate-linux.org/main/en/calculate2"
 LICENSE="Apache-2.0"
-SLOT="0"
+SLOT="2.2"
 KEYWORDS="amd64 x86"
-
-DEPEND="~sys-apps/calculate-builder-2.2.32"
-
+IUSE="minimal"
+DEPEND="!<sys-apps/calculate-lib-2.1.8-r1
+	!=sys-apps/calculate-lib-2.1.9
+	!=sys-apps/calculate-lib-2.1.10
+	!minimal? ( dev-python/py-smbpasswd )
+	>=dev-python/pyxml-0.8
+	sys-apps/iproute2
+	sys-apps/pciutils
+	sys-fs/lvm2
+	sys-fs/mdadm
+	sys-apps/file[python]"
 RDEPEND="${DEPEND}"
 
 src_unpack() {
 	unpack "${A}"
 	cd "${S}"
 
-	# fix rebuild changed packages
-	epatch "${FILESDIR}/calculate-assemble-2.2.32-fix_rebuild.patch"
-
-	# fix assemble path
-	epatch "${FILESDIR}/calculate-assemble-2.2.32-fix_assemble.patch"
-
-	# fix name of distr by rasdark
-	epatch "${FILESDIR}/calculate-assemble-2.2.32-fix_vars_share.patch"
-
+	# create revision for calculate lib
+	epatch "${FILESDIR}/calculate-lib-2.2.32-r2.patch"
 }
