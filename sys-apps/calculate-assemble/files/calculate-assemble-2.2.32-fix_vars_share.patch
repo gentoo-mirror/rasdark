@@ -1,0 +1,18 @@
+--- pym/cl_vars_share.py	2014-10-12 23:35:05.468608130 +0400
++++ pym/cl_vars_share.py	2014-10-12 23:36:36.376602712 +0400
+@@ -256,5 +256,7 @@
+                      "CMC":"Calculate Media Center",
++                     "COBRA":"rasdark Desktop Linux",
++                     "TOSS":"TFOKB Security Server",
+                      "Gentoo":"Gentoo"}
+ 
+-    dictLinuxSubName = {"CLD":"KDE", "CLDX":"XFCE", "CLDG":"GNOME"}
++    dictLinuxSubName = {"CLD":"KDE", "CLDX":"XFCE", "CLDG":"GNOME", "COBRA":"Minimal"}
+ 
+@@ -266,3 +268,5 @@
+                       'CMC':'desktop',
+-                      'CSS':'server'}
++                      'CSS':'server',
++                      'COBRA':'desktop',
++                      'TOSS':'server'}
+ 
