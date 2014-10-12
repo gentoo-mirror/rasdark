@@ -17,7 +17,7 @@ x11-misc/lightdm -introspection
 sys-fs/udisks cryptsetup
 sys-fs/cryptsetup kernel -gcrypt -nettle -openssl udev static-libs
 
-sys-kernel/calculate-sources -minimal
+sys-kernel/calculate-sources -minimal firmware
 sys-fs/ntfs3g ntfsprogs ntfsdecrypt -external-fuse
 
 dev-libs/elfutils static-libs
@@ -38,3 +38,8 @@ app-arch/p7zip rar
 
 media-libs/harfbuzz icu
 
+media-sound/lame mp3rtp sndfile
+media-video/ffmpeg threads
+media-video/vlc  opus libsamplerate optimisememory cdda
+app-office/libreoffice -gtk  -bluetooth opengl vlc 
+app-misc/mc gpm
