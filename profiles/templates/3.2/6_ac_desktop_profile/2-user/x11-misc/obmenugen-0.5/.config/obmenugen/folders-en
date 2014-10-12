@@ -1,0 +1,54 @@
+# Calculate os_locale_lang==en_EN name=folders.xml
+<menu id="folders-menu" label="Open">
+		<item label="Home">
+			<action name="Execute">
+				<command>
+					pcmanfm ~/
+				</command>
+			</action>
+		</item>
+		<separator/>
+		<item label="Dropbox">
+			<action name="Execute">
+				<command>
+					pcmanfm ~/Dropbox
+				</command>
+			</action>
+		</item>
+		<separator/>
+                <item label="Documents">
+			<action name="Execute">
+				<command>
+					pcmanfm ~/Documents
+				</command>
+			</action>
+		</item>
+  		<item label="Pictures">
+			<action name="Execute">
+				<command>
+					pcmanfm ~/Pictures
+				</command>
+			</action>
+		</item>
+  		<item label="Music">
+			<action name="Execute">
+				<command>
+					pcmanfm ~/Music
+				</command>
+			</action>
+		</item>
+		<item label="Videos">
+			<action name="Execute">
+				<command>
+					pcmanfm ~/Videos
+				</command>
+			</action>
+		</item>
+		<item label="Downloads">
+			<action name="Execute">
+				<command>
+					pcmanfm ~/Downloads
+				</command>
+			</action>
+		</item>
+	</menu>
