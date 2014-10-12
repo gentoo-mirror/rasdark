@@ -1,11 +1,12 @@
 # Calculate name=world format=world
 #?in(os_linux_pkglist, TOSS,COBRA)!=#
+app-text/wgetpaste
 net-analyzer/mtr
 net-analyzer/netcat6
-app-text/wgetpaste
 #in#
 
 #?in(os_linux_pkglist, COBRA)!=#
 net-irc/kvirc
 www-client/firefox-bin
+www-plugins/adobe-flash
 #in#

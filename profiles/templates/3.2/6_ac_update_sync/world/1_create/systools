@@ -1,15 +1,15 @@
 # Calculate name=world format=world
 #?in(os_linux_pkglist, TOSS,COBRA)!=#
-app-misc/tmux-mem-cpu-load
 app-misc/mc
-sys-process/lsof
+app-misc/tmux-mem-cpu-load
+sys-fs/cryptsetup
 sys-process/atop
 sys-process/htop
 sys-process/iotop
-sys-fs/cryptsetup
+sys-process/lsof
 #in#
 
 #?in(os_linux_pkglist, COBRA)!=#
-sys-block/gparted
 app-admin/keepassx
+sys-block/gparted
 #in#

@@ -1,6 +1,8 @@
 # Calculate name=world format=world
 
 #?in(os_linux_pkglist, COBRA)!=#
+app-admin/testdisk
+app-arch/p7zip
 app-editors/nano
 media-fonts/terminus-font
 sys-apps/ifplugd
