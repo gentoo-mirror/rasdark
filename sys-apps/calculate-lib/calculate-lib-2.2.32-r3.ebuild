@@ -34,4 +34,7 @@ src_unpack() {
 
 	# create revision for calculate lib
 	epatch "${FILESDIR}/calculate-lib-2.2.32-r2.patch"
+	
+	# fix dists
+	epatch "${FILESDIR}/calculate-lib-2.2.32-fix-vars-dists.patch"
 }
