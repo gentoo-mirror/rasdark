@@ -5,6 +5,7 @@
 ~dev-util/gsimplecal-1.6 x86 amd64
 ~net-misc/remmina-1.0.0_p20130723 x86 amd64
 ~net-wireless/aircrack-ng-1.2_beta3-r3 x86 amd64
+~net-wireless/lorcon-0.0_p20130212-r1 x86 amd64
 ~net-wireless/reaver-1.4-r3 x86 amd64
 ~sys-fs/cryptsetup-1.6.6 x86 amd64
 ~sys-fs/ntfs3g-2014.2.15 x86 amd64
