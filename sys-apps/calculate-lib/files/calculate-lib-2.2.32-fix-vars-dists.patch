@@ -1,8 +1,6 @@
-diff --git pym/cl_vars_share.py pym/cl_vars_share.py
-index 4de30c0..0b254b2 100644
---- pym/cl_vars_share.py
-+++ pym/cl_vars_share.py
-@@ -254,9 +254,11 @@
+--- pym/cl_vars_share.py	2014-10-12 23:35:05.468608130 +0400
++++ pym/cl_vars_share.py	2014-10-12 23:36:36.376602712 +0400
+@@ -254,9 +254,11 @@ class varsShare:
                       "CLS":"Calculate Linux Scratch",
                       "CSS":"Calculate Scratch Server",
                       "CMC":"Calculate Media Center",
@@ -15,7 +13,7 @@ index 4de30c0..0b254b2 100644
  
      dictNameSystem = {'CDS':'server',
                        'CLD':'desktop',
-@@ -264,7 +266,9 @@
+@@ -264,7 +266,9 @@ class varsShare:
                        'CLDX':'desktop',
                        'CLS':'desktop',
                        'CMC':'desktop',
