@@ -1,8 +1,0 @@
-# Calculate exists(/etc/portage/package.use/my)==
-
-app-editors/gvim python perl
-app-emulation/winetricks rar
-dev-libs/botan threads
-dev-qt/qt-creator autotools cmake cvs -doc examples fakevim git  subversion valgrind
-net-irc/kvirc -audiofile -oss -theora -dcc_voice -phonon doc
-www-client/firefox system-jpeg system-sqlite
