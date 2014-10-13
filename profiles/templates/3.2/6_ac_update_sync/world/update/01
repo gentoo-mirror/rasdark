@@ -1,6 +1,6 @@
-# Calculate format=world name=world ini(update-rasdark.world)<1
+# Calculate format=world name=world ini(overlay-rasdark.world)<1
 
-#-ini(update-rasdark.world,1)-#
+#-ini(overlay-rasdark.world,1)-#
 
 #?in(os_linux_pkglist, TOSS,COBRA)!=#
 app-admin/testdisk
