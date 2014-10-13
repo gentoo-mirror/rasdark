@@ -1,3 +1,4 @@
+# Calculate comment=!
 ! для применения настроек в текущей сессии используйте `xrdb -load ~/.Xresources`
 
 Xft.antialias: true
