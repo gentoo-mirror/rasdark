@@ -1,5 +1,7 @@
-# Calculate format=world name=world ini(update-rasdark.world)<2
+# Calculate format=world name=world ini(update-rasdark.world)<1
+
 #-ini(update-rasdark.world,1)-#
+
 #?in(os_linux_pkglist, TOSS,COBRA)!=#
 app-admin/testdisk
 app-arch/p7zip
