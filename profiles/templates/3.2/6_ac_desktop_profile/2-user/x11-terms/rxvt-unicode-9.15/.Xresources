@@ -1,0 +1,62 @@
+! для применения настроек в текущей сессии используйте `xrdb -load ~/.Xresources`
+
+Xft.antialias: true
+Xft.dpi: 96
+Xft.rgba: none
+Xft.hinting: true
+Xft.hintstyle: hintslight
+
+URxvt.perl-ext-common: default,tabbed,matcher
+
+URxvt.url-launcher: /usr/bin/firefox-bin
+URxvt.matcher.button: 2
+URxvt.colorUL: #cacc46
+URxvt.underlineURLs: true
+URxvt.underlineColor: #cacc46
+
+URxvt.font: xft:Droid Sans Mono Slashed:pixelsize=13
+URxvt.boldFont: xft:Droid Sans Mono Slashed:bold
+
+URxvt.saveLines: 5000
+URxvt.geometry: 100x35
+URxvt.termName: rxvt
+
+URxvt.scrollBar: true
+URxvt.scrollstyle: plain
+URxvt.scrollBar_right: true
+URxvt.scrollColor: #1A1A1A
+
+! color the man
+URxvt.colorMode: on
+URxvt.boldColors: on
+URxvt.dynamicColors: on
+URxvt.colorULMode: on
+URxvt.underLine: off
+URxvt.colorBDMode: on
+URxvt.colorBD:  cyan
+
+URxvt.background: #000000
+URxvt.foreground: #ffffff
+URxvt.color0: #000000
+URxvt.color1: #700000
+URxvt.color2: #00b45a
+URxvt.color3: #df5900
+URxvt.color4: #006ad7
+URxvt.color5: #dc0097
+URxvt.color6: #00cad3
+URxvt.color7: #dcdccc
+URxvt.color8: #009048
+URxvt.color9: #dc0000
+URxvt.color10: #72d5a3
+URxvt.color11: #f0dfaf
+URxvt.color12: #94bff3
+URxvt.color13: #ec93d3
+URxvt.color14: #93e0e3
+URxvt.color15: #ffffff
+
+URxvt.tabbed.tabbar-fg: 2
+URxvt.tabbed.tabbar-bg: 0
+URxvt.tabbed.tab-fg: 3
+URxvt.tabbed.tab-bg: 0
+
+! URxvt.iconFile: /usr/share/pixmaps/terminal.xpm
