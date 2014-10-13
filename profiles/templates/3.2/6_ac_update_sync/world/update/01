@@ -36,7 +36,6 @@ app-editors/gvim
 app-office/libreoffice
 app-text/evince
 dev-util/gsimplecal
-gnome-extra/gcalctool
 gnome-extra/nm-applet
 kde-base/oxygen-icons
 lxde-base/lxmenu-data
