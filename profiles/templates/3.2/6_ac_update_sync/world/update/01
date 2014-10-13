@@ -39,7 +39,6 @@ app-office/libreoffice
 app-text/evince
 dev-util/gsimplecal
 gnome-extra/nm-applet
-kde-base/oxygen-icons
 lxde-base/lxmenu-data
 mail-client/thunderbird-bin
 media-gfx/calculate-wallpapers
@@ -87,8 +86,6 @@ x11-themes/gnome-icon-theme
 x11-themes/gnome-icon-theme-extras
 x11-themes/gtk-engines
 x11-themes/haematite-xcursors
-x11-themes/oxygen-gtk:2
-x11-themes/oxygen-gtk:3
 x11-themes/pidgin-penguins-smileys
 #in#
 
