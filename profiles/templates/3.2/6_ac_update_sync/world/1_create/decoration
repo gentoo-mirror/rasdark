@@ -1,6 +1,7 @@
 # Calculate name=world format=world
 
 #?in(os_linux_pkglist, COBRA)!=#
+lxde-base/lxmenu-data
 kde-base/oxygen-icons
 media-gfx/calculate-wallpapers
 media-gfx/dm-themes-calculate

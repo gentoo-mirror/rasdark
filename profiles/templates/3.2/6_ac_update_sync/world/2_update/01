@@ -39,6 +39,7 @@ dev-util/gsimplecal
 gnome-extra/gcalctool
 gnome-extra/nm-applet
 kde-base/oxygen-icons
+lxde-base/lxmenu-data
 mail-client/thunderbird-bin
 media-gfx/calculate-wallpapers
 media-gfx/dm-themes-calculate
