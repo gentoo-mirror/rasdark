@@ -3,7 +3,7 @@
 		<item label="Home">
 			<action name="Execute">
 				<command>
-					pcmanfm ~/
+					pcmanfm #-ini(resource.path)-#
 				</command>
 			</action>
 		</item>
@@ -11,7 +11,7 @@
 		<item label="Dropbox">
 			<action name="Execute">
 				<command>
-					pcmanfm ~/Dropbox
+					pcmanfm #-ini(resource.path)-#/Dropbox
 				</command>
 			</action>
 		</item>
@@ -19,35 +19,35 @@
                 <item label="Documents">
 			<action name="Execute">
 				<command>
-					pcmanfm ~/Documents
+					pcmanfm #-ini(resource.documents)-#
 				</command>
 			</action>
 		</item>
   		<item label="Pictures">
 			<action name="Execute">
 				<command>
-					pcmanfm ~/Pictures
+					pcmanfm #-ini(resource.pictures)-#
 				</command>
 			</action>
 		</item>
   		<item label="Music">
 			<action name="Execute">
 				<command>
-					pcmanfm ~/Music
+					pcmanfm #-ini(resource.music)-#
 				</command>
 			</action>
 		</item>
 		<item label="Videos">
 			<action name="Execute">
 				<command>
-					pcmanfm ~/Videos
+					pcmanfm #-ini(resource.videos)-#
 				</command>
 			</action>
 		</item>
 		<item label="Downloads">
 			<action name="Execute">
 				<command>
-					pcmanfm ~/Downloads
+					pcmanfm #-ini(resource.downloads)-#
 				</command>
 			</action>
 		</item>

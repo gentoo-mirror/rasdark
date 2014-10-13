@@ -3,7 +3,7 @@
 		<item label="Carpeta de inicio">
 			<action name="Execute">
 				<command>
-					pcmanfm ~/
+					pcmanfm #-ini(resource.path)-#
 				</command>
 			</action>
 		</item>
@@ -11,7 +11,7 @@
 		<item label="Dropbox">
 			<action name="Execute">
 				<command>
-					pcmanfm ~/Dropbox
+					pcmanfm #-ini(resource.desktop)-#/Dropbox
 				</command>
 			</action>
 		</item>
@@ -19,35 +19,35 @@
                 <item label="Documentos">
 			<action name="Execute">
 				<command>
-					pcmanfm ~/Documentos
+					pcmanfm #-ini(resource.documents)-#
 				</command>
 			</action>
 		</item>
   		<item label="Imágenes">
 			<action name="Execute">
 				<command>
-					pcmanfm ~/Imágenes
+					pcmanfm #-ini(resource.pictures)-#
 				</command>
 			</action>
 		</item>
   		<item label="Música">
 			<action name="Execute">
 				<command>
-					pcmanfm ~/Música
+					pcmanfm #-ini(resource.music)-#
 				</command>
 			</action>
 		</item>
 		<item label="Vídeos">
 			<action name="Execute">
 				<command>
-					pcmanfm ~/Vídeos
+					pcmanfm #-ini(resource.videos)-#
 				</command>
 			</action>
 		</item>
 		<item label="Descargas">
 			<action name="Execute">
 				<command>
-					pcmanfm ~/Descargas
+					pcmanfm #-ini(resource.downloads)-#
 				</command>
 			</action>
 		</item>
