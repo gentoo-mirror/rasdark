@@ -1,0 +1,11 @@
+# Calculate format=world name=world ini(overlay-rasdark.world)<2
+
+#-ini(overlay-rasdark.world,2)-#
+
+#?in(os_linux_pkglist, COBRA)!=#
+!kde-base/oxygen-icons
+!x11-themes/oxygen-gtk:2
+!x11-themes/oxygen-gtk:3
+!gnome-extra/gcalctool
+sci-calculators/qalculate-gtk
+#in#

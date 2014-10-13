@@ -5,7 +5,6 @@ app-editors/gvim
 app-office/libreoffice
 app-text/evince
 dev-util/gsimplecal
-gnome-extra/gcalctool
 mail-client/thunderbird-bin
 media-gfx/gimp
 media-sound/volumeicon
