@@ -7,5 +7,8 @@
 !x11-themes/oxygen-gtk:2
 !x11-themes/oxygen-gtk:3
 !gnome-extra/gcalctool
+!app-text/evince
 sci-calculators/qalculate-gtk
+app-text/qpdfview
+media-gfx/nomacs
 #in#

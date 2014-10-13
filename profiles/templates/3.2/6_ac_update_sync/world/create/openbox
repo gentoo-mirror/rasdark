@@ -3,10 +3,11 @@
 app-arch/xarchiver
 app-editors/gvim
 app-office/libreoffice
-app-text/evince
+app-text/qpdfview
 dev-util/gsimplecal
 mail-client/thunderbird-bin
 media-gfx/gimp
+media-gfx/nomacs
 media-sound/volumeicon
 net-im/pidgin
 x11-misc/gmrun
