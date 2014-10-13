@@ -1,0 +1,11 @@
+# Calculate format=kde
+[Desktop Entry]
+#?os_root_type==livecd#
+Exec=pkexec /usr/bin/zenmap %F
+#os_root_type#
+#?os_root_type!=livecd#
+Exec=pkexec /usr/bin/zenmap %F
+#os_root_type#
+!TryExec=
+!OnlyShowIn=
+
