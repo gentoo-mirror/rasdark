@@ -12,4 +12,5 @@ sci-calculators/qalculate-gtk
 app-text/qpdfview
 media-gfx/nomacs
 x11-libs/gksu
+x11-themes/calculate-icon-theme
 #in#

@@ -1,6 +1,7 @@
 # Calculate pkg(x11-themes/gnome-themes-standard)!=&&exists(~/.gtkrc-2.0)==
 # include standart themes
 gtk-theme-name="Calculate"
+gtk-icon-theme-name="Calculate"
 gtk-font-name="Sans 10"
 
 # include personal settings
