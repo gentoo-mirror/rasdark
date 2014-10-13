@@ -18,7 +18,7 @@ run command = gmrun
 
 # Lock Screen menuitem
 # Also leaving it empty causes menuitem to be hidden
-lock command = xscreensaver-command -lock
+lock command = light-locker-command -l
 
 # Exit menuitem
 # Giving this an empty value don't hides the menuitem
