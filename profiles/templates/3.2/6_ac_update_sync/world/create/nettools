@@ -19,6 +19,7 @@ net-misc/dropbox
 net-misc/yandex-disk
 net-p2p/deluge
 net-wireless/aircrack-ng
+net-wireless/kismet
 net-wireless/reaver
 www-client/firefox-bin
 www-plugins/adobe-flash
