@@ -13,6 +13,7 @@ media-gfx/grub-splashes-calculate
 media-gfx/plymouth-themes-calculate
 net-analyzer/mtr
 net-analyzer/netcat6
+net-dns/bind-tools
 net-ftp/ftp
 net-misc/whois
 sys-apps/ifplugd

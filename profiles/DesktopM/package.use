@@ -41,3 +41,4 @@ x11-libs/libfm udisks
 x11-misc/light-locker upower
 x11-misc/lightdm -introspection
 x11-wm/openbox imlib
+net-dns/bind-tools ipv6 gost idn

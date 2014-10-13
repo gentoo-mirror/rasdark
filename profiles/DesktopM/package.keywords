@@ -22,4 +22,4 @@
 ~x11-misc/tint2-9999 *
 ~x11-misc/xxkb-1.11-r3 x86 amd64
 ~x11-themes/pidgin-penguins-smileys-1.0 x86 amd64
-
+~net-dns/bind-tools-9.10.1 x86 amd64
