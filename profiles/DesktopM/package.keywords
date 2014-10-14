@@ -27,6 +27,6 @@
 ~net-dns/bind-tools-9.10.1 x86 amd64
 
 # gcc-4.9.1
-~sys-devel/gcc-4.9.1 * amd64 x86
-~sys-devel/gcc-config-1.8 amd64 x86
+#~sys-devel/gcc-4.9.1 * amd64 x86
+#~sys-devel/gcc-config-1.8 amd64 x86
 
