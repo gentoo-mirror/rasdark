@@ -1,12 +1,15 @@
-
+# Calculate
 XXkb.controls.two_state: no
 XXkb.controls.add_when_start: yes
 XXkb.controls.add_when_create: yes
 
 XXkb*label.text.1: En
+#?os_locale_lang==es_ES#
 XXkb*label.text.2: Es
+#os_locale_lang#
+#?os_locale_lang==ru_RU#
 XXkb*label.text.3: Ru
-
+#?os_locale_lang#
 
 XXkb.mainwindow.type: tray
 XXkb.mainwindow.label.enable: yes
