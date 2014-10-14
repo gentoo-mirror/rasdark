@@ -2,7 +2,6 @@
 
 #?in(os_linux_pkglist, COBRA)!=#
 lxde-base/lxmenu-data
-kde-base/oxygen-icons
 media-gfx/calculate-wallpapers
 media-gfx/dm-themes-calculate
 media-gfx/grub-splashes-calculate
@@ -10,12 +9,11 @@ media-gfx/lightdm-themes-calculate
 media-gfx/plymouth-themes-calculate
 media-gfx/syslinux-themes-calculate
 x11-themes/calculate-xcursors
+x11-themes/calculate-icon-theme
 x11-themes/elementary-icon-theme
 x11-themes/gnome-icon-theme
 x11-themes/gnome-icon-theme-extras
 x11-themes/haematite-xcursors
-x11-themes/oxygen-gtk:2
-x11-themes/oxygen-gtk:3
 x11-themes/gtk-engines
 #in#
 

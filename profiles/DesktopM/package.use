@@ -43,3 +43,9 @@ x11-misc/light-locker upower
 x11-misc/lightdm -introspection
 x11-wm/openbox imlib
 net-dns/bind-tools ipv6 gost idn
+
+# required by media-gfx/nomacs [raw]
+media-libs/opencv qt4
+
+# required by app-text/qpdfview [pdf,qt4]
+app-text/poppler qt4

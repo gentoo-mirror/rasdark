@@ -2,7 +2,9 @@
 ~app-arch/xarchiver-0.5.3-r1 x86 amd64
 ~app-editors/gvim-7.4.430 x86 amd64
 ~app-editors/vim-core-7.4.430 x86 amd64
+~app-text/qpdfview-0.4.11.1 amd64 x86
 ~dev-util/gsimplecal-1.6 x86 amd64
+~media-gfx/nomacs-1.6.2 amd64 x86
 ~net-misc/dropbox-2.10.2-r1 x86 amd64
 ~net-misc/yandex-disk-0.1.4.504_p1 x86 amd64
 ~net-misc/remmina-1.0.0_p20130723 x86 amd64
