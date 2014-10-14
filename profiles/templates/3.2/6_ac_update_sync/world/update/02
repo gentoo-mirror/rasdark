@@ -6,13 +6,12 @@
 !app-text/evince
 !gnome-extra/gcalctool
 !kde-base/oxygen-icons
-!x11-misc/screengrab
 !x11-themes/oxygen-gtk:2
 !x11-themes/oxygen-gtk:3
 app-text/qpdfview
 media-gfx/nomacs
 sci-calculators/qalculate-gtk
+x11-misc/screengrab
 x11-libs/gksu
 x11-themes/calculate-icon-theme
-xfce-extra/xfce4-screenshooter
 #in#
