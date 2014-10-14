@@ -44,16 +44,6 @@ switch =         Cambiar de usuario
 suspend =        Suspensión
 hibernate =      Hibernación
 #os_locale_lang#
-#?os_locale_lang==en_EN#
-cancel =         Cancel
-logout =         Logout
-restart =        Reboot
-shutdown =       Shutdown
-lock =           Lock
-switch =         Switch user
-suspend =        Suspend
-hibernate =      Hibernate
-#os_locale_lang#
 #?os_locale_lang==ru_RU#
 cancel =         Отмена
 logout =         Выход
@@ -63,4 +53,14 @@ lock =           Блокировка
 switch =         Сменить пользователя
 suspend =        Ждущий режим
 hibernate =      Спящий режим
+#os_locale_lang#
+#?os_locale_lang!=es_ES&&os_locale_lang!=ru_RU#
+cancel =         Cancel
+logout =         Logout
+restart =        Reboot
+shutdown =       Shutdown
+lock =           Lock
+switch =         Switch user
+suspend =        Suspend
+hibernate =      Hibernate
 #os_locale_lang#
