@@ -1,1 +1,1 @@
-# Calculate append=skip merge()!=&&os_root_type==livecd&&ini(update.screen)!=off&&ini(ver.screen)==&&pkg()>=4.0
+# Calculate append=skip merge()!=&&ini(update.screen)!=off&&ini(ver.screen)<4.0&&pkg()>=4.0
