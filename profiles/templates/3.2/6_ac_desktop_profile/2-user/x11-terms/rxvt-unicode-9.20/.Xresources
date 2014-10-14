@@ -1,4 +1,3 @@
-# Calculate comment=!
 ! для применения настроек в текущей сессии используйте `xrdb -load ~/.Xresources`
 
 Xft.antialias: true
@@ -37,17 +36,17 @@ URxvt.colorBDMode: on
 URxvt.colorBD:  cyan
 
 URxvt.background: #000000
-URxvt.foreground: #ffffff
+URxvt.foreground: #dcdccc
 URxvt.color0: #000000
-URxvt.color1: #700000
-URxvt.color2: #00b45a
-URxvt.color3: #df5900
-URxvt.color4: #006ad7
-URxvt.color5: #dc0097
-URxvt.color6: #00cad3
+URxvt.color1: #705050
+URxvt.color2: #60b48a
+URxvt.color3: #dfaf8f
+URxvt.color4: #9ab8d7
+URxvt.color5: #dc8cc3
+URxvt.color6: #8cd0d3
 URxvt.color7: #dcdccc
-URxvt.color8: #009048
-URxvt.color9: #dc0000
+URxvt.color8: #709080
+URxvt.color9: #dca3a3
 URxvt.color10: #72d5a3
 URxvt.color11: #f0dfaf
 URxvt.color12: #94bff3
