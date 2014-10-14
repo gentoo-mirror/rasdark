@@ -9,7 +9,7 @@ XXkb*label.text.2: Es
 #os_locale_lang#
 #?os_locale_lang==ru_RU#
 XXkb*label.text.3: Ru
-#?os_locale_lang#
+#os_locale_lang#
 
 XXkb.mainwindow.type: tray
 XXkb.mainwindow.label.enable: yes
