@@ -3,13 +3,17 @@ XXkb.controls.two_state: no
 XXkb.controls.add_when_start: yes
 XXkb.controls.add_when_create: yes
 
+#?os_locale_language==es#
+XXkb*label.text.1: Es
+XXkb*label.text.2: En
+#os_locale_language#
+#?os_locale_language==ru#
 XXkb*label.text.1: En
-#?os_locale_lang==es_ES#
-XXkb*label.text.2: Es
-#os_locale_lang#
-#?os_locale_lang==ru_RU#
-XXkb*label.text.3: Ru
-#os_locale_lang#
+XXkb*label.text.2: Ru
+#os_locale_language#
+#?os_locale_language!=es&&os_locale_language!=ru#
+XXkb*label.text.1: En
+#os_locale_language#
 
 XXkb.mainwindow.type: tray
 XXkb.mainwindow.label.enable: yes
