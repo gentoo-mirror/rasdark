@@ -1,4 +1,4 @@
-# Calculate os_locale_lang==en_EN name=folders.xml
+# Calculate name=folders.xml
 <menu id="folders-menu" label="Open">
 		<item label="Home">
 			<action name="Execute">
