@@ -26,11 +26,10 @@
 ~x11-themes/pidgin-penguins-smileys-1.0 x86 amd64
 ~net-dns/bind-tools-9.10.1 x86 amd64
 ~sci-calculators/speedcrunch-0.11-r2 x86 amd64
-
-# gcc-4.9.1
-#~sys-devel/gcc-4.9.1 * amd64 x86
-#~sys-devel/gcc-config-1.8 amd64 x86
-
 ~app-cdr/pburn-3.4.3 x86 amd64
 ~app-arch/pet2tgz-0.3 x86 amd64
 ~app-cdr/cddetect-2.1 x86 amd64
+# gcc-4.9.1
+~sys-devel/gcc-4.9.1 * amd64 x8
+~sys-devel/gcc-config-1.8 amd64 x86
+# gcc
