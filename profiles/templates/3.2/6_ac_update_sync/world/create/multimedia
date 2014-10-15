@@ -1,6 +1,7 @@
 # Calculate name=world format=world
 
 #?in(os_linux_pkglist, COBRA)!=#
+app-cdr/xfburn
 media-sound/alsa-utils
 media-sound/deadbeef
 media-sound/pavucontrol

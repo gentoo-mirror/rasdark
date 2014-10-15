@@ -6,12 +6,15 @@ net-analyzer/netcat6
 net-analyzer/nmap
 net-analyzer/tcpdump
 net-dns/bind-tools
+net-dialup/minicom
 net-ftp/ftp
 net-misc/whois
+
 #in#
 
 #?in(os_linux_pkglist, COBRA)!=#
 net-wireless/aircrack-ng
 net-wireless/kismet
 net-wireless/reaver
+x11-misc/x11vnc
 #in#

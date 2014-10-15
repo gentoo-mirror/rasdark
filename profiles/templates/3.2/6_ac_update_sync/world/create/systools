@@ -1,11 +1,21 @@
 # Calculate name=world format=world
 #?in(os_linux_pkglist, TOSS,COBRA)!=#
+app-admin/hddtemp
 app-misc/mc
 app-misc/tmux-mem-cpu-load
 media-gfx/fbgrab
 sys-apps/inxi
+sys-apps/cdrtools
+sys-apps/dvd+rw-tools
+sys-apps/hdparm
+sys-apps/lm_sensors
+sys-apps/smartmontools
 sys-fs/cryptsetup
 sys-fs/extundelete
+sys-fs/dosfstools
+sys-fs/mtools
+sys-power/acpi
+sys-power/acpid
 sys-process/atop
 sys-process/htop
 sys-process/iotop
@@ -13,6 +23,8 @@ sys-process/lsof
 #in#
 
 #?in(os_linux_pkglist, COBRA)!=#
+app-arch/rar
+app-arch/unrar
 app-admin/keepassx
 sys-block/gparted
 x11-libs/gksu
