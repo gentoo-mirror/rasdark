@@ -1,0 +1,17 @@
+# Calculate name=world format=world
+
+#?in(os_linux_pkglist, COBRA)!=#
+app-arch/xarchiver
+app-editors/gvim
+app-office/libreoffice
+app-text/qpdfview
+dev-util/gsimplecal
+mail-client/thunderbird-bin
+media-gfx/gimp
+media-gfx/nomacs
+media-sound/volumeicon
+sci-calculators/speedcrunch
+net-im/pidgin
+x11-plugins/pidgin-hotkeys
+x11-themes/pidgin-penguins-smileys
+#in#

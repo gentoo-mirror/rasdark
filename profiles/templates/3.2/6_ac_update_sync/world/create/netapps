@@ -1,0 +1,13 @@
+# Calculate name=world format=world
+
+#?in(os_linux_pkglist, COBRA)!=#
+gnome-extra/nm-applet
+net-analyzer/wireshark
+net-irc/kvirc
+net-misc/remmina
+net-misc/dropbox
+net-misc/yandex-disk
+net-p2p/deluge
+www-client/firefox-bin
+www-plugins/adobe-flash
+#in#
