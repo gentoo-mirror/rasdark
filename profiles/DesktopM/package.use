@@ -52,3 +52,4 @@ app-text/poppler qt4
 
 #sys-devel/gcc -fortran graphite
 
+x11-misc/x11vnc fbcon
