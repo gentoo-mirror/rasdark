@@ -2,7 +2,7 @@
 
 # Update info
 #-ini(desktop.updating, on)-#
-#-ini(desktop.textedit, gedit)-#
+#-ini(desktop.textedit, gvim)-#
 
 [Added Associations]
 text/plain=gvim.desktop;
