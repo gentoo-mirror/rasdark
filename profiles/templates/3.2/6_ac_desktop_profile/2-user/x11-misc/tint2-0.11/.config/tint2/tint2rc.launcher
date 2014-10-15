@@ -36,6 +36,7 @@ launcher_padding = 5 0 10
 launcher_background_id = 1
 launcher_icon_size = 48
 launcher_item_app = /usr/share/applications/pcmanfm.desktop
+launcher_item_app = /usr/share/applications/calculate-browser.desktop
 launcher_item_app = /usr/share/applications/calculate-audioplayer.desktop
 launcher_item_app = /usr/share/applications/calculate-videoplayer.desktop
 launcher_item_app = /usr/share/applications/calculate-writer.desktop
@@ -43,13 +44,12 @@ launcher_item_app = /usr/share/applications/calculate-calc.desktop
 launcher_item_app = /usr/share/applications/calculate-imageedit.desktop
 launcher_item_app = /usr/share/applications/calculate-calculator.desktop
 launcher_item_app = /usr/share/applications/calculate-mail.desktop
-launcher_item_app = /usr/share/applications/calculate-browser.desktop
 launcher_item_app = /usr/share/applications/calculate-im.desktop
 launcher_item_app = /usr/share/applications/calculate-chat.desktop
 launcher_item_app = /usr/share/applications/deluge.desktop
 launcher_item_app = /usr/share/applications/remmina.desktop
 launcher_item_app = /usr/share/applications/keepassx.desktop
 launcher_item_app = /usr/share/applications/gvim.desktop
-launcher_item_app = /usr/share/applications/qstardict.desktop
+launcher_item_app = /usr/share/applications/calculate-imageburn.desktop
 
 # End of config
