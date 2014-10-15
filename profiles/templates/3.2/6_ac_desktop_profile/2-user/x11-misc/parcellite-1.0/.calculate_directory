@@ -1,1 +1,1 @@
-# Calculate append=skip merge()!=&&ini(update.parcellite)!=off&&ini(ver.parcellite)<1.0&&pkg()>=1.0
+# Calculate append=skip merge()!=&&ini(update.parcellite)!=off&&ini(ver.parcellite)<1.0&&pkg()>=1.0||merge()!=&&ini(update.parcellite)!=off&&ini(ver.parcellite)==&&pkg()>=1.0

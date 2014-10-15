@@ -1,1 +1,1 @@
-# Calculate append=skip merge()!=&&ini(update.obshutdown)!=off&&ini(ver.obshutdown)<0.1&&pkg(x11-misc/obshutdown)>=0.1
+# Calculate append=skip merge()!=&&ini(update.obshutdown)!=off&&ini(ver.obshutdown)<0.1&&pkg()>=0.1||merge()!=&&ini(update.obshutdown)!=off&&ini(ver.obshutdown)==&&pkg()>=0.1
