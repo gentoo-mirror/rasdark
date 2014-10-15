@@ -2,6 +2,7 @@
 #?in(os_linux_pkglist, TOSS,COBRA)!=#
 app-misc/mc
 app-misc/tmux-mem-cpu-load
+media-gfx/fbgrab
 sys-apps/inxi
 sys-fs/cryptsetup
 sys-fs/extundelete

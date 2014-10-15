@@ -1,7 +1,6 @@
 # Calculate name=world format=world
 
 #?in(os_linux_pkglist, COBRA)!=#
-media-gfx/fbgrab
 media-sound/alsa-utils
 media-sound/deadbeef
 media-sound/pavucontrol
