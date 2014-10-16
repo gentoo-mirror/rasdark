@@ -29,6 +29,14 @@
 ~app-cdr/pburn-3.4.3 x86 amd64
 ~app-arch/pet2tgz-0.3 x86 amd64
 ~app-cdr/cddetect-2.1 x86 amd64
+~app-admin/pwgen-2.06-r2 x86 amd64
+~app-emulation/wine-1.7.28 x86 amd64
+~app-emulation/winetricks-20140302 x86 amd64
+~dev-util/strace-4.9 x86 amd64
+~x11-plugins/purple-plugin_pack-2.7.0-r1 x86 amd64
+~media-video/v4l2ucp-2.0.2 x86 amd64
+~app-editors/gvim-7.4.475 x86 amd64
+~app-editors/vim-core-7.4.475 x86 amd64
 # gcc-4.9.1
 ~sys-devel/gcc-4.9.1 * amd64 x86
 ~sys-devel/gcc-config-1.8 x86 amd64

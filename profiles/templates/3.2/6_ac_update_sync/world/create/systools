@@ -1,8 +1,10 @@
 # Calculate name=world format=world
 #?in(os_linux_pkglist, TOSS,COBRA)!=#
 app-admin/hddtemp
+app-admin/pwgen
 app-misc/mc
 app-misc/tmux-mem-cpu-load
+dev-util/strace
 media-gfx/fbgrab
 sys-apps/inxi
 sys-apps/cdrtools
@@ -16,6 +18,10 @@ sys-fs/dosfstools
 sys-fs/mtools
 sys-power/acpi
 sys-power/acpid
+sys-power/cpupower
+sys-power/pm-utils
+sys-power/powernowd
+sys-power/powertop
 sys-process/atop
 sys-process/htop
 sys-process/iotop

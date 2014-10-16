@@ -3,7 +3,13 @@
 #?in(os_linux_pkglist, COBRA)!=#
 app-arch/xarchiver
 app-editors/gvim
+app-vim/vim-spell-en
+app-vim/vim-spell-es
+app-vim/vim-spell-ru
+app-emulation/wine
+app-emulation/winetricks
 app-office/libreoffice
+app-text/fbreader
 app-text/qpdfview
 dev-util/gsimplecal
 mail-client/thunderbird-bin
@@ -14,4 +20,5 @@ sci-calculators/speedcrunch
 net-im/pidgin
 x11-plugins/pidgin-hotkeys
 x11-themes/pidgin-penguins-smileys
+x11-plugins/purple-plugin_pack
 #in#

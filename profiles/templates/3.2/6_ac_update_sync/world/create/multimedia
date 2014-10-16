@@ -7,5 +7,6 @@ media-sound/deadbeef
 media-sound/pavucontrol
 media-sound/sox
 media-video/vlc
+media-video/v4l2ucp
 #in#
 
