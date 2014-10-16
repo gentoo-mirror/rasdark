@@ -5,9 +5,7 @@
 #?in(os_linux_pkglist, COBRA)!=#
 !app-text/evince
 !gnome-extra/gcalctool
-!kde-base/oxygen-icons
-!x11-themes/oxygen-gtk:2
-!x11-themes/oxygen-gtk:3
+!net-wireless/broadcom-sta
 app-admin/hddtemp
 app-arch/rar
 app-arch/unrar

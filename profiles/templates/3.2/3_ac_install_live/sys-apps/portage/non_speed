@@ -1,0 +1,8 @@
+# Calculate path=/etc/portage/env name=non_speed protected exists(/etc/portage/env/non_speed)==||ac_install_disk==on||os_install_root_type==livecd
+
+#?os_arch_machine!=x86_64#
+CFLAGS="-O3 -pipe -march=i686"
+#os_arch_machine#
+#?os_arch_machine==x86_64#
+CFLAGS="-O3 -pipe -march=x86_64"
+#os_arch_machine#
