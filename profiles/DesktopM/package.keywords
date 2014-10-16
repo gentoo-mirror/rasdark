@@ -34,7 +34,7 @@
 ~app-emulation/winetricks-20140302 x86 amd64
 ~dev-util/strace-4.9 x86 amd64
 ~x11-plugins/purple-plugin_pack-2.7.0-r1 x86 amd64
-~media-video/v4l2ucp-2.0.2 x86 amd64
+~media-video/v4l2ucp-9999 x86 amd64
 ~app-editors/gvim-7.4.475 x86 amd64
 ~app-editors/vim-core-7.4.475 x86 amd64
 # gcc-4.9.1
