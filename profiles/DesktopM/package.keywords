@@ -39,6 +39,8 @@
 ~x11-libs/cairo-1.12.16-r3 x86 amd64
 ~app-office/libreoffice-4.3.1.2 x86 amd64
 ~app-office/libreoffice-l10n-4.3.1.2 x86 amd64
+~sys-auth/pam_ldap-186-r1 x86 amd64
+~media-video/vlc-2.1.5 x86 amd64
 # for office
 ~dev-libs/librevenge-0.0.1 x86 amd64
 ~media-libs/libfreehand-0.1.0 x86 amd64
@@ -57,5 +59,3 @@
 ~app-text/libwpg-0.3.0 x86 amd64
 ~media-libs/libvisio-0.1.0 x86 amd64
 #
-~sys-auth/pam_ldap-186-r1 x86 amd64
-~media-video/vlc-2.1.5 x86 amd64
