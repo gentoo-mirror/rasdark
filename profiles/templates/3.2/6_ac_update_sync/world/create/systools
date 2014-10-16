@@ -7,8 +7,8 @@ app-misc/tmux-mem-cpu-load
 dev-util/strace
 media-gfx/fbgrab
 sys-apps/inxi
-sys-apps/cdrtools
-sys-apps/dvd+rw-tools
+app-cdr/cdrtools
+app-cdr/dvd+rw-tools
 sys-apps/hdparm
 sys-apps/lm_sensors
 sys-apps/smartmontools
