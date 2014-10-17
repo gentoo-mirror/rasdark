@@ -45,25 +45,25 @@
 # gcc
 # not build with gcc-4.9
 ~x11-libs/cairo-1.12.16-r3 x86 amd64
-~app-office/libreoffice-4.3.1.2 x86 amd64
-~app-office/libreoffice-l10n-4.3.1.2 x86 amd64
+#~app-office/libreoffice-4.3.1.2 x86 amd64
+#~app-office/libreoffice-l10n-4.3.1.2 x86 amd64
 ~sys-auth/pam_ldap-186-r1 x86 amd64
 ~media-video/vlc-2.1.5 x86 amd64
 # for office
-~dev-libs/librevenge-0.0.1 x86 amd64
-~media-libs/libfreehand-0.1.0 x86 amd64
-~app-text/libmspub-0.1.1 x86 amd64
-~media-libs/libcdr-0.1.0 x86 amd64
-~app-text/libwpd-0.10.0 x86 amd64
-~dev-libs/liborcus-0.7.0 x86 amd64
-~app-text/libetonyek-0.1.1 x86 amd64
-~app-text/libebook-0.1.1 x86 amd64
-~app-text/libabw-0.1.0 x86 amd64
-~app-text/libmwaw-0.3.1 x86 amd64
-~media-libs/glm-0.9.5.1 x86 amd64
-~dev-libs/libixion-0.7.0 x86 amd64
-~app-text/libwps-0.3.0 x86 amd64
-~app-text/libodfgen-0.1.1 x86 amd64
-~app-text/libwpg-0.3.0 x86 amd64
-~media-libs/libvisio-0.1.0 x86 amd64
+#~dev-libs/librevenge-0.0.1 x86 amd64
+#~media-libs/libfreehand-0.1.0 x86 amd64
+#~app-text/libmspub-0.1.1 x86 amd64
+#~media-libs/libcdr-0.1.0 x86 amd64
+#~app-text/libwpd-0.10.0 x86 amd64
+#~dev-libs/liborcus-0.7.0 x86 amd64
+#~app-text/libetonyek-0.1.1 x86 amd64
+#~app-text/libebook-0.1.1 x86 amd64
+#~app-text/libabw-0.1.0 x86 amd64
+#~app-text/libmwaw-0.3.1 x86 amd64
+#~media-libs/glm-0.9.5.1 x86 amd64
+#~dev-libs/libixion-0.7.0 x86 amd64
+#~app-text/libwps-0.3.0 x86 amd64
+#~app-text/libodfgen-0.1.1 x86 amd64
+#~app-text/libwpg-0.3.0 x86 amd64
+#~media-libs/libvisio-0.1.0 x86 amd64
 #
