@@ -11,7 +11,7 @@ dev-libs/popt static-libs
 dev-qt/qtgui gtkstyle
 media-libs/harfbuzz icu
 media-libs/sdl-mixer mikmod mod
-media-sound/deadbeef -ffmpeg ape converter dts hotkeys infobar mms notify mono2stereo psf shn supereq -gtk2 gtk3 -lastfm wma pltbrowser
+media-sound/deadbeef ffmpeg ape converter dts hotkeys infobar mms notify mono2stereo psf shn supereq -gtk2 gtk3 -lastfm wma pltbrowser
 media-sound/lame mp3rtp sndfile
 media-video/ffmpeg threads
 media-video/vlc  opus libsamplerate optimisememory cdda
