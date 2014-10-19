@@ -6,6 +6,7 @@ media-sound/alsa-utils
 media-sound/deadbeef
 media-sound/pavucontrol
 media-sound/sox
+media-video/ffmpeg
 media-video/vlc
 media-video/v4l2ucp
 #in#
