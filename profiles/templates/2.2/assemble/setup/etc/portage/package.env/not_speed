@@ -1,5 +1,4 @@
 # Calculate comment=#
-
 # packages that do not build with gcc-4.9.1 and -Os with x86 profile
 #?os_assemble_arch_machine!=x86_64#
 net-dialup/lrzsz not_speed
