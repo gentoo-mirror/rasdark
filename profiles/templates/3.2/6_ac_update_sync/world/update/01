@@ -113,7 +113,7 @@ x11-misc/screengrab
 x11-misc/screengrab
 x11-misc/tint2
 x11-misc/x11vnc
-x11-misc/xxkb
+x11-misc/gxkb
 x11-plugins/pidgin-hotkeys
 x11-plugins/purple-plugin_pack
 x11-themes/calculate-icon-theme

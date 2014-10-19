@@ -2,7 +2,6 @@
 
 tint2 &
 tint2 -c ~/.config/tint2/tint2rc.launcher &
-#parcellite &
-xxkb &
+gxkb &
 pcmanfm --desktop &
 
