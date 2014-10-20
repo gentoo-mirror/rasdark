@@ -37,6 +37,7 @@
 ~media-video/v4l2ucp-9999 x86 amd64
 ~app-editors/gvim-7.4.475 x86 amd64
 ~app-editors/vim-core-7.4.475 x86 amd64
+~x11-misc/gxkb-0.7.2 x86 amd64
 # gcc-4.9.1
 ~sys-devel/gcc-4.9.1 * amd64 x86
 ~sys-devel/gcc-config-1.8 x86 amd64
