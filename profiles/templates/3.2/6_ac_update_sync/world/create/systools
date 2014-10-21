@@ -1,5 +1,6 @@
 # Calculate name=world format=world
 #?in(os_linux_pkglist, TOSS,COBRA)!=#
+!net-wireless/broadcom-sta
 app-admin/hddtemp
 app-admin/pwgen
 app-misc/mc
