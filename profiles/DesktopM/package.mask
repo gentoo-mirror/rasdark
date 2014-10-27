@@ -46,7 +46,6 @@
 >=net-wireless/gnome-bluetooth-3.12
 >=sci-geosciences/gnome-maps-3.12
 >=sys-apps/gnome-disk-utility-3.12
->=x11-libs/gtk+-3.12
 >=x11-terms/gnome-terminal-3.12
 >=x11-themes/gnome-backgrounds-3.12
 >=x11-themes/gnome-icon-theme-3.12

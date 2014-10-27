@@ -1,2 +1,2 @@
-# Calculate pkg(x11-themes/elementary-icon-theme)!=&&exists(~/.gtkrc-2.0-presonal)==
-gtk-icon-theme-name="elementary"
+# Calculate exists(~/.gtkrc-2.0-presonal)==
+# Put here your personal settings

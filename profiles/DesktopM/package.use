@@ -2,7 +2,7 @@ app-admin/testdisk ntfs reiserfs
 app-arch/p7zip rar
 app-editors/gvim neXt perl python
 app-misc/mc gpm
-app-office/libreoffice gtk -bluetooth opengl vlc 
+app-office/libreoffice gtk -bluetooth opengl -vlc
 dev-libs/boost python
 dev-libs/elfutils static-libs
 dev-libs/libgcrypt static-libs
@@ -41,7 +41,8 @@ virtual/udev static-libs
 x11-libs/libfm udisks
 x11-misc/light-locker upower
 x11-misc/lightdm -introspection
-x11-wm/openbox imlib
+x11-wm/openbox imlib xdg
+x11-terms/rxvt-unicode 256-color xft
 net-dns/bind-tools ipv6 gost idn
 media-libs/opencv qt4
 app-text/poppler qt4
@@ -50,3 +51,8 @@ media-video/vlc skins wma-fixed
 # gcc
 sys-devel/gcc -fortran graphite
 x11-misc/x11vnc fbcon
+# new use
+media-fonts/terminus-font X pcf
+sys-fs/mtools -X
+app-misc/mc -spell
+dev-vcs/git -gtk

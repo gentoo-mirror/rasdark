@@ -10,3 +10,5 @@ x11-misc/pcmanfm
 x11-misc/tint2
 x11-misc/gxkb
 x11-misc/screengrab
+x11-terms/rxvt-unicode
+x11-wm/openbox

@@ -7,14 +7,17 @@ net-analyzer/nmap
 net-analyzer/tcpdump
 net-dns/bind-tools
 net-dialup/minicom
+net-firewall/iptables
+net-fs/samba
 net-ftp/ftp
 net-misc/whois
-
 #in#
 
 #?in(os_linux_pkglist, COBRA)!=#
 net-wireless/aircrack-ng
 net-wireless/kismet
 net-wireless/reaver
+net-wireless/wireless-tools
+net-wireless/wpa_supplicant
 x11-misc/x11vnc
 #in#

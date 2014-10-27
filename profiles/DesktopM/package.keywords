@@ -1,70 +1,69 @@
+~app-admin/pwgen-2.06-r2 x86 amd64
 ~app-admin/testdisk-6.14 x86 amd64
+~app-arch/pet2tgz-0.3 x86 amd64
 ~app-arch/xarchiver-0.5.3-r1 x86 amd64
-~app-editors/gvim-7.4.430 x86 amd64
-~app-editors/vim-core-7.4.430 x86 amd64
+~app-cdr/cddetect-2.1 x86 amd64
+~app-cdr/pburn-3.4.3 x86 amd64
+~app-crypt/chntpw-110511 x86 amd64
+~app-editors/gvim-7.4.488 x86 amd64
+~app-editors/vim-core-7.4.488 x86 amd64
+~app-emulation/wine-1.7.29 x86 amd64
+~app-emulation/winetricks-20140302 x86 amd64
 ~app-text/qpdfview-0.4.11.1 amd64 x86
 ~dev-util/gsimplecal-1.6 x86 amd64
+~dev-util/strace-4.9 x86 amd64
 ~media-gfx/nomacs-1.6.2 amd64 x86
-~net-misc/dropbox-2.10.2-r1 x86 amd64
-~net-misc/yandex-disk-0.1.4.504_p1 x86 amd64
-~net-misc/remmina-1.0.0_p20130723 x86 amd64
+~media-video/v4l2ucp-9999 x86 amd64
 ~net-analyzer/nmap-6.47 amd64 x86
 ~net-analyzer/tcpdump-4.6.2 amd64 x86
+~net-dns/bind-tools-9.10.1 x86 amd64
+~net-im/pidgin-2.10.10 x86 amd64
+~net-misc/dropbox-2.10.41 x86 amd64
+~net-misc/remmina-1.1.1 x86 amd64
+~net-misc/yandex-disk-0.1.4.504_p1 x86 amd64
 ~net-wireless/aircrack-ng-1.2_beta3-r3 x86 amd64
 ~net-wireless/lorcon-0.0_p20130212-r1 x86 amd64
 ~net-wireless/reaver-1.4-r3 x86 amd64
+~sci-calculators/speedcrunch-0.11-r2 x86 amd64
 ~sys-fs/cryptsetup-1.6.6 x86 amd64
 ~sys-fs/ntfs3g-2014.2.15 x86 amd64
 ~x11-libs/libfm-9999 *
+~x11-misc/gxkb-0.7.2 x86 amd64
 ~x11-misc/light-locker-1.4.0-r1 x86 amd64
 ~x11-misc/obconf-2.0.4 x86 amd64
 ~x11-misc/obmenugen-bin-0.5-r72 x86 amd64
 ~x11-misc/obshutdown-9999 x86 amd64
 ~x11-misc/pcmanfm-9999 *
 ~x11-misc/tint2-9999 *
-~x11-misc/xxkb-1.11-r3 x86 amd64
-~x11-themes/pidgin-penguins-smileys-1.0 x86 amd64
-~net-dns/bind-tools-9.10.1 x86 amd64
-~sci-calculators/speedcrunch-0.11-r2 x86 amd64
-~app-cdr/pburn-3.4.3 x86 amd64
-~app-arch/pet2tgz-0.3 x86 amd64
-~app-cdr/cddetect-2.1 x86 amd64
-~app-admin/pwgen-2.06-r2 x86 amd64
-~app-emulation/wine-1.7.28 x86 amd64
-~app-emulation/winetricks-20140302 x86 amd64
-~dev-util/strace-4.9 x86 amd64
 ~x11-plugins/purple-plugin_pack-2.7.0-r1 x86 amd64
-~media-video/v4l2ucp-9999 x86 amd64
-~app-editors/gvim-7.4.475 x86 amd64
-~app-editors/vim-core-7.4.475 x86 amd64
-~x11-misc/gxkb-0.7.2 x86 amd64
+~x11-themes/pidgin-penguins-smileys-1.0 x86 amd64
 # gcc-4.9.1
-~sys-devel/gcc-4.9.1 * amd64 x86
-~sys-devel/gcc-config-1.8 x86 amd64
 ~dev-libs/cloog-0.18.1 x86 amd64
 ~dev-libs/isl-0.12.2 x86 amd64
+~sys-devel/gcc-4.9.1 * amd64 x86
+~sys-devel/gcc-config-1.8 x86 amd64
 # gcc
 # not build with gcc-4.9
-~x11-libs/cairo-1.12.16-r3 x86 amd64
 ~app-office/libreoffice-4.3.1.2 x86 amd64
 ~app-office/libreoffice-l10n-4.3.1.2 x86 amd64
-~sys-auth/pam_ldap-186-r1 x86 amd64
 ~media-video/vlc-2.1.5 x86 amd64
+~sys-auth/pam_ldap-186-r1 x86 amd64
+~x11-libs/cairo-1.12.16-r3 x86 amd64
 # for office
-~dev-libs/librevenge-0.0.1 x86 amd64
-~media-libs/libfreehand-0.1.0 x86 amd64
-~app-text/libmspub-0.1.1 x86 amd64
-~media-libs/libcdr-0.1.0 x86 amd64
-~app-text/libwpd-0.10.0 x86 amd64
-~dev-libs/liborcus-0.7.0 x86 amd64
-~app-text/libetonyek-0.1.1 x86 amd64
-~app-text/libebook-0.1.1 x86 amd64
 ~app-text/libabw-0.1.0 x86 amd64
+~app-text/libebook-0.1.1 x86 amd64
+~app-text/libetonyek-0.1.1 x86 amd64
+~app-text/libmspub-0.1.1 x86 amd64
 ~app-text/libmwaw-0.3.1 x86 amd64
-~media-libs/glm-0.9.5.1 x86 amd64
-~dev-libs/libixion-0.7.0 x86 amd64
-~app-text/libwps-0.3.0 x86 amd64
 ~app-text/libodfgen-0.1.1 x86 amd64
+~app-text/libwpd-0.10.0 x86 amd64
 ~app-text/libwpg-0.3.0 x86 amd64
+~app-text/libwps-0.3.0 x86 amd64
+~dev-libs/libixion-0.7.0 x86 amd64
+~dev-libs/liborcus-0.7.0 x86 amd64
+~dev-libs/librevenge-0.0.1 x86 amd64
+~media-libs/glm-0.9.5.1 x86 amd64
+~media-libs/libcdr-0.1.0 x86 amd64
+~media-libs/libfreehand-0.1.0 x86 amd64
 ~media-libs/libvisio-0.1.0 x86 amd64
 #

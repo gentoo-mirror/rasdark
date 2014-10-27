@@ -1,4 +1,4 @@
-# Calculate format=diff
+# Calculate format=diff merge(sys-kernel/calculate-sources)<3.14.21
 diff --git a/Documentation/vm/00-INDEX b/Documentation/vm/00-INDEX
 index 081c497..75bde3d 100644
 --- a/Documentation/vm/00-INDEX
