@@ -38,6 +38,8 @@ src_unpack() {
 }
 
 src_prepare() {
+	epatch "${FILESDIR}/${P}-fix-cat-and-lang.patch"
+
 	cat <<-EOF > "${T}"/${PN}
 	#!/bin/bash
 	"/usr/share/${PN}/${PN}" "\$@"
