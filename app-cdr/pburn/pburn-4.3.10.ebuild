@@ -9,12 +9,18 @@ inherit eutils
 
 DESCRIPTION="A burning tool with GTK+ frontend"
 HOMEPAGE="http://murga-linux.com/puppy/viewtopic.php?t=23881"
-SRC_URI="http://www.meownplanet.net/zigbert/${P}.pet"
+SRC_URI="http://www.meownplanet.net/zigbert/${P}.pet
+		 http://www.meownplanet.net/zigbert/${PN}_NLS.pet"
 
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE=""
+LANGS="de el es fi fr it ja nb pl ru zh_CN"
+
+for LANG in ${LANGS} ; do
+	        IUSE+=" linguas_${LANG}"
+done
 
 RDEPEND="app-admin/killproc
 	app-cdr/cddetect
@@ -27,6 +33,8 @@ DEPEND="app-arch/pet2tgz"
 src_unpack() {
 	pet2tgz -i "${DISTDIR}"/${P}.pet -o "${WORKDIR}"/${P}.tar.gz
 	unpack ./${P}.tar.gz
+	pet2tgz -i "${DISTDIR}"/${PN}_NLS.pet -o "${WORKDIR}"/${PN}_NLS.tar.gz
+	unpack ./${PN}_NLS.tar.gz
 }
 
 src_prepare() {
@@ -36,6 +44,15 @@ src_prepare() {
 	EOF
 
 	sed -i -e 's:usleep:/sbin/&:' usr/local/pburn/box_splash || die
+    for lang in ${LANGS};do
+        for x in ${lang};do
+          if ! use linguas_${x}; then
+				einfo "remove linguas_${x}"
+                rm -r "${WORKDIR}/${PN}_NLS/usr/share/locale/${x}"
+          fi
+        done
+    done
+
 }
 
 src_install() {
@@ -43,12 +60,11 @@ src_install() {
 
 	dodir /usr/share
 	cp -dpR usr/local/${PN} "${D}"/usr/share || die
-
-	make_desktop_entry \
-		${PN} \
-		"Pburn CD/DVD/Blu-ray writer" \
-		/usr/share/${PN}/${PN}20.png \
-		"AudioVideo;DiscBurning"
+	cp -dpR usr/share/applications "${D}"/usr/share/applications || die
+	cp -dpR usr/share/icons "${D}"/usr/share/icons || die
+    
+	# installing locales
+	cp -dpR "${WORKDIR}/${PN}_NLS/usr/share/locale" "${D}"/usr/share/locale || die
 
 	dohtml -r usr/share/doc
 }
