@@ -52,3 +52,6 @@
 >=x11-themes/gnome-icon-theme-extras-3.12
 >=x11-themes/gnome-icon-theme-symbolic-3.12
 >=x11-themes/gnome-themes-standard-3.12
+#
+>=www-client/firefox-30.0
+>=mail-client/thunderbird-30.0

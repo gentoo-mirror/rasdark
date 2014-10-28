@@ -12,7 +12,7 @@ app-office/libreoffice
 app-text/fbreader
 app-text/qpdfview
 dev-util/gsimplecal
-mail-client/thunderbird-bin
+mail-client/thunderbird
 media-gfx/gimp
 media-gfx/nomacs
 media-sound/volumeicon

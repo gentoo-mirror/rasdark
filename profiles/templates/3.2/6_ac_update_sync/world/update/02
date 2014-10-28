@@ -1,0 +1,8 @@
+# Calculate format=world name=world ini(overlay-rasdark.world)<2
+
+#-ini(overlay-rasdark.world,2)-#
+
+#?in(os_linux_pkglist, COBRA)!=#
+mail-client/thunderbird
+www-client/firefox
+#in#
