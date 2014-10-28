@@ -4,8 +4,9 @@
  Name[hu_HU]=Pburn CD/DVD/Blu-ray író
  Name[ja]=Pburn CD/DVD/Blu-ray書き込み
  Name[nb_NO]=Pburn Brenn CD/DVD/Blu-ray
-+Name[ru]=Запись CD/DVD/Blu-ray Pburn
- Icon=/usr/share/icons/hicolor/scalable/apps/pburn.svg
+-Icon=/usr/share/icons/hicolor/scalable/apps/pburn.svg
++Name[ru]=Запись CD/DVD/Blu-ray
++Icon=pburn
  Comment=Pburn CD/DVD/Blu-ray writer
  Exec=pburn
  Terminal=false

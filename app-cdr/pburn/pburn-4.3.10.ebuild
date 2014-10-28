@@ -2,10 +2,8 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: /var/cvsroot/gentoo-x86/app-cdr/pburn/pburn-3.4.3.ebuild,v 1.3 2013/04/25 14:28:43 ssuominen Exp $
 
-# wget --user puppy --password linux "http://www.meownplanet.net/zigbert/${P}.pet"
-
 EAPI=4
-inherit eutils fdo-mime gnome2-utils
+inherit eutils gnome2-utils
 
 DESCRIPTION="A burning tool with GTK+ frontend"
 HOMEPAGE="http://murga-linux.com/puppy/viewtopic.php?t=23881"
@@ -66,21 +64,22 @@ src_install() {
     
 	# installing locales
 	cp -dpR "${WORKDIR}/${PN}_NLS/usr/share/locale" "${D}"/usr/share/locale || die
+	
+	# installing icons
+	tar axf "${FILESDIR}"/hicolor-icons.tar.bz2  -C "${D}"/usr/share || die
+	
+	dohtml -r usr/share/doc/*.html
+}
 
-	dohtml -r usr/share/doc
+pkg_preinst() {
+        gnome2_icon_savelist
 }
 
 pkg_postinst() {
-	fdo-mime_desktop_database_update
-	fdo-mime_mime_database_update
-	gnome2_icon_cache_update
+        gnome2_icon_cache_update
 }
 
 pkg_postrm() {
-	fdo-mime_desktop_database_update
-	fdo-mime_mime_database_update
-	gnome2_icon_cache_update
+        gnome2_icon_cache_update
 }
-
-
 
