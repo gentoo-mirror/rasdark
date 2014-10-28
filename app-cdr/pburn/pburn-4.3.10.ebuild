@@ -47,7 +47,6 @@ src_prepare() {
     for lang in ${LANGS};do
         for x in ${lang};do
           if ! use linguas_${x}; then
-				einfo "remove linguas_${x}"
                 rm -r "${WORKDIR}/${PN}_NLS/usr/share/locale/${x}"
           fi
         done
