@@ -300,11 +300,6 @@
         <command>amixer sset Master 1+</command>
       </action>
     </keybind>
-    <keybind key="0x6B">
-      <action name="Execute">
-        <command>scrot ~/Pictures/`date +%x-%X-%N.png`</command>
-      </action>
-    </keybind>
     <keybind key="0x7C">
       <action name="Execute">
         <command>obshutdown</command>
@@ -323,12 +318,12 @@
     <!-- Keybinding for PrintScreen Key -->
     <keybind key="Print">
       <action name="Execute">
-        <execute>scrot 'shot_%Y-%m-%d_%H%M%S.png' -e 'mv $f ~/Screenshots/'</execute>
+        <execute>screengrab --fullscreen</execute>
       </action>
     </keybind>
     <keybind key="A-Print">
       <action name="Execute">
-        <execute>scrot -s 'shot_%Y-%m-%d_%H%M%S.png' -e 'mv $f ~/Screenshots/'</execute>
+        <execute>screengrab --active</execute>
       </action>
     </keybind>
   </keyboard>
