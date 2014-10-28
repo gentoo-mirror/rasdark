@@ -5,7 +5,7 @@
 # wget --user puppy --password linux "http://www.meownplanet.net/zigbert/${P}.pet"
 
 EAPI=4
-inherit eutils
+inherit eutils fdo-mime gnome2-utils
 
 DESCRIPTION="A burning tool with GTK+ frontend"
 HOMEPAGE="http://murga-linux.com/puppy/viewtopic.php?t=23881"
@@ -69,3 +69,18 @@ src_install() {
 
 	dohtml -r usr/share/doc
 }
+
+pkg_postinst() {
+	fdo-mime_desktop_database_update
+	fdo-mime_mime_database_update
+	gnome2_icon_cache_update
+}
+
+pkg_postrm() {
+	fdo-mime_desktop_database_update
+	fdo-mime_mime_database_update
+	gnome2_icon_cache_update
+}
+
+
+
