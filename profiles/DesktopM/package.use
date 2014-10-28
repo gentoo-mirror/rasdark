@@ -56,3 +56,4 @@ media-fonts/terminus-font X pcf
 sys-fs/mtools -X
 app-misc/mc -spell
 dev-vcs/git -gtk
+www-client/firefox custom-optimization minimal system-cairo system-icu system-jpeg system-sqlite
