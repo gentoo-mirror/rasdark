@@ -27,13 +27,13 @@
 ~sci-calculators/speedcrunch-0.11-r2 x86 amd64
 ~sys-fs/cryptsetup-1.6.6 x86 amd64
 ~sys-fs/ntfs3g-2014.2.15 x86 amd64
-~x11-libs/libfm-9999 *
+~x11-libs/libfm-1.2.3 x86 amd64
 ~x11-misc/gxkb-0.7.2 x86 amd64
 ~x11-misc/light-locker-1.4.0-r1 x86 amd64
 ~x11-misc/obconf-2.0.4 x86 amd64
 ~x11-misc/obmenugen-bin-0.5-r72 x86 amd64
 ~x11-misc/obshutdown-9999 x86 amd64
-~x11-misc/pcmanfm-9999 *
+~x11-misc/pcmanfm-1.2.3 x86 amd64
 ~x11-misc/tint2-9999 *
 ~x11-plugins/purple-plugin_pack-2.7.0-r1 x86 amd64
 ~x11-themes/pidgin-penguins-smileys-1.0 x86 amd64
