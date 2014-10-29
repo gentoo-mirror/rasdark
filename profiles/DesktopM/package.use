@@ -5,6 +5,7 @@ app-emulation/winetricks -gtk
 app-misc/mc -spell
 app-misc/mc gpm
 app-office/libreoffice gtk -bluetooth opengl -vlc
+app-portage/layman git mercurial
 app-text/poppler qt4
 dev-db/sqlite secure-delete
 dev-libs/boost python
