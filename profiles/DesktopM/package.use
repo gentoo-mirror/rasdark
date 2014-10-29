@@ -20,7 +20,16 @@ media-fonts/terminus-font X pcf
 media-libs/harfbuzz icu
 media-libs/opencv qt4
 media-libs/sdl-mixer mikmod mod
-media-sound/deadbeef ffmpeg ape converter dts hotkeys infobar mms notify mono2stereo psf shn supereq -gtk2 gtk3 -lastfm wma pltbrowser
+media-plugins/deadbeef-plugins-meta archive bookmark-manager bs2b filebrowser gnome-mmkeys replaygain-control stereo-widener waveform-seekbar vu-meter infobar -jack -mpris musical-spectrum -opus spectrogram vk
+media-plugins/deadbeef-infobar -gtk2 gtk3
+media-plugins/deadbeef-fb -gtk2 gtk3
+media-plugins/deadbeef-spectrogram -gtk2 gtk3
+media-plugins/deadbeef-vk -gtk2 gtk3
+media-plugins/deadbeef-vu-meter -gtk2 gtk3
+media-plugins/deadbeef-replaygain-control -gtk2 gtk3
+media-plugins/deadbeef-waveform-seekbar -gtk2 gtk3
+media-plugins/deadbeef-musical-spectrum -gtk2 gtk3
+media-sound/deadbeef aac alsa cdda converter dts ffmpeg flac gtk3 hotkeys libnotify m3u mms mono2stereo mp3 musepack nls psf pulseaudio shn sndfile vorbis wavpack wma equalizer libsamplerate -gtk2 playlist-browser shell-exec curl
 media-sound/lame mp3rtp sndfile
 media-video/ffmpeg threads
 media-video/vlc  opus libsamplerate optimisememory cdda
@@ -47,6 +56,7 @@ sys-fs/udev static-libs
 sys-fs/udisks cryptsetup
 sys-kernel/calculate-sources -minimal firmware
 sys-libs/e2fsprogs-libs static-libs
+sci-libs/fftw -fortran
 virtual/libgudev static-libs
 virtual/libudev static-libs
 virtual/udev static-libs
