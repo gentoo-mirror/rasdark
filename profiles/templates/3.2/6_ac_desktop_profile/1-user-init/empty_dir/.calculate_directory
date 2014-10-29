@@ -1,1 +1,1 @@
-# Calculate append=skip exists(~/.kde4)==&&exists(~/.gconf)==&&exists(~/.config)==
+# Calculate append=skip ini(update.custom)!=off&&ini(personal.custom)<1||ini(update.custom)!=off&&ini(personal.custom)==
