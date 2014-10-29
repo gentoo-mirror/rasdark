@@ -3,6 +3,7 @@
 #-ini(overlay-rasdark.world,2)-#
 
 #?in(os_linux_pkglist, COBRA)!=#
+app-forensics/scalpel
 mail-client/thunderbird
 www-client/firefox
 #in#

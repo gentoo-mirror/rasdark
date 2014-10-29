@@ -9,6 +9,7 @@
 ~app-editors/vim-core-7.4.488 x86 amd64
 ~app-emulation/wine-1.7.29 x86 amd64
 ~app-emulation/winetricks-20140302 x86 amd64
+~app-forensics/scalpel-2.0 x86 amd64
 ~app-text/qpdfview-0.4.11.1 amd64 x86
 ~dev-util/gsimplecal-1.6 x86 amd64
 ~dev-util/strace-4.9 x86 amd64
