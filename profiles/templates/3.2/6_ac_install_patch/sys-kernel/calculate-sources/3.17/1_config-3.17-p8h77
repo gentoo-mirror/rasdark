@@ -1,4 +1,4 @@
-# Calculate name=.config os_arch_machine==x86_64&&in(main.hr_board_model,P8H77-M)!=&&in(main.hr_board_vendor,ASUSTeK)!=
+# Calculate name=.config os_arch_machine==x86_64&&in(hr_board_model,P8H77-M)!=&&in(hr_board_vendor,ASUSTeK)!=
 #
 # Automatically generated file; DO NOT EDIT.
 # Linux/x86 3.17.1-darkus Kernel Configuration
