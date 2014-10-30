@@ -7,15 +7,6 @@
 				</command>
 			</action>
 		</item>
-		<separator/>
-		<item label="Dropbox">
-			<action name="Execute">
-				<command>
-					pcmanfm #-ini(resource.path)-#/Dropbox
-				</command>
-			</action>
-		</item>
-		<separator/>
                 <item label="Documents">
 			<action name="Execute">
 				<command>
