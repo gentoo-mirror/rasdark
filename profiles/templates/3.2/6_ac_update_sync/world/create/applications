@@ -11,6 +11,7 @@ app-emulation/winetricks
 app-office/libreoffice
 app-text/fbreader
 app-text/qpdfview
+dev-java/oracle-jre-bin
 dev-util/gsimplecal
 mail-client/thunderbird
 media-gfx/gimp

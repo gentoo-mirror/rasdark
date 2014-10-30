@@ -8,6 +8,7 @@ app-office/libreoffice gtk -bluetooth opengl -vlc
 app-portage/layman git mercurial
 app-text/poppler qt4
 dev-db/sqlite secure-delete
+dev-java/oracle-jre-bin fontconfig jce nsplugin
 dev-libs/boost python
 dev-libs/elfutils static-libs
 dev-libs/libgcrypt static-libs
