@@ -65,7 +65,7 @@ dev-util/gsimplecal
 dev-util/strace
 gnome-extra/nm-applet
 lxde-base/lxmenu-data
-mail-client/thunderbird-bin
+mail-client/thunderbird
 media-gfx/calculate-wallpapers
 media-gfx/dm-themes-calculate
 media-gfx/gimp
@@ -108,7 +108,7 @@ sys-power/cpupower
 sys-power/pm-utils
 sys-power/powernowd
 sys-power/powertop
-www-client/firefox-bin
+www-client/firefox
 www-plugins/adobe-flash
 x11-libs/gksu
 x11-misc/gmrun
@@ -129,13 +129,11 @@ x11-plugins/pidgin-hotkeys
 x11-plugins/purple-plugin_pack
 x11-terms/rxvt-unicode
 x11-themes/calculate-icon-theme
-x11-themes/calculate-xcursors
 x11-themes/elementary-icon-theme
 x11-themes/gnome-icon-theme
 x11-themes/gnome-icon-theme-extras
 x11-themes/gtk-engines
 x11-themes/haematite-xcursors
-x11-themes/pidgin-penguins-smileys
 x11-themes/pidgin-penguins-smileys
 x11-wm/openbox
 #in#

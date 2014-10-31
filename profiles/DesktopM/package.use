@@ -16,20 +16,21 @@ dev-libs/libgpg-error static-libs
 dev-libs/popt static-libs
 dev-qt/qtgui gtkstyle
 dev-vcs/git -gtk
+mail-client/claws-mail pdf rss smime webkit xface -libindicate
 mail-client/thunderbird custom-optimization minimal system-cairo system-icu system-jpeg system-sqlite
 media-fonts/terminus-font X pcf
 media-libs/harfbuzz icu
 media-libs/opencv qt4
 media-libs/sdl-mixer mikmod mod
-media-plugins/deadbeef-plugins-meta archive bookmark-manager bs2b filebrowser gnome-mmkeys replaygain-control stereo-widener waveform-seekbar vu-meter infobar -jack -mpris musical-spectrum -opus spectrogram vk
-media-plugins/deadbeef-infobar -gtk2 gtk3
 media-plugins/deadbeef-fb -gtk2 gtk3
+media-plugins/deadbeef-infobar -gtk2 gtk3
+media-plugins/deadbeef-musical-spectrum -gtk2 gtk3
+media-plugins/deadbeef-plugins-meta archive bookmark-manager bs2b filebrowser gnome-mmkeys replaygain-control stereo-widener waveform-seekbar vu-meter infobar -jack -mpris musical-spectrum -opus spectrogram vk
+media-plugins/deadbeef-replaygain-control -gtk2 gtk3
 media-plugins/deadbeef-spectrogram -gtk2 gtk3
 media-plugins/deadbeef-vk -gtk2 gtk3
 media-plugins/deadbeef-vu-meter -gtk2 gtk3
-media-plugins/deadbeef-replaygain-control -gtk2 gtk3
 media-plugins/deadbeef-waveform-seekbar -gtk2 gtk3
-media-plugins/deadbeef-musical-spectrum -gtk2 gtk3
 media-sound/deadbeef aac alsa cdda converter dts ffmpeg flac gtk3 hotkeys libnotify m3u mms mono2stereo mp3 musepack nls psf pulseaudio shn sndfile vorbis wavpack wma equalizer libsamplerate -gtk2 playlist-browser shell-exec curl
 media-sound/lame mp3rtp sndfile
 media-video/ffmpeg threads
@@ -43,9 +44,11 @@ net-fs/samba -winbind
 net-irc/kvirc -audiofile -oss -theora -dcc_voice -phonon doc
 net-libs/libpcap netlink
 net-libs/rb_libtorrent python
+net-libs/webkit-gtk -introspection -geoloc libsecret
 net-misc/remmina -avahi freerdp gnome-keyring ssh vte
 net-p2p/deluge geoip setproctitle webinterface sound
 net-wireless/lorcon python
+sci-libs/fftw -fortran
 sys-apps/util-linux static-libs
 sys-block/gparted btrfs dmraid fat jfs mdadm ntfs reiserfs xfs
 sys-fs/cryptsetup kernel -gcrypt -nettle -openssl udev static-libs
@@ -57,10 +60,10 @@ sys-fs/udev static-libs
 sys-fs/udisks cryptsetup
 sys-kernel/calculate-sources -minimal firmware
 sys-libs/e2fsprogs-libs static-libs
-sci-libs/fftw -fortran
 virtual/libgudev static-libs
 virtual/libudev static-libs
 virtual/udev static-libs
+www-client/dwb examples -gtk3
 www-client/firefox custom-optimization minimal system-cairo system-icu system-jpeg system-sqlite
 x11-libs/libfm udisks
 x11-misc/light-locker upower

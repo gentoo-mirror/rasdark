@@ -5,6 +5,6 @@
 #?in(os_linux_pkglist, COBRA)!=#
 app-forensics/scalpel
 dev-java/oracle-jre-bin
-mail-client/thunderbird
-www-client/firefox
+mail-client/claws-mail
+wwww-client/dwb
 #in#
