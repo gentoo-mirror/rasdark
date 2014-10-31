@@ -2,5 +2,6 @@
 # packages that do not build with ffast-math
 #?os_assemble_arch_machine!=x86_64#
 dev-db/sqlite nomath
+net-libs/webkit-gtk nomath
 x11-wm/openbox nomath
 #os_assemble_arch_machine#
