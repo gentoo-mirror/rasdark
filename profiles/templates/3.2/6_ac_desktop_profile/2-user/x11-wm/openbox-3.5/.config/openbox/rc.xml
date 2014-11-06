@@ -290,6 +290,11 @@
         <command>urxvt</command>
       </action>
     </keybind>
+    <keybind key="C-A-w">
+      <action name="Execute">
+        <command>firefox</command>
+      </action>
+    </keybind>
     <keybind key="0x7A">
       <action name="Execute">
         <command>amixer sset Master 1-</command>
