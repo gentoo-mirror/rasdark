@@ -17,7 +17,7 @@ dev-libs/popt static-libs
 dev-qt/qtgui gtkstyle
 dev-vcs/git -gtk
 mail-client/claws-mail pdf rss smime webkit xface -libindicate
-mail-client/thunderbird custom-optimization minimal system-cairo system-icu system-jpeg system-sqlite
+mail-client/thunderbird custom-cflags custom-optimization minimal system-cairo system-icu system-jpeg system-sqlite
 media-fonts/terminus-font X pcf
 media-libs/harfbuzz icu
 media-libs/opencv qt4
