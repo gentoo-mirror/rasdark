@@ -21,9 +21,9 @@
 item:terminal
 item:filemanager
 #raw:<item label="root Midnight Commanger"><action name="Execute"><execute>urxvt -e sudo mc</execute></action></item>
-item:webbrowser
-item:instantmessaging
-item:editor
+#item:webbrowser
+#item:instantmessaging
+#item:editor
 #raw:<menu execute="obdevicemenu" id="mounts" label="Внешние накопители"/>
 item:runcommand
 file:folders.xml
@@ -43,4 +43,3 @@ submenu:openbox
 sep:
 item:lock
 item:exit
-

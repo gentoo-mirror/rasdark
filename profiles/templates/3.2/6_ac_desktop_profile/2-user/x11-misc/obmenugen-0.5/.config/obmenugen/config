@@ -12,7 +12,7 @@
 terminal = urxvt
 editor = gvim
 filemanager = pcmanfm
-webbrowser = firefox-bin
+webbrowser = firefox
 instant messaging = pidgin
 run command = gmrun
 
