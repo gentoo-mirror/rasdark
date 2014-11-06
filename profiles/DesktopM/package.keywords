@@ -55,7 +55,7 @@
 # gcc-4.9.1
 ~dev-libs/cloog-0.18.1 x86 amd64
 ~dev-libs/isl-0.12.2 x86 amd64
-~sys-devel/gcc-4.9.1 * amd64 x86
+~sys-devel/gcc-4.9.2 * amd64 x86
 ~sys-devel/gcc-config-1.8 x86 amd64
 # gcc
 # not build with gcc-4.9
