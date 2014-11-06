@@ -14,6 +14,7 @@
 ~dev-util/gsimplecal-1.6 x86 amd64
 ~dev-util/strace-4.9 x86 amd64
 ~mail-client/claws-mail-3.11.1 x86 amd64
+~mail-client/thunderbird-31.2.0-r1 x86 amd64
 ~media-gfx/nomacs-1.6.2 amd64 x86
 ~media-plugins/deadbeef-archive-reader-20140219 x86 amd64
 ~media-plugins/deadbeef-bookmark-manager-20140514 x86 amd64
@@ -42,6 +43,7 @@
 ~sys-fs/ntfs3g-2014.2.15 x86 amd64
 ~virtual/jre-1.7.0 x86 amd64
 ~www-client/dwb-2014.03.07 x86 amd64
+~www-client/firefox-31.2.0-r1 x86 amd64
 ~x11-libs/libfm-1.2.3 x86 amd64
 ~x11-misc/gxkb-0.7.3 x86 amd64
 ~x11-misc/light-locker-1.4.0-r1 x86 amd64
