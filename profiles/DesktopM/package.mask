@@ -1,5 +1,4 @@
 # Gnome 3.12
->=dev-cpp/gtkmm-3.12
 >=dev-python/pygobject-3.12
 >=dev-util/gnome-devel-docs-3.12
 >=games-arcade/gnome-nibbles-3.12
