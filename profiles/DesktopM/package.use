@@ -64,7 +64,7 @@ virtual/libgudev static-libs
 virtual/libudev static-libs
 virtual/udev static-libs
 www-client/dwb examples -gtk3
-www-client/firefox custom-optimization minimal system-cairo system-icu system-jpeg system-sqlite
+www-client/firefox custom-cflags custom-optimization minimal system-cairo system-icu system-jpeg system-sqlite
 x11-libs/libfm udisks
 x11-misc/light-locker upower
 x11-misc/lightdm -introspection
