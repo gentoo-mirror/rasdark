@@ -1117,6 +1117,7 @@ Current=true
 5_Hostname=calvino.freenode.net
 12_Id=myserver58044590720
 15_Description=Main%20Freenode%20router
+15_SSL=true
 17_Hostname=leguin.freenode.net
 21_Id=myserver580445472730
 24_Description=Corvallis,%20OR,%20USA
