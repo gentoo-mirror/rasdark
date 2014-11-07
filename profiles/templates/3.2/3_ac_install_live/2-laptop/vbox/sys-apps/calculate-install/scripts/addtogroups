@@ -1,0 +1,5 @@
+# Calculate exec=/bin/bash
+# 
+gpasswd -a guest vboxguest
+gpasswd -a guest vboxsf
+true
