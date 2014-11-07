@@ -14,7 +14,7 @@ stringSSLCertificatePath=
 boolNotifyListChangesToActiveWindow=true
 #?os_locale_language==ru#
 stringQuitMessage=Я%20использую%20KVirc%20($version)%20на%20#-os_linux_shortname-#%20Linux.%20А%20ты?
-stringAwayMessage=Ушел.%20Когда%20вернусь%20тогда%пришел.
+stringAwayMessage=Ушел.%20Когда%20вернусь%20тогда%20пришел.
 #os_locale_language#
 #?os_locale_language==es#
 stringQuitMessage=Yo%20uso%20KVirc%20($version)%20on%20#-os_linux_shortname-#%20Linux.%20¿Y%20tú?
