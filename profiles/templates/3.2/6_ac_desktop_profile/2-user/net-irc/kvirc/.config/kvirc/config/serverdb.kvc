@@ -1086,6 +1086,7 @@ RealName=-=#-os_linux_name-#%20#-os_linux_ver-#%20#-os_linux_subname-#=-
 1_Hostname=anthony.freenode.net
 11_Description=Corvallis,%20OR,%20USA
 13_Hostname=goethe.freenode.net
+15_Port=7000
 20_Description=Helsinki,%20Finland
 22_Hostname=sterling.freenode.net
 NickName=#-case(lower,ur_login)-#-#-os_locale_language-#
@@ -1107,6 +1108,7 @@ Current=true
 4_Hostname=calkins.freenode.net
 11_Id=myserver580445797289
 14_Description=Main%20Europe%20IPv6%20router
+15_AutoConnect=true
 16_Hostname=kornbluth.freenode.net
 20_Id=myserver580445180956
 23_Description=Taoyuan,%20Taiwan
@@ -1147,7 +1149,6 @@ Current=true
 5_Id=myserver58044552865
 8_Description=Main%20Europe%20router
 17_Id=myserver580445850997
-AutoConnect=true
 #?os_root_type==hdd&&hr_virtual==#
 UserName=#-os_linux_shortname-#
 #os_root_type#
