@@ -79,7 +79,7 @@ media-sound/pavucontrol
 media-sound/sox
 media-sound/volumeicon
 media-video/v4l2ucp
-media-video/vlc
+media-video/smplayer2
 net-dialup/minicom
 net-im/pidgin
 net-irc/kvirc

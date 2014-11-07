@@ -1,4 +1,4 @@
-# Calculate format=compiz protected ini(desktop.videoplayer-removing)==on merge=media-video/vlc
+# Calculate format=compiz protected ini(desktop.videoplayer-removing)==on merge=media-video/vlc,media-video/smplayer2
 
 #-ini(desktop.videoplayer-removing,)-#
 
