@@ -1,5 +1,6 @@
-# Calculate exec=/bin/bash
+# Calculate exec=/bin/bash pkg(app-emulation/virtualbox-guest-additions)!=
 # 
-gpasswd -a guest vboxguest
-gpasswd -a guest vboxsf
+echo "Adding \"guest\" to vbox-guests groups"
+/usr/bin/gpasswd -a guest vboxguest >/dev/null
+/usr/bin/gpasswd -a guest vboxsf >/dev/null
 true
