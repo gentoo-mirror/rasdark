@@ -1,1 +1,1 @@
-# Calculate name= path=#-case(lower,os_linux_shortname)-#.default
+# Calculate name= path=#-ini(resource.path)-#/.mozilla/firefox/#-case(lower,os_linux_shortname)-#.default
