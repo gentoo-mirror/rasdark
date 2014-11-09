@@ -1,1 +1,1 @@
-# Calculate append=skip merge(www-client/firefox-bin)!=&&ini(update.firefox)!=off&&ini(personal.firefox)==&&pkg(www-client/firefox-bin)>=30.0&&exists(~/.mozilla)==||merge(www-client/firefox)!=&&ini(update.firefox)!=off&&ini(personal.firefox)==&&pkg(www-client/firefox)>=30.0&&exists(~/.mozilla)==
+# Calculate append=skip merge(www-client/firefox-bin)!=&&ini(update.firefox)!=off&&ini(personal.firefox)==&&pkg(www-client/firefox-bin)>=30.0||merge(www-client/firefox)!=&&ini(update.firefox)!=off&&ini(personal.firefox)==&&pkg(www-client/firefox)>=30.0
