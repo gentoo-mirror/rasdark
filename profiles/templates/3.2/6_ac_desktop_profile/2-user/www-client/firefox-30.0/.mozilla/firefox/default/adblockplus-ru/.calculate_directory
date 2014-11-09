@@ -1,2 +1,2 @@
-# Calculate append=skip os_locale_language==ru path=~/.mozilla/firefox/calculate.default/adblockplus
+# Calculate append=skip os_locale_language==ru path=~/.mozilla/firefox/#-case(lower,os_linux_shortname)-#.default/adblockplus
 

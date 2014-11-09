@@ -30,11 +30,9 @@ user_pref("extensions.ui.experiment.hidden", true);
 user_pref("extensions.ui.lastCategory", "addons://list/plugin");
 user_pref("extensions.ui.locale.hidden", false);
 #extensions
-#?os_locale_language==ru#
 user_pref("extensions.bootstrappedAddons", "{\"{d10d0bf8-f5b5-c8b4-a8b2-2b9879e08c5d}\":{\"version\":\"2.6.5\",\"type\":\"extension\",\"descriptor\":\"/home/guest/.mozilla/firefox/calculate.default/extensions/{d10d0bf8-f5b5-c8b4-a8b2-2b9879e08c5d}.xpi\"},\"langpack-ru@firefox.mozilla.org\":{\"version\":\"31.2.0\",\"type\":\"locale\",\"descriptor\":\"/usr/lib/firefox/browser/extensions/langpack-ru@firefox.mozilla.org\"}}");
 user_pref("extensions.enabledAddons", "vimperator%40mozdev.org:3.8.2,%7B972ce4c6-7e08-4474-a285-3208198ce6fd%7D:31.2.0");
 user_pref("extensions.installCache", "[{\"name\":\"app-global\",\"addons\":{\"langpack-es-ES@firefox.mozilla.org\":{\"descriptor\":\"/usr/lib/firefox/browser/extensions/langpack-es-ES@firefox.mozilla.org\",\"mtime\":1415277603000,\"rdfTime\":1415277588000},\"langpack-ru@firefox.mozilla.org\":{\"descriptor\":\"/usr/lib/firefox/browser/extensions/langpack-ru@firefox.mozilla.org\",\"mtime\":1415277603000,\"rdfTime\":1415277589000},\"{972ce4c6-7e08-4474-a285-3208198ce6fd}\":{\"descriptor\":\"/usr/lib/firefox/browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}\",\"mtime\":1415277601000,\"rdfTime\":1415277564000}}},{\"name\":\"app-profile\",\"addons\":{\"vimperator@mozdev.org\":{\"descriptor\":\"/home/guest/.mozilla/firefox/calculate.default/extensions/vimperator@mozdev.org.xpi\",\"mtime\":1415353552000},\"{d10d0bf8-f5b5-c8b4-a8b2-2b9879e08c5d}\":{\"descriptor\":\"/home/guest/.mozilla/firefox/calculate.default/extensions/{d10d0bf8-f5b5-c8b4-a8b2-2b9879e08c5d}.xpi\",\"mtime\":1415353520000}}}]");
-#os_locale_language#
 #adblock
 user_pref("extensions.adblockplus.currentVersion", "2.6.5");
 user_pref("extensions.adblockplus.notificationdata", "{\"shown\":[],\"lastCheck\":1415355273524,\"softExpiration\":1415424686041,\"hardExpiration\":1415528074211,\"data\":{\"notifications\":[],\"version\":\"201411071010\"},\"lastError\":0,\"downloadStatus\":\"synchronize_ok\"}");
