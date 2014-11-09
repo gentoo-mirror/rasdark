@@ -5,4 +5,5 @@
 #?in(os_linux_pkglist, COBRA)!=#
 !media-video/smplayer2
 media-video/smplayer
+x11-themes/smplayer-skins
 #in#

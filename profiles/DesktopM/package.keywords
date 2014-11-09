@@ -29,6 +29,8 @@
 ~media-plugins/deadbeef-vk-0.2.2 x86 amd64
 ~media-plugins/deadbeef-vu-meter-20140914 x86 amd64
 ~media-plugins/deadbeef-waveform-seekbar-0.5 x86 amd64
+~media-video/smplayer-14.9.0-r1 x86 amd64
+~x11-themes/smplayer-skins-14.9.0 x86 amd64
 ~media-video/v4l2ucp-9999 x86 amd64
 ~net-dns/bind-tools-9.10.1 x86 amd64
 ~net-libs/webkit-gtk-2.4.7-r200 x86 amd64
