@@ -1,3 +1,4 @@
+# Calculate os_locale_language==ru
 <SearchPlugin xmlns="http://www.mozilla.org/2006/browser/search/" xmlns:os="http://a9.com/-/spec/opensearch/1.1/">
 <os:ShortName>Yandex Slovari</os:ShortName>
 <os:Description>Type your word</os:Description>
