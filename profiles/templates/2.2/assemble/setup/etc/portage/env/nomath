@@ -4,6 +4,6 @@
 CFLAGS="-O3 -pipe -march=i686"
 #os_assemble_arch_machine#
 #?os_assemble_arch_machine==x86_64#
-CFLAGS="-O3 -pipe -march=x86_64"
+CFLAGS="-O3 -pipe -march=x86-64"
 #os_assemble_arch_machine#
 CXXFLAGS="${CFLAGS}"
