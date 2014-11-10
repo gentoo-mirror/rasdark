@@ -1,4 +1,3 @@
-# Calculate name=elemhide.css
 @-moz-document domain("bouweenpc.nl"){
 #header-banner{-moz-binding: url(about:abp-elemhidehit?018911326843#dummy) !important;}
 }

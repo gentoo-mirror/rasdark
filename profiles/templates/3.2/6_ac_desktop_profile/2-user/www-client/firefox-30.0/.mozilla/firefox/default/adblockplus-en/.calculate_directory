@@ -1,2 +1,1 @@
-# Calculate os_locale_language!=ru path=~/.mozilla/firefox/#-case(lower,os_linux_shortname)-#.default/adblockplus
-
+# Calculate name= os_locale_language!=ru path=#-ini(resource.path)-#/.mozilla/firefox/#-case(lower,os_linux_shortname)-#.default/adblockplus
