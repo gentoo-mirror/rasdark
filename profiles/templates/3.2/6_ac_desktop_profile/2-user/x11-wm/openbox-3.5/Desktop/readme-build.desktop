@@ -1,0 +1,23 @@
+# Calculate chmod=755 os_root_type==livecd
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Type=Application
+Name[ru]=Информация о сборке
+Name=About this build
+Comment=
+Categories=Application;
+#?os_locale_language!=ru&&os_locale_language!=fr&&os_locale_language!=es#
+Exec=xdg-open #-ini(resource.documents)-#/readme-first-en.html
+#os_locale_language#
+#?os_locale_language==ru#
+Exec=xdg-open #-ini(resource.documents)-#/readme-first-ru.html
+#os_locale_language#
+#?os_locale_language==es#
+Exec=xdg-open #-ini(resource.documents)-#/readme-first-es.html
+#os_locale_language#
+Icon=help-contents
+Terminal=false
+StartupNotify=false
