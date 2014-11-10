@@ -239,7 +239,6 @@
     <keybind key="W-d">
       <action name="ToggleShowDesktop"/>
     </keybind>
-    <!-- Keybindings for windows -->
     <keybind key="A-F4">
       <action name="Close"/>
     </keybind>
@@ -253,7 +252,6 @@
         <menu>client-menu</menu>
       </action>
     </keybind>
-    <!-- Keybindings for window switching -->
     <keybind key="A-Tab">
       <action name="NextWindow"/>
     </keybind>
@@ -266,7 +264,6 @@
         <desktop>yes</desktop>
       </action>
     </keybind>
-    <!-- Keybindings for running applications -->
     <keybind key="W-e">
       <action name="Execute">
         <startupnotify>
@@ -285,42 +282,16 @@
         <command>gmrun</command>
       </action>
     </keybind>
-    <keybind key="C-A-t">
+    <keybind key="W-t">
       <action name="Execute">
         <command>urxvt</command>
       </action>
     </keybind>
-    <keybind key="C-A-w">
+    <keybind key="W-w">
       <action name="Execute">
         <command>firefox</command>
       </action>
     </keybind>
-    <keybind key="0x7A">
-      <action name="Execute">
-        <command>amixer sset Master 1-</command>
-      </action>
-    </keybind>
-    <keybind key="0x7B">
-      <action name="Execute">
-        <command>amixer sset Master 1+</command>
-      </action>
-    </keybind>
-    <keybind key="0x7C">
-      <action name="Execute">
-        <command>obshutdown</command>
-      </action>
-    </keybind>
-    <keybind key="0xB3">
-      <action name="Execute">
-        <command>/usr/local/bin/asus_tp.sh</command>
-      </action>
-    </keybind>
-    <keybind key="XF86AudioMute">
-      <action name="Execute">
-        <command>amixer sset Master toggle</command>
-      </action>
-    </keybind>
-    <!-- Keybinding for PrintScreen Key -->
     <keybind key="Print">
       <action name="Execute">
         <execute>screengrab --fullscreen</execute>
