@@ -55,8 +55,8 @@
 ~dev-libs/isl-0.12.2 x86 amd64
 ~sys-devel/gcc-4.9.2 * amd64 x86
 ~sys-devel/gcc-config-1.8 x86 amd64
-~app-office/libreoffice-4.3.1.2 x86 amd64
-~app-office/libreoffice-l10n-4.3.1.2 x86 amd64
+~app-office/libreoffice-4.3.4.1 x86 amd64
+~app-office/libreoffice-l10n-4.3.4.1 x86 amd64
 ~media-video/mplayer2-2.0_p20131009 x86 amd64
 ~sys-auth/pam_ldap-186-r1 x86 amd64
 ~x11-libs/cairo-1.12.16-r3 x86 amd64
