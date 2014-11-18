@@ -8,6 +8,7 @@ media-gfx/grub-splashes-calculate
 media-gfx/lightdm-themes-calculate
 media-gfx/plymouth-themes-calculate
 media-gfx/syslinux-themes-calculate
+x11-misc/mate-notification-daemon
 x11-themes/calculate-icon-theme
 x11-themes/elementary-icon-theme
 x11-themes/gnome-icon-theme
