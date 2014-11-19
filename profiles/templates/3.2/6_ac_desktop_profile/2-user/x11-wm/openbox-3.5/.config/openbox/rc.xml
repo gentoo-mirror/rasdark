@@ -264,7 +264,7 @@
         <desktop>yes</desktop>
       </action>
     </keybind>
-    <keybind key="W-e">
+    <keybind key="C-A-e">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
@@ -282,12 +282,12 @@
         <command>gmrun</command>
       </action>
     </keybind>
-    <keybind key="W-t">
+    <keybind key="C-A-t">
       <action name="Execute">
         <command>urxvt</command>
       </action>
     </keybind>
-    <keybind key="W-w">
+    <keybind key="C-A-w">
       <action name="Execute">
         <command>firefox</command>
       </action>

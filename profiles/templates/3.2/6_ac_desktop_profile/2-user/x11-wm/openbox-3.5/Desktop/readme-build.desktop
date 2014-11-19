@@ -9,15 +9,7 @@ Name[ru]=Информация о сборке
 Name=About this build
 Comment=
 Categories=Application;
-#?os_locale_language!=ru&&os_locale_language!=fr&&os_locale_language!=es#
-Exec=xdg-open #-ini(resource.documents)-#/readme-first-en.html
-#os_locale_language#
-#?os_locale_language==ru#
-Exec=xdg-open #-ini(resource.documents)-#/readme-first-ru.html
-#os_locale_language#
-#?os_locale_language==es#
-Exec=xdg-open #-ini(resource.documents)-#/readme-first-es.html
-#os_locale_language#
+Exec=xdg-open #-ini(resource.documents)-#/readme-first.html
 Icon=help-contents
 Terminal=false
 StartupNotify=false
