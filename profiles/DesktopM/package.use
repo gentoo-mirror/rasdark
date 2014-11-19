@@ -35,7 +35,7 @@ media-sound/deadbeef aac alsa cdda converter dts ffmpeg flac gtk3 hotkeys libnot
 media-sound/lame mp3rtp sndfile
 media-video/ffmpeg threads
 media-video/mplayer2 lcms pvr yuv4mpeg
-net-analyzer/nmap -lua gtk ncat ndiff nmap-update nping
+net-analyzer/nmap -lua ncat ndiff nmap-update nping zenmap
 net-analyzer/wireshark -adns geoip -gtk3 smi
 net-dns/bind-tools ipv6 gost idn
 net-fs/cifs-utils -acl
