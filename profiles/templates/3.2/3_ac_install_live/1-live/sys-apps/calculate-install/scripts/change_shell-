@@ -1,5 +1,0 @@
-# Calculate format=patch name=passwd-
-<reg>^guest:.*
-</reg>
-<text>guest:x:1000:1000::/home/guest:/bin/zsh
-</text>

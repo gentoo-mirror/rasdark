@@ -1,0 +1,5 @@
+# Calculate exec=/bin/bash pkg(app-shells/zsh)!=
+# 
+echo "Changing shell"
+/usr/bin/chsh -s /bin/zsh
+true
