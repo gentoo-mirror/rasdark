@@ -1,0 +1,5 @@
+# Calculate format=patch path=/etc name=passwd-
+<reg>^guest:.*
+</reg>
+<text>guest:x:1000:1000::/home/guest:/bin/zsh
+</text>
