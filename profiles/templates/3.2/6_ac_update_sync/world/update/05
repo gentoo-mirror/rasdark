@@ -1,0 +1,7 @@
+# Calculate format=world name=world ini(overlay-rasdark.world)<5
+
+#-ini(overlay-rasdark.world,5)-#
+
+#?in(os_linux_pkglist, COBRA)!=#
+app-shells/zsh
+#in#

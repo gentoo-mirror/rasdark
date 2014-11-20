@@ -7,6 +7,7 @@ app-misc/mc gpm
 app-office/libreoffice gtk -bluetooth opengl -vlc
 app-portage/layman git mercurial
 app-text/poppler qt4
+app-shells/zsh doc examples
 dev-db/sqlite secure-delete
 dev-java/oracle-jre-bin fontconfig jce nsplugin
 dev-libs/boost python
