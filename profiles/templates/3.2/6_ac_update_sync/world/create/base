@@ -4,7 +4,7 @@
 app-admin/testdisk
 app-arch/p7zip
 app-editors/nano
-app-shells/zsh
+app-shells/zsh-completion
 media-fonts/terminus-font
 sys-apps/ifplugd
 sys-apps/less

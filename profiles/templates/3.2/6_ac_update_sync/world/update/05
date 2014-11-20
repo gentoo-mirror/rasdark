@@ -3,5 +3,5 @@
 #-ini(overlay-rasdark.world,5)-#
 
 #?in(os_linux_pkglist, COBRA)!=#
-app-shells/zsh
+app-shells/zsh-completion
 #in#
