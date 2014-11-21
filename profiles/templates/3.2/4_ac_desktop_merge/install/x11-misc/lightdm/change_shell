@@ -1,10 +1,8 @@
 # Calculate exec=/bin/bash pkg(app-shells/zsh)!=
 # 
-SH=$(grep #-ur_login-# /etc/passwd | awk -F':' '{ print $7; }' | awk -F'/' '{ print $3; }')
-echo "шелл елены: ${SH}"
+SH=$(grep guest /etc/passwd | awk -F':' '{ print $7; }' | awk -F'/' '{ print $3; }')
 if [ "${SH}" != "zsh" ] 
 then
-    echo "Changing shell"
-    /usr/bin/chsh -s /bin/zsh #-ur_login-#
+    /usr/bin/chsh -s /bin/zsh guest
     exit 0
 fi
