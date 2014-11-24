@@ -14,26 +14,12 @@ setopt appendhistory autocd beep
 
 bindkey -v
 
-#eval `ssh-agent -s` 2>/dev/null
-#ssh-add ~/.ssh/id_rsa 2>/dev/null
-
 alias la='ls -la'
 alias hpush='git push origin HEAD'
-alias -s {c,cpp}=vim
-alias -s avi=smplayer
 
 autoload -U edit-command-line
 zle -N  edit-command-line
 bindkey -M vicmd v edit-command-line
-
-#git_prompt() {
-#  temp=`git symbolic-ref HEAD 2>/dev/null | cut -d / -f 3`
-#  if [ "$temp" != "" ]; then echo "$temp:"; fi
-#}
-#setopt prompt_subst
-
-#export PROMPT='%n@%m> '
-#export RPROMPT='[$(git_prompt)%~]'
 
 setopt menucomplete
 zstyle ':completion:*' menu select=1 _complete _ignored _approximate
@@ -109,10 +95,6 @@ alias logh="grc head"
   alias cvs="grc --colour=auto cvs"
   alias netstat="grc --colour=auto netstat"
 }
-
-#command_not_found_handler() {
-#  /usr/lib/command-not-found $1
-#}
 
 alias dirf='find . -type d | sed -e "s/[^-][^\/]*\//  |/g" -e "s/|\([^ ]\)/|-\1/"'
 alias lls="ls -F --color=auto -l | sed -e 's/--x/1/g' -e 's/-w-/2/g' -e 's/-wx/3/g' -e 's/r--/4/g'  -e 's/r-x/5/g' -e 's/rw-/6/g' -e 's/rwx/7/g' -e 's/---/0/g'"
