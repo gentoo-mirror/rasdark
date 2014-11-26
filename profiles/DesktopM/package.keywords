@@ -5,13 +5,13 @@
 ~app-cdr/cddetect-2.1 x86 amd64
 ~app-cdr/pburn-4.3.10 x86 amd64
 ~app-crypt/chntpw-110511 x86 amd64
-~app-editors/gvim-7.4.488 x86 amd64
-~app-editors/vim-core-7.4.488 x86 amd64
+~app-editors/gvim-7.4.527 x86 amd64
+~app-editors/vim-core-7.4.527 x86 amd64
 ~app-emulation/wine-1.7.29 x86 amd64
 ~app-emulation/winetricks-20140302 x86 amd64
 ~app-forensics/scalpel-2.0 x86 amd64
 ~app-text/qpdfview-0.4.12 amd64 x86
-~app-shells/zsh-completions-0.12.0 x86 amd64
+~app-shells/zsh-completions-0.12.0-r1 x86 amd64
 ~dev-util/gsimplecal-1.6 x86 amd64
 ~dev-util/strace-4.9 x86 amd64
 ~mail-client/thunderbird-31.2.0-r1 x86 amd64
