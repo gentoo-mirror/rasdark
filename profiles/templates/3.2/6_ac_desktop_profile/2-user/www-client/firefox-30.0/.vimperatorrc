@@ -1,3 +1,4 @@
+# Calculate comment=" exists(~/.vimperatorrc)==
 "3.8.2 (created: 2014/02/13 23:52:43)
 
 set gui=none
@@ -21,10 +22,9 @@ js <<EOF
 }
 EOF
 
-map <silent> <F8> :js toggle_element('TabsToolbar')<CR>
-map <silent> <F9> :js toggle_element('nav-bar')<CR>
+"map <silent> <F8> :js toggle_element('TabsToolbar')<CR>
+"map <silent> <F9> :js toggle_element('nav-bar')<CR>
 
-echo "vimperatorrc sourced"
 source! /home/guest/.vimperatorrc.local
 
 " vim: set ft=vimperator:
