@@ -17,8 +17,6 @@ RDEPEND="net-im/pidgin[gtk]"
 DEPEND="${RDEPEND}
 	virtual/pkgconfig"
 
-S=${WORKDIR}/${MY_P}
-
 src_install() {
 	emake DESTDIR="${D}" install
 	dodoc AUTHORS ChangeLog README
