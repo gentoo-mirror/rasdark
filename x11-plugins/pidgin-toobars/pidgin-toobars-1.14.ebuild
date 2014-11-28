@@ -4,7 +4,7 @@
 
 EAPI=5
 
-inherit toolchain-funcs
+inherit toolchain-funcs eutils
 
 RESTRICT="primaryuri"
 
@@ -22,12 +22,16 @@ RDEPEND="net-im/pidgin[gtk]"
 DEPEND="${RDEPEND}
 	dev-util/pkgconfig"
 
+src_prepare() {
+	epatch "${FILESDIR}/po_makefile.patch"
+}
+
 src_install() {
-	emake install DESTDIR="${D}" || die "emake install failed"
+	emake DESTDIR="${D}" install || die "emake install failed"
 	dodoc README AUTHORS VERSION
 }
 
 pkg_postinst() {
 	elog "Please note that the MyStatusBar (in purple-plugin_pack) conflicts"
-	elog" with TooBars and you should only turn one on at a time."
+	elog " with TooBars and you should only turn one on at a time."
 }
