@@ -22,4 +22,8 @@ net-im/pidgin
 x11-plugins/pidgin-hotkeys
 x11-themes/pidgin-penguins-smileys
 x11-plugins/purple-plugin_pack
+x11-plugins/pidgin-encryption
+x11-plugins/pidgin-gpg
+x11-plugins/pidgin-musictracker
+x11-plugins/pidgin-toobars
 #in#
