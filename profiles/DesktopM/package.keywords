@@ -82,3 +82,4 @@
 ~media-video/smplayer-14.9.0-r1 x86 amd64
 ~x11-plugins/pidgin-gpg-0.9 x86 amd64
 ~x11-plugins/pidgin-toobars-1.14 x86 amd64
+~app-crypt/gpgme-1.5.2 x86 amd64
