@@ -16,6 +16,7 @@
 ~dev-util/strace-4.9 x86 amd64
 ~mail-client/thunderbird-31.3.0 x86 amd64
 ~media-gfx/nomacs-2.2.0 amd64 x86
+~media-video/smtube-14.8.0 x86 amd64
 ~media-plugins/deadbeef-archive-reader-20140219 x86 amd64
 ~media-plugins/deadbeef-bookmark-manager-20140514 x86 amd64
 ~media-plugins/deadbeef-bs2b-20110319 x86 amd64
