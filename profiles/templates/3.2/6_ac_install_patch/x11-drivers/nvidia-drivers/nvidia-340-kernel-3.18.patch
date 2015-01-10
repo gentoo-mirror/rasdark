@@ -4,7 +4,7 @@
 @@ -128,6 +128,10 @@ static struct drm_driver nv_drm_driver =
      .gem_prime_vmap = nv_gem_prime_vmap,
      .gem_prime_vunmap = nv_gem_prime_vunmap,
-.
+
 +#if LINUX_VERSION_CODE >= KERNEL_VERSION(3, 18, 0)
 + .set_busid = drm_pci_set_busid,
 +#endif
@@ -23,7 +23,7 @@ index c8c8af1..00f0973 100644
 -    return nvidia_frontend_ioctl(file->f_dentry->d_inode, file, cmd, i_arg);
 +    return nvidia_frontend_ioctl(file->f_path.dentry->d_inode, file, cmd, i_arg);
  }
-.
+
      long nvidia_frontend_compat_ioctl(
 @@ -336,7 +336,7 @@ long nvidia_frontend_compat_ioctl(
      unsigned long i_arg
@@ -32,7 +32,7 @@ index c8c8af1..00f0973 100644
 -    return nvidia_frontend_ioctl(file->f_dentry->d_inode, file, cmd, i_arg);
 +    return nvidia_frontend_ioctl(file->f_path.dentry->d_inode, file, cmd, i_arg);
  }
-.
+
  int nvidia_frontend_mmap(
 diff --git a/nv.c~ b/nv.c
 index 6b31000..3db114e 100644
@@ -45,5 +45,5 @@ index 6b31000..3db114e 100644
 -    return nvidia_ioctl(file->f_dentry->d_inode, file, cmd, i_arg);
 +    return nvidia_ioctl(file->f_path.dentry->d_inode, file, cmd, i_arg);
  }
-.
+
  /*
