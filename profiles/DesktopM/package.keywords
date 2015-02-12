@@ -89,3 +89,4 @@
 ~dev-libs/nspr-4.10.7-r1 x86 amd64
 
 dev-qt/*:4 x86 amd64
+~dev-qt/qtchooser-0_p20150102 x86 amd64
