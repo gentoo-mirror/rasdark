@@ -87,7 +87,7 @@
 ~x11-plugins/pidgin-toobars-1.14 x86 amd64
 ~app-crypt/gpgme-1.5.2 x86 amd64
 ~media-libs/libpng-1.6.15 x86 amd64
-~dev-libs/nss-3.17.3 x86 amd64
+~dev-libs/nss-3.17.4 x86 amd64
 ~dev-libs/nspr-4.10.7-r1 x86 amd64
 # qt:4
 ~dev-qt/qtchooser-0_p20150102 x86 amd64
