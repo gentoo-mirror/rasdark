@@ -43,7 +43,7 @@
 ~sys-fs/ntfs3g-2014.2.15 x86 amd64
 ~sys-kernel/calculate-sources-3.19.0 x86 amd64
 ~virtual/jre-1.7.0 x86 amd64
-~www-client/firefox-35.0 x86 amd64
+~www-client/firefox-36.0 x86 amd64
 ~x11-libs/libfm-1.2.3 x86 amd64
 ~x11-misc/gxkb-0.7.3 x86 amd64
 ~x11-misc/light-locker-1.4.0-r1 x86 amd64
@@ -57,8 +57,8 @@
 ~dev-libs/isl-0.12.2 x86 amd64
 ~sys-devel/gcc-4.9.2 * amd64 x86
 ~sys-devel/gcc-config-1.8 x86 amd64
-~app-office/libreoffice-4.4.0.3 x86 amd64
-~app-office/libreoffice-l10n-4.4.0.3 x86 amd64
+~app-office/libreoffice-4.4.1.2 x86 amd64
+~app-office/libreoffice-l10n-4.4.1.2 x86 amd64
 ~media-video/mplayer2-2.0_p20131009 x86 amd64
 ~sys-auth/pam_ldap-186-r1 x86 amd64
 ~x11-libs/cairo-1.12.16-r3 x86 amd64
