@@ -1,0 +1,9 @@
+# Calculate format=world name=world ini(overlay-rasdark.world)<9
+
+#-ini(overlay-rasdark.world,9)-#
+
+#?in(os_linux_pkglist, COBRA)!=#
+!www-client/firefox
+!www-plugins/adobe-flash
+www-client/chromium
+#in#

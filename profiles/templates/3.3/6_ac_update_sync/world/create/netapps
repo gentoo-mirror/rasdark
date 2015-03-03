@@ -8,6 +8,5 @@ net-misc/remmina
 net-misc/dropbox
 net-misc/yandex-disk
 net-p2p/deluge
-www-client/firefox
-www-plugins/adobe-flash
+www-client/chromium
 #in#
