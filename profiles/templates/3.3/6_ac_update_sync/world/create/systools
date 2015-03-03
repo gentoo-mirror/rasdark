@@ -8,7 +8,6 @@ app-cdr/cdrtools
 app-cdr/dvd+rw-tools
 app-misc/mc
 app-misc/tmux
-app-portage/genlop
 dev-util/strace
 media-gfx/fbgrab
 net-misc/dhcp
