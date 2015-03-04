@@ -21,7 +21,7 @@
 >=gnome-base/gnome-session-3.12
 >=gnome-base/gnome-settings-daemon-3.12
 >=gnome-base/gnome-shell-3.12
->=gnome-base/libgnome-keyring-3.12
+#>=gnome-base/libgnome-keyring-3.12
 >=gnome-extra/gnome-boxes-3.12
 >=gnome-extra/gnome-calculator-3.12
 >=gnome-extra/gnome-clocks-3.12
