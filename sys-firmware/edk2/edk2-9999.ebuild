@@ -11,7 +11,7 @@ inherit python subversion toolchain-funcs flag-o-matic
 DESCRIPTION="A modern, feature-rich, cross-platform firmware development env. for the UEFI and PI specifications"
 HOMEPAGE="http://sourceforge.net/apps/mediawiki/tianocore"
 SRC_URI=""
-REPO_REV="@16952"
+#REPO_REV="@16952"
 ESVN_REPO_URI="http://edk2.svn.sourceforge.net/svnroot/edk2/trunk/edk2"
 
 LICENSE="BSD"
