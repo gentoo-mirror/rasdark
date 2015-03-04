@@ -47,8 +47,8 @@
 >=sys-apps/gnome-disk-utility-3.12
 >=x11-terms/gnome-terminal-3.12
 >=x11-themes/gnome-backgrounds-3.12
->=x11-themes/gnome-icon-theme-3.12
->=x11-themes/gnome-icon-theme-extras-3.12
+#>=x11-themes/gnome-icon-theme-3.12
+#>=x11-themes/gnome-icon-theme-extras-3.12
 >=x11-themes/gnome-icon-theme-symbolic-3.12
 >=x11-themes/gnome-themes-standard-3.12
 #
