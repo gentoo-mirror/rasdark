@@ -16,7 +16,7 @@
 >=gnome-base/gnome-core-libs-3.12
 >=gnome-base/gnome-desktop-3.12
 >=gnome-base/gnome-extra-apps-3.12
->=gnome-base/gnome-keyring-3.12
+#>=gnome-base/gnome-keyring-3.12
 >=gnome-base/gnome-light-3.12
 >=gnome-base/gnome-session-3.12
 >=gnome-base/gnome-settings-daemon-3.12
