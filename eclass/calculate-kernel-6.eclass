@@ -13,7 +13,7 @@ EXPORT_FUNCTIONS pkg_setup src_unpack src_compile src_install pkg_postinst
 IUSE="vmlinuz minimal"
 
 REQUIRED_USE="minimal? ( vmlinuz )"
-RDEPEND="vmlinuz? ( sys-kernel/dracut )"
+RDEPEND="vmlinuz? ( sys-kernel/dracut app-arch/lz4 )"
 
 detect_version
 detect_arch
@@ -38,6 +38,17 @@ calculate-kernel-6_pkg_setup() {
 
 calculate-kernel-6_src_unpack() {
 	kernel-2_src_unpack
+	cd ${S}
+	local GENTOOARCH="${ARCH}"
+	unset ARCH
+	emake defconfig || die "kernel configure failed"
+	ARCH="${GENTOOARCH}"
+}
+
+vmlinuz_clean_localversion() {
+	sed -ri 's/^(CONFIG_LOCALVERSION=")[^"]+"/\1"/' .config
+	sed -ri 's/^(CONFIG_LOCALVERSION_AUTO)=.*$/# \1 is not set/' .config
+	rm -f localversion*
 }
 
 vmlinuz_src_compile() {
@@ -45,6 +56,7 @@ vmlinuz_src_compile() {
 	local GENTOOARCH="${ARCH}"
 	unset ARCH
 	cd ${S}
+	vmlinuz_clean_localversion
 	emake olddefconfig || die "kernel configure failed"
 	emake && emake modules || die "kernel build failed"
 	[ -f .config ] && cp .config .config.save
@@ -57,13 +69,14 @@ calculate-kernel-6_src_compile() {
 
 vmlinuz_src_install() {
 	# dracut change this files in chroot of ramdisk
-	SANDBOX_WRITE="${SANDBOX_WRITE}:/etc/ld.so.cache~:/etc/ld.so.cache:/etc/mtab"
+	SANDBOX_WRITE="${SANDBOX_WRITE}:/run/blkid:/etc/ld.so.cache~:/etc/ld.so.cache:/etc/mtab"
 	cd ${S}
 	dodir /usr/share/${PN}/${PV}/boot
 	INSTALL_PATH=${D}/usr/share/${PN}/${PV}/boot emake install
 	INSTALL_MOD_PATH=${D} emake modules_install
 	/sbin/depmod -b ${D} ${KV_FULL}
-	/usr/bin/dracut -a calculate -a plymouth -a video -k ${D}/lib/modules/${KV_FULL} \
+	use plymouth && PLYMOUTH="-a plymouth"
+	/usr/bin/dracut -a calculate $PLYMOUTH -a video -k ${D}/lib/modules/${KV_FULL} \
 		--kver ${KV_FULL} \
 		${D}/usr/share/${PN}/${PV}/boot/initramfs-${KV_FULL}
 	# move firmware to share, because /lib/firmware installation does collisions
@@ -112,7 +125,7 @@ clean_for_minimal() {
 		scripts/Makefile.clean scripts/mod/modpost \
 		include/config/kernel.release include/config/auto.conf \
 		arch/x86/Makefile_32.cpu arch/x86/Makefile \
-		System.map Makefile Kbuild"
+		System.map Kconfig Makefile Kbuild"
 	find . -type f -a \! -wholename ./.config \
 		$(echo $KEEPLIST | sed -r 's/(\S+)(\s|$)/-a \! -wholename .\/\1 /g') \
 		-a \! -name "*.h" -delete
@@ -127,7 +140,9 @@ calculate-kernel-6_src_install() {
 	kernel-2_src_install
 	if ! use vmlinuz
 	then
-		cp .config ${D}/usr/share/${PN}/${PV}/boot/config-${KV_FULL}
+		dodir /usr/share/${PN}/${PV}/boot
+		insinto /usr/share/${PN}/${PV}/boot
+		newins .config config-${KV_FULL}
 	fi
 	use vmlinuz && touch ${D}/usr/src/linux-${KV_FULL}/.calculate
 }
