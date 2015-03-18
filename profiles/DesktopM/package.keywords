@@ -8,7 +8,7 @@
 ~app-editors/gvim-7.4.527 x86 amd64
 ~app-editors/vim-core-7.4.527 x86 amd64
 ~app-emulation/wine-1.7.29 x86 amd64
-~app-emulation/winetricks-20140302 x86 amd64
+~app-emulation/winetricks-20141130 x86 amd64
 ~app-forensics/scalpel-2.0 x86 amd64
 ~app-text/qpdfview-0.4.12 amd64 x86
 ~app-shells/zsh-completions-0.12.0-r1 x86 amd64
