@@ -20,7 +20,7 @@ IUSE=""
 DEPEND="dev-qt/qtcore:4
 	dev-qt/qtgui:4"
 RDEPEND="${DEPEND}
-	|| ( media-video/smplayer media-video/mplayer media-video/vlc kde-base/dragon media-video/totem media-video/gnome-mplayer )"
+	|| ( media-video/mpv media-video/smplayer media-video/mplayer media-video/vlc kde-base/dragon media-video/totem media-video/gnome-mplayer )"
 
 src_prepare() {
 	eqmake4 src/${PN}.pro
