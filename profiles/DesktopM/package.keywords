@@ -59,7 +59,6 @@
 ~sys-devel/gcc-config-1.8 x86 amd64
 ~app-office/libreoffice-4.4.1.2 x86 amd64
 ~app-office/libreoffice-l10n-4.4.1.2 x86 amd64
-~media-video/mplayer2-2.0_p20131009 x86 amd64
 ~sys-auth/pam_ldap-186-r1 x86 amd64
 ~x11-libs/cairo-1.12.16-r3 x86 amd64
 # for office
@@ -82,7 +81,8 @@
 ~media-libs/libpagemaker-0.0.2 x86 amd64
 ~media-libs/libvisio-0.1.0 x86 amd64
 #
-~media-video/smplayer-14.9.0-r1 x86 amd64
+~media-video/smplayer-14.9.0.6690-r3 x86 amd64
+~media-video/mpv-0.8.3 x86 amd64
 ~x11-plugins/pidgin-gpg-0.9 x86 amd64
 ~x11-plugins/pidgin-toobars-1.14 x86 amd64
 ~app-crypt/gpgme-1.5.2 x86 amd64
