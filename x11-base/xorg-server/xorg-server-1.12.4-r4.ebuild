@@ -17,7 +17,7 @@ SRC_URI="${SRC_URI} mirror://gentoo/${PN}-1.12-cve-2014-8091..8103.patches.tar.x
 IUSE_SERVERS="dmx kdrive xnest xorg xvfb"
 IUSE="${IUSE_SERVERS} ipv6 minimal nptl selinux tslib +udev"
 
-RDEPEND=">=app-admin/eselect-opengl-1.0.8
+RDEPEND=">=app-eselect/eselect-opengl-1.0.8
 	dev-libs/openssl
 	media-libs/freetype
 	>=x11-apps/iceauth-1.0.2
