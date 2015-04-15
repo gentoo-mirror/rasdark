@@ -6,7 +6,8 @@ lmb_slider=true
 mmb_mute=false
 use_horizontal_slider=false
 show_sound_level=false
-onclick=bash -c "/usr/bin/alsamixer"
+use_transparent_background=true
+onclick=urxvt -e /usr/bin/alsamixer
 theme=White Gnome
 
 [Hotkeys]
