@@ -59,6 +59,7 @@ IUSE_VIDEO_CARDS="
 	video_cards_savage
 	video_cards_siliconmotion
 	video_cards_sis
+	video_cards_sis671
 	video_cards_sunbw2
 	video_cards_suncg14
 	video_cards_suncg3
@@ -128,6 +129,7 @@ PDEPEND="
 	video_cards_savage?        ( x11-drivers/xf86-video-savage )
 	video_cards_siliconmotion? ( x11-drivers/xf86-video-siliconmotion )
 	video_cards_sis?           ( x11-drivers/xf86-video-sis )
+	video_cards_sis671?        ( x11-drivers/xf86-video-sis671 )
 	video_cards_suncg14?       ( x11-drivers/xf86-video-suncg14 )
 	video_cards_suncg3?        ( x11-drivers/xf86-video-suncg3 )
 	video_cards_suncg6?        ( x11-drivers/xf86-video-suncg6 )
