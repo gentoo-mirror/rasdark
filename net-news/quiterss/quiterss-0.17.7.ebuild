@@ -36,7 +36,7 @@ DEPEND="${RDEPEND}
 "
 
 [[ ${PV} == *9999* ]] || \
-S="${WORKDIR}/${MY_P}"
+S="${WORKDIR}/"
 
 DOCS=( AUTHORS HISTORY_EN HISTORY_RU README )
 
