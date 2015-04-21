@@ -15,7 +15,7 @@ MY_P="QuiteRSS-${PV}-src"
 DESCRIPTION="A Qt4-based RSS/Atom feed reader"
 HOMEPAGE="https://quiterss.org"
 [[ ${PV} == *9999* ]] || \
-SRC_URI="https://quiterss.org/files/${PV}/${MY_P}.tar.bz2"
+SRC_URI="https://quiterss.org/files/${PV}/${MY_P}.tar.gz"
 
 LICENSE="GPL-3"
 SLOT="0"
