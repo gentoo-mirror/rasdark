@@ -41,7 +41,7 @@
 ~sci-calculators/speedcrunch-0.11-r2 x86 amd64
 ~sys-fs/cryptsetup-1.6.6 x86 amd64
 ~sys-fs/ntfs3g-2014.2.15 x86 amd64
-~sys-kernel/calculate-sources-3.19.4 x86 amd64
+~sys-kernel/calculate-sources-3.19.5 x86 amd64
 ~virtual/jre-1.7.0 x86 amd64
 ~x11-libs/libfm-1.2.3 x86 amd64
 ~x11-libs/libfm-extra-1.2.3 x86 amd64
@@ -105,3 +105,4 @@
 ~media-video/ffmpeg-2.6.1 x86 amd64
 ~media-sound/volumeicon-0.5.0 x86 amd64
 ~www-client/firefox-37.0.1 x86 amd64
+~virtual/jre-1.8.0 x86 amd64
