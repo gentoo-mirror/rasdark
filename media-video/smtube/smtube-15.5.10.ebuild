@@ -4,7 +4,7 @@
 #
 EAPI=5
 
-PLOCALES="el en es eu gl hu ja lt pl pt ru_RU zh_CN"
+PLOCALES="en es"
 PLOCALE_BACKUP="en"
 
 inherit l10n qt4-r2
