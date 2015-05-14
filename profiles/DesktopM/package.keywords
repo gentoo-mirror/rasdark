@@ -78,3 +78,13 @@
 ~x11-plugins/purple-plugin_pack-2.7.0-r1 x86 amd64
 ~x11-themes/pidgin-penguins-smileys-1.0 x86 amd64
 ~x11-themes/smplayer-skins-15.2.0 x86 amd64
+~sys-kernel/linux-firmware-20150320 x86 amd64
+~sys-boot/os-prober x86 amd64
+~sys-boot/os-prober-1.65 x86 amd64
+~sys-apps/ethtool-3.18 x86 amd64
+~sys-devel/gettext-0.19.4 x86 amd64
+~sys-power/cpupower-3.18 x86 amd64
+~app-cdr/cdrtools-3.01_alpha28 x86 amd64
+~net-wireless/wpa_supplicant-2.4-r3 x86 amd64
+~app-i18n/man-pages-ru-3.71.2209.1992.20140911 x86 amd64
+~net-misc/dropbox-2.10.41-r1 x86 amd64

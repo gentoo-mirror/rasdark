@@ -9,8 +9,6 @@ app-shells/gentoo-zsh-completions
 media-fonts/terminus-font
 sys-apps/ifplugd
 sys-apps/less
-sys-fs/btrfs-progs
-sys-fs/nilfs-utils
 sys-fs/ntfs3g
 sys-fs/reiserfsprogs
 sys-kernel/dracut

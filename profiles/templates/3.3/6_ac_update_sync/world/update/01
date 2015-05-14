@@ -28,7 +28,6 @@ sys-apps/ethtool
 sys-apps/ifplugd
 sys-apps/inxi
 sys-apps/usbutils
-sys-fs/btrfs-progs
 sys-fs/cryptsetup
 sys-fs/extundelete
 sys-kernel/dracut
@@ -99,7 +98,6 @@ sys-apps/smartmontools
 sys-block/gparted
 sys-fs/dosfstools
 sys-fs/mtools
-sys-fs/nilfs-utils
 sys-fs/ntfs3g
 sys-fs/reiserfsprogs
 sys-power/acpi

@@ -1,0 +1,8 @@
+# Calculate format=world name=world ini(overlay-rasdark.world)<14
+
+#-ini(overlay-rasdark.world,14)-#
+
+#?in(os_linux_pkglist, COBRA)!=#
+!sys-fs/btrfs-progs
+!sys-fs/nilfs-utils
+#in#

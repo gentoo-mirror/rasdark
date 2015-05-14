@@ -79,3 +79,6 @@ x11-misc/x11vnc fbcon
 sys-apps/calculate-utils client console desktop qt4 server
 sys-fs/eudev gudev
 media-video/smplayer qt4
+media-libs/libpng apng
+www-client/links -X
+gnome-extra/nm-applet -bluetooth
