@@ -1,7 +1,7 @@
 app-admin/testdisk ntfs reiserfs
 app-arch/p7zip rar
 app-editors/gvim neXt perl python
-app-emulation/wine vaapi staging
+app-emulation/wine -vaapi -staging
 app-emulation/winetricks -gtk
 app-misc/mc -spell gpm
 app-office/libreoffice gtk -bluetooth opengl -vlc
