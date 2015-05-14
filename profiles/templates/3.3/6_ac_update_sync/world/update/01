@@ -61,7 +61,7 @@ app-text/qpdfview
 app-vim/vim-spell-en
 app-vim/vim-spell-es
 app-vim/vim-spell-ru
-dev-util/gsimplecal
+x11-misc/gsimplecal
 dev-util/strace
 gnome-extra/nm-applet
 lxde-base/lxmenu-data
