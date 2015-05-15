@@ -61,7 +61,7 @@
 ~sys-kernel/calculate-sources-3.19.8 x86 amd64
 ~virtual/jre-1.7.0 x86 amd64
 ~virtual/jre-1.8.0 x86 amd64
-~www-client/firefox-37.0.2 x86 amd64
+~www-client/firefox-38.0.1 x86 amd64
 ~x11-libs/cairo-1.14.2 x86 amd64
 ~x11-libs/libfm-1.2.3 x86 amd64
 ~x11-libs/libfm-extra-1.2.3 x86 amd64
