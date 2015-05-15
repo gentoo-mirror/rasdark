@@ -89,3 +89,5 @@
 ~net-misc/dropbox-2.10.41-r1 x86 amd64
 ~dev-util/mdds-0.12.0 x86 amd64
 ~media-libs/libass-0.12.2 x86 amd64
+=dev-libs/libixion-0.9.0 x86 amd64
+=dev-libs/liborcus-0.7.1 x86 amd64
