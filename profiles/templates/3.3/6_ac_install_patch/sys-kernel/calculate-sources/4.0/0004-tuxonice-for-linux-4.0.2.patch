@@ -1,4 +1,4 @@
-# Calculate format=diff
+# Calculate format=diff pkg(sys-kernel/calculate-sources)==4.0.2
 diff --git a/Documentation/kernel-parameters.txt b/Documentation/kernel-parameters.txt
 index bfcb1a6..d934053 100644
 --- a/Documentation/kernel-parameters.txt
