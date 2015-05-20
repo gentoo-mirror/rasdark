@@ -83,3 +83,4 @@ media-libs/libpng apng
 www-client/links -X
 gnome-extra/nm-applet -bluetooth
 media-gfx/nomacs raw tiff opencv
+x11-misc/tint2 battery tint2conf
