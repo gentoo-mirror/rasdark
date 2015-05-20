@@ -45,7 +45,7 @@
 ~media-video/ffmpeg-2.6.2 x86 amd64
 ~media-video/mpv-0.9.1 x86 amd64
 ~media-video/smplayer-14.9.0.6690-r3 x86 amd64
-~media-video/smtube-15.5.10 x86 amd64
+~media-video/smtube-15.5.17 x86 amd64
 ~media-video/v4l2ucp-9999 x86 amd64
 ~net-dns/bind-tools-9.10.2 x86 amd64
 ~net-misc/remmina-1.2.0_rc3 x86 amd64
