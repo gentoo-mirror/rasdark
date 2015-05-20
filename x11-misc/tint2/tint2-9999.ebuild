@@ -4,7 +4,7 @@
 
 EAPI="5"
 
-inherit cmake-utils eutils gnome2-utils git-2
+inherit cmake-utils gnome2-utils git-2
 
 DESCRIPTION="A lightweight panel/taskbar"
 HOMEPAGE="https://gitlab.com/o9000/tint2.git"
@@ -35,11 +35,7 @@ DEPEND="${RDEPEND}
         virtual/pkgconfig
         x11-proto/xineramaproto"
 
-src_prepare() {
-	if use tint2conf ; then
-                epatch ${FILESDIR}/gtk-update-icon-cache.patch
-        fi
-}
+PATCHES=( "${FILESDIR}/${PN}-update-icon-cache.patch" )
 
 src_configure() {
         local mycmakeargs=(
@@ -55,10 +51,7 @@ src_configure() {
 
 src_install() {
         cmake-utils_src_install
-
         if use tint2conf ; then
-                rm "${D}/usr/bin/tintwizard.py" || die
-
                 gnome2_icon_cache_update
         fi
 }
