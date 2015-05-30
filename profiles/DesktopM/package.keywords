@@ -49,8 +49,8 @@
 ~media-plugins/deadbeef-vu-meter-20140914 x86 amd64
 ~media-plugins/deadbeef-waveform-seekbar-0.5 x86 amd64
 ~media-sound/volumeicon-0.5.1 x86 amd64
-~media-video/ffmpeg-2.6.2 x86 amd64
-~media-video/mpv-0.9.1 x86 amd64
+~media-video/ffmpeg-2.6.3 x86 amd64
+~media-video/mpv-0.9.2-r1 x86 amd64
 ~media-video/smplayer-14.9.0.6690-r3 x86 amd64
 ~media-video/smtube-15.5.17 x86 amd64
 ~media-video/v4l2ucp-9999 x86 amd64
