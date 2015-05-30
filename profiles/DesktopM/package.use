@@ -1,4 +1,3 @@
-app-admin/testdisk ntfs reiserfs
 app-arch/p7zip rar
 app-editors/gvim neXt perl python
 app-emulation/wine -vaapi -staging
@@ -6,21 +5,26 @@ app-emulation/winetricks -gtk
 app-misc/mc -spell gpm
 app-office/libreoffice gtk -bluetooth opengl -vlc
 app-portage/layman git mercurial
-app-text/poppler qt4
 app-shells/zsh doc examples
+app-text/poppler qt4
 dev-db/sqlite secure-delete
 dev-java/oracle-jre-bin fontconfig jce nsplugin
+dev-lang/python sqlite
 dev-libs/boost python
 dev-libs/elfutils static-libs
 dev-libs/libgcrypt static-libs
 dev-libs/libgpg-error static-libs
+dev-libs/libxml2 icu python
 dev-libs/popt static-libs
 dev-qt/qtgui gtkstyle
 dev-vcs/git -gtk
+gnome-extra/nm-applet -bluetooth
 mail-client/claws-mail pdf rss smime webkit xface -libindicate
 mail-client/thunderbird custom-cflags custom-optimization minimal system-cairo system-icu system-jpeg system-sqlite
 media-fonts/terminus-font X pcf
+media-gfx/nomacs raw tiff opencv
 media-libs/harfbuzz icu
+media-libs/libpng apng
 media-libs/opencv qt4
 media-libs/sdl-mixer mikmod mod
 media-plugins/deadbeef-fb -gtk2 gtk3
@@ -36,6 +40,7 @@ media-sound/deadbeef aac alsa cdda converter dts ffmpeg flac gtk3 hotkeys libnot
 media-sound/lame mp3rtp sndfile
 media-video/ffmpeg threads
 media-video/mplayer2 lcms pvr yuv4mpeg
+media-video/smplayer qt4
 net-analyzer/nmap -lua ncat ndiff nmap-update nping zenmap
 net-analyzer/wireshark -adns geoip -gtk3 smi
 net-dns/bind-tools ipv6 gost idn
@@ -49,38 +54,31 @@ net-misc/remmina -avahi freerdp gnome-keyring ssh vte
 net-p2p/deluge geoip setproctitle webinterface sound
 net-wireless/lorcon python
 sci-libs/fftw -fortran
+sys-apps/calculate-utils client console desktop qt4 server
 sys-apps/util-linux static-libs
 sys-block/gparted btrfs dmraid fat jfs mdadm ntfs reiserfs xfs
+sys-devel/gcc -fortran graphite
 sys-fs/cryptsetup kernel -gcrypt -nettle -openssl udev static-libs
+sys-fs/eudev gudev static-libs
 sys-fs/lvm2 lvm2create_initrd static-libs -thin
 sys-fs/mtools -X
 sys-fs/ntfs3g ntfsprogs ntfsdecrypt -external-fuse
-sys-fs/udev gudev
-sys-fs/udev static-libs
-sys-fs/eudev static-libs
-virtual/libudev static-libs
+sys-fs/udev gudev static-libs
 sys-fs/udisks cryptsetup
 sys-kernel/calculate-sources -minimal firmware
 sys-libs/e2fsprogs-libs static-libs
+sys-libs/zlib minizip
 virtual/libgudev static-libs
 virtual/libudev static-libs
 virtual/udev static-libs
 www-client/dwb examples -gtk3
 www-client/firefox custom-cflags custom-optimization minimal system-cairo system-icu system-jpeg system-sqlite
+www-client/links -X
+x11-libs/libdrm libkms
 x11-libs/libfm udisks
 x11-misc/light-locker upower
 x11-misc/lightdm -introspection
+x11-misc/tint2 battery tint2conf
+x11-misc/x11vnc fbcon
 x11-terms/rxvt-unicode 256-color xft
 x11-wm/openbox imlib xdg
-# gcc
-sys-devel/gcc -fortran graphite
-x11-misc/x11vnc fbcon
-#
-sys-apps/calculate-utils client console desktop qt4 server
-sys-fs/eudev gudev
-media-video/smplayer qt4
-media-libs/libpng apng
-www-client/links -X
-gnome-extra/nm-applet -bluetooth
-media-gfx/nomacs raw tiff opencv
-x11-misc/tint2 battery tint2conf
