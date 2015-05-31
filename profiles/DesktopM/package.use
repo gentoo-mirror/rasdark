@@ -82,4 +82,4 @@ x11-misc/tint2 battery tint2conf
 x11-misc/x11vnc fbcon
 x11-terms/rxvt-unicode 256-color xft
 x11-wm/openbox imlib xdg
-app-admin/testdist ntfs qt4 reiserfs
+app-admin/testdisk ntfs qt4 reiserfs
