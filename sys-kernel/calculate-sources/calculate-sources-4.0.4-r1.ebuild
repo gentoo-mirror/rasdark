@@ -18,11 +18,12 @@ DEPEND="vmlinuz? ( || ( app-arch/xz-utils app-arch/lzma-utils )
 		sys-boot/grub
 	)
 	firmware? ( sys-kernel/linux-firmware )
-	themes? ( media-gfx/plymouth-themes-calculate )
-	plymouth? ( sys-boot/plymouth sys-boot/plymouth-openrc-plugin )
+	themes? ( media-gfx/splash-themes-calculate )
 	"
 
-RDEPEND="${DEPEND}"
+RDEPEND="${DEPEND}
+!<app-emulation/virtualbox-modules-4.3.24
+"
 
 SRC_URI="${KERNEL_URI} ${ARCH_URI}"
 
