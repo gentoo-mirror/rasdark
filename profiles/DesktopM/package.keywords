@@ -1,4 +1,5 @@
 ~dev-libs/glib-2.44.1 x86 amd64
+~dev-util/gdbus-codegen-2.44.1 x86 amd64
 =dev-qt/qtcore-4.8.6* x86 amd64
 =dev-qt/qtdbus-4.8.6* x86 amd64
 =dev-qt/qtgui-4.8.6* x86 amd64
