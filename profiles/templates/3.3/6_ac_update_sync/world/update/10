@@ -1,0 +1,7 @@
+# Calculate format=world name=world ini(overlay-rasdark.world)<10
+
+#-ini(overlay-rasdark.world,10)-#
+
+#?in(os_linux_pkglist, COBRA)!=#
+!app-portage/genlop
+#in#

@@ -1,0 +1,8 @@
+# Calculate format=world name=world ini(overlay-rasdark.world)<4
+
+#-ini(overlay-rasdark.world,4)-#
+
+#?in(os_linux_pkglist, COBRA)!=#
+!x11-misc/notification-daemon
+x11-misc/mate-notification-daemon
+#in#

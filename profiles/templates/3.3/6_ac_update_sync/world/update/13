@@ -1,0 +1,8 @@
+# Calculate format=world name=world ini(overlay-rasdark.world)<13
+
+#-ini(overlay-rasdark.world,13)-#
+
+#?in(os_linux_pkglist, COBRA)!=#
+!dev-util/gsimplecal
+x11-misc/gsimplecal
+#in#
