@@ -1,7 +1,8 @@
+app-admin/testdisk ntfs qt4 reiserfs
 app-arch/p7zip rar
 app-editors/gvim neXt perl python
-app-emulation/wine -vaapi -staging
 app-emulation/winetricks -gtk
+app-emulation/wine -vaapi -staging
 app-misc/mc -spell gpm
 app-office/libreoffice gtk -bluetooth opengl -vlc
 app-portage/layman git mercurial
@@ -16,7 +17,9 @@ dev-libs/libgcrypt static-libs
 dev-libs/libgpg-error static-libs
 dev-libs/libxml2 icu python
 dev-libs/popt static-libs
+dev-python/pyside -webkit
 dev-qt/qtgui gtkstyle
+dev-qt/qtsql -mysql sqlite
 dev-vcs/git -gtk
 gnome-extra/nm-applet -bluetooth
 mail-client/claws-mail pdf rss smime webkit xface -libindicate
@@ -46,7 +49,7 @@ net-analyzer/wireshark -adns geoip -gtk3 smi
 net-dns/bind-tools ipv6 gost idn
 net-fs/cifs-utils -acl
 net-fs/samba -winbind
-net-irc/kvirc -audiofile -oss -theora -dcc_voice -phonon doc qt4
+net-irc/kvirc -audiofile -oss -theora -dcc_voice -phonon doc qt4 -webkit
 net-libs/libpcap netlink
 net-libs/rb_libtorrent python
 net-libs/webkit-gtk -introspection -geoloc libsecret
@@ -76,10 +79,9 @@ www-client/firefox custom-cflags custom-optimization minimal system-cairo system
 www-client/links -X
 x11-libs/libdrm libkms
 x11-libs/libfm udisks
-x11-misc/light-locker upower
 x11-misc/lightdm -introspection
+x11-misc/light-locker upower
 x11-misc/tint2 battery tint2conf
 x11-misc/x11vnc fbcon
 x11-terms/rxvt-unicode 256-color xft
 x11-wm/openbox imlib xdg
-app-admin/testdisk ntfs qt4 reiserfs
