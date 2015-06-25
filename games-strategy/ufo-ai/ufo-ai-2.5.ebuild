@@ -64,6 +64,7 @@ src_prepare() {
 src_configure() {
 	# they are special and provide hand batched configure file
 	local myconf="
+		--target-os=linux
 		--disable-dependency-tracking
 		$(use_enable !debug release)
 		$(use_enable editor ufo2map)
