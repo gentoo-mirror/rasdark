@@ -15,11 +15,11 @@ EGIT_BRANCH="master"
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS=""
-IUSE="debug dedicated editor"
+IUSE="debug server +client editor sse"
 
 # Dependencies and more instructions can be found here:
 # http://ufoai.ninex.info/wiki/index.php/Compile_for_Linux
-DEPEND="!dedicated? (
+DEPEND="client? (
 		virtual/opengl
 		virtual/glu
 		media-libs/libsdl
@@ -32,10 +32,10 @@ DEPEND="!dedicated? (
 		media-libs/libvorbis
 		x11-proto/xf86vidmodeproto
 	)
+	dev-lang/lua
 	net-misc/curl
 	sys-devel/gettext
 	sys-libs/zlib
-	dev-lang/lua
 	editor? (
 		dev-libs/libxml2
 		virtual/jpeg
@@ -43,6 +43,7 @@ DEPEND="!dedicated? (
 		x11-libs/gtkglext
 		x11-libs/gtksourceview:2.0
 	)"
+RDEPEND="${DEPEND}"
 
 S=${WORKDIR}/${MY_P}-source
 
@@ -54,11 +55,10 @@ src_prepare() {
 	# don't try to use the system mini-xml
 	sed -i -e '/mxml/d' configure || die
 
-	epatch \
-		"${FILESDIR}"/${P}-mathlib.patch
+        # fix llua5.1 build error
+        sed -i -e 's/lua5.1/lua/g' build/default.mk || die
 
-#	cp "${DISTDIR}"/1maps.pk3 "${WORKDIR}"/base/ || die
-#	mv "${WORKDIR}"/base/ "${S}"/ || die
+	epatch "${FILESDIR}"/${P}-mathlib.patch
 }
 
 src_configure() {
@@ -66,18 +66,23 @@ src_configure() {
 	local myconf="
 		--target-os=linux
 		--disable-dependency-tracking
+		--disable-testall
 		$(use_enable !debug release)
 		$(use_enable editor ufo2map)
 		$(use_enable editor uforadiant)
-		--enable-ufoded
+		$(use_enable server ufoded)
+		$(use_enable client ufo)
+		$(use_enable sse)
+		--enable-game
+		--disable-paranoid
 		--bindir="${GAMES_BINDIR}"
 		--libdir="$(games_get_libdir)"
 		--datadir="${GAMES_DATADIR}/${PN/-}"
 		--localedir="${EPREFIX}/usr/share/locale/"
 		--prefix="${GAMES_PREFIX}"
 	"
-        echo "./configure ${myconf}"
-        ./configure ${myconf} || die
+	echo "./configure ${myconf}"
+	./configure ${myconf} || die
 }
 
 src_compile() {
@@ -92,9 +97,11 @@ src_compile() {
 
 src_install() {
 	newicon src/ports/linux/ufo.png ${PN}.png
-	dobin ufoded
-	make_desktop_entry ufoded "UFO: Alien Invasion Server" ${PN}
-	if ! use dedicated; then
+	if use server; then
+	    dobin ufoded
+	    make_desktop_entry ufoded "UFO: Alien Invasion Server" ${PN}
+	fi
+	if use client; then
 		dobin ufo
 		make_desktop_entry ufo "UFO: Alien Invasion" ${PN}
 	fi
