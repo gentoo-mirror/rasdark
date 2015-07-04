@@ -1,5 +1,7 @@
 ~dev-libs/glib-2.44.1 x86 amd64
 ~dev-util/gdbus-codegen-2.44.1 x86 amd64
+~dev-qt/qtsingleapplication-2.6.1_p20150629 x86 amd64
+~dev-qt/qtlockedfile-2.4.1_p20150629 x86 amd64
 =dev-qt/qtcore-4.8.6* x86 amd64
 =dev-qt/qtdbus-4.8.6* x86 amd64
 =dev-qt/qtgui-4.8.6* x86 amd64
@@ -73,7 +75,7 @@
 ~sys-devel/gettext-0.19.4 x86 amd64
 ~sys-fs/cryptsetup-1.6.7 x86 amd64
 ~sys-fs/ntfs3g-2014.2.15-r1 x86 amd64
-~sys-kernel/calculate-sources-4.0.6 x86 amd64
+~sys-kernel/calculate-sources-4.0.7 x86 amd64
 ~sys-kernel/linux-firmware-20150320 x86 amd64
 ~sys-power/cpupower-3.18 x86 amd64
 ~virtual/jre-1.7.0 x86 amd64
