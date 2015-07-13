@@ -3,7 +3,7 @@
 # $Header: /var/cvsroot/gentoo-x86/net-news/quiterss/quiterss-0.15.4.ebuild,v 1.1 2014/04/26 19:13:54 maksbotan Exp $
 
 EAPI=5
-PLOCALES="ar bg cs de el_GR en es fa fi fr gl he hi hu it ja ko lt nl pl pt_BR pt_PT ro_RO ru sk sr sv tg_TJ th_TH tr uk vi zh_CN zh_TW"
+PLOCALES="ar bg cs de el_GR en es fa fi fr gl hi hu it ja ko lt nl pl pt_BR pt_PT ro_RO ru sk sr sv tg_TJ tr uk vi zh_CN zh_TW"
 PLOCALE_BACKUP="en"
 
 inherit qt4-r2 l10n fdo-mime gnome2-utils eutils
@@ -34,9 +34,9 @@ S="${WORKDIR}/"
 
 DOCS=( AUTHORS HISTORY_EN HISTORY_RU README.md )
 
-src_prepare() {
-    l10n_find_plocales_changes "${S}/lang" "${PN}_" '.ts'
-}
+#src_prepare() {
+#    l10n_find_plocales_changes "${S}/lang" "${PN}_" '.ts'
+#}
 
 src_configure() {
         eqmake5 PREFIX="${EPREFIX}/usr" \
@@ -45,10 +45,8 @@ src_configure() {
 }
 
 gen_translation() {
-        local mydir
-        mydir="$(qt5_get_bindir)"
         ebegin "Generating $1 translation"
-        "${mydir}"/lrelease ${PN}_${1}.ts
+        lrelease ${PN}_${1}.ts
         eend $? || die "failed to generate $1 translation"
 }
 
@@ -59,6 +57,11 @@ src_compile() {
         l10n_for_each_locale_do gen_translation
 }
 
+del_locale() {
+    rm "${D}"usr/share/$PN/lang/${PN}_${1}.qm
+    eend $? || die "failed to remove $1 translation"
+}
+
 pkg_preinst() {
 	gnome2_icon_savelist
 }
@@ -66,6 +69,7 @@ pkg_preinst() {
 pkg_postinst() {
 	fdo-mime_desktop_database_update
 	gnome2_icon_cache_update
+	l10n_for_each_disabled_locale_do del_locale
 }
 
 pkg_postrm() {
