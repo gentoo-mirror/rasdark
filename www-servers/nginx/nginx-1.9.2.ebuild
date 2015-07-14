@@ -323,6 +323,11 @@ src_prepare() {
 			sed -i -e "/${module}/d" auto/install || die
 		fi
 	done
+
+       if use nginx_modules_http_pagespeed; then
+            mv ${WORKDIR}/psol ${HTTP_PAGESPEED_MODULE_WD}
+       fi
+
 }
 
 src_configure() {
@@ -470,11 +475,10 @@ src_configure() {
 		http_enabled=1
 		myconf+=( --add-module=${HTTP_MEMC_MODULE_WD} )
 	fi
-        if use nginx_modules_http_pagespeed; then
-            	mv ${WORKDIR}/psol ${HTTP_PAGESPEED_MODULE_WD}
-        	if use nginx_modules_http_pagespeed ; then
-                	myconf+=" --add-module=${HTTP_PAGESPEED_MODULE_WD}"
-		fi
+
+       	if use nginx_modules_http_pagespeed ; then
+		http_enabled=1
+               	myconf+=( --add-module=${HTTP_PAGESPEED_MODULE_WD} )
 	fi
 
 	if use http || use http-cache; then
