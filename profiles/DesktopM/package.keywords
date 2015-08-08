@@ -98,3 +98,4 @@
 ~x11-themes/pidgin-penguins-smileys-1.0 x86 amd64
 ~x11-themes/smplayer-skins-15.2.0 x86 amd64
 ~x11-libs/gtk+-2.24.28 x86 amd64
+~net-libs/rb_libtorrent-1.0.5 x86 amd64
