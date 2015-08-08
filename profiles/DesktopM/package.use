@@ -49,7 +49,7 @@ net-analyzer/wireshark -adns geoip -gtk3 smi
 net-dns/bind-tools ipv6 gost idn
 net-fs/cifs-utils -acl
 net-fs/samba -winbind
-net-irc/kvirc -audiofile -oss -theora -dcc_voice -phonon doc qt4 -webkit
+net-irc/kvirc -audiofile -oss -theora -dcc_voice -phonon doc qt4 -webkit -dcc_video
 net-libs/libpcap netlink
 net-libs/rb_libtorrent python
 net-libs/webkit-gtk -introspection -geoloc libsecret
