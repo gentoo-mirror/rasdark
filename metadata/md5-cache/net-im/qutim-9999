@@ -1,0 +1,12 @@
+_eclasses_=toolchain-funcs	4b8d3388c0a6e798504e20ba30b49361	git-r3	1502b9838d043db47700b8120083e637	multilib	df4e4d5cfd3d137d0c248e1991c0e4d6	eutils	351a78113be5b393c09a2c948701ad36
+_md5_=cad11f0d4b8e9ce7058e2bc44da2eb45
+SLOT=0
+DEFINED_PHASES=compile configure install prepare unpack
+EAPI=5
+DEPEND=>=dev-qt/qtcore-5.5 >=dev-qt/qtnetwork-5.5 >=dev-qt/qtx11extras-5.5 >=dev-qt/qtwidgets-5.5 >=dev-qt/qtscript-5.5 >=dev-qt/qtquick1-5.5 >=dev-qt/qtxmlpatterns-5.5 >=dev-qt/qtwebsockets-5.5 >=dev-qt/qtwebchannel-5.5[qml] >=dev-qt/qtconcurrent-5.5 >=dev-qt/qtmultimedia-5.5 sdl? ( media-libs/sdl-mixer ) indicator? ( dev-libs/libindicate-qt ) app-crypt/qca virtual/gsasl dev-libs/qtkeychain[qt5] dev-util/qbs clang? ( >=sys-devel/clang-3.5.0 ) >=dev-vcs/git-1.8.2.1
+DESCRIPTION=Qt4-based multi-protocol instant messenger
+LICENSE=GPL-3
+IUSE=clang debug sdl +vkontakte -indicator linguas_ar linguas_be linguas_bg linguas_cs linguas_cv linguas_de linguas_en_GB linguas_es linguas_fr linguas_he linguas_kk linguas_nds linguas_ru linguas_sk linguas_uk linguas_uz linguas_zh_CN
+KEYWORDS=**
+HOMEPAGE=http://www.qutim.org
+RDEPEND=>=dev-qt/qtcore-5.5 >=dev-qt/qtnetwork-5.5 >=dev-qt/qtx11extras-5.5 >=dev-qt/qtwidgets-5.5 >=dev-qt/qtscript-5.5 >=dev-qt/qtquick1-5.5 >=dev-qt/qtxmlpatterns-5.5 >=dev-qt/qtwebsockets-5.5 >=dev-qt/qtwebchannel-5.5[qml] >=dev-qt/qtconcurrent-5.5 >=dev-qt/qtmultimedia-5.5 sdl? ( media-libs/sdl-mixer ) indicator? ( dev-libs/libindicate-qt ) app-crypt/qca virtual/gsasl dev-libs/qtkeychain[qt5]

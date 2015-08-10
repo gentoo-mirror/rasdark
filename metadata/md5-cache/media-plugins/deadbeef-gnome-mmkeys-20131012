@@ -1,0 +1,13 @@
+_eclasses_=toolchain-funcs	4b8d3388c0a6e798504e20ba30b49361	deadbeef-plugins	7c8fe03766edd0d6acdc92e6fc07974d	multilib	df4e4d5cfd3d137d0c248e1991c0e4d6	eutils	351a78113be5b393c09a2c948701ad36
+_md5_=9d05f3f61c2e35d6e34aa4b5459a194d
+SLOT=0
+DEFINED_PHASES=prepare
+EAPI=5
+DEPEND=media-sound/deadbeef
+DESCRIPTION=DeaDBeeF gnome (via dbus) multimedia keys plugin
+LICENSE=GPL-2
+RESTRICT=mirror
+SRC_URI=https://github.com/barthez/deadbeef-gnome-mmkeys/archive/8e95cd380ba457fe6b666e5e704aa823d5eca1fa.tar.gz -> deadbeef-gnome-mmkeys-20131012.tar.gz
+KEYWORDS=~*
+HOMEPAGE=https://github.com/barthez/deadbeef-gnome-mmkeys
+RDEPEND=sys-apps/dbus media-sound/deadbeef
