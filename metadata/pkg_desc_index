@@ -8,8 +8,7 @@ media-plugins/deadbeef-bookmark-manager 20140514 99999999: DeaDBeeF bookmark man
 media-plugins/deadbeef-bs2b 20110319 99999999: DeaDBeeF bs2b dsp plugin
 media-plugins/deadbeef-fb 20140904 99999999: DeaDBeeF filebrowser plugin
 media-plugins/deadbeef-gnome-mmkeys 20131012 99999999: DeaDBeeF gnome (via dbus) multimedia keys plugin
-media-plugins/deadbeef-infobar 1.4: DeaDBeeF infobar plugin for DeadBeeF that shows lyrics and artist's biography for the current track
-media-plugins/deadbeef-infobar 9999: DeaDBeeF infobar plugin that shows lyrics and artist's biography for the current track
+media-plugins/deadbeef-infobar 1.4 9999: DeaDBeeF infobar plugin that shows lyrics and artist's biography for the current track
 media-plugins/deadbeef-jack 20110321 99999999: DeaDBeeF jack output plugin
 media-plugins/deadbeef-mpris 20140221 99999999: DeaDBeeF MPRIS plugin
 media-plugins/deadbeef-musical-spectrum 20140718 99999999: DeaDBeeF musical spectrum plugin
