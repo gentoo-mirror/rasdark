@@ -1,9 +1,9 @@
-_eclasses_=git-2	1bb87192831f668cd20d93ffb1689c94
-_md5_=749bed24ceff0926379fd7d39dd30867
-SLOT=0
 DEFINED_PHASES=install unpack
-EAPI=4
 DEPEND=dev-vcs/git
 DESCRIPTION=Small tool to show UKSM statistics.
-LICENSE=GPL-3
+EAPI=4
 HOMEPAGE=http://github.com/pfactum/uksmstat
+LICENSE=GPL-3
+SLOT=0
+_eclasses_=git-2	1bb87192831f668cd20d93ffb1689c94
+_md5_=749bed24ceff0926379fd7d39dd30867
