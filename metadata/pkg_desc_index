@@ -23,7 +23,6 @@ media-plugins/deadbeef-waveform-seekbar 0.5 9999: DeaDBeeF waveform seekbar plug
 media-plugins/gimp-save-for-web 0.29.3 9999: Allows to find optimized saving options for popular web formats for the GIMP
 media-sound/deadbeef 0.6.2 9999: foobar2k-like music player
 media-sound/volumeicon 0.5.1: A lightweight volume control that sits in your systray
-media-video/openshot 1.4.3: OpenShot Video Editor is a non-linear video editor
 media-video/smtube 15.5.17: YouTube Browser for SMPlayer
 media-video/v4l2ucp 2.0.2 9999: A universal control panel for all Video for Linux Two (V4L2) devices
 net-analyzer/suricata 2.0.6: next generation intrusion detection and prevention engine
@@ -32,7 +31,6 @@ net-im/viber 9999: Free calls, text and picture sharing with anyone, anywhere!
 net-misc/android-file-transfer 2.2: Reliable MTP client with minimalistic UI
 net-misc/qtmib 1.1.1: Easy-to-use SNMPv1 and SNMPv2c MIB Browser written in QT4
 net-news/quiterss 0.18.2: A Qt5-based RSS/Atom feed reader
-net-p2p/qbittorrent 3.2.0: BitTorrent client in C++ and Qt
 sys-apps/lm_sensors 3.4.0: Hardware Monitoring user-space utilities
 sys-apps/uksmstat 9999: Small tool to show UKSM statistics.
 sys-firmware/edk2 9999: A modern, feature-rich, cross-platform firmware development env. for the UEFI and PI specifications
