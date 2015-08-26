@@ -30,7 +30,6 @@ net-im/qutim 9999: Qt4-based multi-protocol instant messenger
 net-im/viber 9999: Free calls, text and picture sharing with anyone, anywhere!
 net-misc/android-file-transfer 2.2: Reliable MTP client with minimalistic UI
 net-misc/qtmib 1.1.1: Easy-to-use SNMPv1 and SNMPv2c MIB Browser written in QT4
-net-news/quiterss 0.18.2: A Qt5-based RSS/Atom feed reader
 sys-apps/lm_sensors 3.4.0: Hardware Monitoring user-space utilities
 sys-apps/uksmstat 9999: Small tool to show UKSM statistics.
 sys-firmware/edk2 9999: A modern, feature-rich, cross-platform firmware development env. for the UEFI and PI specifications
