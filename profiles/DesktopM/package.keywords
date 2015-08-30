@@ -59,7 +59,7 @@
 ~media-video/smtube-15.5.17 x86 amd64
 ~media-video/v4l2ucp-9999 x86 amd64
 ~net-dns/bind-tools-9.10.2 x86 amd64
-~net-misc/dropbox-2.10.41-r1 x86 amd64
+~net-misc/dropbox-3.6.8 x86 amd64
 ~net-misc/remmina-1.2.0_rc3 x86 amd64
 ~net-misc/yandex-disk-0.1.5.870_p1 x86 amd64
 ~net-wireless/reaver-1.4-r3 x86 amd64
