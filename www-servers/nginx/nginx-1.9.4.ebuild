@@ -1,8 +1,8 @@
 # Copyright 1999-2015 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/www-servers/nginx/nginx-1.9.2.ebuild,v 1.1 2015/07/13 04:51:06 mgorny Exp $
+# $Id$
 
-EAPI="5"
+EAPI=5
 
 # Maintainer notes:
 # - http_rewrite-independent pcre-support makes sense for matching locations without an actual rewrite
@@ -29,7 +29,7 @@ HTTP_UPLOAD_PROGRESS_MODULE_P="ngx_http_upload_progress-${HTTP_UPLOAD_PROGRESS_M
 HTTP_UPLOAD_PROGRESS_MODULE_URI="https://github.com/masterzen/nginx-upload-progress-module/archive/v${HTTP_UPLOAD_PROGRESS_MODULE_PV}.tar.gz"
 HTTP_UPLOAD_PROGRESS_MODULE_WD="${WORKDIR}/nginx-upload-progress-module-${HTTP_UPLOAD_PROGRESS_MODULE_PV}"
 
-# http_headers_more (http://github.com/agentzh/headers-more-nginx-module, BSD license)
+# http_headers_more (https://github.com/agentzh/headers-more-nginx-module, BSD license)
 HTTP_HEADERS_MORE_MODULE_PV="0.26"
 HTTP_HEADERS_MORE_MODULE_P="ngx_http_headers_more-${HTTP_HEADERS_MORE_MODULE_PV}"
 HTTP_HEADERS_MORE_MODULE_URI="https://github.com/agentzh/headers-more-nginx-module/archive/v${HTTP_HEADERS_MORE_MODULE_PV}.tar.gz"
@@ -83,16 +83,16 @@ HTTP_NAXSI_MODULE_P="ngx_http_naxsi-${HTTP_NAXSI_MODULE_PV}"
 HTTP_NAXSI_MODULE_URI="https://github.com/nbs-system/naxsi/archive/${HTTP_NAXSI_MODULE_PV}.tar.gz"
 HTTP_NAXSI_MODULE_WD="${WORKDIR}/naxsi-${HTTP_NAXSI_MODULE_PV}/naxsi_src"
 
-# nginx-rtmp-module (http://github.com/arut/nginx-rtmp-module, BSD license)
+# nginx-rtmp-module (https://github.com/arut/nginx-rtmp-module, BSD license)
 RTMP_MODULE_PV="1.1.7"
 RTMP_MODULE_P="ngx_rtmp-${RTMP_MODULE_PV}"
-RTMP_MODULE_URI="http://github.com/arut/nginx-rtmp-module/archive/v${RTMP_MODULE_PV}.tar.gz"
+RTMP_MODULE_URI="https://github.com/arut/nginx-rtmp-module/archive/v${RTMP_MODULE_PV}.tar.gz"
 RTMP_MODULE_WD="${WORKDIR}/nginx-rtmp-module-${RTMP_MODULE_PV}"
 
-# nginx-dav-ext-module (http://github.com/arut/nginx-dav-ext-module, BSD license)
+# nginx-dav-ext-module (https://github.com/arut/nginx-dav-ext-module, BSD license)
 HTTP_DAV_EXT_MODULE_PV="0.0.3"
 HTTP_DAV_EXT_MODULE_P="ngx_http_dav_ext-${HTTP_DAV_EXT_MODULE_PV}"
-HTTP_DAV_EXT_MODULE_URI="http://github.com/arut/nginx-dav-ext-module/archive/v${HTTP_DAV_EXT_MODULE_PV}.tar.gz"
+HTTP_DAV_EXT_MODULE_URI="https://github.com/arut/nginx-dav-ext-module/archive/v${HTTP_DAV_EXT_MODULE_PV}.tar.gz"
 HTTP_DAV_EXT_MODULE_WD="${WORKDIR}/nginx-dav-ext-module-${HTTP_DAV_EXT_MODULE_PV}"
 
 # echo-nginx-module (https://github.com/agentzh/echo-nginx-module, BSD license)
@@ -115,10 +115,10 @@ HTTP_PUSH_STREAM_MODULE_URI="https://github.com/wandenberg/nginx-push-stream-mod
 HTTP_PUSH_STREAM_MODULE_WD="${WORKDIR}/nginx-push-stream-module-${HTTP_PUSH_STREAM_MODULE_PV}"
 
 # sticky-module (https://bitbucket.org/nginx-goodies/nginx-sticky-module-ng, BSD-2)
-HTTP_STICKY_MODULE_PV="1.2.5"
+HTTP_STICKY_MODULE_PV="1.2.6"
 HTTP_STICKY_MODULE_P="nginx_http_sticky_module_ng-${HTTP_STICKY_MODULE_PV}"
 HTTP_STICKY_MODULE_URI="https://bitbucket.org/nginx-goodies/nginx-sticky-module-ng/get/${HTTP_STICKY_MODULE_PV}.tar.bz2"
-HTTP_STICKY_MODULE_WD="${WORKDIR}/nginx-goodies-nginx-sticky-module-ng-bd312d586752"
+HTTP_STICKY_MODULE_WD="${WORKDIR}/nginx-goodies-nginx-sticky-module-ng-c78b7dd79d0d"
 
 # mogilefs-module (http://www.grid.net.ru/nginx/mogilefs.en.html, BSD-2)
 HTTP_MOGILEFS_MODULE_PV="1.0.4"
@@ -133,7 +133,7 @@ HTTP_MEMC_MODULE_URI="https://github.com/openresty/memc-nginx-module/archive/v${
 HTTP_MEMC_MODULE_WD="${WORKDIR}/memc-nginx-module-${HTTP_MEMC_MODULE_PV}"
 
 # Google pagespeed (http://ngxpagespeed.com/, Apache)
-HTTP_PAGESPEED_MODULE_PV="1.9.32.4"
+HTTP_PAGESPEED_MODULE_PV="1.9.32.6"
 HTTP_PAGESPEED_MODULE_P="ngx_pagespeed-${HTTP_PAGESPEED_MODULE_PV}-beta"
 HTTP_PAGESPEED_MODULE_URI="https://github.com/pagespeed/ngx_pagespeed/archive/v${HTTP_PAGESPEED_MODULE_PV}-beta.tar.gz"
 HTTP_PAGESPEED_MODULE_PSOL="https://dl.google.com/dl/page-speed/psol/${HTTP_PAGESPEED_MODULE_PV}.tar.gz"
@@ -163,7 +163,7 @@ SRC_URI="http://nginx.org/download/${P}.tar.gz
 	nginx_modules_http_sticky? ( ${HTTP_STICKY_MODULE_URI} -> ${HTTP_STICKY_MODULE_P}.tar.bz2 )
 	nginx_modules_http_mogilefs? ( ${HTTP_MOGILEFS_MODULE_URI} -> ${HTTP_MOGILEFS_MODULE_P}.tar.gz )
 	nginx_modules_http_memc? ( ${HTTP_MEMC_MODULE_URI} -> ${HTTP_MEMC_MODULE_P}.tar.gz )
-        nginx_modules_http_pagespeed? ( ${HTTP_PAGESPEED_MODULE_URI} -> ${HTTP_PAGESPEED_MODULE_P}.tar.gz
+	nginx_modules_http_pagespeed? ( ${HTTP_PAGESPEED_MODULE_URI} -> ${HTTP_PAGESPEED_MODULE_P}.tar.gz
                                         ${HTTP_PAGESPEED_MODULE_PSOL} -> psol-${HTTP_PAGESPEED_MODULE_PV}.tar.gz )"
 
 
@@ -303,7 +303,7 @@ src_prepare() {
 	epatch "${FILESDIR}/${PN}-1.4.1-fix-perl-install-path.patch"
 
 	if use nginx_modules_http_upstream_check; then
-		epatch "${FILESDIR}/check-${PV}".patch
+		epatch "${FILESDIR}/check-1.9.2".patch
 	fi
 
 	if use nginx_modules_http_lua; then
@@ -323,11 +323,10 @@ src_prepare() {
 			sed -i -e "/${module}/d" auto/install || die
 		fi
 	done
-
-       if use nginx_modules_http_pagespeed; then
+	
+	if use nginx_modules_http_pagespeed; then
             mv ${WORKDIR}/psol ${HTTP_PAGESPEED_MODULE_WD}
-       fi
-
+        fi
 }
 
 src_configure() {
@@ -476,10 +475,10 @@ src_configure() {
 		myconf+=( --add-module=${HTTP_MEMC_MODULE_WD} )
 	fi
 
-       	if use nginx_modules_http_pagespeed ; then
+        if use nginx_modules_http_pagespeed ; then
 		http_enabled=1
-               	myconf+=( --add-module=${HTTP_PAGESPEED_MODULE_WD} )
-	fi
+                myconf+=( --add-module=${HTTP_PAGESPEED_MODULE_WD} )
+        fi
 
 	if use http || use http-cache; then
 		http_enabled=1
