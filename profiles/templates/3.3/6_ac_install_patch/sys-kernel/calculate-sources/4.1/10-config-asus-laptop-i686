@@ -1,4 +1,4 @@
-# Calculate name=.config os_arch_machine==i686&&hr_laptop==asus&&hr_board_model==K50C
+# Calculate name=.config os_arch_machine==i686&&ini(hardware.model)==k50c
 CONFIG_60XX_WDT=m
 # CONFIG_64BIT is not set
 # CONFIG_6LOWPAN is not set
