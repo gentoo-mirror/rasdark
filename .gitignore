@@ -2,3 +2,4 @@ cross-i686-pc-linux-gnu
 metadata/md5-cache
 *.swp
 profiles/templates/kernel
+net-print
