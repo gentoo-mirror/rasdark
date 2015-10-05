@@ -23,7 +23,7 @@ media-plugins/deadbeef-waveform-seekbar 0.5 9999: DeaDBeeF waveform seekbar plug
 media-plugins/gimp-save-for-web 0.29.3 9999: Allows to find optimized saving options for popular web formats for the GIMP
 media-sound/deadbeef 0.6.2 9999: foobar2k-like music player
 media-sound/volumeicon 0.5.1: A lightweight volume control that sits in your systray
-media-video/smtube 15.5.17: YouTube Browser for SMPlayer
+media-video/smtube 15.9.0: YouTube Browser for SMPlayer
 media-video/v4l2ucp 2.0.2 9999: A universal control panel for all Video for Linux Two (V4L2) devices
 net-analyzer/suricata 2.0.6: next generation intrusion detection and prevention engine
 net-im/jitsi-bin 2.8: Secure IM communicator that supports SIP, XMPP/Jabber, AIM/ICQ, Windows Live, Yahoo
