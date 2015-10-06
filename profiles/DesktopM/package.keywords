@@ -1,4 +1,4 @@
-~dev-java/oracle-jre-bin-1.8.0.60* x86 amd64
+=dev-java/oracle-jre-bin-1.8.0.60* x86 amd64
 ~dev-libs/glib-2.44.1 x86 amd64
 ~dev-util/gdbus-codegen-2.44.1 x86 amd64
 ~dev-qt/qtsingleapplication-2.6.1_p20150629 x86 amd64
