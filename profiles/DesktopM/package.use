@@ -87,3 +87,4 @@ x11-terms/rxvt-unicode 256-color xft
 x11-wm/openbox imlib xdg
 media-sound/audacious chardet
 media-plugins/audacious-plugins lame libsamplerate http sndfile
+media-libs/lcms abi_x86_32

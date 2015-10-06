@@ -15,7 +15,6 @@ app-text/wgetpaste
 media-fonts/terminus-font
 media-gfx/fbgrab
 media-gfx/grub-splashes-calculate
-media-gfx/plymouth-themes-calculate
 net-analyzer/mtr
 net-analyzer/netcat6
 net-dns/bind-tools
@@ -70,7 +69,6 @@ media-gfx/dm-themes-calculate
 media-gfx/gimp
 media-gfx/lightdm-themes-calculate
 media-gfx/nomacs
-media-gfx/plymouth-themes-calculate
 media-gfx/syslinux-themes-calculate
 media-sound/alsa-utils
 media-sound/deadbeef
