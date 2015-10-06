@@ -1,0 +1,8 @@
+# Calculate format=world name=world ini(overlay-rasdark.world)<15
+
+#-ini(overlay-rasdark.world,15)-#
+
+#?in(os_linux_pkglist, COBRA)!=#
+!media-sound/deadbeef
+media-sound/audacious
+#in#
