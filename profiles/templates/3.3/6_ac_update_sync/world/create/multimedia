@@ -4,7 +4,7 @@
 app-cdr/pburn
 media-plugins/alsa-plugins
 media-sound/alsa-utils
-media-sound/deadbeef
+media-sound/audacious
 media-sound/sox
 media-video/ffmpeg
 media-video/mpv

@@ -102,3 +102,5 @@
 
 =net-misc/networkmanager-1.0.4-r1 x86 amd64
 =gnome-extra/nm-applet-1.0.4 x86 amd64
+~media-sound/audacious-3.6.2 x86 amd64
+~media-plugins/audacious-plugins-3.6.2-r1 x86 amd64
