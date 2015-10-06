@@ -41,7 +41,7 @@
 ~net-misc/remmina-1.2.0_rc3 x86 amd64
 =net-misc/yandex-disk-0.1.5* x86 amd64
 ~net-wireless/reaver-1.4-r3 x86 amd64
-~net-wireless/wpa_supplicant-2.5 x86 amd64
+~net-wireless/wpa_supplicant-2.4-r4 x86 amd64
 ~sci-calculators/speedcrunch-0.11-r2 x86 amd64
 ~sys-apps/ethtool-4.0 x86 amd64
 ~sys-apps/inxi-2.2.19 x86 amd64
