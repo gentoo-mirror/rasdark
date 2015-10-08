@@ -1,4 +1,4 @@
-# Calculate comment=# format=raw
+# Calculate comment=# format=raw path=~/.config/obshutdown
 #
 # Openbox shutdown dialog
 # This is example obshutdown rc file
