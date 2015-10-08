@@ -14,5 +14,6 @@ sys-fs/reiserfsprogs
 sys-kernel/dracut
 sys-process/lsof
 virtual/linux-sources
+sys-apps/calculate-toolkit
 #in#
 

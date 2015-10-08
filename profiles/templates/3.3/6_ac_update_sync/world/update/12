@@ -1,7 +1,0 @@
-# Calculate format=world name=world ini(overlay-rasdark.world)<12
-
-#-ini(overlay-rasdark.world,12)-#
-
-#?in(os_linux_pkglist, COBRA)!=#
-www-client/firefox
-#in#
