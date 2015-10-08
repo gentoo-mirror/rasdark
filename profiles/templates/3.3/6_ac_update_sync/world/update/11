@@ -1,9 +1,0 @@
-# Calculate format=world name=world ini(overlay-rasdark.world)<11
-
-#-ini(overlay-rasdark.world,11)-#
-
-#?in(os_linux_pkglist, COBRA)!=#
-!media-video/mplayer
-!media-video/mplayer2
-media-video/mpv
-#in#

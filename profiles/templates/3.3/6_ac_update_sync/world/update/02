@@ -1,8 +1,0 @@
-# Calculate format=world name=world ini(overlay-rasdark.world)<2
-
-#-ini(overlay-rasdark.world,2)-#
-
-#?in(os_linux_pkglist, COBRA)!=#
-app-forensics/scalpel
-dev-java/oracle-jre-bin
-#in#

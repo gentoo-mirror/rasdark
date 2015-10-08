@@ -1,7 +1,0 @@
-# Calculate format=world name=world ini(overlay-rasdark.world)<7
-
-#-ini(overlay-rasdark.world,7)-#
-
-#?in(os_linux_pkglist, COBRA)!=#
-media-video/smtube
-#in#
