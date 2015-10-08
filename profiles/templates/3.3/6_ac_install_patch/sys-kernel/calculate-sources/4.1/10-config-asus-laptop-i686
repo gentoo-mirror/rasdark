@@ -1,4 +1,4 @@
-# Calculate name=.config os_arch_machine==i686&&ini(hardware.model)==k50c
+# Calculate name=.config os_arch_machine==i686&&ini(hardware.laptop_model)==k50c
 CONFIG_60XX_WDT=m
 # CONFIG_64BIT is not set
 # CONFIG_6LOWPAN is not set

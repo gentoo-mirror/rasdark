@@ -1,4 +1,4 @@
-# Calculate format=kernel name=.config os_install_arch_machine==x86_64&&main.hr_board_model==Z97M-PLUS
+# Calculate format=kernel name=.config os_install_arch_machine==x86_64&&ini(hardware.board_model)==z97m_plus
 # CONFIG_60XX_WDT is not set
 # CONFIG_8139_OLD_RX_RESET is not set
 # CONFIG_8139TOO_TUNE_TWISTER is not set
