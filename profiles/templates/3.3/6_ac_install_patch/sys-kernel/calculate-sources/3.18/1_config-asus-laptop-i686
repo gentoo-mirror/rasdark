@@ -1,4 +1,4 @@
-# Calculate name=.config os_arch_machine==i686&&ini(hardware.model)==k50c
+# Calculate name=.config os_arch_machine==i686&&ini(hardware.laptop_model)==k50c
 #
 # Automatically generated file; DO NOT EDIT.
 # Linux/x86 3.18.1-darkus Kernel Configuration
