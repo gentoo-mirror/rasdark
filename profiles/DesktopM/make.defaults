@@ -10,9 +10,9 @@ USE="${USE} rdesktop"
 USE="${USE} -dconf networkmanager udisks -systemd modemmanager -libav -qt3support qt4 -qt5"
 
 # Window manager and specialities
-USE="${USE} -eds -gnome -kde"
+USE="${USE} -eds -gnome -kde infinality"
 
-CL="builder client desktop console consolegui"
+
 THEMES="CLDX"
 LIGHTDM_SESSION=openbox
 KERNELNAME="darkus"
