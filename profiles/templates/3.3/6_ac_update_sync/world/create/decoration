@@ -2,6 +2,7 @@
 
 #?in(os_linux_pkglist, COBRA)!=#
 lxde-base/lxmenu-data
+media-fonts/infinality-ultimate-meta
 media-gfx/calculate-wallpapers
 media-gfx/dm-themes-calculate
 media-gfx/grub-splashes-calculate
