@@ -24,7 +24,13 @@
 ~dev-util/gtk-update-icon-cache-3.16.5 x86 amd64
 ~dev-util/strace-4.10 x86 amd64
 =gnome-extra/nm-applet-1.0.6 x86 amd64
+~media-fonts/courier-prime-1.203 x86 amd64
+~media-fonts/heuristica-0.2.1 x86 amd64
+~media-fonts/infinality-ultimate-meta-1 x86 amd64
+~media-fonts/signika-1.001 x86 amd64
+~media-fonts/tex-gyre-2.005 x86 amd64
 ~media-gfx/nomacs-2.4.6 x86 amd64
+~media-libs/fontconfig-ultimate-2015.08.01 x86 amd64
 ~media-libs/libass-0.12.3 x86 amd64
 ~media-libs/x265-1.7 x86 amd64
 ~media-plugins/audacious-plugins-3.6.2-r1 x86 amd64
