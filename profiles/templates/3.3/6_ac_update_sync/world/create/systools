@@ -17,6 +17,7 @@ sys-apps/inxi
 sys-apps/lm_sensors
 sys-apps/smartmontools
 sys-apps/usbutils
+sys-auth/pam_update
 sys-fs/cryptsetup
 sys-fs/dosfstools
 sys-fs/extundelete
