@@ -10,8 +10,10 @@ net-misc/yandex-disk
 net-p2p/deluge
 #?os_arch_machine_gentoo==amd64#
 www-client/yandex-browser-beta
+www-plugins/chrome-binary-plugins
 #os_arch_machine_gentoo#
 #?os_arch_machine_gentoo!=amd64#
 www-client/firefox
+www-plugins/adobe-flash
 #os_arch_machine_gentoo#
 #in#
