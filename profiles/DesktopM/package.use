@@ -3,7 +3,7 @@ app-arch/p7zip rar
 app-editors/gvim neXt perl python
 app-emulation/winetricks -gtk
 app-emulation/wine -vaapi -staging
-app-misc/mc -spell gpm
+app-misc/mc -spell gpm sftp
 app-office/libreoffice gtk -bluetooth opengl -vlc branding
 app-portage/layman git mercurial
 app-shells/zsh doc examples
