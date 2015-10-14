@@ -77,4 +77,5 @@
 ~x11-plugins/pidgin-toobars-1.14 x86 amd64
 ~x11-themes/pidgin-penguins-smileys-1.0 x86 amd64
 ~x11-themes/smplayer-skins-15.2.0 x86 amd64
-~www-client/yandex-browser-15.9.2454.2433_p1 amd64
+~www-client/yandex-browser-beta-15.9.2454.2433_p1 amd64
+~www-plugins/chrome-binary-plugins-46.0.2490.64_beta1 amd64
