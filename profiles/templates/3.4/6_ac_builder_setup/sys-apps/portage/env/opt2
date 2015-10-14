@@ -1,2 +1,2 @@
-CFLAGS="-O2 -pipe -march=native"
+CFLAGS="-O2 -pipe -march=x86-64"
 CXXFLAGS="${CFLAGS}"
