@@ -1,4 +1,4 @@
-# Calculate format=compiz protected ini(desktop.browser-removing)==on merge=www-client/dwb
+# Calculate format=compiz protected ini(desktop.browser-removing)==on merge=www-client/dwb,www-client/yandex-browser
 
 #-ini(desktop.browser-removing,)-#
 

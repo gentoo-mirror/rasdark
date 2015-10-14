@@ -7,7 +7,7 @@ CHROMIUM_LANGS="cs de en_US es fr it ja kk pt_BR pt_PT ru tr uk zh_CN zh_TW"
 inherit chromium multilib unpacker gnome2-utils
 
 DESCRIPTION="Yandex Browser is a browser that combines a minimal design with sophisticated technology to make the web faster, safer, and easier."
-HOMEPAGE="http://browser.yandex.ru/beta/"
+HOMEPAGE="http://browser.yandex.ru/"
 LICENSE="EULA"
 SLOT="0"
 SRC_URI="
