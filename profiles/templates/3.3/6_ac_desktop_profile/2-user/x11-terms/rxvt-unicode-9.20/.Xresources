@@ -15,8 +15,8 @@ URxvt.colorUL: #cacc46
 URxvt.underlineURLs: true
 URxvt.underlineColor: #cacc46
 
-URxvt.font: xft:Noto Sans:size=10:antialias=true
-URxvt.boldFont: xft:Noto Sans:bold:size=10:antialias=true
+URxvt.font: xft:Andale Mono:size=10:antialias=true
+URxvt.boldFont: xft:Andale Mono:bold:size=10:antialias=true
 
 URxvt.saveLines: 5000
 URxvt.geometry: 120x35
