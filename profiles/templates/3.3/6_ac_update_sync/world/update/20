@@ -4,6 +4,7 @@
 
 #?in(os_linux_pkglist, COBRA)!=#
 #os_arch_machine_gentoo==amd64
+!www-client/firefox
 www-client/yandex-browser
 #os_arch_machine_gentoo#
 #in#
