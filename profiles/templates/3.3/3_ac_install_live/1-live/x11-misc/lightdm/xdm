@@ -1,5 +1,4 @@
-# Calculate comment=#
+# Calculate format=kde ini(hardware.laptop_model)==k50c
 
-#?ini(hardware.laptop_model)==k50c#
 DISPLAYMANAGER="lightdm"
-#ini#
+
