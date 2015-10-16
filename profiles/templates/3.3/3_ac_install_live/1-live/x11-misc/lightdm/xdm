@@ -1,5 +1,5 @@
 # Calculate comment=#
 
-#ini(hardware.laptop_model)==k50c#
+#?ini(hardware.laptop_model)==k50c#
 DISPLAYMANAGER="lightdm"
 #ini#
