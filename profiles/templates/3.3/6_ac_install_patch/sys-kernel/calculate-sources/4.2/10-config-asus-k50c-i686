@@ -1,4 +1,4 @@
-# Calculate format=kernel name=.config os_arch_machine==i686&&ini(hardware.laptop_model)==k50c
+# Calculate format=kernel name=.config os_arch_machine==i686&&ini(hardware.model)==laptop_k50c
 # CONFIG_3C515 is not set
 # CONFIG_ACENIC is not set
 # CONFIG_ACERHDF is not set
