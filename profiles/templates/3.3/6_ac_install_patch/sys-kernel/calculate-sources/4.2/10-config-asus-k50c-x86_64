@@ -1,4 +1,4 @@
-# Calculate format=kernel name=.config os_install_arch_machine==x86_64&&ini(hardware.laptop_model)==k50c
+# Calculate format=kernel name=.config os_install_arch_machine==x86_64&&ini(hardware.model)==laptop_k50c
 # CONFIG_ACENIC is not set
 # CONFIG_ACERHDF is not set
 # CONFIG_ACER_WMI is not set
