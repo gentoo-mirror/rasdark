@@ -1,4 +1,4 @@
-# Calculate format=kde path=/etc name=conf.d ini(hardware.model)==laptop_k50c||ini(hardware.model)==virtualbox
+# Calculate format=kde path=/etc/conf.d name=xdm ini(hardware.model)==laptop_k50c||ini(hardware.model)==virtualbox
 
 DISPLAYMANAGER="lightdm"
 
