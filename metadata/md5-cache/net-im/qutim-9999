@@ -8,5 +8,5 @@ KEYWORDS=**
 LICENSE=GPL-3
 RDEPEND=>=dev-qt/qtcore-5.5 >=dev-qt/qtnetwork-5.5 >=dev-qt/qtx11extras-5.5 >=dev-qt/qtwidgets-5.5 >=dev-qt/qtscript-5.5 >=dev-qt/qtquick1-5.5 >=dev-qt/qtxmlpatterns-5.5 >=dev-qt/qtwebsockets-5.5 >=dev-qt/qtwebchannel-5.5[qml] >=dev-qt/qtconcurrent-5.5 >=dev-qt/qtmultimedia-5.5 sdl? ( media-libs/sdl-mixer ) indicator? ( dev-libs/libindicate-qt ) app-crypt/qca virtual/gsasl dev-libs/qtkeychain[qt5]
 SLOT=0
-_eclasses_=eutils	43da5163ba106e87d22d2e7d6d67537f	git-r3	1502b9838d043db47700b8120083e637	multilib	df4e4d5cfd3d137d0c248e1991c0e4d6	toolchain-funcs	7a212e5e01adfa4805c9978366e6ee85
+_eclasses_=eutils	8644194de7be04932084752fb1327080	git-r3	1502b9838d043db47700b8120083e637	multilib	df4e4d5cfd3d137d0c248e1991c0e4d6	toolchain-funcs	7a212e5e01adfa4805c9978366e6ee85
 _md5_=cad11f0d4b8e9ce7058e2bc44da2eb45
