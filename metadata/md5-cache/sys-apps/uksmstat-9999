@@ -5,5 +5,5 @@ EAPI=4
 HOMEPAGE=http://github.com/pfactum/uksmstat
 LICENSE=GPL-3
 SLOT=0
-_eclasses_=git-2	32530738ee006bc09e1ac93f6e73d719
+_eclasses_=git-2	df00117322129fb906bb0a53c3d6a020
 _md5_=749bed24ceff0926379fd7d39dd30867
