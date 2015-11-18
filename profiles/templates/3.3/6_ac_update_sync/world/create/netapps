@@ -8,6 +8,7 @@ net-misc/remmina
 net-misc/dropbox
 net-misc/yandex-disk
 net-p2p/deluge
+net-wireless/blueman
 #?os_arch_machine_gentoo==amd64#
 www-client/yandex-browser-beta
 www-plugins/chrome-binary-plugins
