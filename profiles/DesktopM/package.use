@@ -89,3 +89,6 @@ media-sound/audacious chardet
 media-plugins/audacious-plugins lame libsamplerate http sndfile
 media-libs/lcms abi_x86_32
 sys-fs/ntfs3g xattr
+net-wireless/blueman -appindicator
+net-dns/avahi -qt4 utils
+app-mobilephone/obexftp python

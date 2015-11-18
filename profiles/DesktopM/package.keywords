@@ -79,3 +79,6 @@
 ~x11-themes/smplayer-skins-15.2.0 x86 amd64
 ~www-client/yandex-browser-beta-15.9.2454.2433_p1 amd64
 ~www-plugins/chrome-binary-plugins-46.0.2490.64_beta1 amd64
+=x11-misc/mate-notification-daemon-1.8* x86 amd64
+=app-mobilephone/obexftp-0.24* x86 amd64
+=dev-libs/openobex-1.7* x86 amd64
