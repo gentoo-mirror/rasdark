@@ -1,7 +1,7 @@
 # Calculate format=diff
-diff -urN linux-4.2.1.orig/Documentation/Changes linux-4.2.1/Documentation/Changes
---- linux-4.2.1.orig/Documentation/Changes	2015-09-21 19:11:11.000000000 +0200
-+++ linux-4.2.1/Documentation/Changes	2015-09-26 23:36:44.528433600 +0200
+diff -urN linux-4.2.6.orig/Documentation/Changes linux-4.2.6/Documentation/Changes
+--- linux-4.2.6.orig/Documentation/Changes	2015-11-09 23:37:56.000000000 +0100
++++ linux-4.2.6/Documentation/Changes	2015-11-12 10:00:42.836540140 +0100
 @@ -29,6 +29,7 @@
  o  e2fsprogs              1.41.4                  # e2fsck -V
  o  jfsutils               1.1.3                   # fsck.jfs -V
@@ -35,9 +35,9 @@ diff -urN linux-4.2.1.orig/Documentation/Changes linux-4.2.1/Documentation/Chang
  Xfsprogs
  --------
  o  <ftp://oss.sgi.com/projects/xfs/>
-diff -urN linux-4.2.1.orig/Documentation/filesystems/reiser4.txt linux-4.2.1/Documentation/filesystems/reiser4.txt
---- linux-4.2.1.orig/Documentation/filesystems/reiser4.txt	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/Documentation/filesystems/reiser4.txt	2015-09-26 23:36:44.528433600 +0200
+diff -urN linux-4.2.6.orig/Documentation/filesystems/reiser4.txt linux-4.2.6/Documentation/filesystems/reiser4.txt
+--- linux-4.2.6.orig/Documentation/filesystems/reiser4.txt	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/Documentation/filesystems/reiser4.txt	2015-11-12 10:00:42.837540169 +0100
 @@ -0,0 +1,75 @@
 +Reiser4 filesystem
 +==================
@@ -114,9 +114,9 @@ diff -urN linux-4.2.1.orig/Documentation/filesystems/reiser4.txt linux-4.2.1/Doc
 +dont_load_bitmap
 +	Don't load all bitmap blocks at mount time, it is useful for
 +	machines with tiny RAM and large disks.
-diff -urN linux-4.2.1.orig/fs/fs-writeback.c linux-4.2.1/fs/fs-writeback.c
---- linux-4.2.1.orig/fs/fs-writeback.c	2015-09-21 19:11:11.000000000 +0200
-+++ linux-4.2.1/fs/fs-writeback.c	2015-09-26 23:38:54.485898410 +0200
+diff -urN linux-4.2.6.orig/fs/fs-writeback.c linux-4.2.6/fs/fs-writeback.c
+--- linux-4.2.6.orig/fs/fs-writeback.c	2015-11-09 23:37:56.000000000 +0100
++++ linux-4.2.6/fs/fs-writeback.c	2015-11-12 10:00:42.837540169 +0100
 @@ -40,28 +40,6 @@
  };
  
@@ -301,9 +301,9 @@ diff -urN linux-4.2.1.orig/fs/fs-writeback.c linux-4.2.1/fs/fs-writeback.c
  
  	if (likely(!current_is_workqueue_rescuer() ||
  		   !test_bit(WB_registered, &wb->state))) {
-diff -urN linux-4.2.1.orig/fs/Kconfig linux-4.2.1/fs/Kconfig
---- linux-4.2.1.orig/fs/Kconfig	2015-09-21 19:11:11.000000000 +0200
-+++ linux-4.2.1/fs/Kconfig	2015-09-26 23:36:44.530433607 +0200
+diff -urN linux-4.2.6.orig/fs/Kconfig linux-4.2.6/fs/Kconfig
+--- linux-4.2.6.orig/fs/Kconfig	2015-11-09 23:37:56.000000000 +0100
++++ linux-4.2.6/fs/Kconfig	2015-11-12 10:00:42.838540199 +0100
 @@ -24,6 +24,7 @@
  	default y if EXT4_FS=y
  	default m if EXT2_FS_XATTR || EXT3_FS_XATTR || EXT4_FS
@@ -312,9 +312,9 @@ diff -urN linux-4.2.1.orig/fs/Kconfig linux-4.2.1/fs/Kconfig
  source "fs/reiserfs/Kconfig"
  source "fs/jfs/Kconfig"
  
-diff -urN linux-4.2.1.orig/fs/Makefile linux-4.2.1/fs/Makefile
---- linux-4.2.1.orig/fs/Makefile	2015-09-21 19:11:11.000000000 +0200
-+++ linux-4.2.1/fs/Makefile	2015-09-26 23:36:44.530433607 +0200
+diff -urN linux-4.2.6.orig/fs/Makefile linux-4.2.6/fs/Makefile
+--- linux-4.2.6.orig/fs/Makefile	2015-11-09 23:37:56.000000000 +0100
++++ linux-4.2.6/fs/Makefile	2015-11-12 10:00:42.838540199 +0100
 @@ -62,6 +62,7 @@
  # Do not add any filesystems before this line
  obj-$(CONFIG_FSCACHE)		+= fscache/
@@ -323,9 +323,9 @@ diff -urN linux-4.2.1.orig/fs/Makefile linux-4.2.1/fs/Makefile
  obj-$(CONFIG_EXT3_FS)		+= ext3/ # Before ext2 so root fs can be ext3
  obj-$(CONFIG_EXT2_FS)		+= ext2/
  # We place ext4 after ext2 so plain ext2 root fs's are mounted using ext2
-diff -urN linux-4.2.1.orig/fs/read_write.c linux-4.2.1/fs/read_write.c
---- linux-4.2.1.orig/fs/read_write.c	2015-09-21 19:11:11.000000000 +0200
-+++ linux-4.2.1/fs/read_write.c	2015-09-26 23:36:44.531433611 +0200
+diff -urN linux-4.2.6.orig/fs/read_write.c linux-4.2.6/fs/read_write.c
+--- linux-4.2.6.orig/fs/read_write.c	2015-11-09 23:37:56.000000000 +0100
++++ linux-4.2.6/fs/read_write.c	2015-11-12 10:00:42.838540199 +0100
 @@ -4,7 +4,7 @@
   *  Copyright (C) 1991, 1992  Linus Torvalds
   */
@@ -385,9 +385,9 @@ diff -urN linux-4.2.1.orig/fs/read_write.c linux-4.2.1/fs/read_write.c
  
  ssize_t __vfs_read(struct file *file, char __user *buf, size_t count,
  		   loff_t *pos)
-diff -urN linux-4.2.1.orig/fs/reiser4/as_ops.c linux-4.2.1/fs/reiser4/as_ops.c
---- linux-4.2.1.orig/fs/reiser4/as_ops.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/as_ops.c	2015-09-26 23:36:44.531433611 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/as_ops.c linux-4.2.6/fs/reiser4/as_ops.c
+--- linux-4.2.6.orig/fs/reiser4/as_ops.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/as_ops.c	2015-11-12 10:00:42.839540228 +0100
 @@ -0,0 +1,348 @@
 +/* Copyright 2003 by Hans Reiser, licensing governed by reiser4/README */
 +
@@ -737,9 +737,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/as_ops.c linux-4.2.1/fs/reiser4/as_ops.c
 +   fill-column: 120
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/block_alloc.c linux-4.2.1/fs/reiser4/block_alloc.c
---- linux-4.2.1.orig/fs/reiser4/block_alloc.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/block_alloc.c	2015-09-26 23:36:44.532433614 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/block_alloc.c linux-4.2.6/fs/reiser4/block_alloc.c
+--- linux-4.2.6.orig/fs/reiser4/block_alloc.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/block_alloc.c	2015-11-12 10:00:42.840540258 +0100
 @@ -0,0 +1,1176 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by
 +reiser4/README */
@@ -1917,9 +1917,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/block_alloc.c linux-4.2.1/fs/reiser4/block
 +   scroll-step: 1
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/block_alloc.h linux-4.2.1/fs/reiser4/block_alloc.h
---- linux-4.2.1.orig/fs/reiser4/block_alloc.h	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/block_alloc.h	2015-09-26 23:36:44.532433614 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/block_alloc.h linux-4.2.6/fs/reiser4/block_alloc.h
+--- linux-4.2.6.orig/fs/reiser4/block_alloc.h	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/block_alloc.h	2015-11-12 10:00:42.840540258 +0100
 @@ -0,0 +1,177 @@
 +/* Copyright 2002, 2003 by Hans Reiser, licensing governed by reiser4/README */
 +
@@ -2098,9 +2098,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/block_alloc.h linux-4.2.1/fs/reiser4/block
 +   fill-column: 120
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/blocknrlist.c linux-4.2.1/fs/reiser4/blocknrlist.c
---- linux-4.2.1.orig/fs/reiser4/blocknrlist.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/blocknrlist.c	2015-09-26 23:36:44.533433618 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/blocknrlist.c linux-4.2.6/fs/reiser4/blocknrlist.c
+--- linux-4.2.6.orig/fs/reiser4/blocknrlist.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/blocknrlist.c	2015-11-12 10:00:42.840540258 +0100
 @@ -0,0 +1,336 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by
 + * reiser4/README */
@@ -2438,9 +2438,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/blocknrlist.c linux-4.2.1/fs/reiser4/block
 +   scroll-step: 1
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/blocknrset.c linux-4.2.1/fs/reiser4/blocknrset.c
---- linux-4.2.1.orig/fs/reiser4/blocknrset.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/blocknrset.c	2015-09-26 23:36:44.533433618 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/blocknrset.c linux-4.2.6/fs/reiser4/blocknrset.c
+--- linux-4.2.6.orig/fs/reiser4/blocknrset.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/blocknrset.c	2015-11-12 10:00:42.841540287 +0100
 @@ -0,0 +1,399 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by
 +reiser4/README */
@@ -2841,9 +2841,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/blocknrset.c linux-4.2.1/fs/reiser4/blockn
 + * scroll-step: 1
 + * End:
 + */
-diff -urN linux-4.2.1.orig/fs/reiser4/carry.c linux-4.2.1/fs/reiser4/carry.c
---- linux-4.2.1.orig/fs/reiser4/carry.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/carry.c	2015-09-26 23:36:44.534433621 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/carry.c linux-4.2.6/fs/reiser4/carry.c
+--- linux-4.2.6.orig/fs/reiser4/carry.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/carry.c	2015-11-12 10:00:42.842540317 +0100
 @@ -0,0 +1,1398 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by
 +   reiser4/README */
@@ -4243,9 +4243,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/carry.c linux-4.2.1/fs/reiser4/carry.c
 +   scroll-step: 1
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/carry.h linux-4.2.1/fs/reiser4/carry.h
---- linux-4.2.1.orig/fs/reiser4/carry.h	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/carry.h	2015-09-26 23:36:44.535433625 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/carry.h linux-4.2.6/fs/reiser4/carry.h
+--- linux-4.2.6.orig/fs/reiser4/carry.h	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/carry.h	2015-11-12 10:00:42.842540317 +0100
 @@ -0,0 +1,445 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by
 +   reiser4/README */
@@ -4692,9 +4692,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/carry.h linux-4.2.1/fs/reiser4/carry.h
 +   scroll-step: 1
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/carry_ops.c linux-4.2.1/fs/reiser4/carry_ops.c
---- linux-4.2.1.orig/fs/reiser4/carry_ops.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/carry_ops.c	2015-09-26 23:36:44.537433632 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/carry_ops.c linux-4.2.6/fs/reiser4/carry_ops.c
+--- linux-4.2.6.orig/fs/reiser4/carry_ops.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/carry_ops.c	2015-11-12 10:00:42.844540376 +0100
 @@ -0,0 +1,2136 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by
 +   reiser4/README */
@@ -6832,9 +6832,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/carry_ops.c linux-4.2.1/fs/reiser4/carry_o
 +   scroll-step: 1
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/carry_ops.h linux-4.2.1/fs/reiser4/carry_ops.h
---- linux-4.2.1.orig/fs/reiser4/carry_ops.h	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/carry_ops.h	2015-09-26 23:36:44.537433632 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/carry_ops.h linux-4.2.6/fs/reiser4/carry_ops.h
+--- linux-4.2.6.orig/fs/reiser4/carry_ops.h	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/carry_ops.h	2015-11-12 10:00:42.844540376 +0100
 @@ -0,0 +1,43 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by
 +   reiser4/README */
@@ -6879,9 +6879,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/carry_ops.h linux-4.2.1/fs/reiser4/carry_o
 +   scroll-step: 1
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/checksum.c linux-4.2.1/fs/reiser4/checksum.c
---- linux-4.2.1.orig/fs/reiser4/checksum.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/checksum.c	2015-09-26 23:36:44.537433632 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/checksum.c linux-4.2.6/fs/reiser4/checksum.c
+--- linux-4.2.6.orig/fs/reiser4/checksum.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/checksum.c	2015-11-12 10:00:42.845540406 +0100
 @@ -0,0 +1,33 @@
 +#include <linux/err.h>
 +#include "debug.h"
@@ -6916,9 +6916,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/checksum.c linux-4.2.1/fs/reiser4/checksum
 +   scroll-step: 1
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/checksum.h linux-4.2.1/fs/reiser4/checksum.h
---- linux-4.2.1.orig/fs/reiser4/checksum.h	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/checksum.h	2015-09-26 23:36:44.537433632 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/checksum.h linux-4.2.6/fs/reiser4/checksum.h
+--- linux-4.2.6.orig/fs/reiser4/checksum.h	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/checksum.h	2015-11-12 10:00:42.845540406 +0100
 @@ -0,0 +1,39 @@
 +#ifndef __CHECKSUM__
 +#define __CHECKSUM__
@@ -6959,9 +6959,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/checksum.h linux-4.2.1/fs/reiser4/checksum
 +   End:
 +*/
 +
-diff -urN linux-4.2.1.orig/fs/reiser4/context.c linux-4.2.1/fs/reiser4/context.c
---- linux-4.2.1.orig/fs/reiser4/context.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/context.c	2015-09-26 23:36:44.538433636 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/context.c linux-4.2.6/fs/reiser4/context.c
+--- linux-4.2.6.orig/fs/reiser4/context.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/context.c	2015-11-12 10:00:42.845540406 +0100
 @@ -0,0 +1,288 @@
 +/* Copyright 2002, 2003 by Hans Reiser, licensing governed by reiser4/README */
 +
@@ -7251,9 +7251,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/context.c linux-4.2.1/fs/reiser4/context.c
 + * scroll-step: 1
 + * End:
 + */
-diff -urN linux-4.2.1.orig/fs/reiser4/context.h linux-4.2.1/fs/reiser4/context.h
---- linux-4.2.1.orig/fs/reiser4/context.h	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/context.h	2015-09-26 23:36:44.538433636 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/context.h linux-4.2.6/fs/reiser4/context.h
+--- linux-4.2.6.orig/fs/reiser4/context.h	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/context.h	2015-11-12 10:00:42.845540406 +0100
 @@ -0,0 +1,233 @@
 +/* Copyright 2001, 2002, 2003, 2004 by Hans Reiser, licensing governed by
 + * reiser4/README */
@@ -7488,9 +7488,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/context.h linux-4.2.1/fs/reiser4/context.h
 +   scroll-step: 1
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/coord.c linux-4.2.1/fs/reiser4/coord.c
---- linux-4.2.1.orig/fs/reiser4/coord.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/coord.c	2015-09-26 23:36:44.539433639 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/coord.c linux-4.2.6/fs/reiser4/coord.c
+--- linux-4.2.6.orig/fs/reiser4/coord.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/coord.c	2015-11-12 10:00:42.846540435 +0100
 @@ -0,0 +1,928 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by
 +   reiser4/README */
@@ -8420,9 +8420,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/coord.c linux-4.2.1/fs/reiser4/coord.c
 +   scroll-step: 1
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/coord.h linux-4.2.1/fs/reiser4/coord.h
---- linux-4.2.1.orig/fs/reiser4/coord.h	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/coord.h	2015-09-26 23:36:44.539433639 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/coord.h linux-4.2.6/fs/reiser4/coord.h
+--- linux-4.2.6.orig/fs/reiser4/coord.h	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/coord.h	2015-11-12 10:00:42.847540465 +0100
 @@ -0,0 +1,399 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by
 +   reiser4/README */
@@ -8823,9 +8823,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/coord.h linux-4.2.1/fs/reiser4/coord.h
 +   scroll-step: 1
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/debug.c linux-4.2.1/fs/reiser4/debug.c
---- linux-4.2.1.orig/fs/reiser4/debug.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/debug.c	2015-09-26 23:36:44.539433639 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/debug.c linux-4.2.6/fs/reiser4/debug.c
+--- linux-4.2.6.orig/fs/reiser4/debug.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/debug.c	2015-11-12 10:00:42.847540465 +0100
 @@ -0,0 +1,308 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by
 + * reiser4/README */
@@ -9135,9 +9135,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/debug.c linux-4.2.1/fs/reiser4/debug.c
 +   fill-column: 120
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/debug.h linux-4.2.1/fs/reiser4/debug.h
---- linux-4.2.1.orig/fs/reiser4/debug.h	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/debug.h	2015-09-26 23:36:44.540433643 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/debug.h linux-4.2.6/fs/reiser4/debug.h
+--- linux-4.2.6.orig/fs/reiser4/debug.h	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/debug.h	2015-11-12 10:00:42.847540465 +0100
 @@ -0,0 +1,351 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by
 +   reiser4/README */
@@ -9490,9 +9490,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/debug.h linux-4.2.1/fs/reiser4/debug.h
 +   fill-column: 120
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/dformat.h linux-4.2.1/fs/reiser4/dformat.h
---- linux-4.2.1.orig/fs/reiser4/dformat.h	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/dformat.h	2015-09-26 23:36:44.540433643 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/dformat.h linux-4.2.6/fs/reiser4/dformat.h
+--- linux-4.2.6.orig/fs/reiser4/dformat.h	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/dformat.h	2015-11-12 10:00:42.847540465 +0100
 @@ -0,0 +1,73 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by
 +   reiser4/README */
@@ -9567,9 +9567,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/dformat.h linux-4.2.1/fs/reiser4/dformat.h
 + * fill-column: 79
 + * End:
 + */
-diff -urN linux-4.2.1.orig/fs/reiser4/discard.c linux-4.2.1/fs/reiser4/discard.c
---- linux-4.2.1.orig/fs/reiser4/discard.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/discard.c	2015-09-26 23:36:44.540433643 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/discard.c linux-4.2.6/fs/reiser4/discard.c
+--- linux-4.2.6.orig/fs/reiser4/discard.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/discard.c	2015-11-12 10:00:42.848540494 +0100
 @@ -0,0 +1,179 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by
 + * reiser4/README */
@@ -9750,9 +9750,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/discard.c linux-4.2.1/fs/reiser4/discard.c
 +   scroll-step: 1
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/discard.h linux-4.2.1/fs/reiser4/discard.h
---- linux-4.2.1.orig/fs/reiser4/discard.h	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/discard.h	2015-09-26 23:36:44.540433643 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/discard.h linux-4.2.6/fs/reiser4/discard.h
+--- linux-4.2.6.orig/fs/reiser4/discard.h	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/discard.h	2015-11-12 10:00:42.848540494 +0100
 @@ -0,0 +1,42 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by
 + * reiser4/README */
@@ -9796,9 +9796,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/discard.h linux-4.2.1/fs/reiser4/discard.h
 +   fill-column: 120
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/dscale.c linux-4.2.1/fs/reiser4/dscale.c
---- linux-4.2.1.orig/fs/reiser4/dscale.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/dscale.c	2015-09-26 23:36:44.541433646 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/dscale.c linux-4.2.6/fs/reiser4/dscale.c
+--- linux-4.2.6.orig/fs/reiser4/dscale.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/dscale.c	2015-11-12 10:00:42.848540494 +0100
 @@ -0,0 +1,192 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by
 + * reiser4/README */
@@ -9992,9 +9992,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/dscale.c linux-4.2.1/fs/reiser4/dscale.c
 +   scroll-step: 1
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/dscale.h linux-4.2.1/fs/reiser4/dscale.h
---- linux-4.2.1.orig/fs/reiser4/dscale.h	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/dscale.h	2015-09-26 23:36:44.541433646 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/dscale.h linux-4.2.6/fs/reiser4/dscale.h
+--- linux-4.2.6.orig/fs/reiser4/dscale.h	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/dscale.h	2015-11-12 10:00:42.848540494 +0100
 @@ -0,0 +1,28 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by
 + * reiser4/README */
@@ -10024,10 +10024,10 @@ diff -urN linux-4.2.1.orig/fs/reiser4/dscale.h linux-4.2.1/fs/reiser4/dscale.h
 +   fill-column: 120
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/entd.c linux-4.2.1/fs/reiser4/entd.c
---- linux-4.2.1.orig/fs/reiser4/entd.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/entd.c	2015-09-26 23:36:44.541433646 +0200
-@@ -0,0 +1,360 @@
+diff -urN linux-4.2.6.orig/fs/reiser4/entd.c linux-4.2.6/fs/reiser4/entd.c
+--- linux-4.2.6.orig/fs/reiser4/entd.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/entd.c	2015-11-12 10:03:06.518798806 +0100
+@@ -0,0 +1,361 @@
 +/* Copyright 2003, 2004 by Hans Reiser, licensing governed by
 + * reiser4/README */
 +
@@ -10333,6 +10333,7 @@ diff -urN linux-4.2.1.orig/fs/reiser4/entd.c linux-4.2.1/fs/reiser4/entd.c
 +	 * write it - it will remain dirty
 +	 */
 +	set_page_dirty_notag(page);
++	account_page_redirty(page);
 +
 +	/*
 +	 * pin inode in memory, unlock page, entd_flush will iput. We can not
@@ -10388,9 +10389,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/entd.c linux-4.2.1/fs/reiser4/entd.c
 + * fill-column: 79
 + * End:
 + */
-diff -urN linux-4.2.1.orig/fs/reiser4/entd.h linux-4.2.1/fs/reiser4/entd.h
---- linux-4.2.1.orig/fs/reiser4/entd.h	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/entd.h	2015-09-26 23:36:44.542433650 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/entd.h linux-4.2.6/fs/reiser4/entd.h
+--- linux-4.2.6.orig/fs/reiser4/entd.h	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/entd.h	2015-11-12 10:00:42.849540524 +0100
 @@ -0,0 +1,90 @@
 +/* Copyright 2003 by Hans Reiser, licensing governed by reiser4/README */
 +
@@ -10482,9 +10483,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/entd.h linux-4.2.1/fs/reiser4/entd.h
 +   fill-column: 120
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/eottl.c linux-4.2.1/fs/reiser4/eottl.c
---- linux-4.2.1.orig/fs/reiser4/eottl.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/eottl.c	2015-09-26 23:36:44.542433650 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/eottl.c linux-4.2.6/fs/reiser4/eottl.c
+--- linux-4.2.6.orig/fs/reiser4/eottl.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/eottl.c	2015-11-12 10:00:42.849540524 +0100
 @@ -0,0 +1,510 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by
 +   reiser4/README */
@@ -10996,9 +10997,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/eottl.c linux-4.2.1/fs/reiser4/eottl.c
 + * scroll-step: 1
 + * End:
 + */
-diff -urN linux-4.2.1.orig/fs/reiser4/estimate.c linux-4.2.1/fs/reiser4/estimate.c
---- linux-4.2.1.orig/fs/reiser4/estimate.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/estimate.c	2015-09-26 23:36:44.542433650 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/estimate.c linux-4.2.6/fs/reiser4/estimate.c
+--- linux-4.2.6.orig/fs/reiser4/estimate.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/estimate.c	2015-11-12 10:00:42.849540524 +0100
 @@ -0,0 +1,129 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by
 +   reiser4/README */
@@ -11129,9 +11130,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/estimate.c linux-4.2.1/fs/reiser4/estimate
 +   scroll-step: 1
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/export_ops.c linux-4.2.1/fs/reiser4/export_ops.c
---- linux-4.2.1.orig/fs/reiser4/export_ops.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/export_ops.c	2015-09-26 23:36:44.543433654 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/export_ops.c linux-4.2.6/fs/reiser4/export_ops.c
+--- linux-4.2.6.orig/fs/reiser4/export_ops.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/export_ops.c	2015-11-12 10:00:42.850540553 +0100
 @@ -0,0 +1,325 @@
 +/* Copyright 2005 by Hans Reiser, licensing governed by
 + * reiser4/README */
@@ -11458,9 +11459,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/export_ops.c linux-4.2.1/fs/reiser4/export
 + * fill-column: 79
 + * End:
 + */
-diff -urN linux-4.2.1.orig/fs/reiser4/flush.c linux-4.2.1/fs/reiser4/flush.c
---- linux-4.2.1.orig/fs/reiser4/flush.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/flush.c	2015-09-26 23:36:44.545433661 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/flush.c linux-4.2.6/fs/reiser4/flush.c
+--- linux-4.2.6.orig/fs/reiser4/flush.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/flush.c	2015-11-12 10:00:42.853540642 +0100
 @@ -0,0 +1,3522 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by
 +   reiser4/README */
@@ -14984,9 +14985,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/flush.c linux-4.2.1/fs/reiser4/flush.c
 +   LocalWords:  preceder
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/flush.h linux-4.2.1/fs/reiser4/flush.h
---- linux-4.2.1.orig/fs/reiser4/flush.h	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/flush.h	2015-09-26 23:36:44.546433664 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/flush.h linux-4.2.6/fs/reiser4/flush.h
+--- linux-4.2.6.orig/fs/reiser4/flush.h	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/flush.h	2015-11-12 10:00:42.853540642 +0100
 @@ -0,0 +1,290 @@
 +/* Copyright 2002, 2003 by Hans Reiser, licensing governed by reiser4/README */
 +
@@ -15278,9 +15279,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/flush.h linux-4.2.1/fs/reiser4/flush.h
 +   LocalWords:  preceder
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/flush_queue.c linux-4.2.1/fs/reiser4/flush_queue.c
---- linux-4.2.1.orig/fs/reiser4/flush_queue.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/flush_queue.c	2015-09-26 23:36:44.546433664 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/flush_queue.c linux-4.2.6/fs/reiser4/flush_queue.c
+--- linux-4.2.6.orig/fs/reiser4/flush_queue.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/flush_queue.c	2015-11-12 10:00:42.854540671 +0100
 @@ -0,0 +1,675 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by
 +   reiser4/README */
@@ -15957,9 +15958,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/flush_queue.c linux-4.2.1/fs/reiser4/flush
 + * scroll-step: 1
 + * End:
 + */
-diff -urN linux-4.2.1.orig/fs/reiser4/forward.h linux-4.2.1/fs/reiser4/forward.h
---- linux-4.2.1.orig/fs/reiser4/forward.h	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/forward.h	2015-09-26 23:36:44.547433668 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/forward.h linux-4.2.6/fs/reiser4/forward.h
+--- linux-4.2.6.orig/fs/reiser4/forward.h	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/forward.h	2015-11-12 10:00:42.854540671 +0100
 @@ -0,0 +1,259 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by
 +   reiser4/README */
@@ -16220,9 +16221,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/forward.h linux-4.2.1/fs/reiser4/forward.h
 +   fill-column: 120
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/fsdata.c linux-4.2.1/fs/reiser4/fsdata.c
---- linux-4.2.1.orig/fs/reiser4/fsdata.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/fsdata.c	2015-09-26 23:36:44.547433668 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/fsdata.c linux-4.2.6/fs/reiser4/fsdata.c
+--- linux-4.2.6.orig/fs/reiser4/fsdata.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/fsdata.c	2015-11-12 10:00:42.854540671 +0100
 @@ -0,0 +1,801 @@
 +/* Copyright 2001, 2002, 2003, 2004, 2005 by Hans Reiser, licensing governed by
 + * reiser4/README */
@@ -17025,9 +17026,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/fsdata.c linux-4.2.1/fs/reiser4/fsdata.c
 + * fill-column: 79
 + * End:
 + */
-diff -urN linux-4.2.1.orig/fs/reiser4/fsdata.h linux-4.2.1/fs/reiser4/fsdata.h
---- linux-4.2.1.orig/fs/reiser4/fsdata.h	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/fsdata.h	2015-09-26 23:36:44.547433668 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/fsdata.h linux-4.2.6/fs/reiser4/fsdata.h
+--- linux-4.2.6.orig/fs/reiser4/fsdata.h	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/fsdata.h	2015-11-12 10:00:42.855540701 +0100
 @@ -0,0 +1,203 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by
 + * reiser4/README */
@@ -17232,9 +17233,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/fsdata.h linux-4.2.1/fs/reiser4/fsdata.h
 + * fill-column: 120
 + * End:
 + */
-diff -urN linux-4.2.1.orig/fs/reiser4/init_super.c linux-4.2.1/fs/reiser4/init_super.c
---- linux-4.2.1.orig/fs/reiser4/init_super.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/init_super.c	2015-09-26 23:36:44.548433672 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/init_super.c linux-4.2.6/fs/reiser4/init_super.c
+--- linux-4.2.6.orig/fs/reiser4/init_super.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/init_super.c	2015-11-12 10:00:42.855540701 +0100
 @@ -0,0 +1,815 @@
 +/* Copyright by Hans Reiser, 2003 */
 +
@@ -18051,9 +18052,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/init_super.c linux-4.2.1/fs/reiser4/init_s
 + * fill-column: 79
 + * End:
 + */
-diff -urN linux-4.2.1.orig/fs/reiser4/inode.c linux-4.2.1/fs/reiser4/inode.c
---- linux-4.2.1.orig/fs/reiser4/inode.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/inode.c	2015-09-26 23:36:44.548433672 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/inode.c linux-4.2.6/fs/reiser4/inode.c
+--- linux-4.2.6.orig/fs/reiser4/inode.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/inode.c	2015-11-12 10:00:42.856540730 +0100
 @@ -0,0 +1,711 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by
 +   reiser4/README */
@@ -18766,9 +18767,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/inode.c linux-4.2.1/fs/reiser4/inode.c
 +   fill-column: 120
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/inode.h linux-4.2.1/fs/reiser4/inode.h
---- linux-4.2.1.orig/fs/reiser4/inode.h	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/inode.h	2015-09-26 23:36:44.549433675 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/inode.h linux-4.2.6/fs/reiser4/inode.h
+--- linux-4.2.6.orig/fs/reiser4/inode.h	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/inode.h	2015-11-12 10:00:42.856540730 +0100
 @@ -0,0 +1,506 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by
 +   reiser4/README */
@@ -19276,9 +19277,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/inode.h linux-4.2.1/fs/reiser4/inode.h
 +   fill-column: 120
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/ioctl.h linux-4.2.1/fs/reiser4/ioctl.h
---- linux-4.2.1.orig/fs/reiser4/ioctl.h	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/ioctl.h	2015-09-26 23:36:44.549433675 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/ioctl.h linux-4.2.6/fs/reiser4/ioctl.h
+--- linux-4.2.6.orig/fs/reiser4/ioctl.h	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/ioctl.h	2015-11-12 10:00:42.857540760 +0100
 @@ -0,0 +1,41 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by
 + * reiser4/README */
@@ -19321,10 +19322,10 @@ diff -urN linux-4.2.1.orig/fs/reiser4/ioctl.h linux-4.2.1/fs/reiser4/ioctl.h
 +   scroll-step: 1
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/jnode.c linux-4.2.1/fs/reiser4/jnode.c
---- linux-4.2.1.orig/fs/reiser4/jnode.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/jnode.c	2015-09-26 23:36:44.550433679 +0200
-@@ -0,0 +1,1918 @@
+diff -urN linux-4.2.6.orig/fs/reiser4/jnode.c linux-4.2.6/fs/reiser4/jnode.c
+--- linux-4.2.6.orig/fs/reiser4/jnode.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/jnode.c	2015-11-12 10:02:57.616531420 +0100
+@@ -0,0 +1,1917 @@
 +/* Copyright 2001, 2002, 2003, 2004 by Hans Reiser, licensing governed by
 + * reiser4/README */
 +/* Jnode manipulation functions. */
@@ -21173,7 +21174,7 @@ diff -urN linux-4.2.1.orig/fs/reiser4/jnode.c linux-4.2.1/fs/reiser4/jnode.c
 +	}
 +
 +	printk
-+	    ("%s: %p: state: %lx: [%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s], level: %i,"
++	    ("%s: %p: state: %lx: [%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s], level: %i,"
 +	     " block: %s, d_count: %d, x_count: %d, "
 +	     "pg: %p, atom: %p, lock: %i:%i, type: %s, ", prefix, node,
 +	     node->state,
@@ -21190,7 +21191,6 @@ diff -urN linux-4.2.1.orig/fs/reiser4/jnode.c linux-4.2.1/fs/reiser4/jnode.c
 +	     jnode_state_name(node, JNODE_RIP),
 +	     jnode_state_name(node, JNODE_MISSED_IN_CAPTURE),
 +	     jnode_state_name(node, JNODE_WRITEBACK),
-+	     jnode_state_name(node, JNODE_NEW),
 +	     jnode_state_name(node, JNODE_DKSET),
 +	     jnode_state_name(node, JNODE_REPACK),
 +	     jnode_state_name(node, JNODE_CLUSTER_PAGE),
@@ -21243,9 +21243,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/jnode.c linux-4.2.1/fs/reiser4/jnode.c
 +   fill-column: 80
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/jnode.h linux-4.2.1/fs/reiser4/jnode.h
---- linux-4.2.1.orig/fs/reiser4/jnode.h	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/jnode.h	2015-09-26 23:36:44.551433682 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/jnode.h linux-4.2.6/fs/reiser4/jnode.h
+--- linux-4.2.6.orig/fs/reiser4/jnode.h	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/jnode.h	2015-11-12 10:00:42.859540819 +0100
 @@ -0,0 +1,704 @@
 +/* Copyright 2001, 2002, 2003, 2004 by Hans Reiser, licensing governed by
 + * reiser4/README */
@@ -21951,9 +21951,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/jnode.h linux-4.2.1/fs/reiser4/jnode.h
 +   fill-column: 120
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/kassign.c linux-4.2.1/fs/reiser4/kassign.c
---- linux-4.2.1.orig/fs/reiser4/kassign.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/kassign.c	2015-09-26 23:36:44.551433682 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/kassign.c linux-4.2.6/fs/reiser4/kassign.c
+--- linux-4.2.6.orig/fs/reiser4/kassign.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/kassign.c	2015-11-12 10:00:42.859540819 +0100
 @@ -0,0 +1,677 @@
 +/* Copyright 2001, 2002, 2003, 2004 by Hans Reiser, licensing governed by
 + * reiser4/README */
@@ -22632,9 +22632,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/kassign.c linux-4.2.1/fs/reiser4/kassign.c
 +   fill-column: 120
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/kassign.h linux-4.2.1/fs/reiser4/kassign.h
---- linux-4.2.1.orig/fs/reiser4/kassign.h	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/kassign.h	2015-09-26 23:36:44.552433686 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/kassign.h linux-4.2.6/fs/reiser4/kassign.h
+--- linux-4.2.6.orig/fs/reiser4/kassign.h	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/kassign.h	2015-11-12 10:00:42.859540819 +0100
 @@ -0,0 +1,111 @@
 +/* Copyright 2001, 2002, 2003, 2004 by Hans Reiser, licensing governed by
 + * reiser4/README */
@@ -22747,9 +22747,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/kassign.h linux-4.2.1/fs/reiser4/kassign.h
 +   fill-column: 120
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/Kconfig linux-4.2.1/fs/reiser4/Kconfig
---- linux-4.2.1.orig/fs/reiser4/Kconfig	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/Kconfig	2015-09-26 23:36:44.552433686 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/Kconfig linux-4.2.6/fs/reiser4/Kconfig
+--- linux-4.2.6.orig/fs/reiser4/Kconfig	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/Kconfig	2015-11-12 10:00:42.860540848 +0100
 @@ -0,0 +1,34 @@
 +config REISER4_FS
 +	tristate "Reiser4 (EXPERIMENTAL)"
@@ -22785,9 +22785,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/Kconfig linux-4.2.1/fs/reiser4/Kconfig
 +	  Don't use this unless you are debugging reiser4.
 +
 +	  If unsure, say N.
-diff -urN linux-4.2.1.orig/fs/reiser4/key.c linux-4.2.1/fs/reiser4/key.c
---- linux-4.2.1.orig/fs/reiser4/key.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/key.c	2015-09-26 23:36:44.552433686 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/key.c linux-4.2.6/fs/reiser4/key.c
+--- linux-4.2.6.orig/fs/reiser4/key.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/key.c	2015-11-12 10:00:42.860540848 +0100
 @@ -0,0 +1,138 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by
 + * reiser4/README */
@@ -22927,9 +22927,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/key.c linux-4.2.1/fs/reiser4/key.c
 +   fill-column: 120
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/key.h linux-4.2.1/fs/reiser4/key.h
---- linux-4.2.1.orig/fs/reiser4/key.h	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/key.h	2015-09-26 23:36:44.553433689 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/key.h linux-4.2.6/fs/reiser4/key.h
+--- linux-4.2.6.orig/fs/reiser4/key.h	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/key.h	2015-11-12 10:00:42.860540848 +0100
 @@ -0,0 +1,392 @@
 +/* Copyright 2000, 2001, 2002, 2003 by Hans Reiser, licensing governed by
 + * reiser4/README */
@@ -23323,9 +23323,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/key.h linux-4.2.1/fs/reiser4/key.h
 +   fill-column: 120
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/ktxnmgrd.c linux-4.2.1/fs/reiser4/ktxnmgrd.c
---- linux-4.2.1.orig/fs/reiser4/ktxnmgrd.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/ktxnmgrd.c	2015-09-26 23:36:44.553433689 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/ktxnmgrd.c linux-4.2.6/fs/reiser4/ktxnmgrd.c
+--- linux-4.2.6.orig/fs/reiser4/ktxnmgrd.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/ktxnmgrd.c	2015-11-12 10:00:42.861540878 +0100
 @@ -0,0 +1,215 @@
 +/* Copyright 2002, 2003 by Hans Reiser, licensing governed by reiser4/README */
 +/* Transaction manager daemon. */
@@ -23542,9 +23542,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/ktxnmgrd.c linux-4.2.1/fs/reiser4/ktxnmgrd
 + * fill-column: 120
 + * End:
 + */
-diff -urN linux-4.2.1.orig/fs/reiser4/ktxnmgrd.h linux-4.2.1/fs/reiser4/ktxnmgrd.h
---- linux-4.2.1.orig/fs/reiser4/ktxnmgrd.h	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/ktxnmgrd.h	2015-09-26 23:36:44.553433689 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/ktxnmgrd.h linux-4.2.6/fs/reiser4/ktxnmgrd.h
+--- linux-4.2.6.orig/fs/reiser4/ktxnmgrd.h	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/ktxnmgrd.h	2015-11-12 10:00:42.861540878 +0100
 @@ -0,0 +1,52 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by
 + * reiser4/README */
@@ -23598,9 +23598,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/ktxnmgrd.h linux-4.2.1/fs/reiser4/ktxnmgrd
 +   fill-column: 120
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/lock.c linux-4.2.1/fs/reiser4/lock.c
---- linux-4.2.1.orig/fs/reiser4/lock.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/lock.c	2015-09-26 23:36:44.554433693 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/lock.c linux-4.2.6/fs/reiser4/lock.c
+--- linux-4.2.6.orig/fs/reiser4/lock.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/lock.c	2015-11-12 10:00:42.862540907 +0100
 @@ -0,0 +1,1237 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by
 + * reiser4/README */
@@ -24839,9 +24839,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/lock.c linux-4.2.1/fs/reiser4/lock.c
 +   fill-column: 79
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/lock.h linux-4.2.1/fs/reiser4/lock.h
---- linux-4.2.1.orig/fs/reiser4/lock.h	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/lock.h	2015-09-26 23:36:44.554433693 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/lock.h linux-4.2.6/fs/reiser4/lock.h
+--- linux-4.2.6.orig/fs/reiser4/lock.h	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/lock.h	2015-11-12 10:00:42.862540907 +0100
 @@ -0,0 +1,250 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by
 + * reiser4/README */
@@ -25093,9 +25093,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/lock.h linux-4.2.1/fs/reiser4/lock.h
 +   fill-column: 120
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/Makefile linux-4.2.1/fs/reiser4/Makefile
---- linux-4.2.1.orig/fs/reiser4/Makefile	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/Makefile	2015-09-26 23:36:44.554433693 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/Makefile linux-4.2.6/fs/reiser4/Makefile
+--- linux-4.2.6.orig/fs/reiser4/Makefile	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/Makefile	2015-11-12 10:00:42.862540907 +0100
 @@ -0,0 +1,103 @@
 +#
 +# reiser4/Makefile
@@ -25200,9 +25200,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/Makefile linux-4.2.1/fs/reiser4/Makefile
 +		   plugin/disk_format/disk_format40.o \
 +		   plugin/disk_format/disk_format.o
 +
-diff -urN linux-4.2.1.orig/fs/reiser4/oid.c linux-4.2.1/fs/reiser4/oid.c
---- linux-4.2.1.orig/fs/reiser4/oid.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/oid.c	2015-09-26 23:36:44.555433697 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/oid.c linux-4.2.6/fs/reiser4/oid.c
+--- linux-4.2.6.orig/fs/reiser4/oid.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/oid.c	2015-11-12 10:00:42.863540937 +0100
 @@ -0,0 +1,141 @@
 +/* Copyright 2003 by Hans Reiser, licensing governed by reiser4/README */
 +
@@ -25345,9 +25345,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/oid.c linux-4.2.1/fs/reiser4/oid.c
 +   scroll-step: 1
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/page_cache.c linux-4.2.1/fs/reiser4/page_cache.c
---- linux-4.2.1.orig/fs/reiser4/page_cache.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/page_cache.c	2015-09-26 23:36:44.555433697 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/page_cache.c linux-4.2.6/fs/reiser4/page_cache.c
+--- linux-4.2.6.orig/fs/reiser4/page_cache.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/page_cache.c	2015-11-12 10:00:42.863540937 +0100
 @@ -0,0 +1,695 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by
 + * reiser4/README */
@@ -26044,9 +26044,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/page_cache.c linux-4.2.1/fs/reiser4/page_c
 + * scroll-step: 1
 + * End:
 + */
-diff -urN linux-4.2.1.orig/fs/reiser4/page_cache.h linux-4.2.1/fs/reiser4/page_cache.h
---- linux-4.2.1.orig/fs/reiser4/page_cache.h	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/page_cache.h	2015-09-26 23:36:44.555433697 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/page_cache.h linux-4.2.6/fs/reiser4/page_cache.h
+--- linux-4.2.6.orig/fs/reiser4/page_cache.h	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/page_cache.h	2015-11-12 10:00:42.863540937 +0100
 @@ -0,0 +1,66 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by
 + * reiser4/README */
@@ -26114,9 +26114,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/page_cache.h linux-4.2.1/fs/reiser4/page_c
 +   scroll-step: 1
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/plugin/cluster.c linux-4.2.1/fs/reiser4/plugin/cluster.c
---- linux-4.2.1.orig/fs/reiser4/plugin/cluster.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/plugin/cluster.c	2015-09-26 23:36:44.556433700 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/plugin/cluster.c linux-4.2.6/fs/reiser4/plugin/cluster.c
+--- linux-4.2.6.orig/fs/reiser4/plugin/cluster.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/plugin/cluster.c	2015-11-12 10:00:42.864540967 +0100
 @@ -0,0 +1,72 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by
 + * reiser4/README */
@@ -26190,9 +26190,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/plugin/cluster.c linux-4.2.1/fs/reiser4/pl
 +  scroll-step: 1
 +  End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/plugin/cluster.h linux-4.2.1/fs/reiser4/plugin/cluster.h
---- linux-4.2.1.orig/fs/reiser4/plugin/cluster.h	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/plugin/cluster.h	2015-09-26 23:36:44.556433700 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/plugin/cluster.h linux-4.2.6/fs/reiser4/plugin/cluster.h
+--- linux-4.2.6.orig/fs/reiser4/plugin/cluster.h	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/plugin/cluster.h	2015-11-12 10:00:42.864540967 +0100
 @@ -0,0 +1,410 @@
 +/* Copyright 2002, 2003 by Hans Reiser, licensing governed by reiser4/README */
 +
@@ -26604,9 +26604,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/plugin/cluster.h linux-4.2.1/fs/reiser4/pl
 +   scroll-step: 1
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/plugin/compress/compress.c linux-4.2.1/fs/reiser4/plugin/compress/compress.c
---- linux-4.2.1.orig/fs/reiser4/plugin/compress/compress.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/plugin/compress/compress.c	2015-09-26 23:36:44.556433700 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/plugin/compress/compress.c linux-4.2.6/fs/reiser4/plugin/compress/compress.c
+--- linux-4.2.6.orig/fs/reiser4/plugin/compress/compress.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/plugin/compress/compress.c	2015-11-12 10:00:42.864540967 +0100
 @@ -0,0 +1,356 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by reiser4/README */
 +/* reiser4 compression transform plugins */
@@ -26964,9 +26964,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/plugin/compress/compress.c linux-4.2.1/fs/
 +  scroll-step: 1
 +  End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/plugin/compress/compress.h linux-4.2.1/fs/reiser4/plugin/compress/compress.h
---- linux-4.2.1.orig/fs/reiser4/plugin/compress/compress.h	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/plugin/compress/compress.h	2015-09-26 23:36:44.556433700 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/plugin/compress/compress.h linux-4.2.6/fs/reiser4/plugin/compress/compress.h
+--- linux-4.2.6.orig/fs/reiser4/plugin/compress/compress.h	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/plugin/compress/compress.h	2015-11-12 10:00:42.864540967 +0100
 @@ -0,0 +1,43 @@
 +#if !defined( __FS_REISER4_COMPRESS_H__ )
 +#define __FS_REISER4_COMPRESS_H__
@@ -27011,9 +27011,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/plugin/compress/compress.h linux-4.2.1/fs/
 +   scroll-step: 1
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/plugin/compress/compress_mode.c linux-4.2.1/fs/reiser4/plugin/compress/compress_mode.c
---- linux-4.2.1.orig/fs/reiser4/plugin/compress/compress_mode.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/plugin/compress/compress_mode.c	2015-09-26 23:36:44.557433704 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/plugin/compress/compress_mode.c linux-4.2.6/fs/reiser4/plugin/compress/compress_mode.c
+--- linux-4.2.6.orig/fs/reiser4/plugin/compress/compress_mode.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/plugin/compress/compress_mode.c	2015-11-12 10:00:42.865540996 +0100
 @@ -0,0 +1,162 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by reiser4/README */
 +/* This file contains Reiser4 compression mode plugins.
@@ -27177,18 +27177,18 @@ diff -urN linux-4.2.1.orig/fs/reiser4/plugin/compress/compress_mode.c linux-4.2.
 +  scroll-step: 1
 +  End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/plugin/compress/Makefile linux-4.2.1/fs/reiser4/plugin/compress/Makefile
---- linux-4.2.1.orig/fs/reiser4/plugin/compress/Makefile	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/plugin/compress/Makefile	2015-09-26 23:36:44.557433704 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/plugin/compress/Makefile linux-4.2.6/fs/reiser4/plugin/compress/Makefile
+--- linux-4.2.6.orig/fs/reiser4/plugin/compress/Makefile	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/plugin/compress/Makefile	2015-11-12 10:00:42.865540996 +0100
 @@ -0,0 +1,5 @@
 +obj-$(CONFIG_REISER4_FS) += compress_plugins.o
 +
 +compress_plugins-objs :=	\
 +	compress.o		\
 +	compress_mode.o
-diff -urN linux-4.2.1.orig/fs/reiser4/plugin/crypto/cipher.c linux-4.2.1/fs/reiser4/plugin/crypto/cipher.c
---- linux-4.2.1.orig/fs/reiser4/plugin/crypto/cipher.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/plugin/crypto/cipher.c	2015-09-26 23:36:44.557433704 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/plugin/crypto/cipher.c linux-4.2.6/fs/reiser4/plugin/crypto/cipher.c
+--- linux-4.2.6.orig/fs/reiser4/plugin/crypto/cipher.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/plugin/crypto/cipher.c	2015-11-12 10:00:42.865540996 +0100
 @@ -0,0 +1,37 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser,
 +   licensing governed by reiser4/README */
@@ -27227,9 +27227,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/plugin/crypto/cipher.c linux-4.2.1/fs/reis
 +   scroll-step: 1
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/plugin/crypto/cipher.h linux-4.2.1/fs/reiser4/plugin/crypto/cipher.h
---- linux-4.2.1.orig/fs/reiser4/plugin/crypto/cipher.h	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/plugin/crypto/cipher.h	2015-09-26 23:36:44.557433704 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/plugin/crypto/cipher.h linux-4.2.6/fs/reiser4/plugin/crypto/cipher.h
+--- linux-4.2.6.orig/fs/reiser4/plugin/crypto/cipher.h	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/plugin/crypto/cipher.h	2015-11-12 10:00:42.865540996 +0100
 @@ -0,0 +1,55 @@
 +/* Copyright 2002, 2003 by Hans Reiser, licensing governed by reiser4/README */
 +/* This file contains definitions for the objects operated
@@ -27286,9 +27286,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/plugin/crypto/cipher.h linux-4.2.1/fs/reis
 +   scroll-step: 1
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/plugin/crypto/digest.c linux-4.2.1/fs/reiser4/plugin/crypto/digest.c
---- linux-4.2.1.orig/fs/reiser4/plugin/crypto/digest.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/plugin/crypto/digest.c	2015-09-26 23:36:44.557433704 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/plugin/crypto/digest.c linux-4.2.6/fs/reiser4/plugin/crypto/digest.c
+--- linux-4.2.6.orig/fs/reiser4/plugin/crypto/digest.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/plugin/crypto/digest.c	2015-11-12 10:00:42.865540996 +0100
 @@ -0,0 +1,58 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by reiser4/README */
 +
@@ -27348,9 +27348,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/plugin/crypto/digest.c linux-4.2.1/fs/reis
 +  scroll-step: 1
 +  End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/plugin/dir/dir.h linux-4.2.1/fs/reiser4/plugin/dir/dir.h
---- linux-4.2.1.orig/fs/reiser4/plugin/dir/dir.h	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/plugin/dir/dir.h	2015-09-26 23:36:44.558433707 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/plugin/dir/dir.h linux-4.2.6/fs/reiser4/plugin/dir/dir.h
+--- linux-4.2.6.orig/fs/reiser4/plugin/dir/dir.h	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/plugin/dir/dir.h	2015-11-12 10:00:42.866541026 +0100
 @@ -0,0 +1,36 @@
 +/* Copyright 2001, 2002, 2003, 2004 by Hans Reiser, licensing governed by
 + * reiser4/README */
@@ -27388,9 +27388,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/plugin/dir/dir.h linux-4.2.1/fs/reiser4/pl
 +   fill-column: 120
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/plugin/dir/hashed_dir.c linux-4.2.1/fs/reiser4/plugin/dir/hashed_dir.c
---- linux-4.2.1.orig/fs/reiser4/plugin/dir/hashed_dir.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/plugin/dir/hashed_dir.c	2015-09-26 23:36:44.558433707 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/plugin/dir/hashed_dir.c linux-4.2.6/fs/reiser4/plugin/dir/hashed_dir.c
+--- linux-4.2.6.orig/fs/reiser4/plugin/dir/hashed_dir.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/plugin/dir/hashed_dir.c	2015-11-12 10:00:42.866541026 +0100
 @@ -0,0 +1,81 @@
 +/* Copyright 2001, 2002, 2003, 2004 by Hans Reiser, licensing governed by
 + * reiser4/README */
@@ -27473,18 +27473,18 @@ diff -urN linux-4.2.1.orig/fs/reiser4/plugin/dir/hashed_dir.c linux-4.2.1/fs/rei
 +   fill-column: 120
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/plugin/dir/Makefile linux-4.2.1/fs/reiser4/plugin/dir/Makefile
---- linux-4.2.1.orig/fs/reiser4/plugin/dir/Makefile	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/plugin/dir/Makefile	2015-09-26 23:36:44.558433707 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/plugin/dir/Makefile linux-4.2.6/fs/reiser4/plugin/dir/Makefile
+--- linux-4.2.6.orig/fs/reiser4/plugin/dir/Makefile	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/plugin/dir/Makefile	2015-11-12 10:00:42.866541026 +0100
 @@ -0,0 +1,5 @@
 +obj-$(CONFIG_REISER4_FS) += dir_plugins.o
 +
 +dir_plugins-objs :=	\
 +	hashed_dir.o	\
 +	seekable_dir.o
-diff -urN linux-4.2.1.orig/fs/reiser4/plugin/dir/seekable_dir.c linux-4.2.1/fs/reiser4/plugin/dir/seekable_dir.c
---- linux-4.2.1.orig/fs/reiser4/plugin/dir/seekable_dir.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/plugin/dir/seekable_dir.c	2015-09-26 23:36:44.558433707 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/plugin/dir/seekable_dir.c linux-4.2.6/fs/reiser4/plugin/dir/seekable_dir.c
+--- linux-4.2.6.orig/fs/reiser4/plugin/dir/seekable_dir.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/plugin/dir/seekable_dir.c	2015-11-12 10:00:42.866541026 +0100
 @@ -0,0 +1,46 @@
 +/* Copyright 2005 by Hans Reiser, licensing governed by
 + * reiser4/README */
@@ -27532,9 +27532,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/plugin/dir/seekable_dir.c linux-4.2.1/fs/r
 +	set_key_offset(result, (__u64) 0);
 +	return;
 +}
-diff -urN linux-4.2.1.orig/fs/reiser4/plugin/dir_plugin_common.c linux-4.2.1/fs/reiser4/plugin/dir_plugin_common.c
---- linux-4.2.1.orig/fs/reiser4/plugin/dir_plugin_common.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/plugin/dir_plugin_common.c	2015-09-26 23:36:44.559433711 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/plugin/dir_plugin_common.c linux-4.2.6/fs/reiser4/plugin/dir_plugin_common.c
+--- linux-4.2.6.orig/fs/reiser4/plugin/dir_plugin_common.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/plugin/dir_plugin_common.c	2015-11-12 10:00:42.867541055 +0100
 @@ -0,0 +1,865 @@
 +/* Copyright 2005 by Hans Reiser, licensing governed by
 +   reiser4/README */
@@ -28401,9 +28401,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/plugin/dir_plugin_common.c linux-4.2.1/fs/
 +   scroll-step: 1
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/plugin/disk_format/disk_format40.c linux-4.2.1/fs/reiser4/plugin/disk_format/disk_format40.c
---- linux-4.2.1.orig/fs/reiser4/plugin/disk_format/disk_format40.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/plugin/disk_format/disk_format40.c	2015-09-26 23:36:44.559433711 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/plugin/disk_format/disk_format40.c linux-4.2.6/fs/reiser4/plugin/disk_format/disk_format40.c
+--- linux-4.2.6.orig/fs/reiser4/plugin/disk_format/disk_format40.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/plugin/disk_format/disk_format40.c	2015-11-12 10:00:42.867541055 +0100
 @@ -0,0 +1,662 @@
 +/* Copyright 2002, 2003 by Hans Reiser, licensing governed by reiser4/README */
 +
@@ -29067,9 +29067,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/plugin/disk_format/disk_format40.c linux-4
 +   scroll-step: 1
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/plugin/disk_format/disk_format40.h linux-4.2.1/fs/reiser4/plugin/disk_format/disk_format40.h
---- linux-4.2.1.orig/fs/reiser4/plugin/disk_format/disk_format40.h	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/plugin/disk_format/disk_format40.h	2015-09-26 23:36:44.559433711 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/plugin/disk_format/disk_format40.h linux-4.2.6/fs/reiser4/plugin/disk_format/disk_format40.h
+--- linux-4.2.6.orig/fs/reiser4/plugin/disk_format/disk_format40.h	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/plugin/disk_format/disk_format40.h	2015-11-12 10:00:42.868541085 +0100
 @@ -0,0 +1,111 @@
 +/* Copyright 2002, 2003 by Hans Reiser, licensing governed by reiser4/README */
 +
@@ -29182,9 +29182,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/plugin/disk_format/disk_format40.h linux-4
 +   scroll-step: 1
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/plugin/disk_format/disk_format.c linux-4.2.1/fs/reiser4/plugin/disk_format/disk_format.c
---- linux-4.2.1.orig/fs/reiser4/plugin/disk_format/disk_format.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/plugin/disk_format/disk_format.c	2015-09-26 23:36:44.560433715 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/plugin/disk_format/disk_format.c linux-4.2.6/fs/reiser4/plugin/disk_format/disk_format.c
+--- linux-4.2.6.orig/fs/reiser4/plugin/disk_format/disk_format.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/plugin/disk_format/disk_format.c	2015-11-12 10:00:42.868541085 +0100
 @@ -0,0 +1,38 @@
 +/* Copyright 2002, 2003 by Hans Reiser, licensing governed by reiser4/README */
 +
@@ -29224,9 +29224,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/plugin/disk_format/disk_format.c linux-4.2
 +   scroll-step: 1
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/plugin/disk_format/disk_format.h linux-4.2.1/fs/reiser4/plugin/disk_format/disk_format.h
---- linux-4.2.1.orig/fs/reiser4/plugin/disk_format/disk_format.h	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/plugin/disk_format/disk_format.h	2015-09-26 23:36:44.560433715 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/plugin/disk_format/disk_format.h linux-4.2.6/fs/reiser4/plugin/disk_format/disk_format.h
+--- linux-4.2.6.orig/fs/reiser4/plugin/disk_format/disk_format.h	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/plugin/disk_format/disk_format.h	2015-11-12 10:00:42.868541085 +0100
 @@ -0,0 +1,27 @@
 +/* Copyright 2002, 2003 by Hans Reiser, licensing governed by reiser4/README */
 +
@@ -29255,18 +29255,18 @@ diff -urN linux-4.2.1.orig/fs/reiser4/plugin/disk_format/disk_format.h linux-4.2
 +   scroll-step: 1
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/plugin/disk_format/Makefile linux-4.2.1/fs/reiser4/plugin/disk_format/Makefile
---- linux-4.2.1.orig/fs/reiser4/plugin/disk_format/Makefile	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/plugin/disk_format/Makefile	2015-09-26 23:36:44.560433715 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/plugin/disk_format/Makefile linux-4.2.6/fs/reiser4/plugin/disk_format/Makefile
+--- linux-4.2.6.orig/fs/reiser4/plugin/disk_format/Makefile	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/plugin/disk_format/Makefile	2015-11-12 10:00:42.868541085 +0100
 @@ -0,0 +1,5 @@
 +obj-$(CONFIG_REISER4_FS) += df_plugins.o
 +
 +df_plugins-objs :=	\
 +	disk_format40.o	\
 +	disk_format.o
-diff -urN linux-4.2.1.orig/fs/reiser4/plugin/fibration.c linux-4.2.1/fs/reiser4/plugin/fibration.c
---- linux-4.2.1.orig/fs/reiser4/plugin/fibration.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/plugin/fibration.c	2015-09-26 23:36:44.560433715 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/plugin/fibration.c linux-4.2.6/fs/reiser4/plugin/fibration.c
+--- linux-4.2.6.orig/fs/reiser4/plugin/fibration.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/plugin/fibration.c	2015-11-12 10:00:42.868541085 +0100
 @@ -0,0 +1,175 @@
 +/* Copyright 2004 by Hans Reiser, licensing governed by
 + * reiser4/README */
@@ -29443,9 +29443,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/plugin/fibration.c linux-4.2.1/fs/reiser4/
 + * fill-column: 79
 + * End:
 + */
-diff -urN linux-4.2.1.orig/fs/reiser4/plugin/fibration.h linux-4.2.1/fs/reiser4/plugin/fibration.h
---- linux-4.2.1.orig/fs/reiser4/plugin/fibration.h	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/plugin/fibration.h	2015-09-26 23:36:44.560433715 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/plugin/fibration.h linux-4.2.6/fs/reiser4/plugin/fibration.h
+--- linux-4.2.6.orig/fs/reiser4/plugin/fibration.h	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/plugin/fibration.h	2015-11-12 10:00:42.868541085 +0100
 @@ -0,0 +1,37 @@
 +/* Copyright 2004 by Hans Reiser, licensing governed by reiser4/README */
 +
@@ -29484,9 +29484,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/plugin/fibration.h linux-4.2.1/fs/reiser4/
 +   fill-column: 120
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/plugin/file/cryptcompress.c linux-4.2.1/fs/reiser4/plugin/file/cryptcompress.c
---- linux-4.2.1.orig/fs/reiser4/plugin/file/cryptcompress.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/plugin/file/cryptcompress.c	2015-09-26 23:36:44.563433725 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/plugin/file/cryptcompress.c linux-4.2.6/fs/reiser4/plugin/file/cryptcompress.c
+--- linux-4.2.6.orig/fs/reiser4/plugin/file/cryptcompress.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/plugin/file/cryptcompress.c	2015-11-12 10:00:42.871541173 +0100
 @@ -0,0 +1,3799 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by
 +   reiser4/README */
@@ -33287,9 +33287,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/plugin/file/cryptcompress.c linux-4.2.1/fs
 +  scroll-step: 1
 +  End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/plugin/file/cryptcompress.h linux-4.2.1/fs/reiser4/plugin/file/cryptcompress.h
---- linux-4.2.1.orig/fs/reiser4/plugin/file/cryptcompress.h	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/plugin/file/cryptcompress.h	2015-09-26 23:36:44.563433725 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/plugin/file/cryptcompress.h linux-4.2.6/fs/reiser4/plugin/file/cryptcompress.h
+--- linux-4.2.6.orig/fs/reiser4/plugin/file/cryptcompress.h	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/plugin/file/cryptcompress.h	2015-11-12 10:00:42.872541203 +0100
 @@ -0,0 +1,619 @@
 +/* Copyright 2002, 2003 by Hans Reiser, licensing governed by reiser4/README */
 +/* See http://www.namesys.com/cryptcompress_design.html */
@@ -33910,9 +33910,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/plugin/file/cryptcompress.h linux-4.2.1/fs
 +   scroll-step: 1
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/plugin/file/file.c linux-4.2.1/fs/reiser4/plugin/file/file.c
---- linux-4.2.1.orig/fs/reiser4/plugin/file/file.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/plugin/file/file.c	2015-09-26 23:36:44.565433732 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/plugin/file/file.c linux-4.2.6/fs/reiser4/plugin/file/file.c
+--- linux-4.2.6.orig/fs/reiser4/plugin/file/file.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/plugin/file/file.c	2015-11-12 10:00:42.874541262 +0100
 @@ -0,0 +1,2796 @@
 +/* Copyright 2001, 2002, 2003, 2004 by Hans Reiser, licensing governed by
 + * reiser4/README */
@@ -36710,9 +36710,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/plugin/file/file.c linux-4.2.1/fs/reiser4/
 + * scroll-step: 1
 + * End:
 + */
-diff -urN linux-4.2.1.orig/fs/reiser4/plugin/file/file_conversion.c linux-4.2.1/fs/reiser4/plugin/file/file_conversion.c
---- linux-4.2.1.orig/fs/reiser4/plugin/file/file_conversion.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/plugin/file/file_conversion.c	2015-09-26 23:36:44.566433736 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/plugin/file/file_conversion.c linux-4.2.6/fs/reiser4/plugin/file/file_conversion.c
+--- linux-4.2.6.orig/fs/reiser4/plugin/file/file_conversion.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/plugin/file/file_conversion.c	2015-11-12 10:00:42.875541291 +0100
 @@ -0,0 +1,755 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser,
 +   licensing governed by reiser4/README */
@@ -37469,9 +37469,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/plugin/file/file_conversion.c linux-4.2.1/
 +  scroll-step: 1
 +  End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/plugin/file/file.h linux-4.2.1/fs/reiser4/plugin/file/file.h
---- linux-4.2.1.orig/fs/reiser4/plugin/file/file.h	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/plugin/file/file.h	2015-09-26 23:36:44.566433736 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/plugin/file/file.h linux-4.2.6/fs/reiser4/plugin/file/file.h
+--- linux-4.2.6.orig/fs/reiser4/plugin/file/file.h	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/plugin/file/file.h	2015-11-12 10:00:42.875541291 +0100
 @@ -0,0 +1,322 @@
 +/* Copyright 2001, 2002, 2003, 2004 by Hans Reiser, licensing governed by
 + * reiser4/README */
@@ -37795,9 +37795,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/plugin/file/file.h linux-4.2.1/fs/reiser4/
 + * scroll-step: 1
 + * End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/plugin/file/Makefile linux-4.2.1/fs/reiser4/plugin/file/Makefile
---- linux-4.2.1.orig/fs/reiser4/plugin/file/Makefile	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/plugin/file/Makefile	2015-09-26 23:36:44.566433736 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/plugin/file/Makefile linux-4.2.6/fs/reiser4/plugin/file/Makefile
+--- linux-4.2.6.orig/fs/reiser4/plugin/file/Makefile	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/plugin/file/Makefile	2015-11-12 10:00:42.875541291 +0100
 @@ -0,0 +1,7 @@
 +obj-$(CONFIG_REISER4_FS) += file_plugins.o
 +
@@ -37806,9 +37806,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/plugin/file/Makefile linux-4.2.1/fs/reiser
 +	tail_conversion.o	\
 +	symlink.o		\
 +	cryptcompress.o
-diff -urN linux-4.2.1.orig/fs/reiser4/plugin/file/symfile.c linux-4.2.1/fs/reiser4/plugin/file/symfile.c
---- linux-4.2.1.orig/fs/reiser4/plugin/file/symfile.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/plugin/file/symfile.c	2015-09-26 23:36:44.566433736 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/plugin/file/symfile.c linux-4.2.6/fs/reiser4/plugin/file/symfile.c
+--- linux-4.2.6.orig/fs/reiser4/plugin/file/symfile.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/plugin/file/symfile.c	2015-11-12 10:00:42.875541291 +0100
 @@ -0,0 +1,87 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by reiser4/README */
 +
@@ -37897,9 +37897,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/plugin/file/symfile.c linux-4.2.1/fs/reise
 +   sophisticated symfile syntax that we are not planning to write for
 +   version 4.0.
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/plugin/file/symlink.c linux-4.2.1/fs/reiser4/plugin/file/symlink.c
---- linux-4.2.1.orig/fs/reiser4/plugin/file/symlink.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/plugin/file/symlink.c	2015-09-26 23:36:44.567433739 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/plugin/file/symlink.c linux-4.2.6/fs/reiser4/plugin/file/symlink.c
+--- linux-4.2.6.orig/fs/reiser4/plugin/file/symlink.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/plugin/file/symlink.c	2015-11-12 10:00:42.876541321 +0100
 @@ -0,0 +1,95 @@
 +/* Copyright 2002, 2003, 2005 by Hans Reiser, licensing governed by reiser4/README */
 +
@@ -37996,10 +37996,10 @@ diff -urN linux-4.2.1.orig/fs/reiser4/plugin/file/symlink.c linux-4.2.1/fs/reise
 +  scroll-step: 1
 +  End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/plugin/file/tail_conversion.c linux-4.2.1/fs/reiser4/plugin/file/tail_conversion.c
---- linux-4.2.1.orig/fs/reiser4/plugin/file/tail_conversion.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/plugin/file/tail_conversion.c	2015-09-26 23:36:44.567433739 +0200
-@@ -0,0 +1,762 @@
+diff -urN linux-4.2.6.orig/fs/reiser4/plugin/file/tail_conversion.c linux-4.2.6/fs/reiser4/plugin/file/tail_conversion.c
+--- linux-4.2.6.orig/fs/reiser4/plugin/file/tail_conversion.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/plugin/file/tail_conversion.c	2015-11-12 10:28:01.257594923 +0100
+@@ -0,0 +1,763 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by reiser4/README */
 +
 +#include "../../inode.h"
@@ -38177,6 +38177,8 @@ diff -urN linux-4.2.1.orig/fs/reiser4/plugin/file/tail_conversion.c linux-4.2.1/
 +								i_mapping));
 +		if (result)
 +			break;
++		SetPageUptodate(pages[i]);
++		set_page_dirty_notag(pages[i]);
 +		unlock_page(pages[i]);
 +		result = find_or_create_extent(pages[i]);
 +		if (result) {
@@ -38190,7 +38192,6 @@ diff -urN linux-4.2.1.orig/fs/reiser4/plugin/file/tail_conversion.c linux-4.2.1/
 +				result);
 +			break;
 +		}
-+		SetPageUptodate(pages[i]);
 +	}
 +	return result;
 +}
@@ -38762,9 +38763,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/plugin/file/tail_conversion.c linux-4.2.1/
 + * scroll-step: 1
 + * End:
 + */
-diff -urN linux-4.2.1.orig/fs/reiser4/plugin/file_ops.c linux-4.2.1/fs/reiser4/plugin/file_ops.c
---- linux-4.2.1.orig/fs/reiser4/plugin/file_ops.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/plugin/file_ops.c	2015-09-26 23:36:44.567433739 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/plugin/file_ops.c linux-4.2.6/fs/reiser4/plugin/file_ops.c
+--- linux-4.2.6.orig/fs/reiser4/plugin/file_ops.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/plugin/file_ops.c	2015-11-12 10:00:42.876541321 +0100
 @@ -0,0 +1,119 @@
 +/* Copyright 2005 by Hans Reiser, licensing governed by
 +   reiser4/README */
@@ -38885,9 +38886,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/plugin/file_ops.c linux-4.2.1/fs/reiser4/p
 + * scroll-step: 1
 + * End:
 + */
-diff -urN linux-4.2.1.orig/fs/reiser4/plugin/file_ops_readdir.c linux-4.2.1/fs/reiser4/plugin/file_ops_readdir.c
---- linux-4.2.1.orig/fs/reiser4/plugin/file_ops_readdir.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/plugin/file_ops_readdir.c	2015-09-26 23:36:44.568433743 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/plugin/file_ops_readdir.c linux-4.2.6/fs/reiser4/plugin/file_ops_readdir.c
+--- linux-4.2.6.orig/fs/reiser4/plugin/file_ops_readdir.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/plugin/file_ops_readdir.c	2015-11-12 10:00:42.877541350 +0100
 @@ -0,0 +1,658 @@
 +/* Copyright 2005 by Hans Reiser, licensing governed by
 + * reiser4/README */
@@ -39547,9 +39548,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/plugin/file_ops_readdir.c linux-4.2.1/fs/r
 + * fill-column: 79
 + * End:
 + */
-diff -urN linux-4.2.1.orig/fs/reiser4/plugin/file_plugin_common.c linux-4.2.1/fs/reiser4/plugin/file_plugin_common.c
---- linux-4.2.1.orig/fs/reiser4/plugin/file_plugin_common.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/plugin/file_plugin_common.c	2015-09-26 23:36:44.568433743 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/plugin/file_plugin_common.c linux-4.2.6/fs/reiser4/plugin/file_plugin_common.c
+--- linux-4.2.6.orig/fs/reiser4/plugin/file_plugin_common.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/plugin/file_plugin_common.c	2015-11-12 10:00:42.878541380 +0100
 @@ -0,0 +1,1004 @@
 +/* Copyright 2005 by Hans Reiser, licensing governed by
 +   reiser4/README */
@@ -40555,9 +40556,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/plugin/file_plugin_common.c linux-4.2.1/fs
 +  scroll-step: 1
 +  End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/plugin/hash.c linux-4.2.1/fs/reiser4/plugin/hash.c
---- linux-4.2.1.orig/fs/reiser4/plugin/hash.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/plugin/hash.c	2015-09-26 23:36:44.569433747 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/plugin/hash.c linux-4.2.6/fs/reiser4/plugin/hash.c
+--- linux-4.2.6.orig/fs/reiser4/plugin/hash.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/plugin/hash.c	2015-11-12 10:00:42.878541380 +0100
 @@ -0,0 +1,352 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by
 + * reiser4/README */
@@ -40911,9 +40912,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/plugin/hash.c linux-4.2.1/fs/reiser4/plugi
 +   fill-column: 120
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/plugin/inode_ops.c linux-4.2.1/fs/reiser4/plugin/inode_ops.c
---- linux-4.2.1.orig/fs/reiser4/plugin/inode_ops.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/plugin/inode_ops.c	2015-09-26 23:36:44.569433747 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/plugin/inode_ops.c linux-4.2.6/fs/reiser4/plugin/inode_ops.c
+--- linux-4.2.6.orig/fs/reiser4/plugin/inode_ops.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/plugin/inode_ops.c	2015-11-12 10:00:42.879541409 +0100
 @@ -0,0 +1,879 @@
 +/*
 + * Copyright 2005 by Hans Reiser, licensing governed by reiser4/README
@@ -41794,9 +41795,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/plugin/inode_ops.c linux-4.2.1/fs/reiser4/
 +	dir->i_ctime = dir->i_mtime = CURRENT_TIME;
 +	return reiser4_update_sd(dir);
 +}
-diff -urN linux-4.2.1.orig/fs/reiser4/plugin/inode_ops_rename.c linux-4.2.1/fs/reiser4/plugin/inode_ops_rename.c
---- linux-4.2.1.orig/fs/reiser4/plugin/inode_ops_rename.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/plugin/inode_ops_rename.c	2015-09-26 23:36:44.570433750 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/plugin/inode_ops_rename.c linux-4.2.6/fs/reiser4/plugin/inode_ops_rename.c
+--- linux-4.2.6.orig/fs/reiser4/plugin/inode_ops_rename.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/plugin/inode_ops_rename.c	2015-11-12 10:00:42.880541439 +0100
 @@ -0,0 +1,925 @@
 +/* Copyright 2001, 2002, 2003, 2004 by Hans Reiser, licensing governed by
 + * reiser4/README */
@@ -42723,9 +42724,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/plugin/inode_ops_rename.c linux-4.2.1/fs/r
 +	return result;
 +}
 +#endif
-diff -urN linux-4.2.1.orig/fs/reiser4/plugin/item/acl.h linux-4.2.1/fs/reiser4/plugin/item/acl.h
---- linux-4.2.1.orig/fs/reiser4/plugin/item/acl.h	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/plugin/item/acl.h	2015-09-26 23:36:44.570433750 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/plugin/item/acl.h linux-4.2.6/fs/reiser4/plugin/item/acl.h
+--- linux-4.2.6.orig/fs/reiser4/plugin/item/acl.h	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/plugin/item/acl.h	2015-11-12 10:00:42.880541439 +0100
 @@ -0,0 +1,66 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by reiser4/README */
 +
@@ -42793,9 +42794,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/plugin/item/acl.h linux-4.2.1/fs/reiser4/p
 +   fill-column: 120
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/plugin/item/blackbox.c linux-4.2.1/fs/reiser4/plugin/item/blackbox.c
---- linux-4.2.1.orig/fs/reiser4/plugin/item/blackbox.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/plugin/item/blackbox.c	2015-09-26 23:36:44.570433750 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/plugin/item/blackbox.c linux-4.2.6/fs/reiser4/plugin/item/blackbox.c
+--- linux-4.2.6.orig/fs/reiser4/plugin/item/blackbox.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/plugin/item/blackbox.c	2015-11-12 10:00:42.880541439 +0100
 @@ -0,0 +1,142 @@
 +/* Copyright 2003 by Hans Reiser, licensing governed by
 + * reiser4/README */
@@ -42939,9 +42940,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/plugin/item/blackbox.c linux-4.2.1/fs/reis
 +   fill-column: 120
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/plugin/item/blackbox.h linux-4.2.1/fs/reiser4/plugin/item/blackbox.h
---- linux-4.2.1.orig/fs/reiser4/plugin/item/blackbox.h	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/plugin/item/blackbox.h	2015-09-26 23:36:44.570433750 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/plugin/item/blackbox.h linux-4.2.6/fs/reiser4/plugin/item/blackbox.h
+--- linux-4.2.6.orig/fs/reiser4/plugin/item/blackbox.h	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/plugin/item/blackbox.h	2015-11-12 10:00:42.880541439 +0100
 @@ -0,0 +1,33 @@
 +/* Copyright 2003 by Hans Reiser, licensing governed by
 + * reiser4/README */
@@ -42976,9 +42977,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/plugin/item/blackbox.h linux-4.2.1/fs/reis
 +   fill-column: 120
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/plugin/item/cde.c linux-4.2.1/fs/reiser4/plugin/item/cde.c
---- linux-4.2.1.orig/fs/reiser4/plugin/item/cde.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/plugin/item/cde.c	2015-09-26 23:36:44.571433754 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/plugin/item/cde.c linux-4.2.6/fs/reiser4/plugin/item/cde.c
+--- linux-4.2.6.orig/fs/reiser4/plugin/item/cde.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/plugin/item/cde.c	2015-11-12 10:00:42.881541469 +0100
 @@ -0,0 +1,1004 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by reiser4/README */
 +
@@ -43984,9 +43985,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/plugin/item/cde.c linux-4.2.1/fs/reiser4/p
 +   fill-column: 120
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/plugin/item/cde.h linux-4.2.1/fs/reiser4/plugin/item/cde.h
---- linux-4.2.1.orig/fs/reiser4/plugin/item/cde.h	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/plugin/item/cde.h	2015-09-26 23:36:44.571433754 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/plugin/item/cde.h linux-4.2.6/fs/reiser4/plugin/item/cde.h
+--- linux-4.2.6.orig/fs/reiser4/plugin/item/cde.h	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/plugin/item/cde.h	2015-11-12 10:00:42.881541469 +0100
 @@ -0,0 +1,87 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by reiser4/README */
 +
@@ -44075,9 +44076,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/plugin/item/cde.h linux-4.2.1/fs/reiser4/p
 +   fill-column: 120
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/plugin/item/ctail.c linux-4.2.1/fs/reiser4/plugin/item/ctail.c
---- linux-4.2.1.orig/fs/reiser4/plugin/item/ctail.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/plugin/item/ctail.c	2015-09-26 23:36:44.572433757 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/plugin/item/ctail.c linux-4.2.6/fs/reiser4/plugin/item/ctail.c
+--- linux-4.2.6.orig/fs/reiser4/plugin/item/ctail.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/plugin/item/ctail.c	2015-11-12 10:00:42.883541528 +0100
 @@ -0,0 +1,1769 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by reiser4/README */
 +
@@ -45848,9 +45849,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/plugin/item/ctail.c linux-4.2.1/fs/reiser4
 +   fill-column: 120
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/plugin/item/ctail.h linux-4.2.1/fs/reiser4/plugin/item/ctail.h
---- linux-4.2.1.orig/fs/reiser4/plugin/item/ctail.h	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/plugin/item/ctail.h	2015-09-26 23:36:44.572433757 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/plugin/item/ctail.h linux-4.2.6/fs/reiser4/plugin/item/ctail.h
+--- linux-4.2.6.orig/fs/reiser4/plugin/item/ctail.h	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/plugin/item/ctail.h	2015-11-12 10:00:42.883541528 +0100
 @@ -0,0 +1,102 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by reiser4/README */
 +
@@ -45954,9 +45955,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/plugin/item/ctail.h linux-4.2.1/fs/reiser4
 +   fill-column: 120
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/plugin/item/extent.c linux-4.2.1/fs/reiser4/plugin/item/extent.c
---- linux-4.2.1.orig/fs/reiser4/plugin/item/extent.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/plugin/item/extent.c	2015-09-26 23:36:44.573433761 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/plugin/item/extent.c linux-4.2.6/fs/reiser4/plugin/item/extent.c
+--- linux-4.2.6.orig/fs/reiser4/plugin/item/extent.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/plugin/item/extent.c	2015-11-12 10:00:42.883541528 +0100
 @@ -0,0 +1,197 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by reiser4/README */
 +
@@ -46155,9 +46156,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/plugin/item/extent.c linux-4.2.1/fs/reiser
 + * scroll-step: 1
 + * End:
 + */
-diff -urN linux-4.2.1.orig/fs/reiser4/plugin/item/extent_file_ops.c linux-4.2.1/fs/reiser4/plugin/item/extent_file_ops.c
---- linux-4.2.1.orig/fs/reiser4/plugin/item/extent_file_ops.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/plugin/item/extent_file_ops.c	2015-09-26 23:36:44.574433765 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/plugin/item/extent_file_ops.c linux-4.2.6/fs/reiser4/plugin/item/extent_file_ops.c
+--- linux-4.2.6.orig/fs/reiser4/plugin/item/extent_file_ops.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/plugin/item/extent_file_ops.c	2015-11-12 10:00:42.884541557 +0100
 @@ -0,0 +1,1435 @@
 +/* COPYRIGHT 2001, 2002, 2003 by Hans Reiser, licensing governed by reiser4/README */
 +
@@ -47594,9 +47595,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/plugin/item/extent_file_ops.c linux-4.2.1/
 + * scroll-step: 1
 + * End:
 + */
-diff -urN linux-4.2.1.orig/fs/reiser4/plugin/item/extent_flush_ops.c linux-4.2.1/fs/reiser4/plugin/item/extent_flush_ops.c
---- linux-4.2.1.orig/fs/reiser4/plugin/item/extent_flush_ops.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/plugin/item/extent_flush_ops.c	2015-09-26 23:36:44.575433768 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/plugin/item/extent_flush_ops.c linux-4.2.6/fs/reiser4/plugin/item/extent_flush_ops.c
+--- linux-4.2.6.orig/fs/reiser4/plugin/item/extent_flush_ops.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/plugin/item/extent_flush_ops.c	2015-11-12 10:00:42.885541587 +0100
 @@ -0,0 +1,686 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by reiser4/README */
 +
@@ -48284,9 +48285,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/plugin/item/extent_flush_ops.c linux-4.2.1
 + * scroll-step: 1
 + * End:
 + */
-diff -urN linux-4.2.1.orig/fs/reiser4/plugin/item/extent.h linux-4.2.1/fs/reiser4/plugin/item/extent.h
---- linux-4.2.1.orig/fs/reiser4/plugin/item/extent.h	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/plugin/item/extent.h	2015-09-26 23:36:44.575433768 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/plugin/item/extent.h linux-4.2.6/fs/reiser4/plugin/item/extent.h
+--- linux-4.2.6.orig/fs/reiser4/plugin/item/extent.h	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/plugin/item/extent.h	2015-11-12 10:00:42.885541587 +0100
 @@ -0,0 +1,231 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by reiser4/README */
 +
@@ -48519,9 +48520,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/plugin/item/extent.h linux-4.2.1/fs/reiser
 +   fill-column: 120
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/plugin/item/extent_item_ops.c linux-4.2.1/fs/reiser4/plugin/item/extent_item_ops.c
---- linux-4.2.1.orig/fs/reiser4/plugin/item/extent_item_ops.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/plugin/item/extent_item_ops.c	2015-09-26 23:36:44.576433772 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/plugin/item/extent_item_ops.c linux-4.2.6/fs/reiser4/plugin/item/extent_item_ops.c
+--- linux-4.2.6.orig/fs/reiser4/plugin/item/extent_item_ops.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/plugin/item/extent_item_ops.c	2015-11-12 10:00:42.886541616 +0100
 @@ -0,0 +1,887 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by reiser4/README */
 +
@@ -49410,9 +49411,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/plugin/item/extent_item_ops.c linux-4.2.1/
 +   scroll-step: 1
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/plugin/item/internal.c linux-4.2.1/fs/reiser4/plugin/item/internal.c
---- linux-4.2.1.orig/fs/reiser4/plugin/item/internal.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/plugin/item/internal.c	2015-09-26 23:36:44.576433772 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/plugin/item/internal.c linux-4.2.6/fs/reiser4/plugin/item/internal.c
+--- linux-4.2.6.orig/fs/reiser4/plugin/item/internal.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/plugin/item/internal.c	2015-11-12 10:00:42.886541616 +0100
 @@ -0,0 +1,404 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by reiser4/README */
 +
@@ -49818,9 +49819,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/plugin/item/internal.c linux-4.2.1/fs/reis
 +   fill-column: 120
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/plugin/item/internal.h linux-4.2.1/fs/reiser4/plugin/item/internal.h
---- linux-4.2.1.orig/fs/reiser4/plugin/item/internal.h	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/plugin/item/internal.h	2015-09-26 23:36:44.577433775 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/plugin/item/internal.h linux-4.2.6/fs/reiser4/plugin/item/internal.h
+--- linux-4.2.6.orig/fs/reiser4/plugin/item/internal.h	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/plugin/item/internal.h	2015-11-12 10:00:42.886541616 +0100
 @@ -0,0 +1,57 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by reiser4/README */
 +/* Internal item contains down-link to the child of the internal/twig
@@ -49879,9 +49880,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/plugin/item/internal.h linux-4.2.1/fs/reis
 +   fill-column: 120
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/plugin/item/item.c linux-4.2.1/fs/reiser4/plugin/item/item.c
---- linux-4.2.1.orig/fs/reiser4/plugin/item/item.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/plugin/item/item.c	2015-09-26 23:36:44.577433775 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/plugin/item/item.c linux-4.2.6/fs/reiser4/plugin/item/item.c
+--- linux-4.2.6.orig/fs/reiser4/plugin/item/item.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/plugin/item/item.c	2015-11-12 10:00:42.887541646 +0100
 @@ -0,0 +1,719 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by reiser4/README */
 +
@@ -50602,9 +50603,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/plugin/item/item.c linux-4.2.1/fs/reiser4/
 +   fill-column: 120
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/plugin/item/item.h linux-4.2.1/fs/reiser4/plugin/item/item.h
---- linux-4.2.1.orig/fs/reiser4/plugin/item/item.h	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/plugin/item/item.h	2015-09-26 23:36:44.578433779 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/plugin/item/item.h linux-4.2.6/fs/reiser4/plugin/item/item.h
+--- linux-4.2.6.orig/fs/reiser4/plugin/item/item.h	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/plugin/item/item.h	2015-11-12 10:00:42.888541675 +0100
 @@ -0,0 +1,398 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by reiser4/README */
 +
@@ -51004,9 +51005,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/plugin/item/item.h linux-4.2.1/fs/reiser4/
 +   scroll-step: 1
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/plugin/item/Makefile linux-4.2.1/fs/reiser4/plugin/item/Makefile
---- linux-4.2.1.orig/fs/reiser4/plugin/item/Makefile	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/plugin/item/Makefile	2015-09-26 23:36:44.578433779 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/plugin/item/Makefile linux-4.2.6/fs/reiser4/plugin/item/Makefile
+--- linux-4.2.6.orig/fs/reiser4/plugin/item/Makefile	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/plugin/item/Makefile	2015-11-12 10:00:42.888541675 +0100
 @@ -0,0 +1,18 @@
 +obj-$(CONFIG_REISER4_FS) += item_plugins.o
 +
@@ -51026,9 +51027,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/plugin/item/Makefile linux-4.2.1/fs/reiser
 +
 +
 +
-diff -urN linux-4.2.1.orig/fs/reiser4/plugin/item/sde.c linux-4.2.1/fs/reiser4/plugin/item/sde.c
---- linux-4.2.1.orig/fs/reiser4/plugin/item/sde.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/plugin/item/sde.c	2015-09-26 23:36:44.578433779 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/plugin/item/sde.c linux-4.2.6/fs/reiser4/plugin/item/sde.c
+--- linux-4.2.6.orig/fs/reiser4/plugin/item/sde.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/plugin/item/sde.c	2015-11-12 10:00:42.888541675 +0100
 @@ -0,0 +1,186 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by reiser4/README */
 +
@@ -51216,9 +51217,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/plugin/item/sde.c linux-4.2.1/fs/reiser4/p
 +   fill-column: 120
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/plugin/item/sde.h linux-4.2.1/fs/reiser4/plugin/item/sde.h
---- linux-4.2.1.orig/fs/reiser4/plugin/item/sde.h	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/plugin/item/sde.h	2015-09-26 23:36:44.579433782 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/plugin/item/sde.h linux-4.2.6/fs/reiser4/plugin/item/sde.h
+--- linux-4.2.6.orig/fs/reiser4/plugin/item/sde.h	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/plugin/item/sde.h	2015-11-12 10:00:42.888541675 +0100
 @@ -0,0 +1,66 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by reiser4/README */
 +
@@ -51286,9 +51287,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/plugin/item/sde.h linux-4.2.1/fs/reiser4/p
 +   fill-column: 120
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/plugin/item/static_stat.c linux-4.2.1/fs/reiser4/plugin/item/static_stat.c
---- linux-4.2.1.orig/fs/reiser4/plugin/item/static_stat.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/plugin/item/static_stat.c	2015-09-26 23:36:44.580433786 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/plugin/item/static_stat.c linux-4.2.6/fs/reiser4/plugin/item/static_stat.c
+--- linux-4.2.6.orig/fs/reiser4/plugin/item/static_stat.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/plugin/item/static_stat.c	2015-11-12 10:00:42.889541705 +0100
 @@ -0,0 +1,1114 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by reiser4/README */
 +
@@ -52404,9 +52405,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/plugin/item/static_stat.c linux-4.2.1/fs/r
 +   fill-column: 120
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/plugin/item/static_stat.h linux-4.2.1/fs/reiser4/plugin/item/static_stat.h
---- linux-4.2.1.orig/fs/reiser4/plugin/item/static_stat.h	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/plugin/item/static_stat.h	2015-09-26 23:36:44.580433786 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/plugin/item/static_stat.h linux-4.2.6/fs/reiser4/plugin/item/static_stat.h
+--- linux-4.2.6.orig/fs/reiser4/plugin/item/static_stat.h	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/plugin/item/static_stat.h	2015-11-12 10:00:42.889541705 +0100
 @@ -0,0 +1,224 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by reiser4/README */
 +
@@ -52632,9 +52633,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/plugin/item/static_stat.h linux-4.2.1/fs/r
 +   fill-column: 120
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/plugin/item/tail.c linux-4.2.1/fs/reiser4/plugin/item/tail.c
---- linux-4.2.1.orig/fs/reiser4/plugin/item/tail.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/plugin/item/tail.c	2015-09-26 23:36:44.581433790 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/plugin/item/tail.c linux-4.2.6/fs/reiser4/plugin/item/tail.c
+--- linux-4.2.6.orig/fs/reiser4/plugin/item/tail.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/plugin/item/tail.c	2015-11-12 10:00:42.890541734 +0100
 @@ -0,0 +1,810 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by reiser4/README */
 +
@@ -53446,9 +53447,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/plugin/item/tail.c linux-4.2.1/fs/reiser4/
 + * scroll-step: 1
 + * End:
 + */
-diff -urN linux-4.2.1.orig/fs/reiser4/plugin/item/tail.h linux-4.2.1/fs/reiser4/plugin/item/tail.h
---- linux-4.2.1.orig/fs/reiser4/plugin/item/tail.h	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/plugin/item/tail.h	2015-09-26 23:36:44.581433790 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/plugin/item/tail.h linux-4.2.6/fs/reiser4/plugin/item/tail.h
+--- linux-4.2.6.orig/fs/reiser4/plugin/item/tail.h	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/plugin/item/tail.h	2015-11-12 10:00:42.890541734 +0100
 @@ -0,0 +1,59 @@
 +/* Copyright 2002, 2003 by Hans Reiser, licensing governed by reiser4/README */
 +
@@ -53509,9 +53510,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/plugin/item/tail.h linux-4.2.1/fs/reiser4/
 +   scroll-step: 1
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/plugin/Makefile linux-4.2.1/fs/reiser4/plugin/Makefile
---- linux-4.2.1.orig/fs/reiser4/plugin/Makefile	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/plugin/Makefile	2015-09-26 23:36:44.581433790 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/plugin/Makefile linux-4.2.6/fs/reiser4/plugin/Makefile
+--- linux-4.2.6.orig/fs/reiser4/plugin/Makefile	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/plugin/Makefile	2015-11-12 10:00:42.890541734 +0100
 @@ -0,0 +1,26 @@
 +obj-$(CONFIG_REISER4_FS) += plugins.o
 +
@@ -53539,9 +53540,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/plugin/Makefile linux-4.2.1/fs/reiser4/plu
 +obj-$(CONFIG_REISER4_FS) += space/
 +obj-$(CONFIG_REISER4_FS) += disk_format/
 +obj-$(CONFIG_REISER4_FS) += security/
-diff -urN linux-4.2.1.orig/fs/reiser4/plugin/node/Makefile linux-4.2.1/fs/reiser4/plugin/node/Makefile
---- linux-4.2.1.orig/fs/reiser4/plugin/node/Makefile	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/plugin/node/Makefile	2015-09-26 23:36:44.581433790 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/plugin/node/Makefile linux-4.2.6/fs/reiser4/plugin/node/Makefile
+--- linux-4.2.6.orig/fs/reiser4/plugin/node/Makefile	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/plugin/node/Makefile	2015-11-12 10:00:42.890541734 +0100
 @@ -0,0 +1,6 @@
 +obj-$(CONFIG_REISER4_FS) += node_plugins.o
 +
@@ -53549,9 +53550,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/plugin/node/Makefile linux-4.2.1/fs/reiser
 +	node.o		\
 +	node40.o	\
 +	node41.o
-diff -urN linux-4.2.1.orig/fs/reiser4/plugin/node/node40.c linux-4.2.1/fs/reiser4/plugin/node/node40.c
---- linux-4.2.1.orig/fs/reiser4/plugin/node/node40.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/plugin/node/node40.c	2015-09-26 23:36:44.585433804 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/plugin/node/node40.c linux-4.2.6/fs/reiser4/plugin/node/node40.c
+--- linux-4.2.6.orig/fs/reiser4/plugin/node/node40.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/plugin/node/node40.c	2015-11-12 10:00:42.893541823 +0100
 @@ -0,0 +1,3072 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by reiser4/README */
 +
@@ -56625,9 +56626,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/plugin/node/node40.c linux-4.2.1/fs/reiser
 +   scroll-step: 1
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/plugin/node/node40.h linux-4.2.1/fs/reiser4/plugin/node/node40.h
---- linux-4.2.1.orig/fs/reiser4/plugin/node/node40.h	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/plugin/node/node40.h	2015-09-26 23:36:44.585433804 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/plugin/node/node40.h linux-4.2.6/fs/reiser4/plugin/node/node40.h
+--- linux-4.2.6.orig/fs/reiser4/plugin/node/node40.h	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/plugin/node/node40.h	2015-11-12 10:00:42.893541823 +0100
 @@ -0,0 +1,130 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by reiser4/README */
 +
@@ -56759,9 +56760,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/plugin/node/node40.h linux-4.2.1/fs/reiser
 +   scroll-step: 1
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/plugin/node/node41.c linux-4.2.1/fs/reiser4/plugin/node/node41.c
---- linux-4.2.1.orig/fs/reiser4/plugin/node/node41.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/plugin/node/node41.c	2015-09-26 23:36:44.585433804 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/plugin/node/node41.c linux-4.2.6/fs/reiser4/plugin/node/node41.c
+--- linux-4.2.6.orig/fs/reiser4/plugin/node/node41.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/plugin/node/node41.c	2015-11-12 10:00:42.893541823 +0100
 @@ -0,0 +1,137 @@
 +/*
 + * Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by reiser4/README
@@ -56900,9 +56901,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/plugin/node/node41.c linux-4.2.1/fs/reiser
 +   scroll-step: 1
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/plugin/node/node41.h linux-4.2.1/fs/reiser4/plugin/node/node41.h
---- linux-4.2.1.orig/fs/reiser4/plugin/node/node41.h	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/plugin/node/node41.h	2015-09-26 23:36:44.585433804 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/plugin/node/node41.h linux-4.2.6/fs/reiser4/plugin/node/node41.h
+--- linux-4.2.6.orig/fs/reiser4/plugin/node/node41.h	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/plugin/node/node41.h	2015-11-12 10:00:42.893541823 +0100
 @@ -0,0 +1,50 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by reiser4/README */
 +
@@ -56954,9 +56955,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/plugin/node/node41.h linux-4.2.1/fs/reiser
 +   scroll-step: 1
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/plugin/node/node.c linux-4.2.1/fs/reiser4/plugin/node/node.c
---- linux-4.2.1.orig/fs/reiser4/plugin/node/node.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/plugin/node/node.c	2015-09-26 23:36:44.585433804 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/plugin/node/node.c linux-4.2.6/fs/reiser4/plugin/node/node.c
+--- linux-4.2.6.orig/fs/reiser4/plugin/node/node.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/plugin/node/node.c	2015-11-12 10:00:42.894541852 +0100
 @@ -0,0 +1,170 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by reiser4/README */
 +
@@ -57128,9 +57129,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/plugin/node/node.c linux-4.2.1/fs/reiser4/
 +   scroll-step: 1
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/plugin/node/node.h linux-4.2.1/fs/reiser4/plugin/node/node.h
---- linux-4.2.1.orig/fs/reiser4/plugin/node/node.h	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/plugin/node/node.h	2015-09-26 23:36:44.586433807 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/plugin/node/node.h linux-4.2.6/fs/reiser4/plugin/node/node.h
+--- linux-4.2.6.orig/fs/reiser4/plugin/node/node.h	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/plugin/node/node.h	2015-11-12 10:00:42.894541852 +0100
 @@ -0,0 +1,275 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by reiser4/README */
 +
@@ -57407,9 +57408,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/plugin/node/node.h linux-4.2.1/fs/reiser4/
 + * scroll-step: 1
 + * End:
 + */
-diff -urN linux-4.2.1.orig/fs/reiser4/plugin/object.c linux-4.2.1/fs/reiser4/plugin/object.c
---- linux-4.2.1.orig/fs/reiser4/plugin/object.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/plugin/object.c	2015-09-26 23:36:44.586433807 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/plugin/object.c linux-4.2.6/fs/reiser4/plugin/object.c
+--- linux-4.2.6.orig/fs/reiser4/plugin/object.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/plugin/object.c	2015-11-12 10:00:42.895541882 +0100
 @@ -0,0 +1,554 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by
 + * reiser4/README */
@@ -57965,9 +57966,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/plugin/object.c linux-4.2.1/fs/reiser4/plu
 +   fill-column: 120
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/plugin/object.h linux-4.2.1/fs/reiser4/plugin/object.h
---- linux-4.2.1.orig/fs/reiser4/plugin/object.h	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/plugin/object.h	2015-09-26 23:36:44.586433807 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/plugin/object.h linux-4.2.6/fs/reiser4/plugin/object.h
+--- linux-4.2.6.orig/fs/reiser4/plugin/object.h	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/plugin/object.h	2015-11-12 10:00:42.895541882 +0100
 @@ -0,0 +1,115 @@
 +/* Copyright 2002, 2003 by Hans Reiser, licensing governed by
 + * reiser4/README */
@@ -58084,9 +58085,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/plugin/object.h linux-4.2.1/fs/reiser4/plu
 +   fill-column: 120
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/plugin/plugin.c linux-4.2.1/fs/reiser4/plugin/plugin.c
---- linux-4.2.1.orig/fs/reiser4/plugin/plugin.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/plugin/plugin.c	2015-09-26 23:36:44.587433811 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/plugin/plugin.c linux-4.2.6/fs/reiser4/plugin/plugin.c
+--- linux-4.2.6.orig/fs/reiser4/plugin/plugin.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/plugin/plugin.c	2015-11-12 10:00:42.895541882 +0100
 @@ -0,0 +1,569 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by
 + * reiser4/README */
@@ -58657,9 +58658,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/plugin/plugin.c linux-4.2.1/fs/reiser4/plu
 + * fill-column: 120
 + * End:
 + */
-diff -urN linux-4.2.1.orig/fs/reiser4/plugin/plugin.h linux-4.2.1/fs/reiser4/plugin/plugin.h
---- linux-4.2.1.orig/fs/reiser4/plugin/plugin.h	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/plugin/plugin.h	2015-09-26 23:36:44.587433811 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/plugin/plugin.h linux-4.2.6/fs/reiser4/plugin/plugin.h
+--- linux-4.2.6.orig/fs/reiser4/plugin/plugin.h	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/plugin/plugin.h	2015-11-12 10:00:42.896541911 +0100
 @@ -0,0 +1,999 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by
 + * reiser4/README */
@@ -59660,9 +59661,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/plugin/plugin.h linux-4.2.1/fs/reiser4/plu
 +   fill-column: 120
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/plugin/plugin_header.h linux-4.2.1/fs/reiser4/plugin/plugin_header.h
---- linux-4.2.1.orig/fs/reiser4/plugin/plugin_header.h	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/plugin/plugin_header.h	2015-09-26 23:36:44.587433811 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/plugin/plugin_header.h linux-4.2.6/fs/reiser4/plugin/plugin_header.h
+--- linux-4.2.6.orig/fs/reiser4/plugin/plugin_header.h	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/plugin/plugin_header.h	2015-11-12 10:00:42.897541940 +0100
 @@ -0,0 +1,150 @@
 +/* Copyright 2002, 2003 by Hans Reiser, licensing governed by reiser4/README */
 +
@@ -59814,9 +59815,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/plugin/plugin_header.h linux-4.2.1/fs/reis
 + * fill-column: 79
 + * End:
 + */
-diff -urN linux-4.2.1.orig/fs/reiser4/plugin/plugin_set.c linux-4.2.1/fs/reiser4/plugin/plugin_set.c
---- linux-4.2.1.orig/fs/reiser4/plugin/plugin_set.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/plugin/plugin_set.c	2015-09-26 23:36:44.588433815 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/plugin/plugin_set.c linux-4.2.6/fs/reiser4/plugin/plugin_set.c
+--- linux-4.2.6.orig/fs/reiser4/plugin/plugin_set.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/plugin/plugin_set.c	2015-11-12 10:00:42.897541940 +0100
 @@ -0,0 +1,387 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by
 + * reiser4/README */
@@ -60205,9 +60206,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/plugin/plugin_set.c linux-4.2.1/fs/reiser4
 + * fill-column: 120
 + * End:
 + */
-diff -urN linux-4.2.1.orig/fs/reiser4/plugin/plugin_set.h linux-4.2.1/fs/reiser4/plugin/plugin_set.h
---- linux-4.2.1.orig/fs/reiser4/plugin/plugin_set.h	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/plugin/plugin_set.h	2015-09-26 23:36:44.588433815 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/plugin/plugin_set.h linux-4.2.6/fs/reiser4/plugin/plugin_set.h
+--- linux-4.2.6.orig/fs/reiser4/plugin/plugin_set.h	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/plugin/plugin_set.h	2015-11-12 10:00:42.897541940 +0100
 @@ -0,0 +1,78 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by
 + * reiser4/README */
@@ -60287,17 +60288,17 @@ diff -urN linux-4.2.1.orig/fs/reiser4/plugin/plugin_set.h linux-4.2.1/fs/reiser4
 +   fill-column: 120
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/plugin/security/Makefile linux-4.2.1/fs/reiser4/plugin/security/Makefile
---- linux-4.2.1.orig/fs/reiser4/plugin/security/Makefile	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/plugin/security/Makefile	2015-09-26 23:36:44.588433815 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/plugin/security/Makefile linux-4.2.6/fs/reiser4/plugin/security/Makefile
+--- linux-4.2.6.orig/fs/reiser4/plugin/security/Makefile	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/plugin/security/Makefile	2015-11-12 10:00:42.897541940 +0100
 @@ -0,0 +1,4 @@
 +obj-$(CONFIG_REISER4_FS) += security_plugins.o
 +
 +security_plugins-objs :=	\
 +	perm.o
-diff -urN linux-4.2.1.orig/fs/reiser4/plugin/security/perm.c linux-4.2.1/fs/reiser4/plugin/security/perm.c
---- linux-4.2.1.orig/fs/reiser4/plugin/security/perm.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/plugin/security/perm.c	2015-09-26 23:36:44.588433815 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/plugin/security/perm.c linux-4.2.6/fs/reiser4/plugin/security/perm.c
+--- linux-4.2.6.orig/fs/reiser4/plugin/security/perm.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/plugin/security/perm.c	2015-11-12 10:00:42.898541970 +0100
 @@ -0,0 +1,33 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by reiser4/README */
 +
@@ -60332,9 +60333,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/plugin/security/perm.c linux-4.2.1/fs/reis
 + * fill-column: 79
 + * End:
 + */
-diff -urN linux-4.2.1.orig/fs/reiser4/plugin/security/perm.h linux-4.2.1/fs/reiser4/plugin/security/perm.h
---- linux-4.2.1.orig/fs/reiser4/plugin/security/perm.h	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/plugin/security/perm.h	2015-09-26 23:36:44.588433815 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/plugin/security/perm.h linux-4.2.6/fs/reiser4/plugin/security/perm.h
+--- linux-4.2.6.orig/fs/reiser4/plugin/security/perm.h	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/plugin/security/perm.h	2015-11-12 10:00:42.898541970 +0100
 @@ -0,0 +1,38 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by reiser4/README */
 +
@@ -60374,9 +60375,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/plugin/security/perm.h linux-4.2.1/fs/reis
 +   fill-column: 120
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/plugin/space/bitmap.c linux-4.2.1/fs/reiser4/plugin/space/bitmap.c
---- linux-4.2.1.orig/fs/reiser4/plugin/space/bitmap.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/plugin/space/bitmap.c	2015-09-26 23:36:44.589433818 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/plugin/space/bitmap.c linux-4.2.6/fs/reiser4/plugin/space/bitmap.c
+--- linux-4.2.6.orig/fs/reiser4/plugin/space/bitmap.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/plugin/space/bitmap.c	2015-11-12 10:00:42.899541999 +0100
 @@ -0,0 +1,1609 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by reiser4/README */
 +
@@ -61987,9 +61988,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/plugin/space/bitmap.c linux-4.2.1/fs/reise
 + * scroll-step: 1
 + * End:
 + */
-diff -urN linux-4.2.1.orig/fs/reiser4/plugin/space/bitmap.h linux-4.2.1/fs/reiser4/plugin/space/bitmap.h
---- linux-4.2.1.orig/fs/reiser4/plugin/space/bitmap.h	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/plugin/space/bitmap.h	2015-09-26 23:36:44.589433818 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/plugin/space/bitmap.h linux-4.2.6/fs/reiser4/plugin/space/bitmap.h
+--- linux-4.2.6.orig/fs/reiser4/plugin/space/bitmap.h	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/plugin/space/bitmap.h	2015-11-12 10:00:42.899541999 +0100
 @@ -0,0 +1,47 @@
 +/* Copyright 2002, 2003 by Hans Reiser, licensing governed by reiser4/README */
 +
@@ -62038,17 +62039,17 @@ diff -urN linux-4.2.1.orig/fs/reiser4/plugin/space/bitmap.h linux-4.2.1/fs/reise
 +   scroll-step: 1
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/plugin/space/Makefile linux-4.2.1/fs/reiser4/plugin/space/Makefile
---- linux-4.2.1.orig/fs/reiser4/plugin/space/Makefile	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/plugin/space/Makefile	2015-09-26 23:36:44.589433818 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/plugin/space/Makefile linux-4.2.6/fs/reiser4/plugin/space/Makefile
+--- linux-4.2.6.orig/fs/reiser4/plugin/space/Makefile	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/plugin/space/Makefile	2015-11-12 10:00:42.899541999 +0100
 @@ -0,0 +1,4 @@
 +obj-$(CONFIG_REISER4_FS) += space_plugins.o
 +
 +space_plugins-objs := \
 +	bitmap.o
-diff -urN linux-4.2.1.orig/fs/reiser4/plugin/space/space_allocator.h linux-4.2.1/fs/reiser4/plugin/space/space_allocator.h
---- linux-4.2.1.orig/fs/reiser4/plugin/space/space_allocator.h	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/plugin/space/space_allocator.h	2015-09-26 23:36:44.589433818 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/plugin/space/space_allocator.h linux-4.2.6/fs/reiser4/plugin/space/space_allocator.h
+--- linux-4.2.6.orig/fs/reiser4/plugin/space/space_allocator.h	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/plugin/space/space_allocator.h	2015-11-12 10:00:42.899541999 +0100
 @@ -0,0 +1,80 @@
 +/* Copyright 2002, 2003 by Hans Reiser, licensing governed by reiser4/README */
 +
@@ -62130,9 +62131,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/plugin/space/space_allocator.h linux-4.2.1
 +   scroll-step: 1
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/plugin/tail_policy.c linux-4.2.1/fs/reiser4/plugin/tail_policy.c
---- linux-4.2.1.orig/fs/reiser4/plugin/tail_policy.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/plugin/tail_policy.c	2015-09-26 23:36:44.590433822 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/plugin/tail_policy.c linux-4.2.6/fs/reiser4/plugin/tail_policy.c
+--- linux-4.2.6.orig/fs/reiser4/plugin/tail_policy.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/plugin/tail_policy.c	2015-11-12 10:00:42.900542029 +0100
 @@ -0,0 +1,113 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by
 + * reiser4/README */
@@ -62247,9 +62248,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/plugin/tail_policy.c linux-4.2.1/fs/reiser
 + * fill-column: 79
 + * End:
 + */
-diff -urN linux-4.2.1.orig/fs/reiser4/plugin/txmod.c linux-4.2.1/fs/reiser4/plugin/txmod.c
---- linux-4.2.1.orig/fs/reiser4/plugin/txmod.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/plugin/txmod.c	2015-09-26 23:36:44.590433822 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/plugin/txmod.c linux-4.2.6/fs/reiser4/plugin/txmod.c
+--- linux-4.2.6.orig/fs/reiser4/plugin/txmod.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/plugin/txmod.c	2015-11-12 10:00:42.901542058 +0100
 @@ -0,0 +1,1239 @@
 +#include "../forward.h"
 +#include "../debug.h"
@@ -63490,9 +63491,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/plugin/txmod.c linux-4.2.1/fs/reiser4/plug
 + * fill-column: 79
 + * End:
 + */
-diff -urN linux-4.2.1.orig/fs/reiser4/pool.c linux-4.2.1/fs/reiser4/pool.c
---- linux-4.2.1.orig/fs/reiser4/pool.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/pool.c	2015-09-26 23:36:44.590433822 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/pool.c linux-4.2.6/fs/reiser4/pool.c
+--- linux-4.2.6.orig/fs/reiser4/pool.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/pool.c	2015-11-12 10:00:42.901542058 +0100
 @@ -0,0 +1,231 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by
 + * reiser4/README */
@@ -63725,9 +63726,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/pool.c linux-4.2.1/fs/reiser4/pool.c
 +   fill-column: 120
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/pool.h linux-4.2.1/fs/reiser4/pool.h
---- linux-4.2.1.orig/fs/reiser4/pool.h	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/pool.h	2015-09-26 23:36:44.591433825 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/pool.h linux-4.2.6/fs/reiser4/pool.h
+--- linux-4.2.6.orig/fs/reiser4/pool.h	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/pool.h	2015-11-12 10:00:42.901542058 +0100
 @@ -0,0 +1,57 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by
 + * reiser4/README */
@@ -63786,9 +63787,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/pool.h linux-4.2.1/fs/reiser4/pool.h
 +   fill-column: 120
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/readahead.c linux-4.2.1/fs/reiser4/readahead.c
---- linux-4.2.1.orig/fs/reiser4/readahead.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/readahead.c	2015-09-26 23:36:44.591433825 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/readahead.c linux-4.2.6/fs/reiser4/readahead.c
+--- linux-4.2.6.orig/fs/reiser4/readahead.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/readahead.c	2015-11-12 10:00:42.901542058 +0100
 @@ -0,0 +1,140 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by
 + * reiser4/README */
@@ -63930,9 +63931,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/readahead.c linux-4.2.1/fs/reiser4/readahe
 +   fill-column: 80
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/readahead.h linux-4.2.1/fs/reiser4/readahead.h
---- linux-4.2.1.orig/fs/reiser4/readahead.h	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/readahead.h	2015-09-26 23:36:44.591433825 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/readahead.h linux-4.2.6/fs/reiser4/readahead.h
+--- linux-4.2.6.orig/fs/reiser4/readahead.h	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/readahead.h	2015-11-12 10:00:42.901542058 +0100
 @@ -0,0 +1,42 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by
 + * reiser4/README */
@@ -63976,9 +63977,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/readahead.h linux-4.2.1/fs/reiser4/readahe
 +   fill-column: 120
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/README linux-4.2.1/fs/reiser4/README
---- linux-4.2.1.orig/fs/reiser4/README	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/README	2015-09-26 23:36:44.591433825 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/README linux-4.2.6/fs/reiser4/README
+--- linux-4.2.6.orig/fs/reiser4/README	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/README	2015-11-12 10:00:42.902542088 +0100
 @@ -0,0 +1,128 @@
 +[LICENSING]
 +
@@ -64108,9 +64109,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/README linux-4.2.1/fs/reiser4/README
 +Edward Shishkin wrote cryptcompress file plugin (which manages files
 +built of encrypted and(or) compressed bodies) and other plugins related
 +to transparent encryption and compression support.
-diff -urN linux-4.2.1.orig/fs/reiser4/reiser4.h linux-4.2.1/fs/reiser4/reiser4.h
---- linux-4.2.1.orig/fs/reiser4/reiser4.h	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/reiser4.h	2015-09-26 23:36:44.592433829 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/reiser4.h linux-4.2.6/fs/reiser4/reiser4.h
+--- linux-4.2.6.orig/fs/reiser4/reiser4.h	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/reiser4.h	2015-11-12 10:00:42.902542088 +0100
 @@ -0,0 +1,260 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by
 + * reiser4/README */
@@ -64372,9 +64373,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/reiser4.h linux-4.2.1/fs/reiser4/reiser4.h
 +   fill-column: 120
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/safe_link.c linux-4.2.1/fs/reiser4/safe_link.c
---- linux-4.2.1.orig/fs/reiser4/safe_link.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/safe_link.c	2015-09-26 23:36:44.592433829 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/safe_link.c linux-4.2.6/fs/reiser4/safe_link.c
+--- linux-4.2.6.orig/fs/reiser4/safe_link.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/safe_link.c	2015-11-12 10:00:42.902542088 +0100
 @@ -0,0 +1,354 @@
 +/* Copyright 2003, 2004 by Hans Reiser, licensing governed by
 + * reiser4/README */
@@ -64730,9 +64731,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/safe_link.c linux-4.2.1/fs/reiser4/safe_li
 +   scroll-step: 1
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/safe_link.h linux-4.2.1/fs/reiser4/safe_link.h
---- linux-4.2.1.orig/fs/reiser4/safe_link.h	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/safe_link.h	2015-09-26 23:36:44.592433829 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/safe_link.h linux-4.2.6/fs/reiser4/safe_link.h
+--- linux-4.2.6.orig/fs/reiser4/safe_link.h	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/safe_link.h	2015-11-12 10:00:42.903542117 +0100
 @@ -0,0 +1,29 @@
 +/* Copyright 2003 by Hans Reiser, licensing governed by
 + * reiser4/README */
@@ -64763,9 +64764,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/safe_link.h linux-4.2.1/fs/reiser4/safe_li
 +   fill-column: 120
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/seal.c linux-4.2.1/fs/reiser4/seal.c
---- linux-4.2.1.orig/fs/reiser4/seal.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/seal.c	2015-09-26 23:36:44.593433833 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/seal.c linux-4.2.6/fs/reiser4/seal.c
+--- linux-4.2.6.orig/fs/reiser4/seal.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/seal.c	2015-11-12 10:00:42.903542117 +0100
 @@ -0,0 +1,219 @@
 +/* Copyright 2002, 2003 by Hans Reiser, licensing governed by reiser4/README */
 +/* Seals implementation. */
@@ -64986,9 +64987,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/seal.c linux-4.2.1/fs/reiser4/seal.c
 +   scroll-step: 1
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/seal.h linux-4.2.1/fs/reiser4/seal.h
---- linux-4.2.1.orig/fs/reiser4/seal.h	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/seal.h	2015-09-26 23:36:44.593433833 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/seal.h linux-4.2.6/fs/reiser4/seal.h
+--- linux-4.2.6.orig/fs/reiser4/seal.h	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/seal.h	2015-11-12 10:00:42.903542117 +0100
 @@ -0,0 +1,49 @@
 +/* Copyright 2002, 2003 by Hans Reiser, licensing governed by reiser4/README */
 +
@@ -65039,9 +65040,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/seal.h linux-4.2.1/fs/reiser4/seal.h
 +   fill-column: 120
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/search.c linux-4.2.1/fs/reiser4/search.c
---- linux-4.2.1.orig/fs/reiser4/search.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/search.c	2015-09-26 23:36:44.594433836 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/search.c linux-4.2.6/fs/reiser4/search.c
+--- linux-4.2.6.orig/fs/reiser4/search.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/search.c	2015-11-12 10:00:42.904542147 +0100
 @@ -0,0 +1,1612 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by
 + * reiser4/README */
@@ -66655,9 +66656,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/search.c linux-4.2.1/fs/reiser4/search.c
 +   scroll-step: 1
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/status_flags.c linux-4.2.1/fs/reiser4/status_flags.c
---- linux-4.2.1.orig/fs/reiser4/status_flags.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/status_flags.c	2015-09-26 23:36:44.595433840 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/status_flags.c linux-4.2.6/fs/reiser4/status_flags.c
+--- linux-4.2.6.orig/fs/reiser4/status_flags.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/status_flags.c	2015-11-12 10:00:42.904542147 +0100
 @@ -0,0 +1,175 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by
 + * reiser4/README */
@@ -66834,9 +66835,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/status_flags.c linux-4.2.1/fs/reiser4/stat
 +	get_super_private(sb)->status_bio = NULL;
 +	return 0;
 +}
-diff -urN linux-4.2.1.orig/fs/reiser4/status_flags.h linux-4.2.1/fs/reiser4/status_flags.h
---- linux-4.2.1.orig/fs/reiser4/status_flags.h	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/status_flags.h	2015-09-26 23:36:44.595433840 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/status_flags.h linux-4.2.6/fs/reiser4/status_flags.h
+--- linux-4.2.6.orig/fs/reiser4/status_flags.h	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/status_flags.h	2015-11-12 10:00:42.905542176 +0100
 @@ -0,0 +1,47 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by
 + * reiser4/README */
@@ -66885,9 +66886,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/status_flags.h linux-4.2.1/fs/reiser4/stat
 +int reiser4_status_finish(void);
 +
 +#endif
-diff -urN linux-4.2.1.orig/fs/reiser4/super.c linux-4.2.1/fs/reiser4/super.c
---- linux-4.2.1.orig/fs/reiser4/super.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/super.c	2015-09-26 23:36:44.595433840 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/super.c linux-4.2.6/fs/reiser4/super.c
+--- linux-4.2.6.orig/fs/reiser4/super.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/super.c	2015-11-12 10:00:42.905542176 +0100
 @@ -0,0 +1,306 @@
 +/* Copyright 2001, 2002, 2003, 2004 by Hans Reiser, licensing governed by
 + * reiser4/README */
@@ -67195,9 +67196,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/super.c linux-4.2.1/fs/reiser4/super.c
 +   fill-column: 120
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/super.h linux-4.2.1/fs/reiser4/super.h
---- linux-4.2.1.orig/fs/reiser4/super.h	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/super.h	2015-09-26 23:36:44.596433843 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/super.h linux-4.2.6/fs/reiser4/super.h
+--- linux-4.2.6.orig/fs/reiser4/super.h	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/super.h	2015-11-12 10:00:42.905542176 +0100
 @@ -0,0 +1,474 @@
 +/* Copyright 2001, 2002, 2003, 2004 by Hans Reiser, licensing governed by
 + * reiser4/README */
@@ -67673,9 +67674,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/super.h linux-4.2.1/fs/reiser4/super.h
 + * fill-column: 120
 + * End:
 + */
-diff -urN linux-4.2.1.orig/fs/reiser4/super_ops.c linux-4.2.1/fs/reiser4/super_ops.c
---- linux-4.2.1.orig/fs/reiser4/super_ops.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/super_ops.c	2015-09-26 23:36:44.597433847 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/super_ops.c linux-4.2.6/fs/reiser4/super_ops.c
+--- linux-4.2.6.orig/fs/reiser4/super_ops.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/super_ops.c	2015-11-12 10:00:42.906542206 +0100
 @@ -0,0 +1,780 @@
 +/* Copyright 2005 by Hans Reiser, licensing governed by
 + * reiser4/README */
@@ -68457,9 +68458,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/super_ops.c linux-4.2.1/fs/reiser4/super_o
 + * fill-column: 79
 + * End:
 + */
-diff -urN linux-4.2.1.orig/fs/reiser4/tap.c linux-4.2.1/fs/reiser4/tap.c
---- linux-4.2.1.orig/fs/reiser4/tap.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/tap.c	2015-09-26 23:36:44.597433847 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/tap.c linux-4.2.6/fs/reiser4/tap.c
+--- linux-4.2.6.orig/fs/reiser4/tap.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/tap.c	2015-11-12 10:00:42.906542206 +0100
 @@ -0,0 +1,376 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by
 + * reiser4/README */
@@ -68837,9 +68838,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/tap.c linux-4.2.1/fs/reiser4/tap.c
 +   scroll-step: 1
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/tap.h linux-4.2.1/fs/reiser4/tap.h
---- linux-4.2.1.orig/fs/reiser4/tap.h	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/tap.h	2015-09-26 23:36:44.598433850 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/tap.h linux-4.2.6/fs/reiser4/tap.h
+--- linux-4.2.6.orig/fs/reiser4/tap.h	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/tap.h	2015-11-12 10:00:42.907542235 +0100
 @@ -0,0 +1,70 @@
 +/* Copyright 2002, 2003 by Hans Reiser, licensing governed by reiser4/README */
 +
@@ -68911,9 +68912,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/tap.h linux-4.2.1/fs/reiser4/tap.h
 +   scroll-step: 1
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/tree.c linux-4.2.1/fs/reiser4/tree.c
---- linux-4.2.1.orig/fs/reiser4/tree.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/tree.c	2015-09-26 23:36:44.599433854 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/tree.c linux-4.2.6/fs/reiser4/tree.c
+--- linux-4.2.6.orig/fs/reiser4/tree.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/tree.c	2015-11-12 10:00:42.908542265 +0100
 @@ -0,0 +1,1878 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by
 + * reiser4/README */
@@ -70793,9 +70794,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/tree.c linux-4.2.1/fs/reiser4/tree.c
 +   scroll-step: 1
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/tree.h linux-4.2.1/fs/reiser4/tree.h
---- linux-4.2.1.orig/fs/reiser4/tree.h	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/tree.h	2015-09-26 23:36:44.600433857 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/tree.h linux-4.2.6/fs/reiser4/tree.h
+--- linux-4.2.6.orig/fs/reiser4/tree.h	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/tree.h	2015-11-12 10:00:42.909542294 +0100
 @@ -0,0 +1,577 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by
 + * reiser4/README */
@@ -71374,9 +71375,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/tree.h linux-4.2.1/fs/reiser4/tree.h
 +   scroll-step: 1
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/tree_mod.c linux-4.2.1/fs/reiser4/tree_mod.c
---- linux-4.2.1.orig/fs/reiser4/tree_mod.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/tree_mod.c	2015-09-26 23:36:44.600433857 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/tree_mod.c linux-4.2.6/fs/reiser4/tree_mod.c
+--- linux-4.2.6.orig/fs/reiser4/tree_mod.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/tree_mod.c	2015-11-12 10:00:42.909542294 +0100
 @@ -0,0 +1,386 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by
 + * reiser4/README */
@@ -71764,9 +71765,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/tree_mod.c linux-4.2.1/fs/reiser4/tree_mod
 +   scroll-step: 1
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/tree_mod.h linux-4.2.1/fs/reiser4/tree_mod.h
---- linux-4.2.1.orig/fs/reiser4/tree_mod.h	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/tree_mod.h	2015-09-26 23:36:44.600433857 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/tree_mod.h linux-4.2.6/fs/reiser4/tree_mod.h
+--- linux-4.2.6.orig/fs/reiser4/tree_mod.h	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/tree_mod.h	2015-11-12 10:00:42.909542294 +0100
 @@ -0,0 +1,29 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by
 + * reiser4/README */
@@ -71797,9 +71798,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/tree_mod.h linux-4.2.1/fs/reiser4/tree_mod
 +   scroll-step: 1
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/tree_walk.c linux-4.2.1/fs/reiser4/tree_walk.c
---- linux-4.2.1.orig/fs/reiser4/tree_walk.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/tree_walk.c	2015-09-26 23:36:44.601433861 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/tree_walk.c linux-4.2.6/fs/reiser4/tree_walk.c
+--- linux-4.2.6.orig/fs/reiser4/tree_walk.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/tree_walk.c	2015-11-12 10:00:42.910542323 +0100
 @@ -0,0 +1,927 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by
 + * reiser4/README */
@@ -72728,9 +72729,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/tree_walk.c linux-4.2.1/fs/reiser4/tree_wa
 +   fill-column: 80
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/tree_walk.h linux-4.2.1/fs/reiser4/tree_walk.h
---- linux-4.2.1.orig/fs/reiser4/tree_walk.h	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/tree_walk.h	2015-09-26 23:36:44.601433861 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/tree_walk.h linux-4.2.6/fs/reiser4/tree_walk.h
+--- linux-4.2.6.orig/fs/reiser4/tree_walk.h	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/tree_walk.h	2015-11-12 10:00:42.910542323 +0100
 @@ -0,0 +1,125 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by reiser4/README */
 +
@@ -72857,9 +72858,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/tree_walk.h linux-4.2.1/fs/reiser4/tree_wa
 +   fill-column: 120
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/txnmgr.c linux-4.2.1/fs/reiser4/txnmgr.c
---- linux-4.2.1.orig/fs/reiser4/txnmgr.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/txnmgr.c	2015-09-26 23:36:44.603433868 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/txnmgr.c linux-4.2.6/fs/reiser4/txnmgr.c
+--- linux-4.2.6.orig/fs/reiser4/txnmgr.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/txnmgr.c	2015-11-12 10:00:42.913542412 +0100
 @@ -0,0 +1,3163 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by
 + * reiser4/README */
@@ -76024,9 +76025,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/txnmgr.c linux-4.2.1/fs/reiser4/txnmgr.c
 + * fill-column: 79
 + * End:
 + */
-diff -urN linux-4.2.1.orig/fs/reiser4/txnmgr.h linux-4.2.1/fs/reiser4/txnmgr.h
---- linux-4.2.1.orig/fs/reiser4/txnmgr.h	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/txnmgr.h	2015-09-26 23:36:44.603433868 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/txnmgr.h linux-4.2.6/fs/reiser4/txnmgr.h
+--- linux-4.2.6.orig/fs/reiser4/txnmgr.h	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/txnmgr.h	2015-11-12 10:00:42.913542412 +0100
 @@ -0,0 +1,755 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by
 + * reiser4/README */
@@ -76783,9 +76784,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/txnmgr.h linux-4.2.1/fs/reiser4/txnmgr.h
 +   fill-column: 120
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/type_safe_hash.h linux-4.2.1/fs/reiser4/type_safe_hash.h
---- linux-4.2.1.orig/fs/reiser4/type_safe_hash.h	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/type_safe_hash.h	2015-09-26 23:36:44.603433868 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/type_safe_hash.h linux-4.2.6/fs/reiser4/type_safe_hash.h
+--- linux-4.2.6.orig/fs/reiser4/type_safe_hash.h	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/type_safe_hash.h	2015-11-12 10:00:42.914542441 +0100
 @@ -0,0 +1,320 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by
 + * reiser4/README */
@@ -77107,9 +77108,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/type_safe_hash.h linux-4.2.1/fs/reiser4/ty
 +   fill-column: 120
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/vfs_ops.c linux-4.2.1/fs/reiser4/vfs_ops.c
---- linux-4.2.1.orig/fs/reiser4/vfs_ops.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/vfs_ops.c	2015-09-26 23:36:44.604433872 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/vfs_ops.c linux-4.2.6/fs/reiser4/vfs_ops.c
+--- linux-4.2.6.orig/fs/reiser4/vfs_ops.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/vfs_ops.c	2015-11-12 10:00:42.914542441 +0100
 @@ -0,0 +1,260 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by
 + * reiser4/README */
@@ -77371,9 +77372,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/vfs_ops.c linux-4.2.1/fs/reiser4/vfs_ops.c
 +   fill-column: 120
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/vfs_ops.h linux-4.2.1/fs/reiser4/vfs_ops.h
---- linux-4.2.1.orig/fs/reiser4/vfs_ops.h	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/vfs_ops.h	2015-09-26 23:36:44.604433872 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/vfs_ops.h linux-4.2.6/fs/reiser4/vfs_ops.h
+--- linux-4.2.6.orig/fs/reiser4/vfs_ops.h	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/vfs_ops.h	2015-11-12 10:00:42.914542441 +0100
 @@ -0,0 +1,60 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by
 + * reiser4/README */
@@ -77435,9 +77436,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/vfs_ops.h linux-4.2.1/fs/reiser4/vfs_ops.h
 +   scroll-step: 1
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/wander.c linux-4.2.1/fs/reiser4/wander.c
---- linux-4.2.1.orig/fs/reiser4/wander.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/wander.c	2015-09-26 23:36:44.605433875 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/wander.c linux-4.2.6/fs/reiser4/wander.c
+--- linux-4.2.6.orig/fs/reiser4/wander.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/wander.c	2015-11-12 10:00:42.916542500 +0100
 @@ -0,0 +1,1783 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by
 + * reiser4/README */
@@ -79222,9 +79223,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/wander.c linux-4.2.1/fs/reiser4/wander.c
 +   fill-column: 80
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/wander.h linux-4.2.1/fs/reiser4/wander.h
---- linux-4.2.1.orig/fs/reiser4/wander.h	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/wander.h	2015-09-26 23:36:44.605433875 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/wander.h linux-4.2.6/fs/reiser4/wander.h
+--- linux-4.2.6.orig/fs/reiser4/wander.h	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/wander.h	2015-11-12 10:00:42.916542500 +0100
 @@ -0,0 +1,135 @@
 +/* Copyright 2002, 2003 by Hans Reiser, licensing governed by reiser4/README */
 +
@@ -79361,9 +79362,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/wander.h linux-4.2.1/fs/reiser4/wander.h
 +   scroll-step: 1
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/writeout.h linux-4.2.1/fs/reiser4/writeout.h
---- linux-4.2.1.orig/fs/reiser4/writeout.h	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/writeout.h	2015-09-26 23:36:44.605433875 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/writeout.h linux-4.2.6/fs/reiser4/writeout.h
+--- linux-4.2.6.orig/fs/reiser4/writeout.h	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/writeout.h	2015-11-12 10:00:42.916542500 +0100
 @@ -0,0 +1,21 @@
 +/* Copyright 2002, 2003, 2004 by Hans Reiser, licensing governed by reiser4/README  */
 +
@@ -79386,9 +79387,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/writeout.h linux-4.2.1/fs/reiser4/writeout
 +   fill-column: 80
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/znode.c linux-4.2.1/fs/reiser4/znode.c
---- linux-4.2.1.orig/fs/reiser4/znode.c	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/znode.c	2015-09-26 23:36:44.606433879 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/znode.c linux-4.2.6/fs/reiser4/znode.c
+--- linux-4.2.6.orig/fs/reiser4/znode.c	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/znode.c	2015-11-12 10:00:42.917542530 +0100
 @@ -0,0 +1,1029 @@
 +/* Copyright 2001, 2002, 2003 by Hans Reiser, licensing governed by
 + * reiser4/README */
@@ -80419,9 +80420,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/znode.c linux-4.2.1/fs/reiser4/znode.c
 +   fill-column: 120
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/fs/reiser4/znode.h linux-4.2.1/fs/reiser4/znode.h
---- linux-4.2.1.orig/fs/reiser4/znode.h	1970-01-01 01:00:00.000000000 +0100
-+++ linux-4.2.1/fs/reiser4/znode.h	2015-09-26 23:36:44.606433879 +0200
+diff -urN linux-4.2.6.orig/fs/reiser4/znode.h linux-4.2.6/fs/reiser4/znode.h
+--- linux-4.2.6.orig/fs/reiser4/znode.h	1970-01-01 01:00:00.000000000 +0100
++++ linux-4.2.6/fs/reiser4/znode.h	2015-11-12 10:00:42.917542530 +0100
 @@ -0,0 +1,434 @@
 +/* Copyright 2001, 2002, 2003, 2004 by Hans Reiser, licensing governed by
 + * reiser4/README */
@@ -80857,9 +80858,9 @@ diff -urN linux-4.2.1.orig/fs/reiser4/znode.h linux-4.2.1/fs/reiser4/znode.h
 +   fill-column: 120
 +   End:
 +*/
-diff -urN linux-4.2.1.orig/include/linux/fs.h linux-4.2.1/include/linux/fs.h
---- linux-4.2.1.orig/include/linux/fs.h	2015-09-21 19:11:11.000000000 +0200
-+++ linux-4.2.1/include/linux/fs.h	2015-09-26 23:36:44.607433883 +0200
+diff -urN linux-4.2.6.orig/include/linux/fs.h linux-4.2.6/include/linux/fs.h
+--- linux-4.2.6.orig/include/linux/fs.h	2015-11-09 23:37:56.000000000 +0100
++++ linux-4.2.6/include/linux/fs.h	2015-11-12 10:00:42.918542559 +0100
 @@ -272,7 +272,7 @@
   */
  #define FILESYSTEM_MAX_STACK_DEPTH 2
@@ -80942,10 +80943,10 @@ diff -urN linux-4.2.1.orig/include/linux/fs.h linux-4.2.1/include/linux/fs.h
  ssize_t vfs_iter_read(struct file *file, struct iov_iter *iter, loff_t *ppos);
  ssize_t vfs_iter_write(struct file *file, struct iov_iter *iter, loff_t *ppos);
  
-diff -urN linux-4.2.1.orig/include/linux/mm.h linux-4.2.1/include/linux/mm.h
---- linux-4.2.1.orig/include/linux/mm.h	2015-09-21 19:11:11.000000000 +0200
-+++ linux-4.2.1/include/linux/mm.h	2015-09-26 23:36:44.608433886 +0200
-@@ -1246,6 +1246,7 @@
+diff -urN linux-4.2.6.orig/include/linux/mm.h linux-4.2.6/include/linux/mm.h
+--- linux-4.2.6.orig/include/linux/mm.h	2015-11-09 23:37:56.000000000 +0100
++++ linux-4.2.6/include/linux/mm.h	2015-11-12 10:00:42.919542589 +0100
+@@ -1267,6 +1267,7 @@
  			  struct mem_cgroup *memcg, struct bdi_writeback *wb);
  int set_page_dirty(struct page *page);
  int set_page_dirty_lock(struct page *page);
@@ -80953,10 +80954,10 @@ diff -urN linux-4.2.1.orig/include/linux/mm.h linux-4.2.1/include/linux/mm.h
  void cancel_dirty_page(struct page *page);
  int clear_page_dirty_for_io(struct page *page);
  
-diff -urN linux-4.2.1.orig/include/linux/sched.h linux-4.2.1/include/linux/sched.h
---- linux-4.2.1.orig/include/linux/sched.h	2015-09-21 19:11:11.000000000 +0200
-+++ linux-4.2.1/include/linux/sched.h	2015-09-26 23:36:44.608433886 +0200
-@@ -2028,6 +2028,7 @@
+diff -urN linux-4.2.6.orig/include/linux/sched.h linux-4.2.6/include/linux/sched.h
+--- linux-4.2.6.orig/include/linux/sched.h	2015-11-09 23:37:56.000000000 +0100
++++ linux-4.2.6/include/linux/sched.h	2015-11-12 10:00:42.921542647 +0100
+@@ -2040,6 +2040,7 @@
  /*
   * Per process flags
   */
@@ -80964,9 +80965,9 @@ diff -urN linux-4.2.1.orig/include/linux/sched.h linux-4.2.1/include/linux/sched
  #define PF_EXITING	0x00000004	/* getting shut down */
  #define PF_EXITPIDONE	0x00000008	/* pi exit done on shut down */
  #define PF_VCPU		0x00000010	/* I'm a virtual CPU */
-diff -urN linux-4.2.1.orig/include/linux/writeback.h linux-4.2.1/include/linux/writeback.h
---- linux-4.2.1.orig/include/linux/writeback.h	2015-09-21 19:11:11.000000000 +0200
-+++ linux-4.2.1/include/linux/writeback.h	2015-09-26 23:36:44.609433890 +0200
+diff -urN linux-4.2.6.orig/include/linux/writeback.h linux-4.2.6/include/linux/writeback.h
+--- linux-4.2.6.orig/include/linux/writeback.h	2015-11-09 23:37:56.000000000 +0100
++++ linux-4.2.6/include/linux/writeback.h	2015-11-12 10:00:42.922542677 +0100
 @@ -12,6 +12,12 @@
  
  DECLARE_PER_CPU(int, dirty_throttle_leaks);
@@ -81012,9 +81013,9 @@ diff -urN linux-4.2.1.orig/include/linux/writeback.h linux-4.2.1/include/linux/w
  struct bdi_writeback;
  void writeback_inodes_sb(struct super_block *, enum wb_reason reason);
  void writeback_inodes_sb_nr(struct super_block *, unsigned long nr,
-diff -urN linux-4.2.1.orig/mm/filemap.c linux-4.2.1/mm/filemap.c
---- linux-4.2.1.orig/mm/filemap.c	2015-09-21 19:11:11.000000000 +0200
-+++ linux-4.2.1/mm/filemap.c	2015-09-26 23:36:44.610433893 +0200
+diff -urN linux-4.2.6.orig/mm/filemap.c linux-4.2.6/mm/filemap.c
+--- linux-4.2.6.orig/mm/filemap.c	2015-11-09 23:37:56.000000000 +0100
++++ linux-4.2.6/mm/filemap.c	2015-11-12 10:00:42.922542677 +0100
 @@ -1470,6 +1470,7 @@
  {
  	ra->ra_pages /= 4;
@@ -81023,9 +81024,9 @@ diff -urN linux-4.2.1.orig/mm/filemap.c linux-4.2.1/mm/filemap.c
  
  /**
   * do_generic_file_read - generic file read routine
-diff -urN linux-4.2.1.orig/mm/page-writeback.c linux-4.2.1/mm/page-writeback.c
---- linux-4.2.1.orig/mm/page-writeback.c	2015-09-21 19:11:11.000000000 +0200
-+++ linux-4.2.1/mm/page-writeback.c	2015-09-26 23:36:44.610433893 +0200
+diff -urN linux-4.2.6.orig/mm/page-writeback.c linux-4.2.6/mm/page-writeback.c
+--- linux-4.2.6.orig/mm/page-writeback.c	2015-11-09 23:37:56.000000000 +0100
++++ linux-4.2.6/mm/page-writeback.c	2015-11-12 10:00:42.923542706 +0100
 @@ -2504,6 +2504,36 @@
  EXPORT_SYMBOL(account_page_redirty);
  
@@ -81063,9 +81064,9 @@ diff -urN linux-4.2.1.orig/mm/page-writeback.c linux-4.2.1/mm/page-writeback.c
   * When a writepage implementation decides that it doesn't want to write this
   * page for some reason, it should redirty the locked page via
   * redirty_page_for_writepage() and it should then unlock the page and return 0
-diff -urN linux-4.2.1.orig/mm/vmscan.c linux-4.2.1/mm/vmscan.c
---- linux-4.2.1.orig/mm/vmscan.c	2015-09-21 19:11:11.000000000 +0200
-+++ linux-4.2.1/mm/vmscan.c	2015-09-26 23:36:44.611433897 +0200
+diff -urN linux-4.2.6.orig/mm/vmscan.c linux-4.2.6/mm/vmscan.c
+--- linux-4.2.6.orig/mm/vmscan.c	2015-11-09 23:37:56.000000000 +0100
++++ linux-4.2.6/mm/vmscan.c	2015-11-12 10:00:42.924542736 +0100
 @@ -2605,6 +2605,9 @@
  	unsigned long total_scanned = 0;
  	unsigned long writeback_threshold;
