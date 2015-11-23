@@ -9,5 +9,5 @@ RDEPEND=media-sound/deadbeef
 RESTRICT=mirror
 SLOT=0
 SRC_URI=https://github.com/cboxdoerfer/ddb_bookmark_manager/archive/ff827d577941481b1e6e360f87a254f50c524628.tar.gz -> deadbeef-bookmark-manager-20140514.tar.gz
-_eclasses_=deadbeef-plugins	7c8fe03766edd0d6acdc92e6fc07974d	eutils	f813d23e417656bf3917483643165d5a	multilib	3972ca401cf7dbb430df9995f5d8d580	toolchain-funcs	7a212e5e01adfa4805c9978366e6ee85
+_eclasses_=deadbeef-plugins	7c8fe03766edd0d6acdc92e6fc07974d	eutils	f20548a2f7b0128068388cd2ec26708a	multilib	3972ca401cf7dbb430df9995f5d8d580	toolchain-funcs	7a212e5e01adfa4805c9978366e6ee85
 _md5_=bc4b4a619e53dfdda739d80709b599fb
