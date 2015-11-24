@@ -6,5 +6,6 @@ HOMEPAGE=has no url
 KEYWORDS=x86 amd64
 LICENSE=GPL-2
 SLOT=0
+_eclass_exported_funcs=pkg_postinst:- src_unpack:git-2 src_configure:- src_compile:-
 _eclasses_=git-2	df00117322129fb906bb0a53c3d6a020
 _md5_=ea2c94582d7c7525a62a1a23b5dc6297
