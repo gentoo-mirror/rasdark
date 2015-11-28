@@ -85,3 +85,5 @@
 =app-misc/mc-4.8* x86 amd64
 =x11-misc/screengrab-1.2* x86 amd64
 =app-admin/testdisk-7.0* x86 amd64
+=sys-fs/reiser4progs-1.1* x86 amd64
+=sys-fs/f2fs-tools-1.5* x86 amd64
