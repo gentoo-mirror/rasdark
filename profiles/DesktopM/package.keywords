@@ -83,3 +83,4 @@
 =app-mobilephone/obexftp-0.24* x86 amd64
 =dev-libs/openobex-1.7* x86 amd64
 =app-misc/mc-4.8* x86 amd64
+=x11-misc/screengrab-1.2* x86 amd64
