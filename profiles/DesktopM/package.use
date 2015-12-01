@@ -92,3 +92,4 @@ sys-fs/ntfs3g xattr
 net-wireless/blueman -appindicator
 net-dns/avahi -qt4 utils
 app-mobilephone/obexftp python
+x11-terms/rxvt-unicode -alt-font-width pixbuf -vanilla iso14755 unicode3 -buffer-on-clear fading-colors
