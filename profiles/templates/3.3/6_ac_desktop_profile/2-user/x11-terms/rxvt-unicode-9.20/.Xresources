@@ -1,26 +1,31 @@
 # Calculate comment=!
 ! для применения настроек в текущей сессии используйте `xrdb -load ~/.Xresources`
 
-Xft.antialias: true
+Xcursor.theme: haematite
+Xcursor.size: 20
+
+!Xft.antialias: true
 Xft.dpi: 96
-Xft.rgba: none
+Xft.rgba: rba
+Xft.lcdfilter:  lcddefault
 Xft.hinting: true
 Xft.hintstyle: hintslight
 
 URxvt.perl-ext-common: default,tabbed,matcher
-
 URxvt.url-launcher: /usr/bin/xdg-open
 URxvt.matcher.button: 3
 URxvt.colorUL: #cacc46
 URxvt.underlineURLs: true
 URxvt.underlineColor: #cacc46
 
-URxvt.font: xft:Andale Mono:size=10:antialias=true
-URxvt.boldFont: xft:Andale Mono:bold:size=10:antialias=true
+!URxvt.font: xft:Andale Mono:size=10:antialias=true
+!URxvt.boldFont: xft:Andale Mono:bold:size=10:antialias=true
+URxvt.font: xft:Roboto Mono for Powerline:size=10
+URxvt.boldFont: xft:Roboto Mono for Powerline:bold:size=10
 
 URxvt.saveLines: 5000
 URxvt.geometry: 120x35
-URxvt.termName: rxvt
+URxvt.termName: rxvt-unicode-256color
 
 URxvt.scrollBar: true
 URxvt.scrollstyle: plain
