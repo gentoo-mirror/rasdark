@@ -2,6 +2,7 @@ app-cdr/pburn 4.3.16: A burning tool with GTK+ frontend
 app-text/litetran 9999: Very simple GUI for text translation (like google translate).
 games-strategy/ufo-ai 2.5 9999: UFO: Alien Invasion - X-COM inspired strategy game
 mail-client/davmail-bin 4.7.0: POP/IMAP/SMTP/Caldav/Carddav/LDAP Exchange Gateway
+media-gfx/blender 2.74 2.75a: 3D Creation/Animation/Publishing System
 media-plugins/deadbeef-archive-reader 20140219 99999999: DeaDBeeF vfs archive reader plugin with gzip, 7z and rar support
 media-plugins/deadbeef-bookmark-manager 20140514 99999999: DeaDBeeF bookmark manager plugin
 media-plugins/deadbeef-bs2b 20110319 99999999: DeaDBeeF bs2b dsp plugin
