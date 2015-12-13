@@ -34,7 +34,7 @@ net-misc/qtmib 1.1.1: Easy-to-use SNMPv1 and SNMPv2c MIB Browser written in QT4
 sys-apps/lm_sensors 3.4.0: Hardware Monitoring user-space utilities
 sys-apps/uksmstat 9999: Small tool to show UKSM statistics.
 sys-firmware/edk2 9999: A modern, feature-rich, cross-platform firmware development env. for the UEFI and PI specifications
-sys-kernel/calculate-sources 4.1.6 4.2.2: Calculate Linux kernel image
+sys-kernel/calculate-sources 4.1.6 4.2.2 4.3.2: Calculate Linux kernel image
 www-client/yandex-browser-beta 15.9.2454.2433_p1: Yandex Browser is a browser that combines a minimal design with sophisticated technology to make the web faster, safer, and easier.
 www-servers/nginx 1.9.7: Robust, small and high performance http and reverse proxy server
 x11-base/xorg-drivers 1.12: Meta package containing deps on all xorg drivers
