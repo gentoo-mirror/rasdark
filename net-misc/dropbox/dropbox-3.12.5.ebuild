@@ -1,6 +1,6 @@
 # Copyright 1999-2015 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
+# $Header: /var/cvsroot/gentoo-x86/net-misc/dropbox/dropbox-3.6.8.ebuild,v 1.1 2015/07/08 05:08:53 naota Exp $
 
 EAPI=5
 
@@ -55,10 +55,7 @@ RDEPEND="
 	net-misc/wget
 	>=sys-devel/gcc-4.2.0
 	sys-libs/zlib
-	|| (
-		sys-libs/ncurses:5/5
-		sys-libs/ncurses:0/5
-	)"
+"
 
 src_unpack() {
 	unpack ${A}
@@ -70,11 +67,19 @@ src_unpack() {
 
 src_prepare() {
 	local target=(
-		cffi-0.8.6-py2.7-*.egg
+		cffi-1.2.1-py2.7-*.egg
+		cryptography-1.0-py2.7-*.egg #new
 		dropbox_sqlite_ext-0.0-py2.7.egg
-		futures-2.1.3-py2.7.egg
+		futures-3.0.2-py2.7.egg
+		idna-2.0-py2.7.egg #new
+		ipaddress-1.0.14-py2.7.egg #new
 		requests-1.2.3-py2.7.egg
-		setuptools-12.3-py2.7.egg
+		setuptools-18.1-py2.7.egg
+		psutil-3.1.1-py2.7-*.egg
+		pyasn1-0.1.8-py2.7.egg
+		six-1.9.0-py2.7.egg #new
+		mock-1.0.1-py2.7.egg
+		tornado-4.2-py2.7-*.egg
 	)
 
 	rm -vf libbz2* libpopt.so.0 libpng12.so.0 || die
@@ -87,7 +92,7 @@ src_prepare() {
 		rm -vrf PyQt5* *pyqt5* images || die
 	fi
 	if use librsync-bundled ; then
-		patchelf --set-rpath '$ORIGIN' _librsync.so || die
+		patchelf --set-rpath '$ORIGIN' librsyncffi.compiled._librsyncffi.so* || die
 	else
 		rm -vf librsync.so.1 || die
 	fi
