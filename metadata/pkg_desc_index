@@ -28,7 +28,6 @@ net-analyzer/suricata 2.0.6: next generation intrusion detection and prevention 
 net-im/jitsi-bin 2.8: Secure IM communicator that supports SIP, XMPP/Jabber, AIM/ICQ, Windows Live, Yahoo
 net-im/qutim 9999: Qt4-based multi-protocol instant messenger
 net-im/viber 9999: Free calls, text and picture sharing with anyone, anywhere!
-net-irc/kvirc 9999: Advanced IRC Client
 net-misc/android-file-transfer 2.2: Reliable MTP client with minimalistic UI
 net-misc/dropbox 3.12.5: Dropbox daemon (pretends to be GUI-less)
 net-misc/qtmib 1.1.1: Easy-to-use SNMPv1 and SNMPv2c MIB Browser written in QT4
