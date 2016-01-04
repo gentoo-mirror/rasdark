@@ -31,6 +31,7 @@ net-im/viber 9999: Free calls, text and picture sharing with anyone, anywhere!
 net-misc/android-file-transfer 2.2: Reliable MTP client with minimalistic UI
 net-misc/dropbox 3.12.5: Dropbox daemon (pretends to be GUI-less)
 net-misc/qtmib 1.1.1: Easy-to-use SNMPv1 and SNMPv2c MIB Browser written in QT4
+net-print/brother-hll2300d 3.2.0: Cups ppd and filters for Brother HL-L2300D
 sys-apps/lm_sensors 3.4.0: Hardware Monitoring user-space utilities
 sys-apps/uksmstat 9999: Small tool to show UKSM statistics.
 sys-firmware/edk2 9999: A modern, feature-rich, cross-platform firmware development env. for the UEFI and PI specifications
