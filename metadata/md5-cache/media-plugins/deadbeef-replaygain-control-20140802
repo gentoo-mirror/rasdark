@@ -12,5 +12,5 @@ RESTRICT=mirror
 SLOT=0
 SRC_URI=https://github.com/cboxdoerfer/ddb_replaygain_control/archive/c0788d47e5bcc2428c57fe4321566891c4abe452.tar.gz -> deadbeef-replaygain-control-20140802.tar.gz
 _eclass_exported_funcs=src_prepare:- src_configure:deadbeef-plugins src_compile:deadbeef-plugins src_install:deadbeef-plugins
-_eclasses_=deadbeef-plugins	7c8fe03766edd0d6acdc92e6fc07974d	eutils	d9bd2ddd85a58e470b49ca997e255a4c	multilib	3972ca401cf7dbb430df9995f5d8d580	toolchain-funcs	7a212e5e01adfa4805c9978366e6ee85
+_eclasses_=deadbeef-plugins	7c8fe03766edd0d6acdc92e6fc07974d	eutils	7332d4dd366dcd51c0014dde21f21897	multilib	3972ca401cf7dbb430df9995f5d8d580	toolchain-funcs	7a212e5e01adfa4805c9978366e6ee85
 _md5_=f74b1d84510ff3870ea6d4b1c7255478
