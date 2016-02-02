@@ -5,8 +5,8 @@
 ~app-cdr/pburn-4.3.16 x86 amd64
 ~app-crypt/chntpw-140201 x86 amd64
 ~app-crypt/gpgme-1.6.0 x86 amd64
-~app-editors/gvim-7.4.827 x86 amd64
-~app-editors/vim-core-7.4.827 x86 amd64
+=app-editors/gvim-7.4* x86 amd64
+=app-editors/vim-core-7.4* x86 amd64
 =app-emulation/wine-1.7* x86 amd64
 ~app-emulation/winetricks-20150826 x86 amd64
 ~app-forensics/scalpel-2.0 x86 amd64
