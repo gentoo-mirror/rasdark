@@ -329,10 +329,6 @@ pkg_setup() {
 		eerror "Please disable either flag and try again."
 		die "Can't compile mogilefs with threads support"
 	fi
-        if use nginx_modules_http_pagespeed; then
-            mv ${WORKDIR}/psol ${HTTP_PAGESPEED_MODULE_WD}
-        fi
-
 }
 
 src_prepare() {
@@ -361,6 +357,11 @@ src_prepare() {
 			sed -i -e "/${module}/d" auto/install || die
 		fi
 	done
+
+       if use nginx_modules_http_pagespeed; then
+            mv ${WORKDIR}/psol ${HTTP_PAGESPEED_MODULE_WD}
+        fi
+
 }
 
 src_configure() {
