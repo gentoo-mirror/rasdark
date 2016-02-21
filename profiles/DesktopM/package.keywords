@@ -57,7 +57,7 @@
 ~sys-devel/gettext-0.19.6 x86 amd64
 =sys-fs/cryptsetup-1.6.8* x86 amd64
 ~sys-fs/ntfs3g-2015.3.14 x86 amd64
-=sys-kernel/calculate-sources-4.3* x86 amd64
+=sys-kernel/calculate-sources-4.4* x86 amd64
 ~sys-kernel/linux-firmware-20150812 x86 amd64
 ~sys-power/cpupower-4.2 x86 amd64
 ~virtual/jdk-1.8.0 x86 amd64
