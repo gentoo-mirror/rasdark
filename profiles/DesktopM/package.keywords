@@ -99,3 +99,4 @@
 =dev-qt/qttranslations-4.8* x86 amd64
 =dev-qt/qtwebkit-4.8* x86 amd64
 =dev-qt/qtxmlpatterns-4.8* x86 amd64
+=dev-libs/liborcus-0.9.2* x86 amd64
