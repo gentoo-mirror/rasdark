@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 
-EAPI=5
+EAPI=6
 
 # Maintainer notes:
 # - http_rewrite-independent pcre-support makes sense for matching locations without an actual rewrite
@@ -48,13 +48,13 @@ HTTP_SLOWFS_CACHE_MODULE_URI="http://labs.frickle.com/files/ngx_slowfs_cache-${H
 HTTP_SLOWFS_CACHE_MODULE_WD="${WORKDIR}/ngx_slowfs_cache-${HTTP_SLOWFS_CACHE_MODULE_PV}"
 
 # http_fancyindex (https://github.com/aperezdc/ngx-fancyindex, BSD license)
-HTTP_FANCYINDEX_MODULE_PV="0.3.5"
+HTTP_FANCYINDEX_MODULE_PV="0.3.6"
 HTTP_FANCYINDEX_MODULE_P="ngx_http_fancyindex-${HTTP_FANCYINDEX_MODULE_PV}"
 HTTP_FANCYINDEX_MODULE_URI="https://github.com/aperezdc/ngx-fancyindex/archive/v${HTTP_FANCYINDEX_MODULE_PV}.tar.gz"
 HTTP_FANCYINDEX_MODULE_WD="${WORKDIR}/ngx-fancyindex-${HTTP_FANCYINDEX_MODULE_PV}"
 
 # http_lua (https://github.com/openresty/lua-nginx-module, BSD license)
-HTTP_LUA_MODULE_PV="0.10.0"
+HTTP_LUA_MODULE_PV="0.10.1rc1"
 HTTP_LUA_MODULE_P="ngx_http_lua-${HTTP_LUA_MODULE_PV}"
 HTTP_LUA_MODULE_URI="https://github.com/openresty/lua-nginx-module/archive/v${HTTP_LUA_MODULE_PV}.tar.gz"
 HTTP_LUA_MODULE_WD="${WORKDIR}/lua-nginx-module-${HTTP_LUA_MODULE_PV}"
@@ -140,12 +140,12 @@ HTTP_PAGESPEED_MODULE_PSOL="https://dl.google.com/dl/page-speed/psol/${HTTP_PAGE
 HTTP_PAGESPEED_MODULE_WD="${WORKDIR}/${HTTP_PAGESPEED_MODULE_P}"
 
 # nginx-ldap-auth-module (https://github.com/kvspb/nginx-auth-ldap, BSD-2)
-HTTP_LDAP_MODULE_PV="d0f2f829f708792ee97a9241c9c6ffd33c47c7c1"
+HTTP_LDAP_MODULE_PV="8517bb05ecc896b54429ca5e95137b0a386bd41a"
 HTTP_LDAP_MODULE_P="nginx-auth-ldap-${HTTP_LDAP_MODULE_PV}"
 HTTP_LDAP_MODULE_URI="https://github.com/kvspb/nginx-auth-ldap/archive/${HTTP_LDAP_MODULE_PV}.tar.gz"
 HTTP_LDAP_MODULE_WD="${WORKDIR}/nginx-auth-ldap-${HTTP_LDAP_MODULE_PV}"
 
-inherit eutils ssl-cert toolchain-funcs perl-module flag-o-matic user systemd versionator multilib
+inherit ssl-cert toolchain-funcs perl-module flag-o-matic user systemd versionator multilib
 
 DESCRIPTION="Robust, small and high performance http and reverse proxy server"
 HOMEPAGE="http://nginx.org"
@@ -332,12 +332,10 @@ pkg_setup() {
 }
 
 src_prepare() {
-	epatch_user
-
-	epatch "${FILESDIR}/${PN}-1.4.1-fix-perl-install-path.patch"
-
-	if use nginx_modules_http_upstream_check; then
-		epatch "${FILESDIR}/check-1.9.2".patch
+        eapply "${FILESDIR}/${PN}-1.4.1-fix-perl-install-path.patch"
+	
+        if use nginx_modules_http_upstream_check; then
+                eapply -p0 "${FILESDIR}/check-1.9.2".patch
 	fi
 
 	if use nginx_modules_http_lua; then
@@ -358,10 +356,11 @@ src_prepare() {
 		fi
 	done
 
-       if use nginx_modules_http_pagespeed; then
+        if use nginx_modules_http_pagespeed; then
             mv ${WORKDIR}/psol ${HTTP_PAGESPEED_MODULE_WD}
         fi
 
+        eapply_user
 }
 
 src_configure() {
