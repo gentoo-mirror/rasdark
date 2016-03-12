@@ -42,7 +42,7 @@
 ~media-video/smtube-15.9.0 x86 amd64
 ~media-video/v4l2ucp-9999 x86 amd64
 =net-dns/bind-tools-9.10.2* x86 amd64
-~net-libs/rb_libtorrent-1.0.6 x86 amd64
+~net-libs/rb_libtorrent-1.0.9 x86 amd64
 =net-misc/networkmanager-1.0.6-r1 x86 amd64
 ~net-misc/remmina-1.2.0_rc3 x86 amd64
 =net-misc/yandex-disk-0.1.5* x86 amd64
