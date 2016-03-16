@@ -25,7 +25,7 @@ RDEPEND="sys-apps/dbus
 	sys-libs/ncurses
 	x11-libs/libX11
 	gtk? ( x11-libs/gtk+:2 )
-	qt4? ( >=dev-qt/qtpascal-2.5 )"
+	qt4? ( >=dev-qt/qt4pas-2.5 )"
 
 DEPEND="${RDEPEND}
 	>=dev-lang/lazarus-1.2"
@@ -37,8 +37,8 @@ src_prepare(){
     export lazpath="/usr/share/lazarus"
 
     if use qt4 ; then
-	cp /usr/lib/qt4/libQt4Pas.so plugins/wlx/WlxMplayer/src/
-	cp /usr/lib/qt4/libQt4Pas.so src/
+	cp /usr/lib/libQt4Pas.so plugins/wlx/WlxMplayer/src/
+	cp /usr/lib/libQt4Pas.so src/
     fi
 
     find ./ -type f -name "build.sh" -exec sed -i 's#$lazbuild #$lazbuild --lazarusdir=/usr/share/lazarus #g' {} \;
