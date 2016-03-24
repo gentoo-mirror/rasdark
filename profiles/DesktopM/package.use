@@ -4,7 +4,7 @@ app-editors/gvim neXt perl python
 app-emulation/winetricks -gtk
 app-emulation/wine -vaapi staging -scanner
 app-misc/mc -spell gpm sftp slang -mclib
-app-office/libreoffice gtk -bluetooth opengl -vlc branding java -python_single_target_python3_4 python_single_target_python3_4 python_targets_python3_4
+app-office/libreoffice gtk -bluetooth opengl -vlc branding java -python_single_target_python2_7 python_single_target_python3_4 python_targets_python3_4
 app-portage/layman git mercurial
 app-shells/zsh doc examples
 app-text/poppler qt4
