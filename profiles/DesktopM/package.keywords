@@ -33,8 +33,8 @@
 ~media-libs/fontconfig-ultimate-2015.08.01 x86 amd64
 ~media-libs/libass-0.12.3 x86 amd64
 ~media-libs/x265-1.7 x86 amd64
-~media-plugins/audacious-plugins-3.6.2-r1 x86 amd64
-~media-sound/audacious-3.6.2 x86 amd64
+=media-plugins/audacious-plugins-3.7* x86 amd64
+=media-sound/audacious-3.7* x86 amd64
 ~media-sound/volumeicon-0.5.1 x86 amd64
 =media-video/ffmpeg-2.8* x86 amd64
 =media-video/mpv-0.15* x86 amd64
