@@ -52,6 +52,7 @@
 ~sys-apps/ethtool-4.0 x86 amd64
 ~sys-apps/inxi-2.2.19 x86 amd64
 ~sys-boot/os-prober-1.67 x86 amd64
+=sys-devel/boost-m4-0.4_p20160328 x86 amd64
 ~sys-devel/gcc-4.9.3 amd64 x86
 ~sys-devel/gcc-config-1.8 x86 amd64
 ~sys-devel/gettext-0.19.6 x86 amd64
