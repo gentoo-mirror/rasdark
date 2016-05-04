@@ -95,3 +95,5 @@ app-mobilephone/obexftp python
 x11-terms/rxvt-unicode -alt-font-width pixbuf -vanilla iso14755 unicode3 -buffer-on-clear fading-colors
 dev-libs/libgudev static-libs
 dev-libs/glib static-libs
+dev-lua/lpeg luajit
+dev-lua/mpack luajit
