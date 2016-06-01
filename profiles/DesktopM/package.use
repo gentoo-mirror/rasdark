@@ -97,3 +97,4 @@ dev-libs/libgudev static-libs
 dev-libs/glib static-libs
 dev-lua/lpeg luajit
 dev-lua/mpack luajit
+media-gfx/viewnior wallpaper
