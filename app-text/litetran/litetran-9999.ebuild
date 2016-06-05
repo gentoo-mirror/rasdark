@@ -5,8 +5,8 @@ EAPI="5"
 inherit cmake-utils fdo-mime git-2
 
 DESCRIPTION="Very simple GUI for text translation (like google translate)."
-HOMEPAGE="https://github.com/flareguner/litetran"
-EGIT_REPO_URI="https://github.com/flareguner/litetran.git"
+HOMEPAGE="http://gfarniev.bitbucket.org/litetran/"
+EGIT_REPO_URI="https://bitbucket.org/gfarniev/litetran.git"
 LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS=""

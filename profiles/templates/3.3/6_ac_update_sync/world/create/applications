@@ -15,7 +15,7 @@ dev-java/oracle-jre-bin
 x11-misc/gsimplecal
 mail-client/thunderbird
 media-gfx/gimp
-media-gfx/nomacs
+media-gfx/viewnior
 media-sound/volumeicon
 sci-calculators/speedcrunch
 net-im/pidgin
