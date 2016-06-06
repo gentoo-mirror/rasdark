@@ -1,0 +1,16 @@
+DEFINED_PHASES=compile configure install
+DEPEND=media-sound/deadbeef gtk2? ( media-sound/deadbeef[gtk2] ) gtk3? ( media-sound/deadbeef[gtk3] )
+DESCRIPTION=DeaDBeeF vu meter plugin
+EAPI=5
+HOMEPAGE=https://github.com/cboxdoerfer/ddb_vu_meter
+IUSE=+gtk2 gtk3
+KEYWORDS=~*
+LICENSE=GPL-2
+RDEPEND=media-sound/deadbeef gtk2? ( media-sound/deadbeef[gtk2] ) gtk3? ( media-sound/deadbeef[gtk3] )
+REQUIRED_USE=|| ( gtk2 gtk3 )
+RESTRICT=mirror
+SLOT=0
+SRC_URI=https://github.com/cboxdoerfer/ddb_vu_meter/archive/940d8d72a46993619c3fba4cde5e30c95f5a4b82.tar.gz -> deadbeef-vu-meter-20140914.tar.gz
+_eclass_exported_funcs=src_configure:deadbeef-plugins src_compile:deadbeef-plugins src_install:deadbeef-plugins
+_eclasses_=deadbeef-plugins	7c8fe03766edd0d6acdc92e6fc07974d	eutils	792f83d5ec9536cb5ccef375469d8bde	multilib	d062ae4ba2fc40a19c11de2ad89b6616	toolchain-funcs	d513d423d449877e49d99af3f7af7acb
+_md5_=4efed151c0ac61ee793a46008de3a20f

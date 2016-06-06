@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile configure install unpack
+DEPEND=>=media-libs/opusfile-0.5[float,http] media-libs/libogg media-sound/deadbeef >=dev-vcs/git-1.8.2.1
+DESCRIPTION=DeaDBeeF ogg opus decoder plugin
+EAPI=5
+HOMEPAGE=https://bitbucket.org/Lithopsian/deadbeef-opus/overview
+LICENSE=GPL-2
+RDEPEND=>=media-libs/opusfile-0.5[float,http] media-libs/libogg media-sound/deadbeef
+RESTRICT=strip
+SLOT=0
+_eclass_exported_funcs=src_unpack:git-r3 src_configure:deadbeef-plugins src_compile:deadbeef-plugins src_install:deadbeef-plugins
+_eclasses_=deadbeef-plugins	7c8fe03766edd0d6acdc92e6fc07974d	eutils	792f83d5ec9536cb5ccef375469d8bde	git-r3	00f60a84fc7b499c99edfe99caea9f95	multilib	d062ae4ba2fc40a19c11de2ad89b6616	toolchain-funcs	d513d423d449877e49d99af3f7af7acb
+_md5_=af0b1a460cebc17c6705ec6f00dd0dad
