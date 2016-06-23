@@ -9,6 +9,8 @@ USE="${USE} -dconf networkmanager udisks -systemd modemmanager -libav -qt3suppor
 USE="${USE} -eds -gnome -kde infinality"
 #
 USE="${USE} natspec"
+#
+USE="${USE} -postgres -mysql"
 
 THEMES="CLDX"
 LIGHTDM_SESSION=openbox
