@@ -9,5 +9,5 @@ LICENSE=GPL-3
 RDEPEND=>=dev-qt/qtcore-5.5 >=dev-qt/qtnetwork-5.5 >=dev-qt/qtx11extras-5.5 >=dev-qt/qtwidgets-5.5 >=dev-qt/qtscript-5.5 >=dev-qt/qtquick1-5.5 >=dev-qt/qtxmlpatterns-5.5 >=dev-qt/qtwebsockets-5.5 >=dev-qt/qtwebchannel-5.5[qml] >=dev-qt/qtconcurrent-5.5 >=dev-qt/qtmultimedia-5.5 sdl? ( media-libs/sdl-mixer ) indicator? ( dev-libs/libindicate-qt ) app-crypt/qca virtual/gsasl dev-libs/qtkeychain[qt5]
 SLOT=0
 _eclass_exported_funcs=src_unpack:git-r3 src_prepare:- src_configure:- src_compile:- src_install:-
-_eclasses_=eutils	792f83d5ec9536cb5ccef375469d8bde	git-r3	00f60a84fc7b499c99edfe99caea9f95	multilib	d062ae4ba2fc40a19c11de2ad89b6616	toolchain-funcs	e886935aae2b45a545665444ab0667cf
+_eclasses_=eutils	792f83d5ec9536cb5ccef375469d8bde	git-r3	00f60a84fc7b499c99edfe99caea9f95	multilib	d062ae4ba2fc40a19c11de2ad89b6616	toolchain-funcs	82165206dedb2075f9a0fb8f9b1f9441
 _md5_=cad11f0d4b8e9ce7058e2bc44da2eb45
