@@ -98,3 +98,4 @@ dev-libs/glib static-libs
 dev-lua/lpeg luajit
 dev-lua/mpack luajit
 media-gfx/viewnior wallpaper
+dev-libs/libpcre abi_x86_32
