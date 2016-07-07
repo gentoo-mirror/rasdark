@@ -130,4 +130,4 @@
 =dev-util/gdbus-codegen-2.48* x86 amd64
 =dev-libs/glib-2.48* x86 amd64
 =x11-libs/gtk+-3.20* x86 amd64
-
+=mail-client/thunderbird-45* x86 amd64
