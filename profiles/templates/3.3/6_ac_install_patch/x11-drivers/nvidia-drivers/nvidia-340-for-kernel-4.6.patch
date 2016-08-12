@@ -1,0 +1,43 @@
+# Calculate format=diff pkg(sys-kernel/calculate-sources)>=4.6&&pkg(sys-kernel/calculate-sources)<4.7&&merge(x11-drivers/nvidia-drivers)>=340.0&&merge(x11-drivers/nvidia-drivers)<341
+--- kernel/os-mlock.c        2015-11-09 07:44:53.000000000 +0200
++++ kernel/os-mlock.c        2016-06-26 20:06:48.000000000 +0300
+@@ -45,7 +45,7 @@
+     }
+ 
+     down_read(&mm->mmap_sem);
+-    ret = get_user_pages(current, mm, (unsigned long)address,
++    ret = get_user_pages_remote(current, mm, (unsigned long)address,
+             page_count, write, force, user_pages, NULL);
+     up_read(&mm->mmap_sem);
+     pinned = ret;
+@@ -58,7 +58,7 @@
+     else if (pinned < page_count)
+     {
+         for (i = 0; i < pinned; i++)
+-            page_cache_release(user_pages[i]);
++            put_page(user_pages[i]);
+         os_free_mem(user_pages);
+         return RM_ERR_INVALID_ADDRESS;
+     }
+@@ -85,7 +85,7 @@
+     {
+         if (write)
+             set_page_dirty_lock(user_pages[i]);
+-        page_cache_release(user_pages[i]);
++        put_page(user_pages[i]);
+     }
+ 
+     os_free_mem(user_pages);
+diff -x '*.cmd' -x '*.conf' -x '*.h' -x '*.o' -ru NVIDIA-Linux-x86_64-340.96/kernel/uvm/nvidia_uvm_lite.c NVIDIA-340-patched/kernel/uvm/nvidia_uvm_lite.c
+--- kernel/uvm/nvidia_uvm_lite.c     2015-11-09 07:44:53.000000000 +0200
++++ kernel/uvm/nvidia_uvm_lite.c     2016-06-26 20:06:48.000000000 +0300
+@@ -785,7 +785,7 @@
+         // a reference so that the fault handling logic is correct:
+         //
+         get_page(pTracking->uvmPage);
+-        retValue = VM_FAULT_MINOR;
++        retValue = 0;                                                                                                                   
+     }                                                                                                                                   
+                                                                                                                                         
+     pRecord->isMapped = NV_TRUE; 
+
