@@ -99,3 +99,4 @@ dev-lua/lpeg luajit
 dev-lua/mpack luajit
 media-gfx/viewnior wallpaper
 dev-libs/libpcre abi_x86_32
+media-libs/freetype -cleartype_hinting
