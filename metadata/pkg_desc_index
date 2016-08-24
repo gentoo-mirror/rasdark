@@ -10,25 +10,7 @@ games-strategy/ufo-ai 2.5 9999: UFO: Alien Invasion - X-COM inspired strategy ga
 mail-client/davmail-bin 4.7.2: POP/IMAP/SMTP/Caldav/Carddav/LDAP Exchange Gateway
 media-gfx/blender 2.74 2.75a: 3D Creation/Animation/Publishing System
 media-gfx/viewnior 1.6: Fast and simple image viewer
-media-plugins/deadbeef-archive-reader 20140219 99999999: DeaDBeeF vfs archive reader plugin with gzip, 7z and rar support
-media-plugins/deadbeef-bookmark-manager 20140514 99999999: DeaDBeeF bookmark manager plugin
-media-plugins/deadbeef-bs2b 20110319 99999999: DeaDBeeF bs2b dsp plugin
-media-plugins/deadbeef-fb 20140904 99999999: DeaDBeeF filebrowser plugin
-media-plugins/deadbeef-gnome-mmkeys 20131012 99999999: DeaDBeeF gnome (via dbus) multimedia keys plugin
-media-plugins/deadbeef-infobar 1.4 9999: DeaDBeeF infobar plugin that shows lyrics and artist's biography for the current track
-media-plugins/deadbeef-jack 20110321 99999999: DeaDBeeF jack output plugin
-media-plugins/deadbeef-mpris 20140221 99999999: DeaDBeeF MPRIS plugin
-media-plugins/deadbeef-musical-spectrum 20140718 99999999: DeaDBeeF musical spectrum plugin
-media-plugins/deadbeef-opus 0.5 0.6 99999999: DeaDBeeF ogg opus decoder plugin
-media-plugins/deadbeef-plugins-meta 1: Meta package for DeaDBeeF player third party plugins
-media-plugins/deadbeef-replaygain-control 20140802 99999999: DeaDBeeF replay gain control plugin
-media-plugins/deadbeef-spectrogram 20140616 99999999: DeaDBeeF spectrogram plugin
-media-plugins/deadbeef-stereo-widener 20110319 99999999: DeaDBeeF simple stereo widener plugin
-media-plugins/deadbeef-vk 0.2.2 9999: DeaDBeeF plugin for listening music from vkontakte.com
-media-plugins/deadbeef-vu-meter 20140914 99999999: DeaDBeeF vu meter plugin
-media-plugins/deadbeef-waveform-seekbar 0.5 9999: DeaDBeeF waveform seekbar plugin
 media-plugins/gimp-save-for-web 0.29.3 9999: Allows to find optimized saving options for popular web formats for the GIMP
-media-sound/deadbeef 0.6.2 9999: foobar2k-like music player
 media-sound/volumeicon 0.5.1: A lightweight volume control that sits in your systray
 media-video/v4l2ucp 2.0.2 9999: A universal control panel for all Video for Linux Two (V4L2) devices
 net-analyzer/suricata 2.0.6: next generation intrusion detection and prevention engine
