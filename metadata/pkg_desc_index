@@ -28,7 +28,7 @@ net-print/brother-hll2300d 3.2.0: Cups ppd and filters for Brother HL-L2300D
 sys-apps/lm_sensors 3.4.0: Hardware Monitoring user-space utilities
 sys-apps/uksmstat 9999: Small tool to show UKSM statistics.
 sys-firmware/edk2 9999: A modern, feature-rich, cross-platform firmware development env. for the UEFI and PI specifications
-sys-kernel/calculate-sources 4.5.7 4.6.2: Calculate Linux kernel image
+sys-kernel/calculate-sources 4.6.7: Calculate Linux kernel image
 www-client/yandex-browser-beta 16.7.0.3265: Yandex Browser is a browser that combines a minimal design with sophisticated technology to make the web faster, safer, and easier.
 www-servers/nginx 1.9.12: Robust, small and high performance http and reverse proxy server
 x11-base/xorg-drivers 1.12: Meta package containing deps on all xorg drivers
