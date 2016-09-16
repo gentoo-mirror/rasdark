@@ -7,6 +7,7 @@
 ~app-crypt/gpgme-1.6.0 x86 amd64
 =app-editors/gvim-8.0* x86 amd64
 =app-editors/vim-core-8.0* x86 amd64
+=app-editors/vim-8.0* x86 amd64
 =app-emulation/wine-1.9* x86 amd64
 ~app-emulation/winetricks-20150826 x86 amd64
 ~app-forensics/scalpel-2.0 x86 amd64
