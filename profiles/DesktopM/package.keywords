@@ -1,3 +1,4 @@
+=dev-util/mdds-1.2* x86 amd64
 ~app-arch/pet2tgz-0.3 x86 amd64
 ~app-arch/xarchiver-0.5.4 x86 amd64
 ~app-cdr/cddetect-2.1 x86 amd64
@@ -12,8 +13,8 @@
 ~app-emulation/winetricks-20150826 x86 amd64
 ~app-forensics/scalpel-2.0 x86 amd64
 ~app-i18n/man-pages-ru-3.71.2209.1992.20140911 x86 amd64
-=app-office/libreoffice-5.1.2* x86 amd64
-=app-office/libreoffice-l10n-5.1.2* x86 amd64
+=app-office/libreoffice-5.2.1* x86 amd64
+=app-office/libreoffice-l10n-5.2.1* x86 amd64
 ~app-shells/zsh-5.1.1 x86 amd64
 ~app-shells/zsh-completions-0.12.0-r2 x86 amd64
 ~app-text/libwps-0.4.1 x86 amd64
@@ -21,7 +22,7 @@
 =dev-java/oracle-jre-bin-1.8.0.60* x86 amd64
 ~dev-libs/cloog-0.18.4 x86 amd64
 ~dev-libs/isl-0.15 x86 amd64
-~dev-libs/libixion-0.9.1 x86 amd64
+=dev-libs/libixion-0.11* x86 amd64
 ~dev-util/gtk-update-icon-cache-3.16.5 x86 amd64
 ~dev-util/strace-4.10 x86 amd64
 =gnome-extra/nm-applet-1.0.6 x86 amd64
@@ -101,7 +102,7 @@
 =dev-qt/qttranslations-4.8* x86 amd64
 =dev-qt/qtwebkit-4.8* x86 amd64
 =dev-qt/qtxmlpatterns-4.8* x86 amd64
-=dev-libs/liborcus-0.9.2* x86 amd64
+=dev-libs/liborcus-0.11* x86 amd64
 ~x11-terms/rxvt-unicode-9.22 x86 amd64
 =dev-lua/lpeg-1.0* amd64 x86
 =dev-lua/mpack-1.0* amd64 x86
