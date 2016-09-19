@@ -2,13 +2,15 @@
 # Distributed under the terms of the GNU General Public License v2
 # $
 
-EAPI="5"
-CHROMIUM_LANGS="cs de en_US es fr it ja kk pt_BR pt_PT ru tr uk zh_CN zh_TW"
-inherit chromium multilib unpacker gnome2-utils
+EAPI="6"
+CHROMIUM_LANGS="cs de en-US es fr it ja kk pt-BR pt-PT ru tr uk zh-CN zh-TW"
+inherit chromium-2 unpacker
+
+RESTRICT="mirror"
 
 DESCRIPTION="Yandex Browser is a browser that combines a minimal design with sophisticated technology to make the web faster, safer, and easier."
 HOMEPAGE="http://browser.yandex.ru/"
-LICENSE="EULA"
+LICENSE="Yandex-EULA"
 SLOT="0"
 SRC_URI="
 	amd64? ( http://repo.yandex.ru/yandex-browser/deb/pool/main/y/yandex-browser-beta/${PN}_${PV}-1_amd64.deb -> ${P}.deb )
@@ -68,6 +70,8 @@ src_prepare() {
 	chromium_remove_language_paks
 	popd > /dev/null || die
 
+	eapply_user
+	
 	sed -r \
 		-e 's|\[(NewWindow)|\[X-\1|g' \
 		-e 's|\[(NewIncognito)|\[X-\1|g' \
@@ -77,31 +81,22 @@ src_prepare() {
 
 src_install() {
 	mv * "${D}" || die
-	make_wrapper "${PN}" "./${PN}" "/${YANDEX_HOME}" "/usr/$(get_libdir)/${PN}/lib"
-#dosym "../../${YANDEX_HOME}/${PN}" /usr/bin/"${PN}"
 	dodir /usr/$(get_libdir)/${PN}/lib
+	make_wrapper "${PN}" "./${PN}" "/${YANDEX_HOME}" "/usr/$(get_libdir)/${PN}/lib"
 	dosym /usr/$(get_libdir)/libudev.so /usr/$(get_libdir)/${PN}/lib/libudev.so.0
-	fperms 4711 /${YANDEX_HOME}/yandex_browser-sandbox
-	local size sizes
-	sizes="16 22 24 32 48 64 128 256 512"
-	for size in ${sizes}; do
-		insinto "/usr/share/icons/hicolor/${size}x${size}/apps"
-		newins "${D}/${YANDEX_HOME}/product_logo_${size}.png" "${PN}.png"
-	done
 
-}
-
-pkg_preinst() {
-        gnome2_icon_savelist
+        for icon in "/${YANDEX_HOME}/product_logo_"*.png; do
+                size="${icon##*/product_logo_}"
+                size=${size%.png}
+                dodir "/usr/share/icons/hicolor/${size}x${size}/apps"
+                newicon -s "${size}" "$icon" "yandex-browser-beta.png"
+         done
 }
 
 pkg_postinst() {
-        # Update mimedb for the new .desktop file
-        fdo-mime_desktop_database_update
-        gnome2_icon_cache_update
-}
-
-pkg_postrm() {
-        gnome2_icon_cache_update
+        ewarn "The SUID sandbox helper binary was found, but is not configured correctly."
+        ewarn "You need to make sure that /${YANDEX_HOME}/yandex_browser-sandbox is owned by root and has mode 4755."
+        chown root:root "/${YANDEX_HOME}/yandex_browser-sandbox"
+        chmod 4755 "/${YANDEX_HOME}/yandex_browser-sandbox"
 }
 
