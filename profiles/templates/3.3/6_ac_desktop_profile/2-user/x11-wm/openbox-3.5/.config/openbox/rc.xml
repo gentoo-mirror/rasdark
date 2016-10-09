@@ -290,7 +290,7 @@
     </keybind>
     <keybind key="C-A-w">
       <action name="Execute">
-        <command>firefox</command>
+        <command>palemoon</command>
       </action>
     </keybind>
     <keybind key="Print">
@@ -301,6 +301,11 @@
     <keybind key="A-Print">
       <action name="Execute">
         <execute>screengrab --active</execute>
+      </action>
+    </keybind>
+    <keybind key="C-Escape">
+      <action name="Execute">
+        <execute>xfce4-taskmanager</execute>
       </action>
     </keybind>
   </keyboard>
