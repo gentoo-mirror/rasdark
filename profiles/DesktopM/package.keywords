@@ -43,7 +43,7 @@
 =dev-lua/mpack-1.0* amd64 x86
 =dev-python/astroid-1.4* x86 amd64
 =dev-python/backports-shutil_get_terminal_size-1.0* x86 amd64
-=dev-python/certifi-2016.* x86 amd64
+=dev-python/certifi-2016* x86 amd64
 =dev-python/entrypoints-0.2* x86 amd64
 =dev-python/functools32-3.2* x86 amd64
 =dev-python/ipykernel-4.5* x86 amd64
