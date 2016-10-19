@@ -37,7 +37,7 @@ x11-drivers/xf86-input-mouse 1.8.1: X.Org driver for mouse input devices
 x11-drivers/xf86-input-synaptics 1.7.4: Driver for Synaptics touchpads
 x11-drivers/xf86-video-sis671 0.9.1 0.10.4-r1: Xorg video driver for SIS M671/M672
 x11-misc/gsimplecal 2.1: A lightweight calendar designed for tint2
-x11-misc/gxkb 0.7.6: X11 keyboard indicator and switcher
+x11-misc/gxkb 0.7.8: X11 keyboard indicator and switcher
 x11-misc/gxneur 0.17.0: GTK+ based GUI for xneur
 x11-misc/kdeneur 0.17.0: GTK+ based GUI for xneur
 x11-misc/obapps 0.1.7: A graphical editor for Openbox application settings
