@@ -168,7 +168,7 @@
 =x11-libs/libfm-1.2.3* x86 amd64
 =x11-libs/libfm-extra-1.2.3* x86 amd64
 ~x11-misc/gsimplecal-2.1 x86 amd64
-~x11-misc/gxkb-0.7.6 x86 amd64
+~x11-misc/gxkb-0.7.8 x86 amd64
 ~x11-misc/light-locker-1.6.0 x86 amd64
 =x11-misc/mate-notification-daemon-1.8* x86 amd64
 ~x11-misc/obconf-2.0.4 x86 amd64
