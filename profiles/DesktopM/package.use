@@ -43,7 +43,7 @@ media-libs/lcms abi_x86_32
 media-libs/libpng apng
 media-libs/opencv qt4
 media-libs/sdl-mixer mikmod mod
-media-plugins/audacious-plugins lame libsamplerate http sndfile
+media-plugins/audacious-plugins lame libsamplerate http sndfile gtk -gtk3
 media-plugins/deadbeef-fb -gtk2 gtk3
 media-plugins/deadbeef-infobar -gtk2 gtk3
 media-plugins/deadbeef-musical-spectrum -gtk2 gtk3
