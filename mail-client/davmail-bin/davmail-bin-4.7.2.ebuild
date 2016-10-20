@@ -10,8 +10,8 @@ MY_REV="2427"
 MY_PN="davmail"
 
 SRC_URI="
-	x86?   ( mirror://sourceforge/${MY_PN}/${MY_PN}-linux-x86-${PV}-${MY_REV}.tgz )
-        amd64? ( mirror://sourceforge/${MY_PN}/${MY_PN}-linux-x86_64-${PV}-${MY_REV}.tgz )"
+	x86?   ( mirror://sourceforge/${MY_PN}/${MY_PN}-linux-x86-${PV}-${MY_REV}.tgz -> ${P}.tgz )
+        amd64? ( mirror://sourceforge/${MY_PN}/${MY_PN}-linux-x86_64-${PV}-${MY_REV}.tgz -> ${P}.tgz )"
 
 DESCRIPTION="POP/IMAP/SMTP/Caldav/Carddav/LDAP Exchange Gateway"
 HOMEPAGE="http://davmail.sourceforge.net/"
