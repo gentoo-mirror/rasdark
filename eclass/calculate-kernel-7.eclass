@@ -12,8 +12,7 @@ EXPORT_FUNCTIONS pkg_setup src_unpack src_compile src_install pkg_postinst
 
 IUSE="+vmlinuz minimal themes firmware +grub"
 
-REQUIRED_USE="minimal? ( vmlinuz )
-	grub? ( vmlinuz )"
+REQUIRED_USE="minimal? ( vmlinuz )"
 
 
 DEPEND="vmlinuz? ( || ( app-arch/xz-utils app-arch/lzma-utils )
@@ -24,7 +23,7 @@ DEPEND="vmlinuz? ( || ( app-arch/xz-utils app-arch/lzma-utils )
 	themes? ( media-gfx/splash-themes-calculate )
 	"
 
-RDEPEND="${DEPEND} vmlinuz? ( sys-kernel/dracut app-arch/lz4 )"
+RDEPEND="${DEPEND} vmlinuz? ( sys-kernel/dracut )"
 
 detect_version
 detect_arch
@@ -113,6 +112,8 @@ clean_for_minimal() {
 	unset ARCH
 	ARCH="${GENTOOARCH}"
 
+	mkdir backup
+	cp Module.symvers backup
 	emake distclean &>/dev/null || die "cannot perform distclean"
 	mv .config.save .config
 	ebegin "kernel: >> Running modules_prepare..."
@@ -123,12 +124,17 @@ clean_for_minimal() {
 	do
 		rm -r arch/$rmpath
 	done
+	mv backup/Module.symvers .
+	rmdir backup
 	KEEPLIST="scripts/Makefile.lib scripts/module-common.lds \
 		scripts/gcc-version.sh scripts/Makefile.help \
 		scripts/Makefile.modinst scripts/Makefile.asm-generic \
 		scripts/Makefile.modbuiltin scripts/Makefile.fwinst \
 		scripts/Makefile.extrawarn scripts/Makefile.kasan \
 		scripts/depmod.sh scripts/Makefile.host \
+		scripts/Makefile.gcc-plugins \
+		Module.symvers \
+		scripts/Makefile.ubsan \
 		scripts/Kbuild.include scripts/Makefile.modpost \
 		scripts/gcc-goto.sh scripts/Makefile.headersinst \
 		scripts/Makefile.build scripts/basic/fixdep \
