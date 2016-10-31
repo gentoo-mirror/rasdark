@@ -4,7 +4,7 @@
 
 EAPI="6"
 CHROMIUM_LANGS="cs de en-US es fr it ja kk pt-BR pt-PT ru tr uk zh-CN zh-TW"
-inherit chromium-2 unpacker
+inherit chromium-2 unpacker pax-utils
 
 RESTRICT="mirror"
 
@@ -53,6 +53,10 @@ QA_PREBUILT="*"
 S=${WORKDIR}
 YANDEX_HOME="opt/${PN/-//}"
 
+pkg_setup() {
+	chromium_suid_sandbox_check_kernel_config
+}
+
 src_unpack() {
 	unpack_deb ${A}
 }
@@ -91,12 +95,14 @@ src_install() {
                 dodir "/usr/share/icons/hicolor/${size}x${size}/apps"
                 newicon -s "${size}" "$icon" "yandex-browser-beta.png"
          done
+
+ 	 pax-mark m "${YANDEX_HOME}/yandex_browser-sandbox"
 }
 
 pkg_postinst() {
         ewarn "The SUID sandbox helper binary was found, but is not configured correctly."
         ewarn "You need to make sure that /${YANDEX_HOME}/yandex_browser-sandbox is owned by root and has mode 4755."
-        chown root:root "/${YANDEX_HOME}/yandex_browser-sandbox"
-        chmod 4755 "/${YANDEX_HOME}/yandex_browser-sandbox"
+#        chown root:root "/${YANDEX_HOME}/yandex_browser-sandbox"
+#        chmod 4755 "/${YANDEX_HOME}/yandex_browser-sandbox"
 }
 
