@@ -22,6 +22,7 @@ net-irc/kvirc 4.4_pre6296 4.9.1_pre20160102120102: Advanced IRC Client
 net-misc/android-file-transfer 2.2 3.0: Reliable MTP client with minimalistic UI
 net-misc/anydesk 2.3.1: All-In-One Solution for Remote Access and Support over the Internet
 net-misc/dropbox 3.12.5: Dropbox daemon (pretends to be GUI-less)
+net-misc/mailru-cloud 0108.15.06: Mail.Ru Cloud
 net-misc/qtmib 1.1.1: Easy-to-use SNMPv1 and SNMPv2c MIB Browser written in QT4
 net-misc/yandex-disk 0.1.5.976_p1: CLI to access Yandex Disk file storage service
 net-print/brother-hll2300d 3.2.0: Cups ppd and filters for Brother HL-L2300D
