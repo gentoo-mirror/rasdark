@@ -23,13 +23,14 @@ net-misc/android-file-transfer 2.2 3.0: Reliable MTP client with minimalistic UI
 net-misc/anydesk 2.3.1: All-In-One Solution for Remote Access and Support over the Internet
 net-misc/dropbox 3.12.5: Dropbox daemon (pretends to be GUI-less)
 net-misc/mailru-cloud 0108.15.06: Mail.Ru Cloud
+net-misc/megasync 16.04-r1 16.10-r1 9999: A Qt-based program for syncing your MEGA account in your PC. This is the official app.
 net-misc/qtmib 1.1.1: Easy-to-use SNMPv1 and SNMPv2c MIB Browser written in QT4
 net-misc/yandex-disk 0.1.5.976_p1: CLI to access Yandex Disk file storage service
 net-print/brother-hll2300d 3.2.0: Cups ppd and filters for Brother HL-L2300D
 sys-apps/lm_sensors 3.4.0: Hardware Monitoring user-space utilities
 sys-apps/uksmstat 9999: Small tool to show UKSM statistics.
 sys-firmware/edk2 9999: A modern, feature-rich, cross-platform firmware development env. for the UEFI and PI specifications
-sys-kernel/calculate-sources 4.7.10 4.8.5: Calculate Linux kernel image
+sys-kernel/calculate-sources 4.7.10 4.8.7: Calculate Linux kernel image
 www-apps/moinmoin 1.9.8: Python WikiClone
 www-client/yandex-browser-beta 16.10.1.545: Yandex Browser is a browser that combines a minimal design with sophisticated technology to make the web faster, safer, and easier.
 x11-base/xorg-drivers 1.12: Meta package containing deps on all xorg drivers
