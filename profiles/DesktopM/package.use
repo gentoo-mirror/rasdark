@@ -82,7 +82,7 @@ sci-libs/fftw -fortran
 sys-apps/calculate-utils client console desktop qt4 server
 sys-apps/util-linux static-libs
 sys-block/gparted btrfs dmraid fat jfs mdadm ntfs reiserfs xfs f2fs reiser4
-sys-devel/gcc -fortran graphite
+sys-devel/gcc fortran graphite
 sys-devel/llvm -clang
 sys-fs/cryptsetup kernel -gcrypt -nettle -openssl udev static-libs
 sys-fs/eudev gudev static-libs
