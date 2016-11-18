@@ -184,3 +184,4 @@
 ~x11-themes/smplayer-skins-15.2.0 x86 amd64
 =dev-python/vcversioner-2.16* amd64 x86
 =www-plugins/mozplugger-2.1* amd64 x86
+=net-misc/freerdp-2.0* x86 amd64
