@@ -62,6 +62,8 @@ src_unpack() {
 }
 
 src_prepare() {
+        chmod -v 0500 ${WORKDIR}/opt/yandex/browser-beta/yandex_browser-sandbox
+
 	rm usr/bin/${PN} || die
 
 	rm -r etc || die
@@ -102,7 +104,7 @@ src_install() {
 pkg_postinst() {
         ewarn "The SUID sandbox helper binary was found, but is not configured correctly."
         ewarn "You need to make sure that /${YANDEX_HOME}/yandex_browser-sandbox is owned by root and has mode 4755."
-#        chown root:root "/${YANDEX_HOME}/yandex_browser-sandbox"
-#        chmod 4755 "/${YANDEX_HOME}/yandex_browser-sandbox"
+        chown root:root "/${YANDEX_HOME}/yandex_browser-sandbox"
+        chmod 4755 "/${YANDEX_HOME}/yandex_browser-sandbox"
 }
 
