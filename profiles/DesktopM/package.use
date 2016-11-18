@@ -112,3 +112,4 @@ x11-terms/rxvt-unicode -alt-font-width pixbuf -vanilla iso14755 unicode3 buffer-
 x11-wm/openbox imlib xdg
 xfce-extra/xfce4-taskmanager gksu
 
+net-libs/webkit-gtk -geolocation
