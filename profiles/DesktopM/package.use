@@ -111,5 +111,4 @@ x11-misc/x11vnc fbcon
 x11-terms/rxvt-unicode -alt-font-width pixbuf -vanilla iso14755 unicode3 buffer-on-clear fading-colors blink
 x11-wm/openbox imlib xdg
 xfce-extra/xfce4-taskmanager gksu
-
-net-libs/webkit-gtk -geolocation
+net-libs/webkit-gtk -geolocation -webgl
