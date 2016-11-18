@@ -32,7 +32,7 @@ sys-apps/uksmstat 9999: Small tool to show UKSM statistics.
 sys-firmware/edk2 9999: A modern, feature-rich, cross-platform firmware development env. for the UEFI and PI specifications
 sys-kernel/calculate-sources 4.7.10 4.8.7: Calculate Linux kernel image
 www-apps/moinmoin 1.9.8: Python WikiClone
-www-client/yandex-browser-beta 16.10.1.545: Yandex Browser is a browser that combines a minimal design with sophisticated technology to make the web faster, safer, and easier.
+www-client/yandex-browser-beta 16.11.0.1819: Yandex Browser is a browser that combines a minimal design with sophisticated technology to make the web faster, safer, and easier.
 x11-base/xorg-drivers 1.12: Meta package containing deps on all xorg drivers
 x11-base/xorg-server 1.12.4-r4: X.Org X servers
 x11-drivers/xf86-input-evdev 2.9.1: Generic Linux input driver
