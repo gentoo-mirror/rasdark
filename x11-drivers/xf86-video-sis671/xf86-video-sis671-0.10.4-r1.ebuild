@@ -20,6 +20,7 @@ KEYWORDS="x86 amd64"
 DEPEND=">x11-base/xorg-server-1.11.4-r1"
 
 src_configure() {
+        eautoreconf
 	econf --prefix=/usr --disable-static
 }
 
