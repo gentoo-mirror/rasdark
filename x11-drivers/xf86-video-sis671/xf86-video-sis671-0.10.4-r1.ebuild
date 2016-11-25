@@ -2,13 +2,13 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI="4"
+EAPI="5"
 
 EGIT_BRANCH="master"
 EGIT_PROJECT="xf86-video-sis671"
 EGIT_REPO_URI="git://github.com/rasdark/xf86-video-sis671.git"
 
-inherit git-2
+inherit git-2 autotools
 
 DESCRIPTION="Xorg video driver for SIS M671/M672"
 HOMEPAGE="has no url"
@@ -19,8 +19,12 @@ KEYWORDS="x86 amd64"
 
 DEPEND=">x11-base/xorg-server-1.11.4-r1"
 
+src_prepare() {
+        eautoconf
+        eautomake
+}
+
 src_configure() {
-        eautoreconf
 	econf --prefix=/usr --disable-static
 }
 
