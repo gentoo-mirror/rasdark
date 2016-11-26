@@ -17,11 +17,14 @@ LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="x86 amd64"
 
-DEPEND=">x11-base/xorg-server-1.11.4-r1"
+DEPEND="=sys-devel/autoconf-2.69*
+        sys-devel/automake:1.15"
+        
+RDEPEND=">x11-base/xorg-server-1.11.4-r1"
 
 src_prepare() {
         eautoconf
-        WANT_AUTOMAKE=1.11 eautomake
+        eautomake
 }
 
 src_configure() {
