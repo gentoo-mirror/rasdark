@@ -21,7 +21,7 @@ DEPEND=">x11-base/xorg-server-1.11.4-r1"
 
 src_prepare() {
         eautoconf
-        WANT_AUTOMAKE=1.9 eautomake
+        WANT_AUTOMAKE=1.11 eautomake
 }
 
 src_configure() {
