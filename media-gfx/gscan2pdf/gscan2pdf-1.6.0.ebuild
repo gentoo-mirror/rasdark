@@ -23,6 +23,7 @@ DEPEND="sys-devel/gettext"
 RDEPEND="app-text/poppler
 	dev-lang/perl[ithreads]
 	>=dev-perl/Config-General-2.40
+        dev-perl/Date-Calc
 	dev-perl/Data-UUID
 	dev-perl/Filesys-Df
 	>=dev-perl/glib-perl-1.100-r1
