@@ -8,7 +8,7 @@ dev-qt/qt4pas 2.5: The Free Pascal Qt4 binding allows Free Pascal to interface w
 games-strategy/ufo-ai 2.5 9999: UFO: Alien Invasion - X-COM inspired strategy game
 mail-client/davmail-bin 4.7.2: POP/IMAP/SMTP/Caldav/Carddav/LDAP Exchange Gateway
 media-gfx/blender 2.74 2.75a: 3D Creation/Animation/Publishing System
-media-gfx/gscan2pdf 1.5.2: GUI to produce PDF or DjVu files from scanned documents
+media-gfx/gscan2pdf 1.6.0: GUI to produce PDF or DjVu files from scanned documents
 media-gfx/viewnior 1.6: Fast and simple image viewer
 media-plugins/gimp-save-for-web 0.29.3 9999: Allows to find optimized saving options for popular web formats for the GIMP
 media-sound/volumeicon 0.5.1: A lightweight volume control that sits in your systray
