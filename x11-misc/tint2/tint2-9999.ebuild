@@ -15,12 +15,12 @@ EGIT_PROJECT="tint2"
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS=""
-IUSE="battery examples tint2conf startup-notification"
-
-PDEPEND="tint2conf? ( x11-misc/tintwizard )"
+IUSE="battery examples tint2conf startup-notification svg"
 
 RDEPEND="startup-notification? ( x11-libs/startup-notification )
+        tint2conf? ( x11-libs/gtk+:2 )
         dev-libs/glib:2
+        svg? ( gnome-base/librsvg:2 )
         media-libs/imlib2[X]
         x11-libs/cairo
         x11-libs/libX11
@@ -43,6 +43,7 @@ src_configure() {
                 $(cmake-utils_use_enable examples EXAMPLES)
                 $(cmake-utils_use_enable tint2conf TINT2CONF)
                 $(cmake-utils_use_enable startup-notification SN)
+                $(cmake-utils_use_enable svg RSVG)
 
                 "-DDOCDIR=/usr/share/doc/${PF}"
         )
