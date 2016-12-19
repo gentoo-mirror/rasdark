@@ -154,7 +154,7 @@
 =sys-fs/f2fs-tools-1.5* x86 amd64
 ~sys-fs/ntfs3g-2015.3.14 x86 amd64
 =sys-fs/reiser4progs-1.1* x86 amd64
-=sys-kernel/calculate-sources-4.7* x86 amd64
+=sys-kernel/calculate-sources-4.8* x86 amd64
 ~sys-kernel/linux-firmware-20150812 x86 amd64
 ~sys-power/cpupower-4.2 x86 amd64
 ~virtual/jdk-1.8.0 x86 amd64
