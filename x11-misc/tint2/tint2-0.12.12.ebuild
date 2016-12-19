@@ -4,24 +4,21 @@
 
 EAPI="5"
 
-inherit cmake-utils gnome2-utils eutils
-
-MY_P="${PV/_/-}"
+inherit cmake-utils gnome2-utils git-2
 
 DESCRIPTION="A lightweight panel/taskbar"
 HOMEPAGE="https://gitlab.com/o9000/tint2.git"
-SRC_URI="https://gitlab.com/o9000/tint2/repository/archive.tar.gz?ref=v${MY_P}
-         -> ${PN}-${MY_P}.tar.gz"
+SRC_URI="https://gitlab.com/o9000/${PN}/repository/archive.tar.gz?ref=v${PV} -> ${P}.tar.gz"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~x86 ~amd64"
-IUSE="battery examples tint2conf startup-notification"
-
-PDEPEND="tint2conf? ( x11-misc/tintwizard )"
+KEYWORDS="~amd64 ~x86"
+IUSE="battery examples tint2conf startup-notification svg"
 
 RDEPEND="startup-notification? ( x11-libs/startup-notification )
+        tint2conf? ( x11-libs/gtk+:2 )
         dev-libs/glib:2
+        svg? ( gnome-base/librsvg:2 )
         media-libs/imlib2[X]
         x11-libs/cairo
         x11-libs/libX11
@@ -36,10 +33,14 @@ DEPEND="${RDEPEND}
         virtual/pkgconfig
         x11-proto/xineramaproto"
 
-PATCHES=( "${FILESDIR}/${PN}-fix-glib.patch"
-          "${FILESDIR}/${PN}-update-cache-old.patch" )
+S="${WORKDIR}/${PN}-v${PV}"
 
-S="${WORKDIR}/$PN.git"
+PATCHES=( "${FILESDIR}/${PN}-update-icon-cache.patch" )
+
+src_unpack() {
+        default
+        mv "${PN}-v${PV}-"* "${PN}-v${PV}"
+}
 
 src_configure() {
         local mycmakeargs=(
@@ -47,6 +48,7 @@ src_configure() {
                 $(cmake-utils_use_enable examples EXAMPLES)
                 $(cmake-utils_use_enable tint2conf TINT2CONF)
                 $(cmake-utils_use_enable startup-notification SN)
+                $(cmake-utils_use_enable svg RSVG)
 
                 "-DDOCDIR=/usr/share/doc/${PF}"
         )
@@ -57,7 +59,6 @@ src_install() {
         cmake-utils_src_install
         if use tint2conf ; then
                 gnome2_icon_cache_update
-                rm -f "${D}/usr/bin/tintwizard.py"
         fi
 }
 
