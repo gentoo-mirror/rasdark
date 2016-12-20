@@ -2,6 +2,7 @@ app-cdr/pburn 4.3.16: A burning tool with GTK+ frontend
 app-editors/retext 6.0.1: Simple editor for Markdown and reStructuredText
 app-misc/double-commander 0.7.5: Cross Platform file manager.
 app-misc/double-commander-bin 0.7.5: Cross Platform file manager.
+app-office/osmo 0.2.14: A handy personal organizer
 app-text/litetran 9999: Very simple GUI for text translation (like google translate).
 app-text/pymarkups 2.0.0: Wrapper around various text markups, used in ReText
 dev-qt/qt4pas 2.5: The Free Pascal Qt4 binding allows Free Pascal to interface with the C++ Library Qt.
