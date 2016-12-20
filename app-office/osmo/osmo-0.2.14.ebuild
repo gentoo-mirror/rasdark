@@ -18,10 +18,8 @@ RESTRICT="mirror"
 RDEPEND=">=x11-libs/gtk+-2.12:2
 	>=dev-libs/libtar-1.2.11-r3
 	dev-libs/libxml2:2
-	dev-libs/libgringotts
 	>=dev-libs/libical-0.33
 	app-text/gtkspell:2
-	gnome-extra/gtkhtml:2
 	>=x11-libs/libnotify-0.7"
 DEPEND="${RDEPEND}
 	virtual/pkgconfig"
