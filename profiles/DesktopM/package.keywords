@@ -186,3 +186,4 @@
 =www-plugins/mozplugger-2.1* amd64 x86
 =net-misc/freerdp-2.0* x86 amd64
 =net-misc/remmina-1.2* x86 amd64
+~media-libs/opusfile-0.8 x86 amd64
