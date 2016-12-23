@@ -11,6 +11,7 @@ mail-client/davmail-bin 4.7.2: POP/IMAP/SMTP/Caldav/Carddav/LDAP Exchange Gatewa
 media-gfx/blender 2.74 2.75a: 3D Creation/Animation/Publishing System
 media-gfx/gscan2pdf 1.6.0: GUI to produce PDF or DjVu files from scanned documents
 media-gfx/viewnior 1.6: Fast and simple image viewer
+media-libs/opus 1.1.3-r1: Open versatile codec designed for interactive speech and audio transmission over the internet
 media-plugins/gimp-save-for-web 0.29.3 9999: Allows to find optimized saving options for popular web formats for the GIMP
 media-sound/volumeicon 0.5.1: A lightweight volume control that sits in your systray
 media-video/shotcut 9999: A free, open source, cross-platform video editor
