@@ -22,7 +22,7 @@ net-fs/winexe 1.0.0-r1 9999: remotely execute commands on Windows NT/2000/XP/200
 net-im/jitsi-bin 2.9.5532: Secure IM communicator that supports SIP, XMPP/Jabber, AIM/ICQ, Windows Live, Yahoo
 net-im/viber 9999: Free calls, text and picture sharing with anyone, anywhere!
 net-irc/kvirc 4.4_pre6296 4.9.1_pre20160102120102: Advanced IRC Client
-net-misc/android-file-transfer 2.2 3.0: Reliable MTP client with minimalistic UI
+net-misc/android-file-transfer 3.0 9999: Reliable MTP client with minimalistic UI
 net-misc/anydesk 2.3.1: All-In-One Solution for Remote Access and Support over the Internet
 net-misc/dropbox 3.12.5: Dropbox daemon (pretends to be GUI-less)
 net-misc/mailru-cloud 0112.15.06: Mail.Ru Cloud
