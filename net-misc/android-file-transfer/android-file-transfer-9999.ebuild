@@ -6,16 +6,18 @@ EAPI=6
 
 PLOCALES="ru"
 
-inherit cmake-utils l10n qmake-utils
+inherit cmake-utils l10n qmake-utils git-r3
 
 MY_PN=${PN}-linux
 DESCRIPTION="Reliable MTP client with minimalistic UI"
 HOMEPAGE="https://whoozle.github.io/android-file-transfer-linux/"
-SRC_URI="https://github.com/whoozle/${MY_PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
+
+EGIT_BRANCH="master"
+EGIT_REPO_URI="https://github.com/whoozle/android-file-transfer-linux.git"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="amd64 x86"
+KEYWORDS=""
 IUSE="fuse debug qt4 qt5 libusb"
 REQUIRED_USE="?? ( qt4 qt5 )"
 
@@ -27,7 +29,7 @@ RDEPEND="fuse? ( sys-fs/fuse )
 DEPEND="${RDEPEND}
 	virtual/pkgconfig"
 
-S=${WORKDIR}/${MY_PN}-${PV}
+S=${WORKDIR}/${P}
 
 src_configure() {
 	local mycmakeargs=(
