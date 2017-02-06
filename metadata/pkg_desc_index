@@ -20,6 +20,7 @@ media-video/v4l2ucp 2.0.2 9999: A universal control panel for all Video for Linu
 net-analyzer/suricata 2.0.6: next generation intrusion detection and prevention engine
 net-fs/winexe 1.0.0-r1 9999: remotely execute commands on Windows NT/2000/XP/2003 systems, with lmhash passthrough support
 net-im/jitsi-bin 2.9.5532: Secure IM communicator that supports SIP, XMPP/Jabber, AIM/ICQ, Windows Live, Yahoo
+net-im/skypeforlinux 1.17.0.1: P2P Internet Telephony (VoiceIP) client
 net-im/viber 9999: Free calls, text and picture sharing with anyone, anywhere!
 net-irc/kvirc 4.4_pre6296 4.9.1_pre20160102120102: Advanced IRC Client
 net-misc/android-file-transfer 3.0 9999: Reliable MTP client with minimalistic UI
