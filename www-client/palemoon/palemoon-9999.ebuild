@@ -40,7 +40,7 @@ RDEPEND="
 		app-arch/bzip2
 		media-libs/libwebp
 		media-libs/libpng[apng]
-		app-text/hunspell
+		>=app-text/hunspell-1.6.0
 		>=media-libs/libvpx-1.4.0
 		>=dev-db/sqlite-3.13.0[secure-delete]
 		x11-libs/cairo
