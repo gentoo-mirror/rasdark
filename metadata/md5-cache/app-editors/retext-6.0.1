@@ -1,0 +1,15 @@
+DEFINED_PHASES=compile configure install prepare test
+DEPEND=python_targets_python3_4? ( dev-lang/python:3.4 ) >=dev-lang/python-exec-2:=[python_targets_python3_4(-)?,-python_single_target_python3_4(-)]
+DESCRIPTION=Simple editor for Markdown and reStructuredText
+EAPI=5
+HOMEPAGE=https://github.com/retext-project/retext https://github.com/retext-project/retext/wiki
+IUSE=+spell python_targets_python3_4 linguas_ca linguas_cs linguas_cy linguas_da linguas_de linguas_es linguas_et linguas_eu linguas_fr linguas_hu linguas_it linguas_ja linguas_pl linguas_pt linguas_pt_BR linguas_ru linguas_sk linguas_sr linguas_sr@latin linguas_uk linguas_zh_TW
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=dev-python/docutils[python_targets_python3_4(-)?,-python_single_target_python3_4(-)] dev-python/markdown[python_targets_python3_4(-)?,-python_single_target_python3_4(-)] !dev-python/markups[python_targets_python3_4(-)?,-python_single_target_python3_4(-)] app-text/pymarkups[python_targets_python3_4(-)?,-python_single_target_python3_4(-)] dev-python/pygments[python_targets_python3_4(-)?,-python_single_target_python3_4(-)] dev-python/PyQt5[gui,network,printsupport,webkit,widgets,python_targets_python3_4(-)?,-python_single_target_python3_4(-)] spell? ( dev-python/pyenchant[python_targets_python3_4(-)?,-python_single_target_python3_4(-)] ) python_targets_python3_4? ( dev-lang/python:3.4 ) >=dev-lang/python-exec-2:=[python_targets_python3_4(-)?,-python_single_target_python3_4(-)]
+REQUIRED_USE=|| ( python_targets_python3_4 )
+SLOT=0
+SRC_URI=mirror://pypi/R/ReText/ReText-6.0.1.tar.gz
+_eclass_exported_funcs=src_prepare:distutils-r1 src_configure:distutils-r1 src_compile:distutils-r1 src_test:distutils-r1 src_install:distutils-r1
+_eclasses_=distutils-r1	ff7a6238714c20c6b0ba05d9956b5ad8	eutils	708f85bc1bf00876604e223fb56e062a	l10n	e26ea0642846685782f1813642e7ff0f	multibuild	742139c87a9fa3766f0c2b155e5522bf	multilib	165fc17c38d1b11dac2008280dab6e80	multiprocessing	eb9be4b678c4e71f3f530a767df31912	python-r1	1f16d4a5e3af0ebb79bbe131576e0618	python-utils-r1	50dad5f912d4c16c130f5679777f25e8	toolchain-funcs	1b1da0c45c555989dc5d832b54880783	xdg-utils	e2b2bd56125ce8cf59ce30c642b59d48
+_md5_=f556f317c31c37caebf230ede98e0551

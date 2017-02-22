@@ -1,0 +1,15 @@
+DEFINED_PHASES=compile configure install prepare setup test
+DEPEND=>=dev-qt/qtcore-4.6:4 >=dev-qt/qtgui-4.6:4 >=dev-qt/qtsql-4.6:4 sys-libs/zlib x11-libs/libX11 dbus? ( >=dev-qt/qtdbus-4.6:4 ) dcc_video? ( media-libs/libv4l theora? ( media-libs/libogg media-libs/libtheora ) ) kde? ( >=kde-base/kdelibs-4 ) oss? ( audiofile? ( media-libs/audiofile ) ) perl? ( dev-lang/perl ) phonon? ( || ( media-libs/phonon[qt4] >=dev-qt/qtphonon-4.6:4 ) ) ssl? ( dev-libs/openssl ) webkit? ( >=dev-qt/qtwebkit-4.6:4 ) virtual/pkgconfig x11-proto/scrnsaverproto nls? ( sys-devel/gettext ) doc? ( app-doc/doxygen ) sys-devel/make >=dev-util/cmake-3.6.3 python? ( =dev-lang/python-2* )
+DESCRIPTION=Advanced IRC Client
+EAPI=5
+HOMEPAGE=http://www.kvirc.net/
+IUSE=audiofile +dbus dcc_video +dcc_voice debug doc gsm +ipc ipv6 kde +nls oss +perl +phonon profile +python +ssl theora +transparency webkit
+KEYWORDS=~alpha amd64 ~ppc ~ppc64 x86
+LICENSE=kvirc
+RDEPEND=>=dev-qt/qtcore-4.6:4 >=dev-qt/qtgui-4.6:4 >=dev-qt/qtsql-4.6:4 sys-libs/zlib x11-libs/libX11 dbus? ( >=dev-qt/qtdbus-4.6:4 ) dcc_video? ( media-libs/libv4l theora? ( media-libs/libogg media-libs/libtheora ) ) kde? ( >=kde-base/kdelibs-4 ) oss? ( audiofile? ( media-libs/audiofile ) ) perl? ( dev-lang/perl ) phonon? ( || ( media-libs/phonon[qt4] >=dev-qt/qtphonon-4.6:4 ) ) ssl? ( dev-libs/openssl ) webkit? ( >=dev-qt/qtwebkit-4.6:4 ) gsm? ( media-sound/gsm ) python? ( =dev-lang/python-2* )
+REQUIRED_USE=audiofile? ( oss ) theora? ( dcc_video )
+SLOT=0
+SRC_URI=ftp://ftp.kvirc.de/pub/kvirc/snapshots/source/kvirc-4.3.1-r6296.tar.bz2
+_eclass_exported_funcs=pkg_setup:- src_prepare:- src_configure:- src_compile:cmake-utils src_test:cmake-utils src_install:cmake-utils
+_eclasses_=cmake-utils	014267c4475c1a625ecec5b16e0db1e6	eutils	708f85bc1bf00876604e223fb56e062a	flag-o-matic	35067884fbff37bc0c8e7421c5315558	multilib	165fc17c38d1b11dac2008280dab6e80	multiprocessing	eb9be4b678c4e71f3f530a767df31912	python	8b7143ec94293338ed5da8a7ef97cfdb	toolchain-funcs	1b1da0c45c555989dc5d832b54880783	versionator	99ae9d758cbe7cfed19170e7d48f5a9c
+_md5_=183e459cc15ee9fddd5c450793f8639f

@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst postrm preinst prepare pretend setup unpack
+DEPEND=>=sys-apps/sed-4 >=dev-vcs/git-1.8.2.1
+DESCRIPTION=Pale Moon Web Browser
+EAPI=6
+HOMEPAGE=https://www.palemoon.org/
+IUSE=+official-branding -system-libs +optimize shared-js jemalloc -valgrind dbus -necko-wifi +gtk2 -gtk3 +gstreamer -webrtc alsa pulseaudio
+LICENSE=MPL-2.0 GPL-2 LGPL-2.1
+RDEPEND=>=sys-devel/autoconf-2.13:2.1 >=dev-lang/perl-5.6 x11-libs/libXt app-arch/zip media-libs/freetype media-libs/fontconfig virtual/pkgconfig dev-lang/yasm dev-lang/python:2.7 system-libs? ( dev-libs/libevent media-libs/libjpeg-turbo sys-libs/zlib app-arch/bzip2 media-libs/libwebp media-libs/libpng[apng] >=app-text/hunspell-1.6.0 >=media-libs/libvpx-1.4.0 >=dev-db/sqlite-3.13.0[secure-delete] x11-libs/cairo x11-libs/pixman ) optimize? ( sys-libs/glibc ) valgrind? ( dev-util/valgrind ) shared-js? ( virtual/libffi ) dbus? ( >=sys-apps/dbus-0.60 >=dev-libs/dbus-glib-0.60 ) gtk2? ( >=x11-libs/gtk+-2.18.0:2 ) gtk3? ( >=x11-libs/gtk+-3.4.0:3 ) gstreamer? ( media-libs/gstreamer:1.0 media-libs/gst-plugins-base:1.0 ) alsa? ( media-libs/alsa-lib ) pulseaudio? ( media-sound/pulseaudio ) necko-wifi? ( net-wireless/wireless-tools )
+REQUIRED_USE=jemalloc? ( !valgrind ) ^^ ( gtk2 gtk3 ) ^^ ( alsa pulseaudio ) necko-wifi? ( dbus )
+SLOT=0
+_eclass_exported_funcs=pkg_pretend:palemoon-1 pkg_preinst:palemoon-1 pkg_postrm:palemoon-1 pkg_postinst:palemoon-1 pkg_setup:palemoon-1 src_unpack:git-r3 src_prepare:- src_configure:- src_compile:- src_install:-
+_eclasses_=check-reqs	aee25bdf4e2f459af86d17f7c41dcdf6	eutils	708f85bc1bf00876604e223fb56e062a	fdo-mime	92d07846ea8ea54172f8c0112a47ae3d	flag-o-matic	35067884fbff37bc0c8e7421c5315558	git-r3	6efc2d7de07a77bf72c7207b48d0e123	gnome2-utils	c6dcdf3a2c22b578b16adb945dc85c35	multilib	165fc17c38d1b11dac2008280dab6e80	palemoon-1	ee4074403d1f516d42f0bed3946c45d4	pax-utils	4c2654a34ebe732e85fda354f6ee642f	toolchain-funcs	1b1da0c45c555989dc5d832b54880783	xdg-utils	e2b2bd56125ce8cf59ce30c642b59d48
+_md5_=b89afb9a45541e81690a1bb705c3bf6a

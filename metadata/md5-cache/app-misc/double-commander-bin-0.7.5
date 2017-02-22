@@ -1,0 +1,15 @@
+DEFINED_PHASES=install prepare
+DESCRIPTION=Cross Platform file manager.
+EAPI=5
+HOMEPAGE=http://doublecmd.sourceforge.net/
+IUSE=qt4 gtk2
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=sys-apps/dbus dev-libs/glib sys-libs/ncurses x11-libs/libX11 gtk2? ( x11-libs/gtk+:2 ) qt4? ( dev-qt/qtgui:4 )
+REQUIRED_USE=^^ ( qt4 gtk2 )
+RESTRICT=mirror
+SLOT=0
+SRC_URI=x86? ( gtk2? ( mirror://sourceforge/doublecmd/doublecmd-0.7.5.gtk2.i386.tar.xz ) qt4? ( mirror://sourceforge/doublecmd/doublecmd-0.7.5.qt.i386.tar.xz ) ) amd64? ( gtk2? ( mirror://sourceforge/doublecmd/doublecmd-0.7.5.gtk2.x86_64.tar.xz ) qt4? ( mirror://sourceforge/doublecmd/doublecmd-0.7.5.qt.x86_64.tar.xz ) )
+_eclass_exported_funcs=src_prepare:- src_install:-
+_eclasses_=eutils	708f85bc1bf00876604e223fb56e062a	multilib	165fc17c38d1b11dac2008280dab6e80	toolchain-funcs	1b1da0c45c555989dc5d832b54880783
+_md5_=3c882a4664d2a3846a58fd72a5ed5f62
