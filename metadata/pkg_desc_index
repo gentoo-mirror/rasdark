@@ -1,4 +1,5 @@
 app-cdr/pburn 4.3.16: A burning tool with GTK+ frontend
+app-crypt/johntheripper 1.8.0-r1: fast password cracker
 app-editors/retext 6.0.1 7.0.0: Simple editor for Markdown and reStructuredText
 app-emulation/vpcs 0.8: Simulate up to 9 PCs in place of VMware boxes in a Dynamips network
 app-misc/double-commander 0.7.8: Cross Platform file manager.
@@ -7,6 +8,7 @@ app-office/osmo 0.2.14: A handy personal organizer
 app-text/litetran 9999: Very simple GUI for text translation (like google translate).
 app-text/pymarkups 2.0.0: Wrapper around various text markups, used in ReText
 dev-qt/qt4pas 2.5: The Free Pascal Qt4 binding allows Free Pascal to interface with the C++ Library Qt.
+dev-util/nvidia-cuda-toolkit 6.5.14-r1 6.5.19-r2: NVIDIA CUDA Toolkit (compiler and friends)
 mail-client/davmail-bin 4.7.3: POP/IMAP/SMTP/Caldav/Carddav/LDAP Exchange Gateway
 media-gfx/gscan2pdf 1.7.3: GUI to produce PDF or DjVu files from scanned documents
 media-gfx/viewnior 1.6: Fast and simple image viewer
@@ -15,6 +17,7 @@ media-plugins/gimp-save-for-web 0.29.3 9999: Allows to find optimized saving opt
 media-sound/volumeicon 0.5.1: A lightweight volume control that sits in your systray
 media-video/shotcut 9999: A free, open source, cross-platform video editor
 media-video/v4l2ucp 2.0.2 9999: A universal control panel for all Video for Linux Two (V4L2) devices
+net-analyzer/suricata 3.2.1-r1: High performance Network IDS, IPS and Network Security Monitoring engine
 net-im/viber 6.5.5: Free calls, text and picture sharing with anyone, anywhere!
 net-irc/kvirc 4.4_pre6296 4.9.1_pre20160102120102: Advanced IRC Client
 net-misc/android-file-transfer 3.0 9999: Reliable MTP client with minimalistic UI
@@ -26,10 +29,10 @@ net-misc/yandex-disk 0.1.5.978_p1: CLI to access Yandex Disk file storage servic
 net-print/brother-hll2300d 3.2.0: Cups ppd and filters for Brother HL-L2300D
 sys-apps/uksmstat 9999: Small tool to show UKSM statistics.
 sys-firmware/edk2 9999: A modern, feature-rich, cross-platform firmware development env. for the UEFI and PI specifications
-sys-kernel/calculate-sources 3.18.44 4.7.10 4.8.10 4.10.2: Calculate Linux kernel image
+sys-kernel/calculate-sources 3.18.44 4.7.10 4.8.10 4.10.3: Calculate Linux kernel image
 www-apps/moinmoin 1.9.8: Python WikiClone
 www-client/palemoon 9999: Pale Moon Web Browser
-www-client/yandex-browser-beta 17.1.1.773: Yandex Browser is a browser that combines a minimal design with sophisticated technology to make the web faster, safer, and easier.
+www-client/yandex-browser-beta 17.3.1.814: Yandex Browser is a browser that combines a minimal design with sophisticated technology to make the web faster, safer, and easier.
 x11-base/xorg-drivers 1.12: Meta package containing deps on all xorg drivers
 x11-base/xorg-server 1.12.4-r4: X.Org X servers
 x11-drivers/xf86-input-evdev 2.9.1: Generic Linux input driver
