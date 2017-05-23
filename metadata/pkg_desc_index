@@ -16,7 +16,7 @@ media-libs/opus 1.1.3-r1: Open versatile codec designed for interactive speech a
 media-plugins/gimp-save-for-web 0.29.3 9999: Allows to find optimized saving options for popular web formats for the GIMP
 media-sound/volumeicon 0.5.1: A lightweight volume control that sits in your systray
 media-video/shotcut 9999: A free, open source, cross-platform video editor
-media-video/v4l2ucp 9999: A universal control panel for all Video for Linux Two (V4L2) devices
+media-video/v4l2ucp 2.0.2 9999: A universal control panel for all Video for Linux Two (V4L2) devices
 net-analyzer/suricata 3.2.1-r1: High performance Network IDS, IPS and Network Security Monitoring engine
 net-im/viber 6.5.5: Free calls, text and picture sharing with anyone, anywhere!
 net-irc/kvirc 4.9.1_pre20160102120102: Advanced IRC Client
