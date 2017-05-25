@@ -40,14 +40,14 @@ x11-drivers/xf86-input-mouse 1.8.1: X.Org driver for mouse input devices
 x11-drivers/xf86-input-synaptics 1.7.4: Driver for Synaptics touchpads
 x11-drivers/xf86-video-sis671 0.9.1 0.10.4-r1 0.10.8: Xorg video driver for SIS M671/M672
 x11-misc/gsimplecal 2.1: A lightweight calendar designed for tint2
-x11-misc/gxkb 0.7.8: X11 keyboard indicator and switcher
+x11-misc/gxkb 0.7.9: X11 keyboard indicator and switcher
 x11-misc/gxneur 0.20.0: GTK+ based GUI for xneur
 x11-misc/kdeneur 0.20.0: GTK+ based GUI for xneur
 x11-misc/obapps 0.1.7: A graphical editor for Openbox application settings
 x11-misc/obdevicemenu 1.7.0: OpenBox device menu
 x11-misc/obmenugen-bin 0.5-r72: Flexible, easy to use and (really) fast static/dinamic menu generator for the Openbox Window Manager.
 x11-misc/obshutdown 9999: GTK/Cairo based shutdown box styled for Openbox and others windows managers
-x11-misc/tint2 0.14.1 9999: A lightweight panel/taskbar
+x11-misc/tint2 0.14.5 9999: A lightweight panel/taskbar
 x11-misc/trayfreq 0.2_pre2: A GTK+ CPU and Battery Tray Tool
 x11-misc/xneur 0.20.0: In-place conversion of text typed in with a wrong keyboard layout (Punto Switcher replacement)
 x11-plugins/pidgin-extended-blist-sort 1.8.0: Pidgin plugin that provides several new sort options for the buddy list
