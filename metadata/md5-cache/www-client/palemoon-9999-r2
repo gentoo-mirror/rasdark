@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst postrm preinst prepare pretend setup unpack
+DEPEND=>=sys-apps/sed-4 >=dev-vcs/git-1.8.2.1
+DESCRIPTION=Pale Moon Web Browser
+EAPI=6
+HOMEPAGE=https://www.palemoon.org/
+IUSE=+official-branding -system-sqlite -system-cairo -system-pixman -system-spell -system-libevent -system-vpx -system-compress -system-images -system-nss +optimize shared-js jemalloc -valgrind devtools dbus -necko-wifi +gtk2 -gtk3 +ffmpeg -webrtc strip-binaries alsa pulseaudio +printing +speech +webm +wave spell cpu_flags_x86_sse cpu_flags_x86_sse2
+LICENSE=MPL-2.0 GPL-2 LGPL-2.1
+RDEPEND=>=sys-devel/autoconf-2.13:2.1 >=dev-lang/perl-5.6 x11-libs/libXt app-arch/zip media-libs/freetype media-libs/fontconfig virtual/pkgconfig dev-lang/yasm dev-lang/python:2.7 system-sqlite? ( >=dev-db/sqlite-3.13.0[secure-delete] ) system-cairo? ( x11-libs/cairo ) system-pixman? ( x11-libs/pixman ) system-spell? ( app-text/hunspell ) system-libevent? ( dev-libs/libevent ) system-vpx? ( >=media-libs/libvpx-1.4.0 ) system-compress? ( >=sys-libs/zlib-1.2.3 app-arch/bzip2 ) system-images? ( media-libs/libjpeg-turbo media-libs/libwebp media-libs/libpng[apng] ) system-nss? ( >=dev-libs/nss-3.28.3 ) optimize? ( sys-libs/glibc ) valgrind? ( dev-util/valgrind ) shared-js? ( virtual/libffi ) dbus? ( >=sys-apps/dbus-0.60 >=dev-libs/dbus-glib-0.60 ) gtk2? ( >=x11-libs/gtk+-2.18.0:2 ) gtk3? ( >=x11-libs/gtk+-3.4.0:3 ) alsa? ( media-libs/alsa-lib ) pulseaudio? ( media-sound/pulseaudio ) ffmpeg? ( media-video/ffmpeg ) necko-wifi? ( net-wireless/wireless-tools )
+REQUIRED_USE=jemalloc? ( !valgrind ) ^^ ( gtk2 gtk3 ) ^^ ( alsa pulseaudio ) necko-wifi? ( dbus ) system-spell? ( spell )
+SLOT=0
+_eclass_exported_funcs=pkg_pretend:palemoon-1 pkg_preinst:palemoon-1 pkg_postrm:palemoon-1 pkg_postinst:palemoon-1 pkg_setup:palemoon-1 src_unpack:git-r3 src_prepare:- src_configure:- src_compile:- src_install:-
+_eclasses_=check-reqs	bd050ce908e4637604ee604ed4b78e8f	epatch	8233751dc5105a6ae8fcd86ce2bb0247	estack	43ddf5aaffa7a8d0482df54d25a66a1f	eutils	9c113d6a64826c40154cad7be15d95ea	fdo-mime	21ef5adf81836863efa968f2a25cff64	flag-o-matic	61cad4fb5d800b29d484b27cb033f59b	git-r3	cbafa3261c37c7e3af44bb16a34ea390	gnome2-utils	8a5e0bf2b8031478ecfeaec753ef4560	ltprune	2770eed66a9b8ef944714cd0e968182e	multilib	97f470f374f2e94ccab04a2fb21d811e	palemoon-1	54064002a1a4505476240b766a713ba8	pax-utils	4f95120230a315c8caaabeb2307b7eee	toolchain-funcs	6eb35f81556258a4bc9182ad3dfd58ee	xdg-utils	b9389dfad0ee8f8e0b2a41b79fcf7120
+_md5_=f7a8dc3280877db3bd5de6adae939e8c
