@@ -29,7 +29,7 @@ net-misc/qtmib 1.1.1: Easy-to-use SNMPv1 and SNMPv2c MIB Browser written in QT4
 net-misc/yandex-disk 0.1.5.978_p1: CLI to access Yandex Disk file storage service
 net-print/brother-hll2300d 3.2.0: Cups ppd and filters for Brother HL-L2300D
 sys-apps/uksmstat 9999: Small tool to show UKSM statistics.
-sys-kernel/calculate-sources 4.9.39 4.10.17 4.11.12 4.12.3: Calculate Linux kernel image
+sys-kernel/calculate-sources 4.9.39 4.10.17 4.11.12 4.12.4: Calculate Linux kernel image
 www-apps/moinmoin 1.9.8: Python WikiClone
 www-client/palemoon 9999 9999-r2: Pale Moon Web Browser
 www-client/yandex-browser-beta 17.4.1.906: Yandex Browser is a browser that combines a minimal design with sophisticated technology to make the web faster, safer, and easier.
