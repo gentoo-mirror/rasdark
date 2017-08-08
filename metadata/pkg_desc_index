@@ -32,7 +32,7 @@ sys-apps/uksmstat 9999: Small tool to show UKSM statistics.
 sys-kernel/calculate-sources 4.9.39 4.10.17 4.11.12 4.12.4: Calculate Linux kernel image
 www-apps/moinmoin 1.9.8: Python WikiClone
 www-client/palemoon 9999 9999-r2: Pale Moon Web Browser
-www-client/yandex-browser-beta 17.4.1.906: Yandex Browser is a browser that combines a minimal design with sophisticated technology to make the web faster, safer, and easier.
+www-client/yandex-browser-beta 17.6.1.835: Yandex Browser is a browser that combines a minimal design with sophisticated technology to make the web faster, safer, and easier.
 x11-base/xorg-drivers 1.12: Meta package containing deps on all xorg drivers
 x11-base/xorg-server 1.12.4-r4: X.Org X servers
 x11-drivers/xf86-input-evdev 2.9.1: Generic Linux input driver
