@@ -9,5 +9,4 @@ LICENSE=GPL-3
 RDEPEND=app-shells/bash sys-apps/dbus x11-wm/openbox sys-fs/udisks notifications? ( x11-misc/notification-daemon )
 SLOT=0
 SRC_URI=http://sourceforge.net/projects/obdevicemenu/files/obdevicemenu-1.7.0.tar.gz
-_eclass_exported_funcs=src_unpack:- src_install:-
 _md5_=f1a73836dff2927fd1a1c3adb1c9aeff
