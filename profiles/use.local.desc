@@ -38,3 +38,4 @@ net-analyzer/suricata:nflog - Enable libnetfilter_log support
 net-analyzer/suricata:nfqueue - Enable NFQUEUE support for inline IDP
 net-analyzer/suricata:redis - Enable Redis support
 net-analyzer/suricata:rules - Install default ruleset
+net-misc/teamviewer:system-wine - Use app-emulation/wine instead of bundled wine.
