@@ -27,7 +27,7 @@ net-misc/httpfs 0.3: Remote FUSE filesystem via server-side script
 net-misc/mailru-cloud 0112.15.06: Mail.Ru Cloud
 net-misc/megasync 16.04-r1 16.10-r1 9999: A Qt-based program for syncing your MEGA account in your PC. This is the official app.
 net-misc/qtmib 1.1.1: Easy-to-use SNMPv1 and SNMPv2c MIB Browser written in QT4
-net-misc/teamviewer 12.0.76279: All-In-One Solution for Remote Access and Support over the Internet
+net-misc/teamviewer 12.0.85001: All-In-One Solution for Remote Access and Support over the Internet
 net-misc/yandex-disk 0.1.5.978_p1: CLI to access Yandex Disk file storage service
 net-print/brother-hll2300d 3.2.0: Cups ppd and filters for Brother HL-L2300D
 sys-apps/uksmstat 9999: Small tool to show UKSM statistics.
