@@ -34,6 +34,7 @@ sys-apps/uksmstat 9999: Small tool to show UKSM statistics.
 sys-kernel/calculate-sources 4.9.52 4.10.17 4.11.12 4.12.14 4.13.4: Calculate Linux kernel image
 www-apps/moinmoin 1.9.8: Python WikiClone
 www-client/palemoon 9999 9999-r2: Pale Moon Web Browser
+www-client/waterfox-bin 55.2.0: Waterfox Web Browser
 www-client/yandex-browser-beta 17.7.1.802: Yandex Browser is a browser that combines a minimal design with sophisticated technology to make the web faster, safer, and easier.
 x11-base/xorg-drivers 1.12: Meta package containing deps on all xorg drivers
 x11-base/xorg-server 1.12.4-r4: X.Org X servers
