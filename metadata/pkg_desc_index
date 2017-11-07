@@ -19,7 +19,7 @@ media-sound/volumeicon 0.5.1: A lightweight volume control that sits in your sys
 media-video/shotcut 9999: A free, open source, cross-platform video editor
 media-video/v4l2ucp 2.0.2 9999: A universal control panel for all Video for Linux Two (V4L2) devices
 net-analyzer/suricata 3.2.1-r1: High performance Network IDS, IPS and Network Security Monitoring engine
-net-im/viber 6.5.5: Free calls, text and picture sharing with anyone, anywhere!
+net-im/viber 6.5.5 7.0.0.1035: Free calls, text and picture sharing with anyone, anywhere!
 net-irc/kvirc 4.9.1_pre20160102120102: Advanced IRC Client
 net-misc/android-file-transfer 3.0 9999: Reliable MTP client with minimalistic UI
 net-misc/anydesk 2.3.1: All-In-One Solution for Remote Access and Support over the Internet
