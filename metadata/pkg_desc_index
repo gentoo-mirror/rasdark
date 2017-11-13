@@ -15,6 +15,7 @@ media-gfx/gscan2pdf 1.7.3: Scan documents, perform OCR, produce PDFs and DjVus
 media-gfx/viewnior 1.6: Fast and simple image viewer
 media-libs/opus 1.1.3-r1: Open versatile codec designed for interactive speech and audio transmission over the internet
 media-plugins/gimp-save-for-web 0.29.3 9999: Allows to find optimized saving options for popular web formats for the GIMP
+media-sound/apulse 9999: PulseAudio emulation for ALSA
 media-sound/volumeicon 0.5.1: A lightweight volume control that sits in your systray
 media-video/shotcut 9999: A free, open source, cross-platform video editor
 media-video/v4l2ucp 2.0.2 9999: A universal control panel for all Video for Linux Two (V4L2) devices
