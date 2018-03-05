@@ -13,4 +13,4 @@ x11-base/xorg-server 1.12.4-r4: X.Org X servers
 x11-drivers/xf86-input-evdev 2.9.1: Generic Linux input driver
 x11-drivers/xf86-input-mouse 1.8.1: X.Org driver for mouse input devices
 x11-drivers/xf86-input-synaptics 1.7.4: Driver for Synaptics touchpads
-x11-drivers/xf86-video-sis671 0.9.1 0.10.4-r1 0.10.8 0.10.8-r2: Xorg video driver for SIS M671/M672
+x11-drivers/xf86-video-sis671 0.9.1 0.10.4-r1 0.10.8 0.10.8-r2 0.10.8-r3: Xorg video driver for SIS M671/M672
