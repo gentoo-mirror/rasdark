@@ -7,7 +7,7 @@ net-irc/kvirc 4.9.1_pre20160102120102: Advanced IRC Client
 net-misc/android-file-transfer 3.0: Reliable MTP client with minimalistic UI
 net-misc/mailru-cloud 0112.15.06: Mail.Ru Cloud
 net-misc/qtmib 1.1.1: Easy-to-use SNMPv1 and SNMPv2c MIB Browser written in QT4
-sys-kernel/calculate-sources 4.9.90: Calculate Linux kernel image
+sys-kernel/calculate-sources 4.9.102: Calculate Linux kernel image
 www-apps/moinmoin 1.9.8: Python WikiClone
 x11-base/xorg-drivers 1.12: Meta package containing deps on all xorg drivers
 x11-base/xorg-server 1.12.4-r4: X.Org X servers
