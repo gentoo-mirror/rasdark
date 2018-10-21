@@ -1,5 +1,5 @@
 app-office/osmo 0.2.14: A handy personal organizer
-app-shells/fzf 0.17.3: A general-purpose command-line fuzzy finder
+app-shells/fzf 0.17.5: A general-purpose command-line fuzzy finder
 media-libs/opus 1.1.3-r1: Open versatile codec designed for interactive speech and audio transmission over the internet
 media-video/v4l2ucp 2.0.2: A universal control panel for all Video for Linux Two (V4L2) devices
 net-im/dialog 9999: Unify interaction between desktop and field staff, host your data on-premise or in the cloud.
