@@ -7,7 +7,6 @@ net-im/viber 6.5.5 7.0.0.1035: Free calls, text and picture sharing with anyone,
 net-irc/kvirc 4.9.1_pre20160102120102: Advanced IRC Client
 net-misc/android-file-transfer 3.0: Reliable MTP client with minimalistic UI
 net-misc/mailru-cloud 0112.15.06: Mail.Ru Cloud
-sys-kernel/calculate-sources 4.14.120: Calculate Linux kernel image
 www-apps/moinmoin 1.9.8: Python WikiClone
 x11-base/xorg-drivers 1.12: Meta package containing deps on all xorg drivers
 x11-base/xorg-server 1.12.4-r4: X.Org X servers
