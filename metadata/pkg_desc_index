@@ -4,7 +4,6 @@ media-libs/opus 1.1.3-r1: Open versatile codec designed for interactive speech a
 media-video/v4l2ucp 2.0.2: A universal control panel for all Video for Linux Two (V4L2) devices
 net-im/dialog 9999: Unify interaction between desktop and field staff, host your data on-premise or in the cloud.
 net-im/viber 6.5.5 7.0.0.1035: Free calls, text and picture sharing with anyone, anywhere!
-net-irc/kvirc 4.9.1_pre20160102120102: Advanced IRC Client
 net-misc/android-file-transfer 3.0: Reliable MTP client with minimalistic UI
 net-misc/mailru-cloud 0112.15.06: Mail.Ru Cloud
 www-apps/moinmoin 1.9.8: Python WikiClone
