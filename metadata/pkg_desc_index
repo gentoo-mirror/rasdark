@@ -1,15 +1,64 @@
+app-accessibility/festival 2.4: Festival Text to Speech engine
+app-cdr/pburn 4.3.16: A burning tool with GTK+ frontend
+app-crypt/johntheripper 1.8.0-r1: fast password cracker
+app-editors/neovim-qt 0.2.12: Neovim client library and GUI, in Qt5
+app-editors/visual-studio-code 1.32.3 1.36.1: Multiplatform Visual Studio Code from Microsoft
+app-emulation/vpcs 0.8: Simulate up to 9 PCs in place of VMware boxes in a Dynamips network
+app-misc/double-commander 0.7.8: Cross Platform file manager.
+app-misc/double-commander-bin 0.8.4-r1: Cross Platform file manager.
 app-office/osmo 0.2.14 0.4.2: A handy personal organizer
 app-shells/fzf 0.17.5: A general-purpose command-line fuzzy finder
+app-text/litetran 9999: Very simple GUI for text translation (like google translate).
+app-text/pymarkups 2.0.0: Wrapper around various text markups, used in ReText
+dev-qt/qt4pas 2.5: The Free Pascal Qt4 binding allows Free Pascal to interface with the C++ Library Qt.
+media-gfx/gscan2pdf 1.7.3: Scan documents, perform OCR, produce PDFs and DjVus
+media-gfx/viewnior 1.7: Fast and simple image viewer
 media-libs/opus 1.1.3-r1: Open versatile codec designed for interactive speech and audio transmission over the internet
-media-video/v4l2ucp 2.0.2: A universal control panel for all Video for Linux Two (V4L2) devices
+media-plugins/gimp-save-for-web 0.29.3 9999: Allows to find optimized saving options for popular web formats for the GIMP
+media-sound/apulse 9999: PulseAudio emulation for ALSA
+media-sound/volumeicon 0.5.1: A lightweight volume control that sits in your systray
+media-video/shotcut 9999: A free, open source, cross-platform video editor
+media-video/v4l2ucp 2.0.2 9999: A universal control panel for all Video for Linux Two (V4L2) devices
+net-analyzer/suricata 3.2.1-r1: High performance Network IDS, IPS and Network Security Monitoring engine
+net-dns/ApacheDirectoryStudio 2.0.0.20170904: Apache Directory Studio is an universal LDAP directory tool.
 net-im/dialog 9999: Unify interaction between desktop and field staff, host your data on-premise or in the cloud.
 net-im/viber 6.5.5 7.0.0.1035: Free calls, text and picture sharing with anyone, anywhere!
-net-misc/android-file-transfer 3.0: Reliable MTP client with minimalistic UI
+net-irc/kvirc 4.9.1_pre20160102120102: Advanced IRC Client
+net-mail/davmail-bin 4.7.3 5.2.0: POP/IMAP/SMTP/Caldav/Carddav/LDAP Exchange Gateway
+net-misc/android-file-transfer 3.0 9999: Reliable MTP client with minimalistic UI
+net-misc/anydesk 2.3.1: All-In-One Solution for Remote Access and Support over the Internet
+net-misc/httpfs 0.3: Remote FUSE filesystem via server-side script
 net-misc/mailru-cloud 0112.15.06: Mail.Ru Cloud
+net-misc/megasync 4.0.2.0 9999: Easy automated syncing with MEGA Cloud Drive
+net-misc/teamviewer 12.0.85001: All-In-One Solution for Remote Access and Support over the Internet
+net-misc/yandex-disk 0.1.5.1010_p1: CLI to access Yandex Disk file storage service
+net-print/brother-hll2300d 3.2.0: Cups ppd and filters for Brother HL-L2300D
+sys-apps/uksmstat 9999: Small tool to show UKSM statistics.
+sys-kernel/calculate-sources 4.19.64 5.1.21 5.2.6: Calculate Linux kernel image
 www-apps/moinmoin 1.9.8: Python WikiClone
+www-client/palemoon 28.5.0 9999-r3: Pale Moon Web Browser
+www-client/waterfox-bin 56.2.9: Waterfox Web Browser
+www-client/yandex-browser-beta 19.4.2.698: Yandex Browser is a browser that combines a minimal design with sophisticated technology to make the web faster, safer, and easier.
 x11-base/xorg-drivers 1.12: Meta package containing deps on all xorg drivers
 x11-base/xorg-server 1.12.4-r4: X.Org X servers
 x11-drivers/xf86-input-evdev 2.9.1: Generic Linux input driver
 x11-drivers/xf86-input-mouse 1.8.1: X.Org driver for mouse input devices
 x11-drivers/xf86-input-synaptics 1.7.4: Driver for Synaptics touchpads
 x11-drivers/xf86-video-sis671 0.9.1 0.10.4-r1 0.10.8 0.10.8-r2 0.10.8-r3 0.10.8-r4 0.10.8-r5: Xorg video driver for SIS M671/M672
+x11-misc/gsimplecal 2.1: A lightweight calendar designed for tint2
+x11-misc/gxkb 0.8.1: X11 keyboard indicator and switcher
+x11-misc/gxneur 0.20.0: GTK+ based GUI for xneur
+x11-misc/kdeneur 0.20.0: GTK+ based GUI for xneur
+x11-misc/lightdm-qt5-greeter 0.9: lightdm-qt5-greeter is a simple frontend for the lightdm displaymanager
+x11-misc/obapps 0.1.7: A graphical editor for Openbox application settings
+x11-misc/obdevicemenu 1.7.0: OpenBox device menu
+x11-misc/oblogout 0.2-r2: Openbox logout script
+x11-misc/obmenugen-bin 0.5-r72: Flexible, easy to use and (really) fast static/dinamic menu generator for the Openbox Window Manager.
+x11-misc/obshutdown 9999: GTK/Cairo based shutdown box styled for Openbox and others windows managers
+x11-misc/tint2 9999: A lightweight panel/taskbar
+x11-misc/trayfreq 0.2_pre2: A GTK+ CPU and Battery Tray Tool
+x11-misc/xneur 0.20.0: In-place conversion of text typed in with a wrong keyboard layout (Punto Switcher replacement)
+x11-plugins/pidgin-extended-blist-sort 1.8.0: Pidgin plugin that provides several new sort options for the buddy list
+x11-plugins/pidgin-sipe 1.24.0 9999: Pidgin Plug-in SIPE (Sip Exchange Protocol)
+x11-plugins/pidgin-toobars 1.14: Plugin adds toolbar and status bar to Pidgin buddy list
+x11-plugins/whatsapp-purple 0.5: WhatsApp protocol implementation for libpurple (Pidgin)
