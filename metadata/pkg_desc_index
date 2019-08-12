@@ -34,7 +34,7 @@ net-misc/teamviewer 12.0.85001: All-In-One Solution for Remote Access and Suppor
 net-misc/yandex-disk 0.1.5.1010_p1: CLI to access Yandex Disk file storage service
 net-print/brother-hll2300d 3.2.0: Cups ppd and filters for Brother HL-L2300D
 sys-apps/uksmstat 9999: Small tool to show UKSM statistics.
-sys-kernel/calculate-sources 4.19.64 5.1.21 5.2.6: Calculate Linux kernel image
+sys-kernel/calculate-sources 4.19.66 5.1.21 5.2.8: Calculate Linux kernel image
 www-apps/moinmoin 1.9.8: Python WikiClone
 www-client/palemoon 28.5.0 9999-r3: Pale Moon Web Browser
 www-client/waterfox-bin 56.2.9: Waterfox Web Browser
