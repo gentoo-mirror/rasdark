@@ -54,6 +54,6 @@ x11-misc/tint2 9999: A lightweight panel/taskbar
 x11-misc/trayfreq 0.2_pre2: A GTK+ CPU and Battery Tray Tool
 x11-misc/xneur 0.20.0: In-place conversion of text typed in with a wrong keyboard layout (Punto Switcher replacement)
 x11-plugins/pidgin-extended-blist-sort 1.8.0: Pidgin plugin that provides several new sort options for the buddy list
-x11-plugins/pidgin-sipe 1.24.0 9999: Pidgin Plug-in SIPE (Sip Exchange Protocol)
+x11-plugins/pidgin-sipe 1.25.0 9999: Pidgin Plug-in SIPE (Sip Exchange Protocol)
 x11-plugins/pidgin-toobars 1.14: Plugin adds toolbar and status bar to Pidgin buddy list
 x11-plugins/whatsapp-purple 0.5: WhatsApp protocol implementation for libpurple (Pidgin)
