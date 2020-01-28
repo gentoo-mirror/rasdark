@@ -9,6 +9,7 @@ app-office/osmo 0.4.2: A handy personal organizer
 app-shells/fzf 0.18.0 0.20.0: A general-purpose command-line fuzzy finder
 app-text/litetran 9999: Very simple GUI for text translation (like google translate).
 app-text/pymarkups 2.0.0: Wrapper around various text markups, used in ReText
+dev-lang/lazarus 2.0.6: Lazarus IDE is a feature rich visual programming environment emulating Delphi
 dev-qt/qt4pas 2.5: The Free Pascal Qt4 binding allows Free Pascal to interface with the C++ Library Qt.
 media-gfx/gscan2pdf 1.7.3: Scan documents, perform OCR, produce PDFs and DjVus
 media-gfx/viewnior 1.7: Fast and simple image viewer
