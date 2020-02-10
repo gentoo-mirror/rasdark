@@ -7,7 +7,6 @@ app-emulation/vpcs 0.8: Simulate up to 9 PCs in place of VMware boxes in a Dynam
 app-misc/double-commander-bin 0.9.6: Cross Platform file manager.
 app-office/osmo 0.4.2: A handy personal organizer
 app-shells/fzf 0.18.0 0.20.0: A general-purpose command-line fuzzy finder
-app-text/litetran 9999: Very simple GUI for text translation (like google translate).
 app-text/pymarkups 2.0.0: Wrapper around various text markups, used in ReText
 dev-lang/lazarus 2.0.6: Lazarus IDE is a feature rich visual programming environment emulating Delphi
 dev-qt/qt4pas 2.5: The Free Pascal Qt4 binding allows Free Pascal to interface with the C++ Library Qt.
@@ -31,7 +30,6 @@ net-misc/mailru-cloud 0112.15.06: Mail.Ru Cloud
 net-misc/megasync 4.0.2.0 9999: Easy automated syncing with MEGA Cloud Drive
 net-misc/yandex-disk 0.1.5.1039_p1: CLI to access Yandex Disk file storage service
 net-print/brother-hll2300d 3.2.0: Cups ppd and filters for Brother HL-L2300D
-sys-apps/uksmstat 9999: Small tool to show UKSM statistics.
 sys-kernel/calculate-sources 4.19.94 5.3.18 5.4.10: Calculate Linux kernel image
 www-client/palemoon 28.7.1 9999-r3: Pale Moon Web Browser
 www-client/yandex-browser-beta 19.12.3.332: Yandex Browser is a browser that combines a minimal design with sophisticated technology to make the web faster, safer, and easier.
@@ -50,8 +48,6 @@ x11-misc/obapps 0.1.7: A graphical editor for Openbox application settings
 x11-misc/obdevicemenu 1.7.0: OpenBox device menu
 x11-misc/oblogout 0.2-r2: Openbox logout script
 x11-misc/obmenugen-bin 0.5-r72: Flexible, easy to use and (really) fast static/dinamic menu generator for the Openbox Window Manager.
-x11-misc/obshutdown 9999: GTK/Cairo based shutdown box styled for Openbox and others windows managers
-x11-misc/tint2 9999: A lightweight panel/taskbar
 x11-misc/trayfreq 0.2_pre2: A GTK+ CPU and Battery Tray Tool
 x11-misc/xneur 0.20.0: In-place conversion of text typed in with a wrong keyboard layout (Punto Switcher replacement)
 x11-plugins/pidgin-extended-blist-sort 1.8.0: Pidgin plugin that provides several new sort options for the buddy list
