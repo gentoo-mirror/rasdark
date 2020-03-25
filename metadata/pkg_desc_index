@@ -29,7 +29,7 @@ net-misc/mailru-cloud 0112.15.06: Mail.Ru Cloud
 net-misc/megasync 4.0.2.0 9999: Easy automated syncing with MEGA Cloud Drive
 net-misc/yandex-disk 0.1.5.1039_p1: CLI to access Yandex Disk file storage service
 net-print/brother-hll2300d 3.2.0: Cups ppd and filters for Brother HL-L2300D
-sys-kernel/calculate-sources 4.19.113 5.4.28 5.5.12: Calculate Linux kernel image
+sys-kernel/calculate-sources 4.19.113 5.4.28 5.5.13: Calculate Linux kernel image
 www-client/palemoon 28.7.1 9999-r3: Pale Moon Web Browser
 www-client/yandex-browser-beta 19.12.3.332: Yandex Browser is a browser that combines a minimal design with sophisticated technology to make the web faster, safer, and easier.
 x11-base/xorg-drivers 1.12: Meta package containing deps on all xorg drivers
