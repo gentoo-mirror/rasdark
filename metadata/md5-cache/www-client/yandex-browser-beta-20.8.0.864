@@ -8,6 +8,6 @@ LICENSE=Yandex-EULA
 RDEPEND=dev-libs/expat dev-libs/glib:2 dev-libs/nspr dev-libs/nss >=dev-libs/openssl-1.0.1:0 gnome-base/gconf:2 media-libs/alsa-lib media-libs/fontconfig media-libs/freetype net-misc/curl net-print/cups sys-apps/dbus sys-libs/libcap virtual/libudev x11-libs/cairo x11-libs/gdk-pixbuf x11-libs/gtk+:2 x11-libs/libX11 x11-libs/libXScrnSaver x11-libs/libXcomposite x11-libs/libXcursor x11-libs/libXdamage x11-libs/libXext x11-libs/libXfixes x11-libs/libXi x11-libs/libXrandr x11-libs/libXrender x11-libs/libXtst x11-libs/pango[X]
 RESTRICT=mirror
 SLOT=0
-SRC_URI=amd64? ( http://repo.yandex.ru/yandex-browser/deb/pool/main/y/yandex-browser-beta/yandex-browser-beta_20.3.2.282-1_amd64.deb -> yandex-browser-beta-20.3.2.282.deb )
+SRC_URI=amd64? ( http://repo.yandex.ru/yandex-browser/deb/pool/main/y/yandex-browser-beta/yandex-browser-beta_20.8.0.864-1_amd64.deb -> yandex-browser-beta-20.8.0.864.deb )
 _eclasses_=chromium-2	92ff174aa2b13d6ea0c4539533f0b2de	desktop	7fd20552ce4cc97e8acb132a499a7dd8	eapi7-ver	f9ec87e93172b25ce65a85303dc06964	epatch	ed88001f77c6dd0d5f09e45c1a5b480e	estack	686eaab303305a908fd57b2fd7617800	eutils	fcb2aa98e1948b835b5ae66ca52868c5	linux-info	c90a203b1c14cfa77bd3e37a0e96c955	ltprune	2729691420b6deeda2a90b1f1183fb55	multilib	2477ebe553d3e4d2c606191fe6c33602	pax-utils	a41d1fd1c111289ffa04490de6ee79d7	preserve-libs	ef207dc62baddfddfd39a164d9797648	toolchain-funcs	605c126bed8d87e4378d5ff1645330cb	unpacker	8ee8c1a2f31437d1766aac890d07a7f4	vcs-clean	2a0f74a496fa2b1552c4f3398258b7bf
 _md5_=89b8dbee20b617554fa94be42055ce26
