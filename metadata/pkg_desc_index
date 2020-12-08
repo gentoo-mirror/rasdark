@@ -1,5 +1,4 @@
 app-accessibility/festival 2.4: Festival Text to Speech engine
-app-cdr/pburn 4.3.16: A burning tool with GTK+ frontend
 app-crypt/johntheripper 1.8.0-r1: fast password cracker
 app-editors/neovim-qt 0.2.14: Neovim client library and GUI, in Qt5
 app-editors/visual-studio-code 1.32.3 1.41.0: Multiplatform Visual Studio Code from Microsoft
@@ -41,7 +40,6 @@ x11-drivers/xf86-input-synaptics 1.7.4: Driver for Synaptics touchpads
 x11-drivers/xf86-video-sis671 0.9.1 0.10.4-r1 0.10.8 0.10.8-r2 0.10.8-r3 0.10.8-r4 0.10.8-r5: Xorg video driver for SIS M671/M672
 x11-misc/gsimplecal 2.1: A lightweight calendar designed for tint2
 x11-misc/gxkb 0.8.1: X11 keyboard indicator and switcher
-x11-misc/gxneur 0.20.0: GTK+ based GUI for xneur
 x11-misc/kdeneur 0.20.0: GTK+ based GUI for xneur
 x11-misc/lightdm-qt5-greeter 0.9: lightdm-qt5-greeter is a simple frontend for the lightdm displaymanager
 x11-misc/obapps 0.1.7: A graphical editor for Openbox application settings
