@@ -6,7 +6,6 @@ app-emulation/vpcs 0.8: Simulate up to 9 PCs in place of VMware boxes in a Dynam
 app-misc/double-commander-bin 0.9.6: Cross Platform file manager.
 app-office/osmo 0.4.2: A handy personal organizer
 app-shells/fzf 0.18.0 0.20.0: A general-purpose command-line fuzzy finder
-app-text/litetran 9999: Very simple GUI for text translation (like google translate).
 app-text/pymarkups 2.0.0: Wrapper around various text markups, used in ReText
 dev-lang/lazarus 2.0.6: Lazarus IDE is a feature rich visual programming environment emulating Delphi
 dev-qt/qt4pas 2.5: The Free Pascal Qt4 binding allows Free Pascal to interface with the C++ Library Qt.
@@ -30,7 +29,6 @@ net-misc/yandex-disk 0.1.5.1039_p1: CLI to access Yandex Disk file storage servi
 net-print/brother-hll2300d 3.2.0: Cups ppd and filters for Brother HL-L2300D
 net-wireless/rtl8812au 20201020: Realtek 8812AU USB WiFi module for Linux kernel
 sys-kernel/calculate-sources 5.9.14 5.10.1: Calculate Linux kernel image
-www-client/palemoon 28.7.1 9999-r3: Pale Moon Web Browser
 www-client/yandex-browser-beta 20.9.3.189: Yandex Browser is a browser that combines a minimal design with sophisticated technology to make the web faster, safer, and easier.
 x11-base/xorg-drivers 1.12: Meta package containing deps on all xorg drivers
 x11-base/xorg-server 1.12.4-r4: X.Org X servers
