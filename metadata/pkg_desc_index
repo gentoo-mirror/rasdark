@@ -11,17 +11,14 @@ media-gfx/viewnior 1.7: Fast and simple image viewer
 media-libs/opus 1.1.3-r1: Open versatile codec designed for interactive speech and audio transmission over the internet
 media-sound/apulse 9999: PulseAudio emulation for ALSA
 media-sound/volumeicon 0.5.1: A lightweight volume control that sits in your systray
-media-video/shotcut 9999: A free, open source, cross-platform video editor
 net-analyzer/suricata 3.2.1-r1: High performance Network IDS, IPS and Network Security Monitoring engine
 net-dns/ApacheDirectoryStudio 2.0.0.20200411: Apache Directory Studio is an universal LDAP directory tool.
 net-im/dialog 9999: Unify interaction between desktop and field staff, host your data on-premise or in the cloud.
 net-im/viber 6.5.5 7.0.0.1035: Free calls, text and picture sharing with anyone, anywhere!
 net-irc/kvirc 4.9.1_pre20160102120102: Advanced IRC Client
 net-mail/davmail-bin 5.5.1: POP/IMAP/SMTP/Caldav/Carddav/LDAP Exchange Gateway
-net-misc/android-file-transfer 3.0 9999: Reliable MTP client with minimalistic UI
 net-misc/httpfs 0.3: Remote FUSE filesystem via server-side script
 net-misc/mailru-cloud 0112.15.06: Mail.Ru Cloud
-net-misc/megasync 4.0.2.0 9999: Easy automated syncing with MEGA Cloud Drive
 net-misc/yandex-disk 0.1.5.1039_p1: CLI to access Yandex Disk file storage service
 net-print/brother-hll2300d 3.2.0: Cups ppd and filters for Brother HL-L2300D
 net-wireless/rtl8812au 20201020: Realtek 8812AU USB WiFi module for Linux kernel
