@@ -2,6 +2,7 @@ DEFINED_PHASES=compile install
 DESCRIPTION=Flexible, easy to use and (really) fast static/dinamic menu generator for the Openbox Window Manager.
 EAPI=3
 HOMEPAGE=https://launchpad.net/obmenugen
+INHERIT=versionator
 KEYWORDS=~amd64 ~x86
 LICENSE=GPL-2
 RDEPEND=x11-wm/openbox
