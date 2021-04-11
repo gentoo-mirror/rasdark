@@ -26,10 +26,8 @@ www-client/yandex-browser-beta 20.11.3.188: Yandex Browser is a browser that com
 x11-base/xorg-drivers 1.12: Meta package containing deps on all xorg drivers
 x11-base/xorg-server 1.12.4-r4: X.Org X servers
 x11-drivers/xf86-input-evdev 2.9.1: Generic Linux input driver
-x11-drivers/xf86-input-mouse 1.8.1: X.Org driver for mouse input devices
 x11-drivers/xf86-input-synaptics 1.7.4: Driver for Synaptics touchpads
 x11-drivers/xf86-video-sis671 0.9.1 0.10.4-r1 0.10.8 0.10.8-r2 0.10.8-r3 0.10.8-r4 0.10.8-r5: Xorg video driver for SIS M671/M672
-x11-misc/gsimplecal 2.1: A lightweight calendar designed for tint2
 x11-misc/obdevicemenu 1.7.0: OpenBox device menu
 x11-misc/obmenugen-bin 0.5-r72: Flexible, easy to use and (really) fast static/dinamic menu generator for the Openbox Window Manager.
 x11-misc/tint2 9999: A lightweight panel/taskbar
