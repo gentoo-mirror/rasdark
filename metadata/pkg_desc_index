@@ -11,7 +11,6 @@ media-gfx/viewnior 1.7: Fast and simple image viewer
 media-libs/opus 1.1.3-r1: Open versatile codec designed for interactive speech and audio transmission over the internet
 media-sound/apulse 9999: PulseAudio emulation for ALSA
 media-sound/volumeicon 0.5.1: A lightweight volume control that sits in your systray
-net-analyzer/suricata 3.2.1-r1: High performance Network IDS, IPS and Network Security Monitoring engine
 net-dns/ApacheDirectoryStudio 2.0.0.20200411: Apache Directory Studio is an universal LDAP directory tool.
 net-im/dialog 9999: Unify interaction between desktop and field staff, host your data on-premise or in the cloud.
 net-im/viber 6.5.5 7.0.0.1035: Free calls, text and picture sharing with anyone, anywhere!
@@ -23,10 +22,6 @@ net-print/brother-hll2300d 3.2.0: Cups ppd and filters for Brother HL-L2300D
 net-wireless/rtl8812au 20201020 20201227 20210203: Realtek 8812AU USB WiFi module for Linux kernel
 sys-kernel/calculate-sources 5.11.5: Calculate Linux kernel image
 www-client/yandex-browser-beta 20.11.3.188: Yandex Browser is a browser that combines a minimal design with sophisticated technology to make the web faster, safer, and easier.
-x11-base/xorg-drivers 1.12: Meta package containing deps on all xorg drivers
-x11-base/xorg-server 1.12.4-r4: X.Org X servers
-x11-drivers/xf86-input-evdev 2.9.1: Generic Linux input driver
-x11-drivers/xf86-input-synaptics 1.7.4: Driver for Synaptics touchpads
 x11-drivers/xf86-video-sis671 0.9.1 0.10.4-r1 0.10.8 0.10.8-r2 0.10.8-r3 0.10.8-r4 0.10.8-r5: Xorg video driver for SIS M671/M672
 x11-misc/obdevicemenu 1.7.0: OpenBox device menu
 x11-misc/obmenugen-bin 0.5-r72: Flexible, easy to use and (really) fast static/dinamic menu generator for the Openbox Window Manager.
