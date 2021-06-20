@@ -21,12 +21,10 @@ net-misc/yandex-disk 0.1.5.1039_p1: CLI to access Yandex Disk file storage servi
 net-print/brother-hll2300d 3.2.0: Cups ppd and filters for Brother HL-L2300D
 net-wireless/rtl8812au 20201020 20201227 20210504: Realtek 8812AU USB WiFi module for Linux kernel
 sys-kernel/calculate-sources 5.12.10: Calculate Linux kernel image
-www-client/yandex-browser-beta 20.11.3.188: Yandex Browser is a browser that combines a minimal design with sophisticated technology to make the web faster, safer, and easier.
 x11-drivers/xf86-video-sis671 0.9.1 0.10.4-r1 0.10.8 0.10.8-r2 0.10.8-r3 0.10.8-r4 0.10.8-r5: Xorg video driver for SIS M671/M672
 x11-misc/obdevicemenu 1.7.0: OpenBox device menu
 x11-misc/obmenugen-bin 0.5-r72: Flexible, easy to use and (really) fast static/dinamic menu generator for the Openbox Window Manager.
 x11-misc/tint2 9999: A lightweight panel/taskbar
-x11-misc/trayfreq 0.2_pre2: A GTK+ CPU and Battery Tray Tool
 x11-plugins/pidgin-extended-blist-sort 1.8.0: Pidgin plugin that provides several new sort options for the buddy list
 x11-plugins/pidgin-sipe 1.25.0 9999: Pidgin Plug-in SIPE (Sip Exchange Protocol)
 x11-plugins/pidgin-toobars 1.14: Plugin adds toolbar and status bar to Pidgin buddy list
