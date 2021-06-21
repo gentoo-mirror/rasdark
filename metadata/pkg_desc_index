@@ -21,6 +21,7 @@ net-misc/yandex-disk 0.1.5.1039_p1: CLI to access Yandex Disk file storage servi
 net-print/brother-hll2300d 3.2.0: Cups ppd and filters for Brother HL-L2300D
 net-wireless/rtl8812au 20201020 20201227 20210504: Realtek 8812AU USB WiFi module for Linux kernel
 sys-kernel/calculate-sources 5.12.10: Calculate Linux kernel image
+www-client/yandex-browser-beta 21.5.3.753: The web browser from Yandex
 x11-drivers/xf86-video-sis671 0.9.1 0.10.4-r1 0.10.8 0.10.8-r2 0.10.8-r3 0.10.8-r4 0.10.8-r5: Xorg video driver for SIS M671/M672
 x11-misc/obdevicemenu 1.7.0: OpenBox device menu
 x11-misc/obmenugen-bin 0.5-r72: Flexible, easy to use and (really) fast static/dinamic menu generator for the Openbox Window Manager.
