@@ -1,0 +1,15 @@
+DEFINED_PHASES=install postinst postrm prepare setup unpack
+DEPEND=>=dev-util/patchelf-0.9
+DESCRIPTION=The web browser from Yandex
+EAPI=7
+HOMEPAGE=https://browser.yandex.ru/beta/
+INHERIT=chromium-2 unpacker pax-utils xdg-utils
+IUSE=ffmpeg-codecs kernel_linux +l10n_cs +l10n_de +l10n_en-US +l10n_es +l10n_fr +l10n_it +l10n_ja +l10n_pt-BR +l10n_pt-PT +l10n_ru +l10n_tr +l10n_uk +l10n_zh-CN +l10n_zh-TW
+KEYWORDS=~amd64
+LICENSE=Yandex-EULA
+RDEPEND=dev-libs/expat dev-libs/glib:2 dev-libs/nspr dev-libs/nss >=dev-libs/openssl-1.0.1:0 gnome-base/gconf:2 media-libs/alsa-lib media-libs/fontconfig media-libs/freetype net-misc/curl net-print/cups sys-apps/dbus sys-libs/libcap virtual/libudev x11-libs/cairo x11-libs/gdk-pixbuf x11-libs/gtk+:2 x11-libs/libX11 x11-libs/libXScrnSaver x11-libs/libXcomposite x11-libs/libXcursor x11-libs/libXdamage x11-libs/libXext x11-libs/libXfixes x11-libs/libXi x11-libs/libXrandr x11-libs/libXrender x11-libs/libXtst x11-libs/pango[X] x11-misc/xdg-utils sys-libs/libudev-compat ffmpeg-codecs? ( =www-plugins/yandex-browser-ffmpeg-codecs-21.6.2.817 )
+RESTRICT=bindist mirror strip
+SLOT=0
+SRC_URI=amd64? ( https://repo.yandex.ru/yandex-browser/deb/pool/main/y/yandex-browser-beta/yandex-browser-beta_21.6.2.817-1_amd64.deb -> yandex-browser-beta-21.6.2.817.deb ) amd64? ( http://gpo.ws54.tk/gentoo-distfiles/yandex-browser-beta-21.6.2.817.deb -> yandex-browser-beta-21.6.2.817.deb )
+_eclasses_=toolchain-funcs	9ea1c67b6f8315fdc2568abb674519aa	multilib	97566c1a256d07b00848aa767e38a352	linux-info	7e8ed4c6a1d136fb291c52386f996c2c	chromium-2	5c8f27044b5401cdbf32dbf6c6cdfbea	unpacker	2eeba54233fa41bdb15dcddcb63fba3a	pax-utils	fce6ad998516159787b92e8043167889	xdg-utils	27f9a2f19502b925ac117bd657aa2979
+_md5_=bad4f2d19f94e87d1709d37753ddc73c
