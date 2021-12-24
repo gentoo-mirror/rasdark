@@ -17,7 +17,7 @@ net-im/dialog 9999: Unify interaction between desktop and field staff, host your
 net-im/viber 6.5.5 7.0.0.1035: Free calls, text and picture sharing with anyone, anywhere!
 net-mail/davmail-bin 5.5.1: POP/IMAP/SMTP/Caldav/Carddav/LDAP Exchange Gateway
 net-misc/httpfs 0.3: Remote FUSE filesystem via server-side script
-net-misc/kerio-control-vpnclient 9.3.6.5808: Kerio VPN Client
+net-misc/kerio-control-vpnclient 9.3.6.5738 9.3.6.5808: Kerio VPN Client
 net-misc/mailru-cloud 0112.15.06: Mail.Ru Cloud
 net-misc/yandex-disk 0.1.5.1039_p1: CLI to access Yandex Disk file storage service
 net-print/brother-hll2300d 3.2.0: Cups ppd and filters for Brother HL-L2300D
