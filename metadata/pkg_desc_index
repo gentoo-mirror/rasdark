@@ -21,8 +21,8 @@ net-misc/kerio-control-vpnclient 9.3.6.5738 9.3.6.5808: Kerio VPN Client
 net-misc/mailru-cloud 0112.15.06: Mail.Ru Cloud
 net-misc/yandex-disk 0.1.5.1039_p1: CLI to access Yandex Disk file storage service
 net-print/brother-hll2300d 3.2.0: Cups ppd and filters for Brother HL-L2300D
-net-wireless/rtl8812au 20210627 20211108: Realtek 8812AU USB WiFi module for Linux kernel
-sys-kernel/calculate-sources 5.12.10: Calculate Linux kernel image
+net-wireless/rtl8812au 20211108 20211212: Realtek 8812AU USB WiFi module for Linux kernel
+sys-kernel/calculate-sources 5.15.16 5.16.2: Calculate Linux kernel image
 www-client/yandex-browser-beta 21.8.3.767: The web browser from Yandex
 x11-drivers/xf86-video-sis671 0.9.1 0.10.4-r1 0.10.8 0.10.8-r2 0.10.8-r3 0.10.8-r4 0.10.8-r5: Xorg video driver for SIS M671/M672
 x11-misc/obdevicemenu 1.7.0: OpenBox device menu
