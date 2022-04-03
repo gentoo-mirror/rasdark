@@ -17,10 +17,11 @@ SRC_URI="
 	amd64? ( https://repo.yandex.ru/yandex-browser/deb/pool/main/y/${PN}/${PN}_${MY_PV}-1_amd64.deb -> ${P}.deb )
 	amd64? ( http://gpo.ws54.tk/gentoo-distfiles/${P}.deb -> ${P}.deb )
 "
-KEYWORDS="~amd64"
+KEYWORDS="amd64"
 IUSE="ffmpeg-codecs"
 
 RDEPEND="
+	!!www-client/yandex-browser-beta
 	dev-libs/expat
 	dev-libs/glib:2
 	dev-libs/nspr
@@ -62,7 +63,7 @@ DEPEND="
 
 QA_PREBUILT="*"
 S=${WORKDIR}
-YANDEX_HOME="opt/${PN/-//}"
+YANDEX_HOME="opt/yandex/browser"
 
 pkg_setup() {
 	chromium_suid_sandbox_check_kernel_config
@@ -94,7 +95,7 @@ src_prepare() {
 		-e 's|\[(NewWindow)|\[X-\1|g' \
 		-e 's|\[(NewIncognito)|\[X-\1|g' \
 		-e 's|^TargetEnvironment|X-&|g' \
-		-i usr/share/applications/${PN}.desktop || die
+		-i usr/share/applications/yandex-browser.desktop || die
 
 	patchelf --remove-rpath "${S}/${YANDEX_HOME}/yandex_browser-sandbox" || die "Failed to fix library rpath (yandex_browser-sandbox)"
 	patchelf --remove-rpath "${S}/${YANDEX_HOME}/yandex_browser" || die "Failed to fix library rpath (yandex_browser)"
