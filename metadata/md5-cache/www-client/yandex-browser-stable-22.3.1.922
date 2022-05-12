@@ -11,5 +11,5 @@ RDEPEND=!!www-client/yandex-browser-beta dev-libs/expat dev-libs/glib:2 dev-libs
 RESTRICT=bindist mirror strip
 SLOT=0
 SRC_URI=amd64? ( https://repo.yandex.ru/yandex-browser/deb/pool/main/y/yandex-browser-stable/yandex-browser-stable_22.3.1.922-1_amd64.deb -> yandex-browser-stable-22.3.1.922.deb ) amd64? ( http://gpo.ws54.tk/gentoo-distfiles/yandex-browser-stable-22.3.1.922.deb -> yandex-browser-stable-22.3.1.922.deb )
-_eclasses_=toolchain-funcs	badd6e329e1f3e6bee99b35bf8763ce8	multilib	4a33c9008e5ee30cb8840a3fdc24df2b	linux-info	3cfb791b045bfb6773a6d0f2d80ce9fd	chromium-2	fe5bb568da464344d16c90acb1c6e91e	unpacker	697382d119fd3d195f110b7979184285	pax-utils	91d47e5d20627c717aa878b9167c62a8	xdg-utils	fffb53a53cf17c9c0c998a3c0a590c7e
+_eclasses_=toolchain-funcs	badd6e329e1f3e6bee99b35bf8763ce8	multilib	4a33c9008e5ee30cb8840a3fdc24df2b	linux-info	ca6a402562d4b125faab56226408af3c	chromium-2	fe5bb568da464344d16c90acb1c6e91e	unpacker	697382d119fd3d195f110b7979184285	pax-utils	91d47e5d20627c717aa878b9167c62a8	xdg-utils	fffb53a53cf17c9c0c998a3c0a590c7e
 _md5_=bc0866268980e6a6854a80c70c6db3ce
