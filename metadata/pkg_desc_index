@@ -1,25 +1,16 @@
 app-editors/neovim-qt 0.2.16.1: Neovim client library and GUI, in Qt5
 app-editors/visual-studio-code 1.69.0: Editor for building and debugging modern web and cloud applications
-app-emulation/vpcs 0.8: Simulate up to 9 PCs in place of VMware boxes in a Dynamips network
-app-misc/double-commander-bin 0.9.9: Cross Platform file manager.
 app-office/joplin-desktop-bin 2.1.9: Joplin is a free, open source note taking and to-do application, which can handle a large number of notes organised into notebooks. The notes are searchable, can be copied, tagged and modified either from the applications directly or from your own text editor.
 app-office/osmo 0.4.4: A handy personal organizer
 app-text/litetran 9999: Very simple GUI for text translation (like google translate).
 dev-embedded/stc8prog 9999: Command line flash programming tool for STC 8051 series microcontrollers
 dev-lang/lazarus 2.0.6: Lazarus IDE is a feature rich visual programming environment emulating Delphi
-dev-qt/qt4pas 2.5: The Free Pascal Qt4 binding allows Free Pascal to interface with the C++ Library Qt.
 media-libs/opus 1.1.3-r1: Open versatile codec designed for interactive speech and audio transmission over the internet
 media-sound/apulse 9999: PulseAudio emulation for ALSA
 media-sound/volumeicon 0.5.1: A lightweight volume control that sits in your systray
 net-dns/ApacheDirectoryStudio 2.0.0.20200411: Apache Directory Studio is an universal LDAP directory tool.
-net-im/dialog 9999: Unify interaction between desktop and field staff, host your data on-premise or in the cloud.
-net-im/viber 6.5.5 7.0.0.1035: Free calls, text and picture sharing with anyone, anywhere!
 net-mail/davmail-bin 5.5.1: POP/IMAP/SMTP/Caldav/Carddav/LDAP Exchange Gateway
-net-misc/httpfs 0.3: Remote FUSE filesystem via server-side script
 net-misc/kerio-control-vpnclient 9.3.6.5738 9.3.6.5808: Kerio VPN Client
-net-misc/mailru-cloud 0112.15.06: Mail.Ru Cloud
-net-misc/yandex-disk 0.1.5.1039_p1: CLI to access Yandex Disk file storage service
-net-print/brother-hll2300d 3.2.0: Cups ppd and filters for Brother HL-L2300D
 net-wireless/rtl8812au 20220606: Realtek 8812AU USB WiFi module for Linux kernel
 sys-kernel/calculate-sources 5.17.15 5.18.10: Calculate Linux kernel image
 www-client/yandex-browser-beta 22.5.0.1879: The web browser from Yandex
@@ -30,5 +21,3 @@ x11-misc/obmenugen-bin 0.5-r72: Flexible, easy to use and (really) fast static/d
 x11-misc/tint2 9999: A lightweight panel/taskbar
 x11-plugins/pidgin-extended-blist-sort 1.8.0: Pidgin plugin that provides several new sort options for the buddy list
 x11-plugins/pidgin-sipe 1.25.0 9999: Pidgin Plug-in SIPE (Sip Exchange Protocol)
-x11-plugins/pidgin-toobars 1.14: Plugin adds toolbar and status bar to Pidgin buddy list
-x11-plugins/whatsapp-purple 0.5: WhatsApp protocol implementation for libpurple (Pidgin)
