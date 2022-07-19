@@ -2,4 +2,3 @@
 # Please add your descriptions to your package's metadata.xml ONLY.
 # * generated automatically using pmaint *
 
-dev-lang/lazarus:minimal - Don't build extra packages from the bigide component
