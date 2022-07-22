@@ -1,14 +1,16 @@
-DEFINED_PHASES=configure install
-DEPEND=>=x11-libs/gtk+-2.12:2 >=dev-libs/libtar-1.2.11-r3 dev-libs/libxml2:2 >=dev-libs/libical-0.33 app-text/gtkspell:2 >=x11-libs/libnotify-0.7 sys-devel/automake:1.15 virtual/pkgconfig
+BDEPEND=sys-devel/gnuconfig >=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.5:1.16 ) >=sys-devel/autoconf-2.71 >=sys-devel/libtool-2.4
+DEFINED_PHASES=configure postinst postrm preinst prepare
+DEPEND=>=x11-libs/gtk+-3.10:3 dev-libs/libxml2:2 >=dev-libs/libical-1.0:0 >=app-text/gspell-1.2.0:0 contacts? ( >=net-libs/webkit-gtk-2.8.0:4 ) backup? ( >=app-arch/libarchive-3.0.0 app-office/gringotts ) >=x11-libs/libnotify-0.7 sys-devel/automake:1.15 virtual/pkgconfig dev-util/desktop-file-utils x11-misc/shared-mime-info
 DESCRIPTION=A handy personal organizer
-EAPI=6
-HOMEPAGE=http://clayo.org/osmo/
-INHERIT=eutils flag-o-matic
+EAPI=7
+HOMEPAGE=http://osmo-pim.sourceforge.net/
+INHERIT=autotools xdg
+IUSE=+contacts +tasks +notes backup debug
 KEYWORDS=amd64 x86
 LICENSE=GPL-2
-RDEPEND=>=x11-libs/gtk+-2.12:2 >=dev-libs/libtar-1.2.11-r3 dev-libs/libxml2:2 >=dev-libs/libical-0.33 app-text/gtkspell:2 >=x11-libs/libnotify-0.7
+RDEPEND=>=x11-libs/gtk+-3.10:3 dev-libs/libxml2:2 >=dev-libs/libical-1.0:0 >=app-text/gspell-1.2.0:0 contacts? ( >=net-libs/webkit-gtk-2.8.0:4 ) backup? ( >=app-arch/libarchive-3.0.0 app-office/gringotts ) >=x11-libs/libnotify-0.7
 RESTRICT=mirror
 SLOT=0
 SRC_URI=mirror://sourceforge/osmo-pim/osmo-0.4.4.tar.gz
-_eclasses_=desktop	22952d8f27cac191d75529d4c38e6bfa	edos2unix	33e347e171066657f91f8b0c72ec8773	estack	055c42df72f76a4f45ec92b35e83cd56	epatch	447396341f5f896d722e435a06f87a4f	toolchain-funcs	1542e649be915f43f6908a9e93909961	multilib	5ca4e49abed8e3a2f7b56920eadee157	ltprune	97143780d341cc8d8f1d4c6187a36d29	preserve-libs	a8e50acee31b5759b4df1f7707cae54b	strip-linguas	ac3ee41ee2d31d8c41a77c0838320cc7	vcs-clean	d271b7bc7e6a009758d7d4ef749174e3	wrapper	4a1902f969e5718126434fc35f3a0d9c	eutils	23cb2d46c80c12aa8b25973b4cdcb257	flag-o-matic	929e29d009c20f55b45c96866ebf47fe
-_md5_=a33cc976b6fa0c35ccabccd646c7e461
+_eclasses_=gnuconfig	b6b3e92f8b8c996400074b5f61a59256	toolchain-funcs	1542e649be915f43f6908a9e93909961	multilib	5ca4e49abed8e3a2f7b56920eadee157	libtool	241a8f577b9781a42a7421e53448a44e	autotools	9e6965bfaa00f52cc61e0d4bc44c87b3	xdg-utils	fffb53a53cf17c9c0c998a3c0a590c7e	xdg	6024fbc93167fad782e2032933654857
+_md5_=71e75248ceb0ee387d43fdd8b9f9b8d4
