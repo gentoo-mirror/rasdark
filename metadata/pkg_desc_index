@@ -1,9 +1,7 @@
-app-editors/neovim-qt 0.2.16.1: Neovim client library and GUI, in Qt5
 app-editors/visual-studio-code 1.69.2: Editor for building and debugging modern web and cloud applications
 app-emulation/vpcs 0.8: Simulate up to 9 PCs in place of VMware boxes in a Dynamips network
 app-office/joplin-desktop-bin 2.1.9: Joplin is a free, open source note taking and to-do application, which can handle a large number of notes organised into notebooks. The notes are searchable, can be copied, tagged and modified either from the applications directly or from your own text editor.
 app-office/osmo 0.4.4: A handy personal organizer
-app-text/litetran 9999: Very simple GUI for text translation (like google translate).
 dev-embedded/stc8prog 9999: Command line flash programming tool for STC 8051 series microcontrollers
 media-libs/opus 1.1.3-r1: Open versatile codec designed for interactive speech and audio transmission over the internet
 media-sound/volumeicon 0.5.1: A lightweight volume control that sits in your systray
@@ -15,6 +13,5 @@ sys-kernel/calculate-sources 5.18.15: Calculate Linux kernel image
 www-client/yandex-browser-beta 22.7.1.828: The web browser from Yandex
 www-client/yandex-browser-stable 22.5.3.673: The web browser from Yandex
 x11-drivers/xf86-video-sis671 0.10.8-r5: Xorg video driver for SIS M671/M672
-x11-misc/tint2 9999: A lightweight panel/taskbar
 x11-plugins/pidgin-sipe 1.25.0 9999: Pidgin Plug-in SIPE (Sip Exchange Protocol)
 x11-plugins/pidgin-toobars 1.14: Plugin adds toolbar and status bar to Pidgin buddy list
