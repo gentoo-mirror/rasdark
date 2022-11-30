@@ -14,7 +14,7 @@ net-print/brother-hll2300d 3.2.0: Cups ppd and filters for Brother HL-L2300D
 net-wireless/rtl8812au 20220827 20221105: Realtek 8812AU USB WiFi module for Linux kernel
 sys-kernel/calculate-sources 6.0.9: Calculate Linux kernel image
 www-client/yandex-browser-beta 22.9.1.1110: The web browser from Yandex
-www-client/yandex-browser-stable 22.9.3.894: The web browser from Yandex
+www-client/yandex-browser-stable 22.11.0.2484: The web browser from Yandex
 x11-drivers/xf86-video-sis671 0.10.8-r5: Xorg video driver for SIS M671/M672
 x11-misc/tint2 9999: A lightweight panel/taskbar
 x11-plugins/pidgin-sipe 1.25.0 9999: Pidgin Plug-in SIPE (Sip Exchange Protocol)
