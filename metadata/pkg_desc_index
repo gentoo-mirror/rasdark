@@ -1,5 +1,5 @@
 app-editors/neovim-qt 0.2.16.1: Neovim client library and GUI, in Qt5
-app-editors/visual-studio-code 1.76.2: Editor for building and debugging modern web and cloud applications
+app-editors/visual-studio-code 1.77.1: Editor for building and debugging modern web and cloud applications
 app-emulation/vpcs 0.8: Simulate up to 9 PCs in place of VMware boxes in a Dynamips network
 app-misc/far2l 2.4.1: Linux port of FAR Manager v2
 app-office/joplin-desktop-bin 2.1.9: Joplin is a free, open source note taking and to-do application, which can handle a large number of notes organised into notebooks. The notes are searchable, can be copied, tagged and modified either from the applications directly or from your own text editor.
