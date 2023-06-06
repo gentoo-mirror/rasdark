@@ -13,8 +13,8 @@ net-misc/kerio-control-vpnclient 9.3.6.5738 9.3.6.5808 9.4.2.7290: Kerio VPN Cli
 net-print/brother-hll2300d 3.2.0: Cups ppd and filters for Brother HL-L2300D
 net-wireless/rtl8812au 20230502: Realtek 8812AU USB WiFi module for Linux kernel
 sys-kernel/calculate-sources 6.1.27 6.2.12 6.2.14: Calculate Linux kernel image
-www-client/yandex-browser-beta 23.3.3.766: The web browser from Yandex
-www-client/yandex-browser-stable 23.3.3.764: The web browser from Yandex
+www-client/yandex-browser-beta 23.5.1.575: The web browser from Yandex
+www-client/yandex-browser-stable 23.5.1.667: The web browser from Yandex
 x11-drivers/xf86-video-sis671 0.10.8-r5: Xorg video driver for SIS M671/M672
 x11-misc/tint2 9999: A lightweight panel/taskbar
 x11-plugins/pidgin-sipe 1.25.0 9999: Pidgin Plug-in SIPE (Sip Exchange Protocol)
