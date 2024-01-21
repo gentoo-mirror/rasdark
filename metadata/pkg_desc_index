@@ -14,7 +14,7 @@ net-dns/ApacheDirectoryStudio 2.0.0.20200411: Apache Directory Studio is an univ
 net-misc/kerio-control-vpnclient 9.4.2.7290: Kerio VPN Client
 net-print/brother-hll2300d 3.2.0: Cups ppd and filters for Brother HL-L2300D
 net-wireless/rtl8812au 20230502: Realtek 8812AU USB WiFi module for Linux kernel
-sys-kernel/calculate-sources 6.1.73 6.6.12: Calculate Linux kernel image
+sys-kernel/calculate-sources 6.1.74 6.6.12: Calculate Linux kernel image
 www-client/yandex-browser-beta 23.11.1.675: The web browser from Yandex
 www-client/yandex-browser-corporate 23.11.1.785: The web browser from Yandex (Corporate version)
 www-client/yandex-browser-stable 23.11.1.714: The web browser from Yandex
