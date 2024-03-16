@@ -13,7 +13,7 @@ media-sound/volumeicon 0.5.1: A lightweight volume control that sits in your sys
 net-dns/ApacheDirectoryStudio 2.0.0.20200411: Apache Directory Studio is an universal LDAP directory tool.
 net-misc/kerio-control-vpnclient 9.4.2.7290: Kerio VPN Client
 net-print/brother-hll2300d 3.2.0: Cups ppd and filters for Brother HL-L2300D
-net-wireless/rtl8812au 20231117: Realtek 8812AU USB WiFi module for Linux kernel
+net-wireless/rtl8812au 20240316: Realtek 8812AU USB WiFi module for Linux kernel
 sys-kernel/calculate-sources 6.1.82 6.6.22: Calculate Linux kernel image
 www-client/yandex-browser-beta 24.1.1.939: The web browser from Yandex
 www-client/yandex-browser-corporate 24.1.3.843: The web browser from Yandex (Corporate version)
