@@ -2,18 +2,23 @@ app-editors/neovim-qt 0.2.18: Neovim client library and GUI, in Qt5
 app-editors/visual-studio-code 1.87.2: Editor for building and debugging modern web and cloud applications
 app-emulation/vpcs 0.8: Simulate up to 9 PCs in place of VMware boxes in a Dynamips network
 app-misc/far2l 2.5.1: Linux port of FAR Manager v2
+app-misc/otpclient 3.1.9: Simple GTK+ v3 OTP client (TOTP and HOTP)
 app-office/joplin-desktop-bin 2.1.9: Joplin is a free, open source note taking and to-do application, which can handle a large number of notes organised into notebooks. The notes are searchable, can be copied, tagged and modified either from the applications directly or from your own text editor.
 app-office/osmo 0.4.4: A handy personal organizer
 app-shells/direnv 2.33.0: Environment variable manager for shell
 app-text/litetran 9999: Very simple GUI for text translation (like google translate).
 dev-embedded/stc8prog 9999: Command line flash programming tool for STC 8051 series microcontrollers
+dev-libs/libbaseencode 1.0.15: Library written in C for encoding and decoding data using base32 or base64 (RFC-4648)
+dev-libs/libcotp 1.2.6 2.0.1: C library that generates TOTP and HOTP
 dev-python/awxkit 23.5.1-r1: Command line interface for Ansible AWX
 media-libs/opus 1.1.3-r1: Open versatile codec designed for interactive speech and audio transmission over the internet
 media-sound/volumeicon 0.5.1: A lightweight volume control that sits in your systray
 net-dns/ApacheDirectoryStudio 2.0.0.20200411: Apache Directory Studio is an universal LDAP directory tool.
+net-im/telegram-desktop-bin 4.16.0: Official desktop client for Telegram (binary package)
 net-misc/kerio-control-vpnclient 9.4.2.7290: Kerio VPN Client
 net-print/brother-hll2300d 3.2.0: Cups ppd and filters for Brother HL-L2300D
 net-wireless/rtl8812au 20240316: Realtek 8812AU USB WiFi module for Linux kernel
+sys-boot/etcher-bin 1.18.11: Flash OS images to SD cards & USB drives, safely and easily.
 sys-kernel/calculate-sources 6.1.83 6.6.23: Calculate Linux kernel image
 www-client/yandex-browser-beta 24.1.1.939: The web browser from Yandex
 www-client/yandex-browser-corporate 24.1.3.843: The web browser from Yandex (Corporate version)
