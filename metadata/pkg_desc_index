@@ -1,5 +1,5 @@
 app-editors/neovim-qt 0.2.18: Neovim client library and GUI, in Qt5
-app-editors/visual-studio-code 1.90.1: Editor for building and debugging modern web and cloud applications
+app-editors/visual-studio-code 1.90.2: Editor for building and debugging modern web and cloud applications
 app-emulation/vpcs 0.8: Simulate up to 9 PCs in place of VMware boxes in a Dynamips network
 app-misc/far2l 2.5.1: Linux port of FAR Manager v2
 app-misc/otpclient 3.1.9: Simple GTK+ v3 OTP client (TOTP and HOTP)
