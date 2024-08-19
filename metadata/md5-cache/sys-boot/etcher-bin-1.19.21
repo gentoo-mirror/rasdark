@@ -9,5 +9,5 @@ RDEPEND=app-arch/lzma dev-libs/expat dev-libs/libappindicator dev-libs/nss media
 RESTRICT=mirror
 SLOT=0
 SRC_URI=https://github.com/balena-io/etcher/releases/download/v1.19.21/balena-etcher_1.19.21_amd64.deb
-_eclasses_=multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	toolchain-funcs	5f8f1dc0c94e007fa08af4e98a19d0e5	multilib	c19072c3cd7ac5cb21de013f7e9832e0	unpacker	fb4b84181244b3b9990fa0bf40232dd2	xdg-utils	baea6080dd821f5562d715887954c9d3
+_eclasses_=multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	toolchain-funcs	333970c740aa7b1a92e4fcdc52f612bd	multilib	c19072c3cd7ac5cb21de013f7e9832e0	unpacker	fb4b84181244b3b9990fa0bf40232dd2	xdg-utils	baea6080dd821f5562d715887954c9d3
 _md5_=97577f50d5e7f1256807370910032923
