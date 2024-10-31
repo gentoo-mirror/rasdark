@@ -3,6 +3,7 @@ app-misc/far2l 2.6.3: Linux port of FAR Manager v2
 app-misc/otpclient 3.1.9: Simple GTK+ v3 OTP client (TOTP and HOTP)
 app-shells/direnv 2.34.0: Environment variable manager for shell
 app-text/litetran 9999: Very simple GUI for text translation (like google translate).
+app-text/simplenote 2.22.2: The simplest way to keep notes
 dev-libs/libbaseencode 1.0.15: Library written in C for encoding and decoding data using base32 or base64 (RFC-4648)
 dev-libs/libcotp 1.2.6 2.0.1: C library that generates TOTP and HOTP
 net-im/telegram-desktop-bin 5.6.1: Official desktop client for Telegram (binary package)
