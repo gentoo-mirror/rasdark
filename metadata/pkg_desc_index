@@ -1,17 +1,17 @@
 app-editors/visual-studio-code 1.95.3: Editor for building and debugging modern web and cloud applications
 app-misc/far2l 2.6.3: Linux port of FAR Manager v2
 app-misc/otpclient 3.1.9: Simple GTK+ v3 OTP client (TOTP and HOTP)
-app-shells/direnv 2.34.0: Environment variable manager for shell
+app-shells/direnv 2.35.0: Environment variable manager for shell
 app-text/litetran 9999: Very simple GUI for text translation (like google translate).
 app-text/simplenote 2.22.2: The simplest way to keep notes
 dev-libs/libbaseencode 1.0.15: Library written in C for encoding and decoding data using base32 or base64 (RFC-4648)
 dev-libs/libcotp 1.2.6 2.0.1: C library that generates TOTP and HOTP
-net-im/telegram-desktop-bin 5.8.3: Official desktop client for Telegram (binary package)
+net-im/telegram-desktop-bin 5.9.0: Official desktop client for Telegram (binary package)
 net-misc/kerio-control-vpnclient 9.4.2.7290: Kerio VPN Client
 net-print/brother-hll2300d 3.2.0: Cups ppd and filters for Brother HL-L2300D
 net-wireless/rtl8812au 20240316 20240510: Realtek 8812AU USB WiFi module for Linux kernel
 sys-boot/etcher-bin 1.19.25: Flash OS images to SD cards & USB drives, safely and easily.
 sys-kernel/calculate-sources 6.6.63 6.11.10: Calculate Linux kernel image
 www-client/yandex-browser-beta 24.10.4.648: The web browser from Yandex
-www-client/yandex-browser-corporate 24.7.6.1016: The web browser from Yandex (Corporate version)
+www-client/yandex-browser-corporate 24.10.4.817: The web browser from Yandex (Corporate version)
 www-client/yandex-browser-stable 24.10.4.808: The web browser from Yandex
