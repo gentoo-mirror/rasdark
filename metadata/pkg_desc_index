@@ -11,7 +11,7 @@ net-misc/kerio-control-vpnclient 9.4.2.7290: Kerio VPN Client
 net-print/brother-hll2300d 3.2.0: Cups ppd and filters for Brother HL-L2300D
 net-wireless/rtl8812au 20240316 20240510: Realtek 8812AU USB WiFi module for Linux kernel
 sys-boot/etcher-bin 1.19.25: Flash OS images to SD cards & USB drives, safely and easily.
-sys-kernel/calculate-sources 6.6.74 6.12.11: Calculate Linux kernel image
-www-client/yandex-browser-beta 24.12.1.704: The web browser from Yandex
-www-client/yandex-browser-corporate 24.10.4.817: The web browser from Yandex (Corporate version)
+sys-kernel/calculate-sources 6.6.75 6.12.12: Calculate Linux kernel image
+www-client/yandex-browser-beta 24.12.4.1056: The web browser from Yandex
+www-client/yandex-browser-corporate 24.12.4.1094: The web browser from Yandex (Corporate version)
 www-client/yandex-browser-stable 24.12.1.712-r1: The web browser from Yandex
