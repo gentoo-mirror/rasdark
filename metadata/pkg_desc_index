@@ -1,4 +1,4 @@
-app-editors/visual-studio-code 1.98.0: Editor for building and debugging modern web and cloud applications
+app-editors/visual-studio-code 1.98.1: Editor for building and debugging modern web and cloud applications
 app-misc/far2l 2.6.3: Linux port of FAR Manager v2
 app-misc/otpclient 3.1.9: Simple GTK+ v3 OTP client (TOTP and HOTP)
 app-shells/direnv 2.35.0: Environment variable manager for shell
