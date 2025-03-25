@@ -8,5 +8,5 @@ LICENSE=custom:kerio-control-vpnclient
 RDEPEND=dev-util/dialog virtual/libcrypt:=
 SLOT=0
 SRC_URI=http://cdn.kerio.com/dwn/control/control-9.4.2-7290/kerio-control-vpnclient-9.4.2-7290-p1-linux-amd64.deb
-_eclasses_=multiprocessing	1e32df7deee68372153dca65f4a7c21f	toolchain-funcs	6afdb6107430c1832ca7e16aacbf8fa1	multilib	b2a329026f2e404e9e371097dda47f96	unpacker	3b4ee72d1e2e0374fd8cd3eddfa00627
+_eclasses_=multiprocessing	1e32df7deee68372153dca65f4a7c21f	toolchain-funcs	6afdb6107430c1832ca7e16aacbf8fa1	multilib	b2a329026f2e404e9e371097dda47f96	unpacker	13d8d65b19f96f31b38c39b57419304e
 _md5_=0591df4086a1c3841bff92d2609b8c79
