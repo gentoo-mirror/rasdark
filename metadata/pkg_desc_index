@@ -1,4 +1,4 @@
-app-editors/visual-studio-code 1.98.2: Editor for building and debugging modern web and cloud applications
+app-editors/visual-studio-code 1.99.0: Editor for building and debugging modern web and cloud applications
 app-misc/far2l 2.6.3: Linux port of FAR Manager v2
 app-misc/otpclient 3.1.9: Simple GTK+ v3 OTP client (TOTP and HOTP)
 app-shells/direnv 2.35.0: Environment variable manager for shell
@@ -11,7 +11,7 @@ net-misc/kerio-control-vpnclient 9.4.2.7290: Kerio VPN Client
 net-print/brother-hll2300d 3.2.0: Cups ppd and filters for Brother HL-L2300D
 net-wireless/rtl8812au 20240316 20240510: Realtek 8812AU USB WiFi module for Linux kernel
 sys-boot/etcher-bin 1.19.25: Flash OS images to SD cards & USB drives, safely and easily.
-sys-kernel/calculate-sources 6.12.20: Calculate Linux kernel image
+sys-kernel/calculate-sources 6.12.22: Calculate Linux kernel image
 www-client/yandex-browser-beta 25.2.1.941: The web browser from Yandex
-www-client/yandex-browser-corporate 25.2.1.917: The web browser from Yandex (Corporate version)
+www-client/yandex-browser-corporate 25.2.4.996: The web browser from Yandex (Corporate version)
 www-client/yandex-browser-stable 25.2.1.939-r1: The web browser from Yandex
