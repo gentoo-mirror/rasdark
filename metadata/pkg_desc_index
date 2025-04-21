@@ -14,4 +14,4 @@ sys-boot/etcher-bin 1.19.25: Flash OS images to SD cards & USB drives, safely an
 sys-kernel/calculate-sources 6.12.24: Calculate Linux kernel image
 www-client/yandex-browser-beta 25.2.6.703: The web browser from Yandex
 www-client/yandex-browser-corporate 25.2.4.996: The web browser from Yandex (Corporate version)
-www-client/yandex-browser-stable 25.2.1.939-r1: The web browser from Yandex
+www-client/yandex-browser-stable 25.2.6.712-r1: The web browser from Yandex
