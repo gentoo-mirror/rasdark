@@ -8,9 +8,9 @@ dev-libs/libcotp 1.2.6 2.0.1: C library that generates TOTP and HOTP
 net-im/telegram-desktop-bin 5.11.1: Official desktop client for Telegram (binary package)
 net-misc/kerio-control-vpnclient 9.4.2.7290: Kerio VPN Client
 net-print/brother-hll2300d 3.2.0: Cups ppd and filters for Brother HL-L2300D
-net-wireless/rtl8812au 20240316 20240510: Realtek 8812AU USB WiFi module for Linux kernel
+net-wireless/rtl8812au 20250330: Realtek 8812AU USB WiFi module for Linux kernel
 sys-boot/etcher-bin 1.19.25: Flash OS images to SD cards & USB drives, safely and easily.
-sys-kernel/calculate-sources 6.12.29: Calculate Linux kernel image
-www-client/yandex-browser-beta 25.4.1.1017: The web browser from Yandex
+sys-kernel/calculate-sources 6.12.30: Calculate Linux kernel image
+www-client/yandex-browser-beta 25.4.1.1058: The web browser from Yandex
 www-client/yandex-browser-corporate 25.2.4.1036: The web browser from Yandex (Corporate version)
-www-client/yandex-browser-stable 25.4.1.1016: The web browser from Yandex
+www-client/yandex-browser-stable 25.4.1.1062: The web browser from Yandex
