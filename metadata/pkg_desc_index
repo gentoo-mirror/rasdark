@@ -1,4 +1,4 @@
-app-editors/visual-studio-code 1.102.0: Editor for building and debugging modern web and cloud applications
+app-editors/visual-studio-code 1.102.1: Editor for building and debugging modern web and cloud applications
 app-misc/otpclient 3.1.9: Simple GTK+ v3 OTP client (TOTP and HOTP)
 app-shells/direnv 2.35.0: Environment variable manager for shell
 app-text/litetran 9999: Very simple GUI for text translation (like google translate).
@@ -11,6 +11,6 @@ net-print/brother-hll2300d 3.2.0: Cups ppd and filters for Brother HL-L2300D
 net-wireless/rtl8812au 20250330: Realtek 8812AU USB WiFi module for Linux kernel
 sys-boot/etcher-bin 1.19.25: Flash OS images to SD cards & USB drives, safely and easily.
 sys-kernel/calculate-sources 6.12.37: Calculate Linux kernel image
-www-client/yandex-browser-beta 25.4.1.1133: The web browser from Yandex
-www-client/yandex-browser-corporate 25.4.1.1137: The web browser from Yandex (Corporate version)
-www-client/yandex-browser-stable 25.4.1.1213: The web browser from Yandex
+www-client/yandex-browser-beta 25.6.1.1037: The web browser from Yandex
+www-client/yandex-browser-corporate 25.6.1.1051: The web browser from Yandex (Corporate version)
+www-client/yandex-browser-stable 25.6.1.1039: The web browser from Yandex
